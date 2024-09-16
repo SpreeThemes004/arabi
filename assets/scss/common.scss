@@ -66,54 +66,13 @@ iframe {
   }
 }
 
-
-// background & color
-.bg-1 {
-  background-color: #00234D;
-}
-
-.bg-2 {
-  background-color: #000;
-}
-
-.bg-3 {
-  background-color: #F76B6A;
-}
-
-.bg-4 {
-  background-color: #071C1F;
-}
-
-.bg-5 {
-  background-color: #FBF3F0;
-}
-
-.bg-pink {
-  background-color: #FFF3F3;
-}
-
-.bg-trust-1 {
-  background-color: #FCEDDA;
-}
-
-.bg-trust-2 {
-  background-color: #F2FBCB;
-}
-
-.bg-trust-3 {
-  background-color: #F7D8F9;
-}
-
 // button and input
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-secondary,
 .btn-secondary:hover,
-.btn-secondary:focus,
-.btn-member,
-.btn-member:hover,
-.btn-member:focus {
+.btn-secondary:focus{
   font-size: 14px;
   line-height: 1;
   text-decoration: none;
@@ -125,45 +84,36 @@ iframe {
   @include prefix(justify-content, center, ms webkit spec);
 }
 
-.btn-member,
-.btn-member:hover,
-.btn-member:focus {
-  min-width: 140px;
-  height: 47px;
-  color: #fff;
-}
-
-.btn-primary,
-.btn-member {
-  @include prefix(border-radius, var(--btn-primary-border-radius), ms webkit spec);
-  color: var(--btn-primary-color);
-  border: 1px solid var(--btn-primary-border-color);
-  background-color: var(--btn-primary-background-color);
-  font-weight: var(--btn-primary-font-weight);
+.btn-primary {
+  @include prefix(border-radius, var(--button-radius), ms webkit spec);
+  color: var( --color-button-text);
+  border: 1px solid var(--color-button-border);
+  background-color: var( --color-button);
+  font-weight: var(--font-button-weight);
 }
 
 .btn-secondary {
-  @include prefix(border-radius, var(--btn-secondary-border-radius), ms webkit spec);
-  color: var(--btn-secondary-color);
-  border: 1px solid var(--btn-secondary-border-color);
-  background-color: var(--btn-secondary-background-color);
-  font-weight: var(--btn-secondary-font-weight);
+  @include prefix(border-radius, var(--secondary-button-radius), ms webkit spec);
+  color: var(--color-secondary-button-text);
+  border: 1px solid var(--color-secondary-button-border);
+  background-color: var(--color-secondary-button);
+  font-weight: var(--font-secondary-button-weight);
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-member:hover,
-.btn-member:focus {
-  color: var(--btn-primary-hover-color);
-  border: 1px solid var(--btn-primary-border-hover-color);
-  background-color: var(--btn-primary-background-hover-color);
+.btn-member:focus{
+  color: var(--color-button-text-hover);
+  border: 1px solid var(--color-button-border-hover);
+  background-color: var(--color-button-hover);
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: var(--btn-secondary-hover-color);
-  border: 1px solid var(--btn-secondary-border-hover-color);
-  background-color: var(--btn-secondary-background-hover-color);
+  color: var(--color-secondary-button-text-hover);
+  border: 1px solid var(--color-secondary-button-border-hover);
+  background-color: var(--color-secondary-button-hover);
 }
 
 .input-reset,
@@ -206,14 +156,10 @@ input[type="number"] {
 }
 
 // overlay
-.overlay-furniture,
-.overlay-tools,
 .overlay {
   position: relative;
 }
 
-.overlay-furniture:before,
-.overlay-tools:before,
 .overlay:before {
   content: "";
   position: absolute;
@@ -225,14 +171,6 @@ input[type="number"] {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.overlay-tools:before {
-  background-color: rgba(7, 28, 31, 0.5);
-}
-
-.overlay-furniture:before {
-  background-color: rgba(0, 35, 77, 0.5);
-}
-
 /*============================================================================
     Template Common CSS
 ==============================================================================*/
@@ -242,17 +180,16 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
-  font-family: var(--heading-font-family);
-  font-weight: var(--heading-font-weight);
+  color: var(--color-heading);
+  font-family: var(--font-heading-family);
+  font-weight: var(--font-heading-weight);
 }
 
 body {
-  color: var(--body-color);
-  background-color: var(--body-background-color);
-  font-size: var(--body-font-size);
-  font-weight: var(--body-font-weight);
-  font-family: var(--body-font-family);
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+  font-weight: var(--font-body-weight);
+  font-family: var(--font-body-family);
   letter-spacing: 0.5px;
   padding-right: 0 !important;
 }
@@ -264,82 +201,90 @@ body {
   margin-right: auto;
 }
 
-// heading and text
-.heading_72,
-.heading_48,
-.heading_42,
-.heading_34,
-.heading_24,
-.heading_18,
+// Typography
+.text_56,
+.text_48,
+.text_42,
+.text_32,
+.text_24,
+.text_18,
 .text_16,
 .text_14,
 .text_12 {
-  margin-bottom: 0;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.2;
+  margin: 0;
   color: #000;
 }
 
-.heading_72 {
-  font-weight: 600;
-  font-size: 72px;
-  line-height: 1.2;
-  letter-spacing: 0;
+.text_56 {
+  font-size: 56px;
+  line-height: 1.25;
 }
 
-.heading_48 {
-  font-weight: 600;
+.text_48 {
   font-size: 48px;
-  line-height: 1.12;
-  letter-spacing: 0.01em;
+  line-height: 1.25;
 }
 
-.heading_42 {
-  font-weight: 600;
+.text_42 {
   font-size: 42px;
-  line-height: 1.12;
-  letter-spacing: 0.01em;
+  line-height: 1.25;
 }
 
-.heading_34 {
-  font-weight: 600;
-  font-size: 34px;
-  line-height: 1.08;
-  letter-spacing: 0.25px;
+.text_32 {
+  font-size: 32px;
+  line-height: 1.2;
 }
 
-.heading_18 {
+.text_24{
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.text_18 {
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 .text_16 {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.68;
-  letter-spacing: 0.5px;
+  line-height: 1.5;
 }
 
 .text_14 {
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.08;
+  line-height: 1.68;
 }
 
 .text_12 {
-  font-weight: 400;
   font-size: 12px;
-  line-height: 18px;
-  letter-spacing: 0.4px;
+  line-height: 1.68;
 }
 
-.link-underline {
+.heading{
+  color: var(--color-heading);
+  font-weight: var(--font-heading-weight);
+  font-family: var(--font-heading-family);
+}
+
+.subheading{
+  color: var(--color-subheading);
+  font-weight: var(--font-subheading-weight);
+  font-family: var(--font-subheading-family);
+}
+
+.text{
+  color: var(--color-foreground);
+  font-weight: var(--font-body-weight);
+  font-family: var(--font-body-family);
+}
+
+.link-underline {  
+  color: var(--color-link);
   text-decoration: underline;
   @include prefix(transition, all 0.3s ease, ms webkit spec);
 
   &:hover {
-    color: var(--secondary-color);
+    color: var(--color-link-hover);
     text-decoration: underline;
   }
 }
@@ -361,14 +306,6 @@ body {
 
 
 // color
-.primary-color {
-  color: var(--primary-color);
-}
-
-.secondary-color {
-  color: var(--secondary-color);
-}
-
 a,
 a:focus,
 a:hover {
@@ -420,124 +357,6 @@ button,
 .height-inherit {
   height: inherit;
 }
-
-// section header
-.section-heading {
-  color: var(--section-heading-color);
-  font-family: var(--section-heading-font-family);
-  font-size: var(--section-heading-font-size);
-  font-weight: var(--section-heading-font-weight);
-  margin-bottom: 0;
-  line-height: 1.5;
-
-  &.primary-color {
-    color: var(--primary-color);
-  }
-}
-
-.section-subheading {
-  color: var(--section-subheading-color);
-  font-family: var(--section-subheading-font-family);
-  font-size: var(--section-subheading-font-size);
-  font-weight: var(--section-subheading-font-weight);
-  margin-top: 10px;
-  margin-bottom: 0;
-
-  &.primary-color {
-    color: var(--primary-color);
-  }
-}
-
-.section-icon {
-  margin-bottom: 10px;
-}
-
-// slick
-.slick-initialized .slick-slide {
-  outline: none;
-}
-
-.common-slider .slick-slide {
-  margin: 0 12px;
-}
-
-.common-slider .slick-list {
-  margin: 0 -12px;
-}
-
-.show-arrows-always .arrow-slider {
-  opacity: 1;
-  visibility: visible;
-  width: 40px;
-  height: 40px;
-  background-color: var(--primary-color);
-  @include prefix(display, flex, ms webkit spec);
-  @include prefix(align-items, center, ms webkit spec);
-  @include prefix(justify-content, center, ms webkit spec);
-  @include prefix(border-radius, 0.25rem, ms webkit spec);
-}
-
-.show-arrows-always .arrow-slider svg {
-  width: 24px;
-  stroke: #000;
-  stroke-width: 1.5px;
-}
-
-.arrows-white .arrow-slider svg {
-  stroke: #fff;
-}
-
-.article-arrows .arrow-slider {
-  opacity: 0;
-  visibility: hidden;
-  @include prefix(transition, all 0.3s, ms webkit spec);
-
-  .home-section:hover & {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-
-// slick
-.slick-dots {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  @include prefix(transform, translateX(-50%), ms webkit spec);
-
-  li {
-    width: 12px;
-    height: 8px;
-    background-color: #000;
-    opacity: 0.5;
-    margin: 0 6px;
-    cursor: pointer;
-
-    @include prefix(border-radius, 8px, ms webkit spec);
-    @include prefix(transition, all 0.3s ease, ms webkit spec);
-
-    &.slick-active {
-      opacity: 1;
-      width: 24px;
-    }
-
-    button {
-      display: none;
-    }
-  }
-}
-
-.slick-arrow[aria-disabled="true"] {
-  pointer-events: none;
-  opacity: 0.5 !important;
-}
-
 
 // show second image on hover
 .hover-switch {

@@ -1,31 +1,68 @@
-.announcement-text,
-.announcement-text:hover,
-.announcement-text:focus,
-.currency-btn,
-.currency-list-option,
-.currency-list-option:hover {
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 27px;
-    font-weight: var(--body-font-weight);
-    color: #000;
+.announcement-bar {
+    background-color: #000;
+    padding: 10px 40px;
 }
 
-.currency-list-option,
-.currency-list-option:hover {
-    color: var(--body-color);
+.announcement-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.announcement-text {
-    margin: 0;
+.announcement-with-two-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.announcement-with-three-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.announcement-contact {
+    display: flex;
+    gap: 12px;
+}
+
+.announcement-bar .text {
+    color: var(--color-secondary);
+}
+
+.announcement-meta {
+    display: flex;
+    position: relative;
+    gap: 24px;
+}
+
+.language-wrapper:before {
+    content: '';
+    background: #fff;
+    position: absolute;
+    width: 1px;
+    height: 16px;
+    top: 50%;
+    left: 51%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+}
+
+.language-list-option > .text,
+.currency-list-option > .text {
+    color: var(--color-primary);
 }
 
 .flag {
     min-width: 20px;
     max-width: 20px;
-    margin-right: 3px;
+    margin-right: 4px;
 }
 
+.language-list,
 .currency-list {
     min-width: auto;
+    padding: 8px;
 }

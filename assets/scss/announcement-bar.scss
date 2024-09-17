@@ -1,26 +1,16 @@
 .announcement-bar {
     background-color: #000;
-    padding: 10px 40px;
+    padding: 10px 0;
 }
 
-.announcement-wrap {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.announcement-has-three-block .text,
+.announcement-has-single-block .text {
+    text-align: center;
 }
 
-.announcement-with-two-block {
+.announcement-bar .announcement-meta-wrap {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.announcement-with-three-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .announcement-contact {
@@ -65,4 +55,10 @@
 .currency-list {
     min-width: auto;
     padding: 8px;
+}
+
+@media (max-width: 991px) {
+    .announcement-bar .text_16 {
+        font-size: 14px;
+    }
 }

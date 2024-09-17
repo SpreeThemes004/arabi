@@ -47,8 +47,8 @@ iframe {
 }
 // custom container
 .container-fluid {
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 @media (max-width: 1800px) {
@@ -120,6 +120,8 @@ iframe {
 .btn-reset {
   border: none;
   outline: none;
+  -moz-outline: none ;
+  -webkit-outline: none ;
   background: transparent;
   padding: 0;
 }
@@ -151,8 +153,8 @@ input[type="number"] {
 
 // icon
 .icon {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
 }
 
 // overlay

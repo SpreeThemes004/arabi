@@ -705,6 +705,28 @@ button,
       -webkit-box-flex: 0;
       flex: 0 0 50px; }
 
+.header-grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px; }
+
+.header-5 .header-grid,
+.header-1 .header-grid {
+  -ms-grid-columns: 216px auto 216px;
+  grid-template-columns: 216px auto 216px; }
+
+.header-2 .header-grid {
+  -ms-grid-columns: 300px auto 300px;
+  grid-template-columns: 300px auto 300px; }
+
+.header-3 .header-grid {
+  -ms-grid-columns: 1fr 120px 1fr;
+  grid-template-columns: 1fr 120px 1fr; }
+
+.header-4 .header-grid {
+  -ms-grid-columns: auto 120px auto;
+  grid-template-columns: auto 120px auto; }
+
 @media (min-width: 992px) {
   .header-1 .main-menu > .menu-list-item {
     padding: 32px 20px; } }

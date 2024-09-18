@@ -28,14 +28,14 @@
     gap: 24px;
 }
 
-.language-wrapper:before {
+.announcement-meta > div + div:before {
     content: '';
     background: #fff;
     position: absolute;
     width: 1px;
     height: 16px;
     top: 50%;
-    left: 51%;
+    left: 48%;
     transform: translateY(-50%);
     opacity: 0.7;
 }

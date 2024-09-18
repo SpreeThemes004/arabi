@@ -422,14 +422,14 @@ button,
   position: relative;
   gap: 24px; }
 
-.language-wrapper:before {
+.announcement-meta > div + div:before {
   content: '';
   background: #fff;
   position: absolute;
   width: 1px;
   height: 16px;
   top: 50%;
-  left: 51%;
+  left: 48%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -452,6 +452,9 @@ button,
 @media (max-width: 991px) {
   .announcement-bar .text_16 {
     font-size: 14px; } }
+
+header {
+  position: relative; }
 
 .header-action {
   display: -webkit-box;

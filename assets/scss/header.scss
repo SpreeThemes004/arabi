@@ -238,6 +238,29 @@
     }
 }
 
+.header-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.header-5 .header-grid,
+.header-1 .header-grid {
+    grid-template-columns: 216px auto 216px;    
+}
+
+.header-2 .header-grid {
+    grid-template-columns: 300px auto 300px; 
+}
+
+.header-3 .header-grid {
+    grid-template-columns: 1fr 120px 1fr;   
+}
+
+.header-4 .header-grid {
+    grid-template-columns: auto 120px auto;
+}
+
+
 
 
 @media (min-width: 992px) {

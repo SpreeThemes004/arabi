@@ -42,24 +42,6 @@ header {
     transition: all ease 0.3s;
 }
 
-.category-btn.show{
-    background: var(--color-foreground);
-}
-
-.category-btn:hover{
-    background: var(--color-foreground);
-}
-
-.category-btn:hover .icon,
-.category-btn:hover .category-title .text{
-    color: var(--color-secondary);
-}
-
-.category-btn.show .icon,
-.category-btn.show .category-title .text{
-    color: var(--color-secondary);
-}
-
 
 .category-dropdwon-title,
 .category-title {
@@ -115,17 +97,12 @@ header {
 }
 
 // Menu has logo
-.nav-has-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.nav-has-logo .header-logo {
+.header-2 .header-logo {
     padding: 0 20px;
 }
 
-.nav-has-logo .main-menu {
+.header-2 .main-menu {
     margin: 0;
 }
 

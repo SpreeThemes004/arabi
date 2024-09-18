@@ -110,6 +110,22 @@
     border: none;
 }
 
+// Menu has logo
+.nav-has-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-has-logo .header-logo {
+    padding: 0 20px;
+}
+
+.nav-has-logo .main-menu {
+    margin: 0;
+}
+
+
 // search
 .header-search-widget .search-form {
     background: #F7F7F7;

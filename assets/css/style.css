@@ -572,6 +572,23 @@ button,
   margin: 0;
   border: none; }
 
+.nav-has-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.nav-has-logo .header-logo {
+  padding: 0 20px; }
+
+.nav-has-logo .main-menu {
+  margin: 0; }
+
 .header-search-widget .search-form {
   background: #F7F7F7;
   display: -webkit-box;
@@ -3319,7 +3336,9 @@ blockquote {
     -ms-flex-align: center;
     align-items: center;
     margin-left: -20px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   .main-menu > .menu-list-item {
     padding: 12px 20px;
     cursor: pointer; }

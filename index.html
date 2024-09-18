@@ -574,6 +574,7 @@
 
         <!-- Header widgets  -->
         <div class="container-fluid my-4">
+            
             <!-- Logo -->
             <div class="header-logo bg-primary-subtle py-4 d-flex justify-content-center">
                 <a href="index.html" class="logo-main">
@@ -855,6 +856,293 @@
                         </svg>
                     </button>                    
                 </form>
+            </div>
+
+            
+             <!-- Header search form large-->
+             <div class="header-search-widget header-search-bar-large bg-danger-subtle py-4 d-flex justify-content-center">
+                <form action="#" class="search-form input-reset">
+                    <input class="search-input input-reset text text_14" type="text" placeholder="search here">
+                    <button type="submit" class="search-button btn-reset">
+                        <svg class="icon icon-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L16.65 16.65" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>                    
+                </form>
+            </div>
+
+            <!-- Header category widget -->
+            <div class="header-category-widget-wrap  bg-secondary-subtle  py-4 d-flex justify-content-center">
+                <div class="header-category-widget">
+                    <button type="button" class="category-btn btn-reset"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="category-title">
+                            <svg class="icon icon-gird" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6.66667 2.00017H2V6.66683H6.66667V2.00017Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.9997 2.00017H9.33301V6.66683H13.9997V2.00017Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.9997 9.3335H9.33301V14.0002H13.9997V9.3335Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.66667 9.3335H2V14.0002H6.66667V9.3335Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                             </svg>
+                             <span class="text text_16">Categories</span>
+                        </div>
+                        <span>
+                            <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                        </span>
+                    </button>
+
+                    <ul class="category-list dropdown-menu dropdown-menu-end">
+                        <li class="category-list-item ">
+                            <a class="category-list-option" href="#" data-value="Desktop PC">
+                                <div class="category-dropdwon-title">
+                                    <svg class="icon icon-desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <rect y="0.684204" width="24" height="24" fill="url(#pattern0_408_3411)"/>
+                                        <defs>
+                                        <pattern id="pattern0_408_3411" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_408_3411" transform="scale(0.0208333)"/>
+                                        </pattern>
+                                        <image id="image0_408_3411" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA7RJREFUaEPtmdvLjVkcxz+kIUmTJEmTJAmJSS5EXEwuxo0Lf4CUUkPORZomuUA5NE0043Ax4YKmcZhGGSlTqEGSkAtNkwtJ0yQxOTd9Xr+1e3p6997rsWs8W3vV07vb71rr+X1/3995D6DL14Aul58egA/NYI+BHgMdauCjMKFBwHDAvwM7VEju8bfAv/H4uaoMnvF5LANzgG+A8RkAEkAP56z+9vudwv8M7AGeADOBzcDknEtjz0NggwBuxxdngJcVLnjfrWr7M+DzUNxF4CgwCjgNvM64+BPgS8EL4AWwHdgVmsk43/GWccCJYOEwcA44DmzJVOJQYB2wUQCv4uBO4HnHouVdIAO/hMZ/BC4BI8Ou8254568D6wLgd+Av4HImCM1wFjC7TgBkXxA5AULty+L4OgEwGt2pAGCiUasuAM6HQ+/IjEJDgK+A9XUCcCTCak4YFcB69/cA5Ma80r5yGNWEygzoqMOizDDBmr2Tg3cFA+aFpcAU4A/gJ+DvAFF7AAq4HFgVQn8KHAL2Re1UewCajhlawbdGoaf2BfQIqD0ABfw6WHgQZYaV6/fdwoA+b8G2BJgHXAX2h/D+r/YMpKCVmiyjTzE/dA2AZlH64wOwG9j7P/YDYwEbGdtKo00xkal1o09//XlfHxzJrVFKvIkq8G5mJVikVRtNDXaVpKyD2gcf7AfAmAibgiivf4BtkRvWplpIAAqfW8qmS+1LpwOGOZ+cOj6dbQVgBPBDRJoyAN9j63sfWJ0APIs0/W1FE/JFmt2FaMqfVqBALX8XZmQvXDQhHXRTmFH5Ss3nQCSzBgNnganAlYxaXK2nkKb5TAKk1RFHmu+0Mylt2znUaGBNsG9PnIo5RyvHIg8UAXivmrcPsHNrMKAZrIxs12qwpcDzQ9hkbu4vVoiOSkz591qYlPsFreIc5WhOFmsJgEr6ogkDVqS/haIbDCiEtDUTXsG9dBrwa2jN6FFuPDQLI8rNaExsEd3TzDcskX1kogjA95xq4gMqZxlwo8hAK9NVO4uAhcCEiBzXQ4Plc4KUfgW+FSzocLLRapUBuFem+1OozHm3qxFGW2W7BRERtHEP56409rgGzG1zyImcDLz3YKvZ/TraivCPkxWndslfdPLBbQAYzUxqzmarjhZb/kam+SyOpKKPVF2agDY7o83BxJYJylYzZ0Kub/3pRLHV7wPJuW0uci4ty5nCqSDaLf1HxvvGhe02F0J533C3q1cPwIemr8dAj4EONdAzoQ4V2PHx/wARIVDgPU3xtAAAAABJRU5ErkJggg=="/>
+                                        </defs>
+                                        </svg>
+                                     <span class="text text_16">Desktop PC</span>
+                                </div>
+                                <span>
+                                    <svg class="icon icon-caret-right" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <g opacity="0.6">
+                                        <path d="M9 18.6842L15 12.6842L9 6.6842" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </svg>
+                                </span>
+                                
+                            </a>
+                        </li>
+                        <li class="category-list-item ">
+                            <a class="category-list-option" href="#" data-value="Laptop">
+                                <div class="category-dropdwon-title">
+                                    <svg class="icon icon-laptop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <rect y="0.684204" width="24" height="24" fill="url(#pattern0_408_3415)"/>
+                                        <defs>
+                                        <pattern id="pattern0_408_3415" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_408_3415" transform="scale(0.0208333)"/>
+                                        </pattern>
+                                        <image id="image0_408_3415" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA0JJREFUaEPtmVuITVEYx3+DJEmSJEmSUsqlEUlRJF7k8kB5c78kUbwweZAQJSRyLVKU5gEPpJSSvCi5PUryIEmSxjS5pZ/W0rY7w9lnzuyzT/aq05yZ2Xut7/99//+39/qvFpp8tDR5/JQAGl3BShXoA/gp4viWDioJwKAHAyOAQQUE8QN4D3wEPgH+/ocGDHwtsCAAKVIFIiO+ANeBM8DbJIABwA5gBfAAeAZ4cVFGZMd4YAZwBTgEdEUKDQHuAo+AvcAHoF+F6CMHK/2vt8G69nDgMDAWmCWdkgCeABeAI8BAYHb4GQOTc/cCsJk5a6QTuA90ANuBlcDENABpcxY4BcwFDgBW5pdYAqU2AaOANqB/b6c8zC99FO0e4CawHlj3NwAKZAmwNdDpKRCp8yJk3hLmMaTqJGA3cAy4lgWA2V4DPE4AyCPo5BoCaAXOAydKAHmnPzSMdAUUsBqY2p2IowaKSKGrwBRgcWgkHck2GrtQkQFcDt1vTNRmswFoB+aH5rLU9tpsAGyjq4ENwORm1ED5HMi7k5YPsvJVooecKylUUqik0P+8H9gMbAHcUsZ9cQ8Zkfl298O+PrudzLQjWwTsBO4Ab4DvmZeuzw19gZHAvGAy3KhmT3wSmA4cDLZKo7IfU2AVtFV0JbR1Nv7LlTgaLJQi+aMmUU9IK2dbGoC2ov7Pw2BsHQ8+TH1IUN9ZNJ/VpfviaXE/cBtwi6bXo/Orrdho2nQHWzoNDQl/GQEoUD3RpIGVNW++s5gEHYTngAZY2sv3mnHAhGATvutBoqLh1eqW8iuwP5imXVkjT9h/Bncx8NQGIGeTQtSYtTVbYR0PM1hrpaW9HukuAXwGzkWbokYA3qbolweOWuZKwwMK+7n2SBJg1mVda58tVQBqYBiwCniVKL3Z8YxA5Vdz5OQ1utpqyd6dvsf5pJbPFStda/alz2jgUjwfWBiy8hq4FYQsf+WolrY2uwCrAWEmXaDSOZsBO2+tgTu389ox5wQ9tVkBs2ZbWhYU7oUuohi12C1VXm50NVQShPQ7DbRHX0hO2WNF53cB2FItt+cB/r0ow9hkh3rqTB+zJkvvhX6KeOz6u0WXJ/WN5lVZgUZX4CfQCUQtMfmoKQAAAABJRU5ErkJggg=="/>
+                                        </defs>
+                                    </svg>
+                                     <span class="text text_16">Laptop</span>
+                                </div>
+                                <span>
+                                    <svg class="icon icon-caret-right" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <g opacity="0.6">
+                                        <path d="M9 18.6842L15 12.6842L9 6.6842" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </svg>
+                                </span>
+                                
+                            </a>
+                        </li>
+                        <li class="category-list-item ">
+                            <a class="category-list-option" href="#" data-value="Processor">
+                                <div class="category-dropdwon-title">
+                                    <svg class="icon icon-processor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <rect y="0.684204" width="24" height="24" fill="url(#pattern0_408_3421)"/>
+                                        <defs>
+                                        <pattern id="pattern0_408_3421" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_408_3421" transform="scale(0.0208333)"/>
+                                        </pattern>
+                                        <image id="image0_408_3421" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABVhJREFUaEPtmkmIHGUUx3/VmJgEVwyaegUaMGoQRQ8uFxUUXOISEzW4HBKJmkTQgwdBRTxo0AQPHhRxwQQVxH2Ja1xBRXA7aEASIxID36sclCQq7nTLf6aqp6amu7rSM5mkIe/S0/3N933v//b3qiJqUBzHhwJfAs+maXpncUscx0uAu4Fz0zT9vrT2qb6naXpG6fdjgfeAu9I0fbK4NiuOVwJXAaduS9PtvdiLev2D1s2SYwAx94Z7uKS4xyy5D7gNON89vFtaa+m7exh1j1lyHrAeWOUebi/teR24GDjWPWzuxV9dAEcBW4Cn3IMk3iazRAzcC5zlHj4prf2cAZhZ+v1M4GPgDvcgARTPk0YWQ2u2u/80wACY7R72ARjSoJlNgegf4CH3cHNJ5TcAj8FYiZkl2zITmlXak5vkMvfweGntQeAmaE11938nyoQuAN4GvgJ0wfTs4D+Ay4FLgfuB74D9gWa2/kD2eUv22QD+Bo4HbgVeA14CZmTrfwIS0CnAPPfwzrgAmFkDomeAK3sdtJvWn4fW1e6eC2TMNZVRyCyRhOYDLysCATIjSXgoPALar8P1XdItU35xtzXt11rxPGlo6nAk4jJgnXuQhjtSFMfxjChqJIDsLT9If58MvCnm3YPMZNLJLJF5CcSFwDfQmjIiuGhKs9UMArA9ihqHVHB3jnv4aNK5H06gZwMfjr57RFnNVnOnANwTRY25gByySMcBpwu9e5ADTzqZJfOAt4DPgU3DDLQBzGi2mhu7+oBZIrt7FVjgHuQLk051eKgCsBx4pBsAs2QFsBQ4KPOffgDKpncCa92D7hpFBQAr3MOjnS7oC4BZsgzID1Ts3q8f7oH/CjlluXtQQmzTeAGo6lzXSQNmiSpTVagz3cMvfTI/tM0sOQxQ0bfZPajM7gRgvntQlTqG5MSLo6gxB5Akc5KnnAYsVJZ1DwJSPFgAVGwpXpfVvgjY4B421gVmlii/bOkAQDlI/vcK8EWWd/JjpzdbzR8EoBVFnfJM+/ox6M2SDcBc95DH5VyaMiuZ12r3oB6hFpklyjsb3cOJJUHlVtDxnGariQDMiaLGkSVHlEQWZI3KmCjUCYBZIvtVYfeBko97+LUW98Nm1A1AHglXZRGxqHElsq1VTnwF8EIXH2hrwMwiiB4GFJXWuwcVfrlGZN/T3EOoAlMDwCL38GJHH+h2sFnSNYwWNWCWKJQ+oR7XPahVzJk/AvgR2OEeVKp0pRoA+gqjOWOVJmSWnABc5B5WF5iPgW8VpYAbO8X4kq33MqHr3MOaXdWAqkH1pwvdgzJym7o5sf7BLDHga0BNzLXuYdTUoRMTFRqQHyoCLXEPqobHkJz4syhqqO4p1tySyAHAgSqnyzG4IgrJbCT5w+syn4HuFYV+A34HilGv0Ww1N00YALOkaDaL3cPTExCF8jDaHUCFE9c2oX7MpqYP9DahCgB1nfjozOYP3hWzqQkgzwN9OXHdMHo9oMnCUvewtq7Z7CKAvsJozUSWKDvOcg9b+2G+hxPnGuieyCaqlOiX+ZoAupcSE1nM9QtivMXchJbT/YAYVzldEYUGo6GpAFAVhQaipezV1GtduULxv+cQtoug8qZ+Taemfbw98WCMVeI4XpkVcwMy2JIu1bJHw4OtOI53RFFDZtCN9rLRYhsA+Wix23D3pGystxcNd1VOD40W1cYOD3er4nZhvK6mQo2JRt/TdvN4/a9shK+HiRrrVI/XqwHs8Qccz0Hrmr4fcOTgzJLBfMQ0AmDwH/LtgQfd+54Tj7i3WTLwGhjslz3G8brN0MsfaZrq5Y42xXEsgbw/Ea/b/A8Do9LyyRvcLAAAAABJRU5ErkJggg=="/>
+                                        </defs>
+                                    </svg>
+                                     <span class="text text_16">Processor</span>
+                                </div>
+                                <span>
+                                    <svg class="icon icon-caret-right" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <g opacity="0.6">
+                                        <path d="M9 18.6842L15 12.6842L9 6.6842" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </svg>
+                                </span>
+                                
+                            </a>
+                        </li>
+                        <li class="category-list-item ">
+                            <a class="category-list-option" href="#" data-value="Graphics Card">
+                                <div class="category-dropdwon-title">
+                                    <svg class="icon icon-graphics-card" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <rect y="0.684204" width="24" height="24" fill="url(#pattern0_408_3427)"/>
+                                        <defs>
+                                        <pattern id="pattern0_408_3427" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_408_3427" transform="scale(0.0208333)"/>
+                                        </pattern>
+                                        <image id="image0_408_3427" width="48" height="48" xlink:href="data:image/png;base64,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"/>
+                                        </defs>
+                                    </svg>
+                                     <span class="text text_16">Graphics Card</span>
+                                </div>
+                                <span>
+                                    <svg class="icon icon-caret-right" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <g opacity="0.6">
+                                        <path d="M9 18.6842L15 12.6842L9 6.6842" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </svg>
+                                </span>
+                                
+                            </a>
+                        </li>
+                        <li class="category-list-item ">
+                            <a class="category-list-option" href="#" data-value="Storage">
+                                <div class="category-dropdwon-title">
+                                    <svg class="icon icon-storage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <rect y="0.684204" width="24" height="24" fill="url(#pattern0_408_3433)"/>
+                                        <defs>
+                                        <pattern id="pattern0_408_3433" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_408_3433" transform="scale(0.0208333)"/>
+                                        </pattern>
+                                        <image id="image0_408_3433" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABC5JREFUaEPtmk+s3FMUxz/TUCL+RVDv3IWFhYiNPwlhJ7FA4r+y05Zgw0ZpQrBASPzb1EZFtd0IrUo1UQuJHbHwZyNiYWFxvx6aRhFRmo58p3defzNv3ph5c+clL5m7mcz93Xvu/d7z5557zmkxoF0wN7e2BXuAmxufjwK/A+f0T2kPIrL8vkPAmcBJHRLtDvUPgfXz8/P/9JNtDVonIn0E3Ai8CBwGPO5e4BLgaeDf0m/qA2mMsf8ujbOAk4HngO+AXd4+4P4ngANSvmlUAJ64TcoPdSdEpFeAzVKedMNDsUUkr/2qlB87sXZsAx6QtGjtpThgIi9LeUsDwFvAfQYQkcyNnWOc8ihDN0h5VwGwXcr3NwC8BDw+LoDXpfxIA8DbwMYC4Fzg9vLt2Ci7GzJmTfn2gZQPFgA7pLypAWAr8PCkAHYDdwHrLP9SPjLhxnumR6RTirz/DOyR8vraADYAO2pueggtc3pBRCPSVmhPxgEvFpFsVi8H/i4WoiYe6+OpwNdS3t8kXA1Azd2OQ+s4AOvAYgs4zAr1KPE4C9YeOwNQ+0THpVeNAxFps29EYC0wqf3vx+H7wL6OPYDXFivxhDoQkTYCvszsp/xW/JZxD3PYePtXZxd/a5OUF0x2FQ5EpL2+fVfIF9or5TsbXsDkVigiHQBuWCEAfa5EBTMakexGXA3tLZIqPwFOSNZgZ64CgJrCPozW1ABEpKuAi6T8zjTBTBPA+8Ad0F6zKkUoItms+dGxEi+yvgdNBR2ISAsvstUqQjMAo3Bumko848CMA5O8yGZWaAT5iYgWtPzO2Cfl22p7o1NX4gLgM2C/lF9YdQCWYlKtB83UOVBiT478/SXlP2pzYCE2OoI4L3tIRHLIcqeUH6wNoOONrpAz97GUnZ/otFoitJKP+gGx0QmjEuUkHgXM2tUXVlm2UFeYWEWEKuxj2SRmAJZ9dJUmVuNARLp1hRIc+6YRG3XSbXulQ/0/Ms6G+uKseg+852w5cJ4j01I+FBFroOWMpdsRKR+OSM7kd7LsUv6lmN/zy5ijx+clJ6+d1HOm6qCkY2WeI9S/ArulfHcvgAlzZBGpx5WISHPFZ3Emv3tSDnz90Pjvjbel7E0tNcZgTpPyTwWsw5ZV0qxLJrrLQna2vpDy9eW/E4CuabhSyl+Vvu8LJy4u/68AvgRu6SbyItInjrlK+YwGgCqJ7jf7HKqeUoOI9CfwqZQ7BSER6RrAvvy6huh8WwBc2hAl54GvlfLnpc8ZyeukfHoDwMSlBs1iD1eouHWLPZ4q2Rk/OMx2x+7N9suAe4A3gB/LnGfK77Pl90LA9RfvAt+UQhFXA1gcnwSsA883ij08zZUr4xV7uNzGimRWd2UX6C+3sexbEZ3b7TaXyjTLccwlt87pltY/xjlnu9DWBbfechv3tNtLltv8B/zgY17R051JAAAAAElFTkSuQmCC"/>
+                                        </defs>
+                                    </svg>
+                                     <span class="text text_16">Storage</span>
+                                </div>
+                                <span>
+                                    <svg class="icon icon-caret-right" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <g opacity="0.6">
+                                        <path d="M9 18.6842L15 12.6842L9 6.6842" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </svg>
+                                </span>
+                                
+                            </a>
+                        </li>
+                        <li class="category-list-item ">
+                            <a class="category-list-option" href="#" data-value="Network Tools">
+                                <div class="category-dropdwon-title">
+                                    <svg class="icon icon-router" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <rect y="0.684204" width="24" height="24" fill="url(#pattern0_408_3457)"/>
+                                        <defs>
+                                        <pattern id="pattern0_408_3457" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_408_3457" transform="scale(0.0208333)"/>
+                                        </pattern>
+                                        <image id="image0_408_3457" width="48" height="48" xlink:href="data:image/png;base64,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"/>
+                                        </defs>
+                                    </svg>
+                                     <span class="text text_16">Network Tools</span>
+                                </div>
+                                <span>
+                                    <svg class="icon icon-caret-right" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <g opacity="0.6">
+                                        <path d="M9 18.6842L15 12.6842L9 6.6842" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="category-list-item ">
+                            <a class="category-list-option" href="#" data-value="Audio Devices">
+                                <div class="category-dropdwon-title">
+                                    <svg class="icon icon-audio" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <rect y="0.684204" width="24" height="24" fill="url(#pattern0_408_3445)"/>
+                                        <defs>
+                                        <pattern id="pattern0_408_3445" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_408_3445" transform="scale(0.0208333)"/>
+                                        </pattern>
+                                        <image id="image0_408_3445" width="48" height="48" xlink:href="data:image/png;base64,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"/>
+                                        </defs>
+                                    </svg>
+                                     <span class="text text_16">Audio Devices</span>
+                                </div>
+                                <span>
+                                    <svg class="icon icon-caret-right" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <g opacity="0.6">
+                                        <path d="M9 18.6842L15 12.6842L9 6.6842" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="category-list-item ">
+                            <a class="category-list-option" href="#" data-value="Printing">
+                                <div class="category-dropdwon-title">
+                                    <svg class="icon icon-printer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <rect y="0.684204" width="24" height="24" fill="url(#pattern0_408_3451)"/>
+                                        <defs>
+                                        <pattern id="pattern0_408_3451" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_408_3451" transform="scale(0.0208333)"/>
+                                        </pattern>
+                                        <image id="image0_408_3451" width="48" height="48" xlink:href="data:image/png;base64,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"/>
+                                        </defs>
+                                    </svg>
+                                     <span class="text text_16">Printing</span>
+                                </div>
+                                <span>
+                                    <svg class="icon icon-caret-right" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <g opacity="0.6">
+                                        <path d="M9 18.6842L15 12.6842L9 6.6842" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="category-list-item ">
+                            <a class="category-list-option" href="#" data-value="Gadget">
+                                <div class="category-dropdwon-title">
+                                    <svg class="icon icon-watch" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <rect y="0.684204" width="24" height="24" fill="url(#pattern0_408_3463)"/>
+                                        <defs>
+                                        <pattern id="pattern0_408_3463" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_408_3463" transform="scale(0.0208333)"/>
+                                        </pattern>
+                                        <image id="image0_408_3463" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABRBJREFUaEPtmluoFWUYhp8dYSURWSIhERUREhHRhYhClBclmeRVxxsr6YiIiIREiESkRoREdtCisizTDkoHkIqIMInooosQiRCJiIyIsJNExIPfH9M448w/s9baCXtgs/bae80/3/sd3u/9/n+N0f06A3gTmAWckLnML8Ba4CnA3ztfY53vhKnAO8DfwEfAry3XmgLcCOwE7gd+anlf5cf6AtgBfAk8mGHIOYD3fQyszLhvaAC+AFZlGCKA94BPJgAAg0ihrhEwhca1Bs6NXP4wswbOBrYBX0UK/TAeRXw6cAdwJ/AQ8CrwW0tDpgHrgQuA+4DdwB8t7z3qY7kpJN9r/PXAA8D3wO3AgQwDJgFXROHrfdNIJuvUD3IA+GC9puFXAZOBfWG8vSDn8t5LgFPj/peBZ4Afo6+0XqstgBOBy4GnAVNAz3tpeK7xyTij6bqC8ecbYAHwXWvrM1joNOADjnTfq4Fvexhetk/jb4vIPg8sHTQAU2cuYJgtuk2AzWgRcF4HHZTsOwx8CmwPZxjdecCZgwZwcmiXR4FbooP64OkRib9yHhifNX2Mqms/F6x0TxT0STnrtakBH3Iz8AhwU3hra7w35EX61LBUE0WFWlUn1pJrmpaua0SVJIo9Py+1NtZXFwA66JVIp5d6cLhy3B4iG91QALAG+B14MQr6mCD6AFgBbOkJQBV7aQmAPcXCXg680bT+oACYLqaar9ZEsbP6Nw3yKv7PCFQBuBV4PAA0OmgQADTsfGBm8Lo94vNoSjKYmml2AJDj0//s6FUA5keKtopwXwBS4MVRfFJruj6LpufflAo2rBQBJ7EnAGl0dUUK2cyk7JEA2BVMMgN4LLw+J7SS7CTTmNPOv76/ErgWeBJ4O4ws14ACUcpeFiLxmEKvTwRsaqaDjKS2T1OZ+W7jE5ApI0UmeaCUfiE0lBS6pCIC6iHr5u4AaaRqr74A9kaq6FF7wqF4UhJ+KkyNT1RoROy4etX0qQKwDjgY3letDpVG3Y14HfgauBcoDifFpiYu318WEXs/IqTuKafQKYV6aWzKfSJgkZnHdwFSn551n+fnmqfqfdNHSW5aWRum3bgCcBKTDjXejmoqKfbM43TpeWlWNnKQ2QhsiIhU0agpZCdWI0nJQ00hG43NSRZ6OChVeWEjMp00/sIw2gLW+DS41DUyN7qkXdNLmh4aCxV52gdeFIXp62thrELt2VCeghKcBurVOgCua2opJUbSiZOHBKGX5fGFEQHzXhp0DJVqZaWUEnUArgM2j6qRlT1kymi08tthX1qVz91CKadCHYCRSomqEAvCYd2BR28761YNPU1ibuiduEmrpIGmjkXqAEivKlv7yruRgkPpxE0AmppQAiD9FicyB5o/gwjqovfv2l0amY3KcwGlgGzTdVdNhnINX60XdyaKI6XF3zhvtwXggUR5qD8rdE7jQypCMdKhvritIqOkGUD5YBp0vUa2raK3ZBQ3tgQz6I0tC/aaGHLeCl3V2iltUsjFbFIqSSclczapzr5bizrHHyO5P/adlOitr7YAEgh1jS3eTps2Zt3gza2D8uauQ5EyQwrNWisHQNL0qs/FIbakOfnavdK2l9H0aNYzAu/zoM/tdbt240ZW+SG5ANL9htwDDulPFZpzwGEKeo8KVo20pwcV9zoj63vEZM4rF9JWfdsI/udzXSPgInrS896uh3wTx6x6cSICx/tXDY7rL3v8L75u8w87569Aq6z4rgAAAABJRU5ErkJggg=="/>
+                                        </defs>
+                                    </svg>
+                                     <span class="text text_16">Gadget</span>
+                                </div>
+                                <span>
+                                    <svg class="icon icon-caret-right" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <g opacity="0.6">
+                                        <path d="M9 18.6842L15 12.6842L9 6.6842" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="category-list-item ">
+                            <a class="category-list-option" href="#" data-value="Accessories">
+                                <div class="category-dropdwon-title">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <rect y="0.684204" width="24" height="24" fill="url(#pattern0_408_3439)"/>
+                                        <defs>
+                                        <pattern id="pattern0_408_3439" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_408_3439" transform="scale(0.0208333)"/>
+                                        </pattern>
+                                        <image id="image0_408_3439" width="48" height="48" xlink:href="data:image/png;base64,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"/>
+                                        </defs>
+                                    </svg>
+                                     <span class="text text_16">Accessories</span>
+                                </div>
+                                <span>
+                                    <svg class="icon icon-caret-right" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <g opacity="0.6">
+                                        <path d="M9 18.6842L15 12.6842L9 6.6842" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </svg>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             
         </div>

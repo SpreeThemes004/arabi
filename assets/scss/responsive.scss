@@ -52,15 +52,10 @@
         flex-wrap: wrap;
     }
 
-    .main-menu>.menu-list-item {
-        padding: 12px 20px;
-        cursor: pointer;
-    }
-
-    .header-1 .main-menu>.menu-list-item {
-        padding: 28px 20px;
-        cursor: pointer;
-    }
+    // .main-menu>.menu-list-item {
+    //     padding: 12px 20px;
+    //     cursor: pointer;
+    // }
 
     .main-menu-2>.menu-list-item {
         padding: 29px 20px;
@@ -700,9 +695,6 @@
         font-size: 28px;
     }
 
-    .sticky-header {
-        height: 65px;
-    }
     .product-gallery-vertical .product-img-thumb {
         margin-right: 0;
         margin-top: 6px;

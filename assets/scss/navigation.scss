@@ -1,3 +1,8 @@
+.main-menu > .menu-list-item {
+    padding: 32px 20px;
+    cursor: pointer;
+}
+
 .navbar {
     padding: 0;
 }
@@ -20,18 +25,8 @@
     stroke-width: 1px;
 }
 
-.icon-hamburger {
-    width: 24px;
-    height: 24px;
-}
-
 .header-wishlist {
     color: #000;
-}
-
-.header-wishlist,
-.header-hamburger {
-    margin-top: 3px;
 }
 
 .site-navigation .nav-link:focus {
@@ -67,4 +62,33 @@
 
 .main-menu .nav-link {
     padding: 0;
+}
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main-menu > .menu-list-item {
+        padding: 32px 14px;
+    }   
+    
+    .mega-menu-header > .text_16,
+    .menu-list-item > .text_16 {
+        font-size: 14px;
+    }
+
+    .header-action {
+        gap: 20px;
+    }
+
+    .header-action-item > .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-1 .main-menu > .menu-list-item {
+        padding: 0;
+    }
 }

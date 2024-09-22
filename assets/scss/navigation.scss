@@ -3,6 +3,11 @@
     cursor: pointer;
 }
 
+.header-5 .main-menu > .menu-list-item,
+.header-4 .main-menu > .menu-list-item {
+    padding: 20px 20px;
+}
+
 .navbar {
     padding: 0;
 }
@@ -68,22 +73,17 @@
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .main-menu > .menu-list-item {
-        padding: 32px 14px;
-    }   
-    
-    .mega-menu-header > .text_16,
-    .menu-list-item > .text_16 {
-        font-size: 14px;
-    }
-
     .header-action {
         gap: 20px;
     }
 
     .header-action-item > .icon {
-        width: 20px;
-        height: 20px;
+        width: 22px;
+        height: 22px;
+    }
+
+    .header-5 .main-menu > .menu-list-item{
+        padding: 20px 18px;
     }
 }
 

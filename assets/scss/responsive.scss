@@ -28,7 +28,7 @@
 @media (min-width: 992px) {
     .main-menu .menu-list-item.active .icon,
     .main-menu .menu-list-item:hover .icon {
-        stroke: var(--secondary-color);
+        stroke: var(--color-primary);
     }
 
     .header-bottom {
@@ -269,7 +269,7 @@
 
     .main-menu .menu-list-item.active>.mega-menu-header .icon,
     .main-menu .menu-list-item:hover>.mega-menu-header .icon {
-        stroke: var(--secondary-color);
+        stroke: var(--color-primary);
     }
 
     .submenu-transform>.container {
@@ -337,8 +337,8 @@
         }
     }
 
-    .menu-list-item {
-        padding: 0.8rem 1rem;
+    .main-menu .menu-list-item {
+        padding: 14px 16px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 

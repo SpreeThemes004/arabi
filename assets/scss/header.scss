@@ -39,6 +39,17 @@ header {
     justify-content: flex-start;
 }
 
+.header-search.header-search-bar-large {
+    grid-area: search-large;
+    display: flex;
+    justify-content: center;
+}
+
+.header-5 .header-grid > .header-search,
+.header-4 .header-grid > .header-search {
+    padding: 20px 0;
+}
+
 .header-action {
     display: flex;
     gap: 24px;
@@ -50,6 +61,14 @@ header {
     justify-content: center;
     grid-area: menu-logo;
     align-items: center;
+}
+
+.header-cat-menu {
+    display: flex;
+    gap: 80px;
+    grid-area: cat-menu;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .language-btn .icon-dropdown,
@@ -197,7 +216,7 @@ header {
     left: 0;
     width: 100%;
     background: #fff;
-    top: 101%;
+    top: 100%;
     z-index: 9;
     opacity: 0;
     @include prefix(border-bottom, 1px solid rgba(0, 0, 0, 0.1), ms webkit spec);
@@ -268,11 +287,11 @@ header {
     gap: 20px;
 }
 
+.header-5 .header-grid,
 .header-4 .header-grid {
     gap: 0;
 }
 
-.header-5 .header-grid,
 .header-1 .header-grid {
     grid-template-columns: 216px auto 216px;  
     grid-template-areas: 'logo menu actions';  
@@ -295,9 +314,14 @@ header {
   'menu menu menu ';
 }
 
-// .header-4 .header-grid {
-//     grid-template-columns: auto 120px auto;
-// }
+.header-5 .header-grid {
+    -ms-grid-columns: 216px auto 216px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        'logo search-large actions'
+        'cat-menu cat-menu cat-menu';
+}
 
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -341,15 +365,30 @@ header {
         padding: 32px 8px;
     }
 
+    .header-1 .main-menu > .menu-list-item {
+        padding: 32px 14px;
+    }
+
     .header-2 .header-logo {
         padding: 0px 8px;
         max-width: 90px;
     }
 
+    .header-1 .mega-menu-header > .text_16,
+    .header-1 .menu-list-item > .text_16,
     .header-2 .mega-menu-header > .text_16,
     .header-2 .menu-list-item > .text_16 {
         font-size: 14px;
     }
+
+    .header-5 .header-search-bar-large .search-form {
+        width: 480px;
+    }
+
+    .header-5 .header-cat-menu {
+        gap: 40px;
+    }
+    
 }
 
 @media (max-width: 991px) {
@@ -369,6 +408,7 @@ header {
         grid-template-areas: 'logo  actions';
     }
 
+    .header-5 .header-grid,
     .header-4 .header-grid {
         grid-template-rows: repeat(1, 1fr);
     }

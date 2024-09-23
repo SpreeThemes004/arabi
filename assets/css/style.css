@@ -937,6 +937,9 @@ header {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start; }
+  .btn-menu-back *,
+  .open-submenu * {
+    pointer-events: none; }
   .header-4 .header-grid > .header-logo, .header-3 .header-grid > .header-logo, .header-2 .header-grid > .header-logo {
     -ms-grid-row: 1;
     -ms-grid-column: 1; }
@@ -3419,6 +3422,9 @@ blockquote {
 
 .footer-logo {
   margin-bottom: 32px; }
+
+.footer-logo img {
+  width: auto; }
 
 .footer-menu-item a,
 .footer-text {

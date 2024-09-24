@@ -28,8 +28,8 @@ iframe {
   width: 100%; }
 
 .container-fluid {
-  padding-left: 2%;
-  padding-right: 2%; }
+  padding-left: 5%;
+  padding-right: 5%; }
 
 @media (max-width: 1800px) {
   .container-fluid {
@@ -720,6 +720,9 @@ header {
 
 .header-2 .main-menu {
   margin: 0; }
+
+.header-action-item {
+  cursor: pointer; }
 
 .header-search-widget .search-form {
   background: #F7F7F7;

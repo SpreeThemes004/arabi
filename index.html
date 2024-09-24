@@ -115,7 +115,13 @@
                                 <div class="currency-wrapper">
                                     <button type="button" class="currency-btn btn-reset"
                                         data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img class="flag" src="assets/img/flag/usd.jpg" alt="img">
+                                        <img 
+                                            class="flag" 
+                                            src="assets/img/flag/usd.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                        >
                                         <span class="text text_14">USD</span>
                                         <span>
                                             <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
@@ -129,31 +135,61 @@
                                     <ul class="currency-list dropdown-menu dropdown-menu-end">
                                         <li class="currency-list-item ">
                                             <a class="currency-list-option" href="#" data-value="USD">
-                                                <img class="flag" src="assets/img/flag/usd.jpg" alt="img">
+                                                <img 
+                                                    class="flag" 
+                                                    src="assets/img/flag/usd.jpg" 
+                                                    alt="img"
+                                                    width="100%"
+                                                    height="100%"
+                                                >
                                                 <span class="text text_14">USD</span>
                                             </a>
                                         </li>
                                         <li class="currency-list-item ">
                                             <a class="currency-list-option" href="#" data-value="CAD">
-                                                <img class="flag" src="assets/img/flag/cad.jpg" alt="img">
+                                                <img 
+                                                class="flag"
+                                                src="assets/img/flag/cad.jpg" 
+                                                alt="img"
+                                                width="100%"
+                                                height="100%"
+                                            >
                                                 <span class="text text_14">CAD</span>
                                             </a>
                                         </li>
                                         <li class="currency-list-item ">
                                             <a class="currency-list-option" href="#" data-value="EUR">
-                                                <img class="flag" src="assets/img/flag/eur.jpg" alt="img">
+                                                <img 
+                                                class="flag" 
+                                                src="assets/img/flag/eur.jpg" 
+                                                alt="img"
+                                                width="100%"
+                                                height="100%"
+                                            >
                                                 <span class="text text_14">EUR</span>
                                             </a>
                                         </li>
                                         <li class="currency-list-item ">
                                             <a class="currency-list-option" href="#" data-value="JPY">
-                                                <img class="flag" src="assets/img/flag/jpy.jpg" alt="img">
+                                                <img 
+                                                class="flag" 
+                                                src="assets/img/flag/jpy.jpg" 
+                                                alt="img"
+                                                width="100%"
+                                                height="100%"
+                                            >
                                                 <span class="text text_14">JPY</span>
                                             </a>
                                         </li>
                                         <li class="currency-list-item ">
                                             <a class="currency-list-option" href="#" data-value="GBP">
-                                                <img class="flag" src="assets/img/flag/gbp.jpg" alt="img">
+                                                <img 
+                                                class="flag" 
+                                                src="assets/img/flag/gbp.jpg" 
+                                                alt="img"
+                                                width="100%"
+                                                height="100%"
+                                            >
                                                 <span class="text text_14">GBP</span>
                                             </a>
                                         </li>
@@ -169,17 +205,30 @@
 
         <!-- header start -->         
         <div class="header-wrap sticky-header">
-            <!-- Header One -->
-            <header class="header-1">
+            <!-- Header Two -->
+            <header class="header-2">
                 <div class="container-fluid">
                     <div class="header-grid">
-                        <div class="header-logo">
+                        <div class="header-logo d-flex d-lg-none">
                             <a href="index.html" class="logo-main">
-                                <img src="assets/img/Logo.png" loading="lazy" alt="Arabi" width="100%" height="100%" loading="lazy">
+                                <img src="assets/img/Logo.png" loading="lazy" alt="Arabi">
                             </a>
                         </div>
-                        <div class="header-menu d-none d-lg-flex">
-                            <nav class="site-navigation">
+                        <div class="header-search d-none d-lg-flex">
+                            <div class="header-search-widget">
+                                <form action="#" class="search-form input-reset">
+                                    <input class="search-input input-reset text text_14" type="text" placeholder="search here">
+                                    <button type="submit" class="search-button btn-reset">
+                                        <svg class="icon icon-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M21 21L16.65 16.65" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>                    
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header-menu-logo d-none d-lg-flex">
+                            <nav class="site-navigation nav-has-logo d-flex">
                                 <ul class="main-menu list-unstyled">
                                     <li class="menu-list-item nav-item has-dropdown active">
                                         <div class="mega-menu-header">
@@ -334,7 +383,7 @@
                                                             class="mega-menu-header d-flex align-items-center justify-content-between">
                                                             <a class="mega-menu-img nav-link-sub nav-text-sub"
                                                                 href="collection-left-sidebar.html">
-                                                                <img class="menu-img" src="assets/img/menu/1.jpg" alt="img" width="100%" height="100%" loading="lazy">
+                                                                <img class="menu-img" src="assets/img/menu/1.jpg" alt="img">
                                                                 <h2 class="img-menu-heading text_16 mt-2">Featured
                                                                     Collection</h2>
                                                                 <div
@@ -356,11 +405,13 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="menu-list-item nav-item has-dropdown">
-                                        <div class="mega-menu-header">
-                                            <a class="text text_16" href="about-us.html">Portfolio</a>
-                                        </div>
-                                    </li>
+                                </ul>
+                                <div class="header-logo d-flex justify-content-center">
+                                    <a href="index.html" class="logo-main">
+                                        <img src="assets/img/Logo.png" loading="lazy" alt="Arabi">
+                                    </a>
+                                </div>
+                                <ul class="main-menu list-unstyled justify-content-center">
                                     <li class="menu-list-item nav-item has-dropdown">
                                         <div class="mega-menu-header">
                                             <a class="text text_16" href="blog.html">
@@ -394,8 +445,9 @@
                             <div class="header-action-wrapper">
                                 <div class="header-action">
                                     <a 
-                                        class="header-action-item header-search" href="javascript:void(0)"
-                                        aria-label="Open search modal"
+                                        class="header-action-item header-search d-block d-lg-none" 
+                                        href="javascript:void(0)" 
+                                        aria-label="Open search box"
                                     >
                                         <svg class="icon icon-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -404,7 +456,7 @@
                                     </a>
                                     <a 
                                         class="header-action-item header-user d-none d-lg-block"
-                                        href="login.html"
+                                        href="login.html" 
                                         aria-label="User login"
                                     >
                                         <svg class="icon icon-user" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -413,8 +465,9 @@
                                         </svg>
                                     </a>
                                     <a 
-                                        class="header-action-item header-wishlist d-none d-lg-block" href="wishlist.html"
-                                        data-bs-toggle="offcanvas"
+                                        class="header-action-item header-wishlist d-none d-lg-block" 
+                                        href="wishlist.html"
+                                        data-bs-toggle="offcanvas" 
                                         aria-label="Wishlist icon"
                                     >
                                         <svg class="icon icon-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -424,8 +477,8 @@
                                     <a 
                                         class="header-action-item header-bar-chart d-none d-lg-block" 
                                         href="#"
-                                        data-bs-toggle="offcanvas"
-                                        aria-label="Compare icon"
+                                        data-bs-toggle="offcanvas" 
+                                        aria-label="Compare Icon"
                                     >
                                         <svg class="icon icon-bar-chart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M18 20V10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -435,7 +488,7 @@
                                     </a>
                                     <a 
                                         class="header-action-item header-cart d-none d-lg-block" 
-                                        href="#drawer-cart"
+                                        href="#"
                                         data-bs-toggle="offcanvas"
                                         aria-label="Cart drawer icon"
                                     >
@@ -446,9 +499,7 @@
                                         </svg>
                                     </a>
                                     <a class="header-action-item header-hamburger d-lg-none" href="#drawer-menu"
-                                        data-bs-toggle="offcanvas"
-                                        aria-label="Open hamburger menu"
-                                    >
+                                        data-bs-toggle="offcanvas">
                                         <svg class="icon icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="24"
                                             height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round">
@@ -458,37 +509,8 @@
                                         </svg>
                                     </a>
                                 </div>
-                             </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="search-wrapper">
-                    <div class="container">
-                        <form action="#" class="search-form d-flex align-items-center">
-                            <button 
-                                type="submit" 
-                                class="search-submit bg-transparent pl-0 text-start" 
-                                aria-label="Submit search button"
-                            >
-                                <svg class="icon icon-search" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.75 0.250183C11.8838 0.250183 15.25 3.61639 15.25 7.75018C15.25 9.54608 14.6201 11.1926 13.5625 12.4846L19.5391 18.4611L18.4609 19.5392L12.4844 13.5627C11.1924 14.6203 9.5459 15.2502 7.75 15.2502C3.61621 15.2502 0.25 11.884 0.25 7.75018C0.25 3.61639 3.61621 0.250183 7.75 0.250183ZM7.75 1.75018C4.42773 1.75018 1.75 4.42792 1.75 7.75018C1.75 11.0724 4.42773 13.7502 7.75 13.7502C11.0723 13.7502 13.75 11.0724 13.75 7.75018C13.75 4.42792 11.0723 1.75018 7.75 1.75018Z"
-                                        fill="black" />
-                                </svg>
-                            </button>
-                            <div class="search-input mr-4">
-                                <input type="text" placeholder="Search your products..." autocomplete="off">
-                            </div>
-                            <div class="search-close">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="icon icon-close">
-                                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                                </svg>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </header>
@@ -1039,7 +1061,13 @@
                         <li class="utilty-menu-item">
                             <button type="button" class="currency-btn btn-reset" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                <img class="flag" src="assets/img/flag/usd.jpg" alt="img">
+                                <img 
+                                    class="flag" 
+                                    src="assets/img/flag/usd.jpg" 
+                                    alt="img"
+                                    width="100%"
+                                    height="100%"
+                                >
                                 <span class="text text_16">USD</span>
                                 <span class="utilty-icon-wrapper">
                                     <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1053,31 +1081,61 @@
                             <ul class="currency-list dropdown-menu dropdown-menu-end px-2">
                                 <li class="currency-list-item ">
                                     <a class="currency-list-option" href="#" data-value="USD">
-                                        <img class="flag" src="assets/img/flag/usd.jpg" alt="img">
+                                        <img 
+                                            class="flag" 
+                                            src="assets/img/flag/usd.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                        >
                                         <span class="text text_16">USD</span>
                                     </a>
                                 </li>
                                 <li class="currency-list-item ">
                                     <a class="currency-list-option" href="#" data-value="CAD">
-                                        <img class="flag" src="assets/img/flag/cad.jpg" alt="img">
+                                        <img 
+                                            class="flag" 
+                                            src="assets/img/flag/cad.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                        >
                                         <span class="text text_16">CAD</span>
                                     </a>
                                 </li>
                                 <li class="currency-list-item ">
                                     <a class="currency-list-option" href="#" data-value="EUR">
-                                        <img class="flag" src="assets/img/flag/eur.jpg" alt="img">
+                                        <img 
+                                            class="flag" 
+                                            src="assets/img/flag/eur.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                        >
                                         <span class="text text_16">EUR</span>
                                     </a>
                                 </li>
                                 <li class="currency-list-item ">
                                     <a class="currency-list-option" href="#" data-value="JPY">
-                                        <img class="flag" src="assets/img/flag/jpy.jpg" alt="img">
+                                        <img 
+                                        class="flag" 
+                                        src="assets/img/flag/jpy.jpg" 
+                                        alt="img"
+                                        width="100%"
+                                        height="100%"
+                                        >
                                         <span class="text text_16">JPY</span>
                                     </a>
                                 </li>
                                 <li class="currency-list-item ">
                                     <a class="currency-list-option" href="#" data-value="GBP">
-                                        <img class="flag" src="assets/img/flag/gbp.jpg" alt="img">
+                                        <img 
+                                            class="flag" 
+                                            src="assets/img/flag/gbp.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                        >
                                         <span class="text text_16">GBP</span>
                                     </a>
                                 </li>
@@ -1109,11 +1167,23 @@
                                 <p class="product-vendor">XS / Dove Gray</p>
                                 <div class="misc d-flex align-items-end justify-content-between">
                                     <div class="quantity d-flex align-items-center justify-content-between">
-                                        <button class="qty-btn dec-qty"><img src="assets/img/icon/minus.svg"
-                                                alt="minus"></button>
+                                        <button class="qty-btn dec-qty">
+                                            <img 
+                                                src="assets/img/icon/minus.svg"
+                                                alt="minus"
+                                                width="100%"
+                                                height="100%"
+                                            >
+                                        </button>
                                         <input class="qty-input" type="number" name="qty" value="1" min="0">
-                                        <button class="qty-btn inc-qty"><img src="assets/img/icon/plus.svg"
-                                                alt="plus"></button>
+                                        <button class="qty-btn inc-qty">
+                                            <img 
+                                                src="assets/img/icon/plus.svg"
+                                                alt="plus"
+                                                width="100%"
+                                                height="100%"
+                                            >
+                                        </button>
                                     </div>
                                     <div class="product-remove-area d-flex flex-column align-items-end">
                                         <div class="product-price">$580.00</div>
@@ -1132,11 +1202,22 @@
                                 <p class="product-vendor">XS / Pink</p>
                                 <div class="misc d-flex align-items-end justify-content-between">
                                     <div class="quantity d-flex align-items-center justify-content-between">
-                                        <button class="qty-btn dec-qty"><img src="assets/img/icon/minus.svg"
-                                                alt="minus"></button>
+                                        <button class="qty-btn dec-qty">
+                                            <img 
+                                                src="assets/img/icon/minus.svg"
+                                                alt="minus"
+                                                width="100%"
+                                                height="100%"
+                                            >
+                                        </button>
                                         <input class="qty-input" type="number" name="qty" value="1" min="0">
-                                        <button class="qty-btn inc-qty"><img src="assets/img/icon/plus.svg"
-                                                alt="plus"></button>
+                                        <button class="qty-btn inc-qty">
+                                            <img 
+                                                src="assets/img/icon/plus.svg"
+                                                alt="plus"
+                                                width="100%"
+                                                height="100%">
+                                            </button>
                                     </div>
                                     <div class="product-remove-area d-flex flex-column align-items-end">
                                         <div class="product-price">$580.00</div>
@@ -1155,11 +1236,23 @@
                                 <p class="product-vendor">XS / Dove Gray</p>
                                 <div class="misc d-flex align-items-end justify-content-between">
                                     <div class="quantity d-flex align-items-center justify-content-between">
-                                        <button class="qty-btn dec-qty"><img src="assets/img/icon/minus.svg"
-                                                alt="minus"></button>
+                                        <button class="qty-btn dec-qty">
+                                            <img 
+                                                src="assets/img/icon/minus.svg"
+                                                alt="minus"
+                                                width="100%"
+                                                height="100%"
+                                            >
+                                        </button>
                                         <input class="qty-input" type="number" name="qty" value="1" min="0">
-                                        <button class="qty-btn inc-qty"><img src="assets/img/icon/plus.svg"
-                                                alt="plus"></button>
+                                        <button class="qty-btn inc-qty">
+                                            <img 
+                                                src="assets/img/icon/plus.svg"
+                                                alt="plus"
+                                                width="100%"
+                                                height="100%"
+                                            >
+                                            </button>
                                     </div>
                                     <div class="product-remove-area d-flex flex-column align-items-end">
                                         <div class="product-price">$580.00</div>
@@ -1178,11 +1271,23 @@
                                 <p class="product-vendor">XS / Dove Gray</p>
                                 <div class="misc d-flex align-items-end justify-content-between">
                                     <div class="quantity d-flex align-items-center justify-content-between">
-                                        <button class="qty-btn dec-qty"><img src="assets/img/icon/minus.svg"
-                                                alt="minus"></button>
+                                        <button class="qty-btn dec-qty">
+                                            <img 
+                                                src="assets/img/icon/minus.svg"
+                                                alt="minus"
+                                                width="100%"
+                                                height="100%"
+                                            >
+                                        </button>
                                         <input class="qty-input" type="number" name="qty" value="1" min="0">
-                                        <button class="qty-btn inc-qty"><img src="assets/img/icon/plus.svg"
-                                                alt="plus"></button>
+                                        <button class="qty-btn inc-qty">
+                                            <img 
+                                                src="assets/img/icon/plus.svg"
+                                                alt="plus"
+                                                width="100%"
+                                                height="100%"
+                                            >
+                                        </button>
                                     </div>
                                     <div class="product-remove-area d-flex flex-column align-items-end">
                                         <div class="product-price">$580.00</div>
@@ -1412,9 +1517,23 @@
     
                                     <div class="misc d-flex align-items-end justify-content-between mt-4">
                                         <div class="quantity d-flex align-items-center justify-content-between">
-                                            <button class="qty-btn dec-qty"><img src="assets/img/icon/minus.svg" alt="minus"></button>
+                                            <button class="qty-btn dec-qty">
+                                                <img 
+                                                    src="assets/img/icon/minus.svg" 
+                                                    alt="minus"
+                                                    width="100%"
+                                                    height="100%"
+                                                >
+                                            </button>
                                             <input class="qty-input" type="number" name="qty" value="1" min="0">
-                                            <button class="qty-btn inc-qty"><img src="assets/img/icon/plus.svg" alt="plus"></button>
+                                            <button class="qty-btn inc-qty">
+                                                <img 
+                                                    src="assets/img/icon/plus.svg" 
+                                                    alt="plus"
+                                                    width="100%"
+                                                    height="100%"
+                                                >
+                                            </button>
                                         </div>
                                         <div class="message-popup d-flex align-items-center">
                                             <span class="message-popup-icon">

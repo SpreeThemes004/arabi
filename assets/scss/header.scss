@@ -171,6 +171,10 @@ header {
 
 
 // search
+.header-action-item {
+    cursor: pointer;
+}
+
 .header-search-widget .search-form {
     background: #F7F7F7;
     display: flex;

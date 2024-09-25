@@ -50,3 +50,29 @@ class headerSearch extends HTMLElement{
 }
 
 customElements.define('header-search', headerSearch);
+
+// main slideshow
+class mainSlideshow extends HTMLElement{
+  constructor(){
+    super();
+
+    this.swiper = this.querySelector('.swiper');
+    this.sliderPagination = this.querySelector('.swiper-pagination');
+    this.navNext = this.querySelector('.swiper-button-next');
+    this.navPrev = this.querySelector('.swiper-button-prev');
+
+    this.init();
+  }
+
+  init(){
+    this.slider = new Swiper(this.swiper, {
+      loop: true,
+    
+      pagination: {
+        el: this.sliderPagination,
+      },
+    });
+  }
+}
+
+customElements.define('slider-component', mainSlideshow)

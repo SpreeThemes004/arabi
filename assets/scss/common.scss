@@ -67,37 +67,35 @@ iframe {
 }
 
 // button and input
-.btn-primary,
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus{
+.button,
+.button:hover,
+.button:focus{
+  min-width: 190px;
+  height: 56px;
   font-size: 14px;
-  line-height: 1;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: normal;
   text-decoration: none;
-  padding: 0 17px;
-  height: 40px;
-  @include prefix(box-shadow, none !important, ms webkit spec);
+  border: var(--button-border-width) solid var(--color-button-border);
+  padding-left: 20px;
+  padding-right: 20px;
+  @include prefix(border-radius, var(--button-radius), ms webkit spec);
   @include prefix(display, inline-flex, ms webkit spec);
   @include prefix(align-items, center, ms webkit spec);
   @include prefix(justify-content, center, ms webkit spec);
+  @include prefix(box-shadow, none !important, ms webkit spec);
+
 }
 
-.btn-primary {
-  @include prefix(border-radius, var(--button-radius), ms webkit spec);
-  color: var( --color-button-text);
-  border: 1px solid var(--color-button-border);
-  background-color: var( --color-button);
-  font-weight: var(--font-button-weight);
+.button-primary{
+  color: var(--color-button-text);
+  background-color: var(--color-button);
 }
 
-.btn-secondary {
-  @include prefix(border-radius, var(--secondary-button-radius), ms webkit spec);
+.button-secondary{
   color: var(--color-secondary-button-text);
-  border: 1px solid var(--color-secondary-button-border);
   background-color: var(--color-secondary-button);
-  font-weight: var(--font-secondary-button-weight);
 }
 
 .btn-primary:hover,
@@ -289,6 +287,14 @@ body {
     color: var(--color-link-hover);
     text-decoration: underline;
   }
+}
+
+.medium{
+  font-weight: 500px;
+}
+
+.semibold{
+  font-weight: 600px;
 }
 
 // animation

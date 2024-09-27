@@ -51,15 +51,15 @@ class headerSearch extends HTMLElement{
 
 customElements.define('header-search', headerSearch);
 
-// main slideshow
-class mainSlideshow extends HTMLElement{
+// Hero slider
+class HeroSlider extends HTMLElement{
   constructor(){
     super();
 
     this.swiper = this.querySelector('.swiper');
     this.sliderPagination = this.querySelector('.swiper-pagination');
-    this.navNext = this.querySelector('.swiper-button-next');
-    this.navPrev = this.querySelector('.swiper-button-prev');
+    this.navNext = this.querySelector('.arrow-next');
+    this.navPrev = this.querySelector('.arrow-prev');
 
     this.init();
   }
@@ -67,12 +67,16 @@ class mainSlideshow extends HTMLElement{
   init(){
     this.slider = new Swiper(this.swiper, {
       loop: true,
-    
+      navigation: {
+        nextEl: this.navNext,
+        prevEl: this.navPrev,
+      },
       pagination: {
         el: this.sliderPagination,
+        clickable: true,
       },
     });
   }
 }
 
-customElements.define('slider-component', mainSlideshow)
+customElements.define('hero-slider', HeroSlider)

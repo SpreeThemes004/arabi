@@ -77,7 +77,6 @@ iframe {
   line-height: 1.2;
   letter-spacing: normal;
   text-decoration: none;
-  border: var(--button-border-width) solid var(--color-button-border);
   padding-left: 20px;
   padding-right: 20px;
   @include prefix(border-radius, var(--button-radius), ms webkit spec);
@@ -85,32 +84,33 @@ iframe {
   @include prefix(align-items, center, ms webkit spec);
   @include prefix(justify-content, center, ms webkit spec);
   @include prefix(box-shadow, none !important, ms webkit spec);
+  @include prefix(transition, all ease 0.4s !important, ms webkit spec);
 
 }
 
 .button-primary{
   color: var(--color-button-text);
   background-color: var(--color-button);
+  border: var(--button-border-width) solid var(--color-button-border);
 }
 
 .button-secondary{
   color: var(--color-secondary-button-text);
   background-color: var(--color-secondary-button);
+  border: var(--button-border-width) solid var(--color-secondary-button-border);
 }
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-member:hover,
-.btn-member:focus{
+.button-primary:hover,
+.button-primary:focus{
   color: var(--color-button-text-hover);
-  border: 1px solid var(--color-button-border-hover);
+  border: var(--button-border-width) solid var(--color-button-border-hover);
   background-color: var(--color-button-hover);
 }
 
-.btn-secondary:hover,
-.btn-secondary:focus {
+.button-secondary:hover,
+.button-secondary:focus {
   color: var(--color-secondary-button-text-hover);
-  border: 1px solid var(--color-secondary-button-border-hover);
+  border: var(--button-border-width) solid var(--color-secondary-button-border-hover);
   background-color: var(--color-secondary-button-hover);
 }
 
@@ -153,6 +153,11 @@ input[type="number"] {
 .icon {
   width: 24px;
   height: 24px;
+}
+
+.icon_50 {
+  width: 50px;
+  height: 50px;
 }
 
 // overlay
@@ -290,11 +295,11 @@ body {
 }
 
 .medium{
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 .semibold{
-  font-weight: 600px;
+  font-weight: 600;
 }
 
 // animation

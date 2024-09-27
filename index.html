@@ -36,7 +36,7 @@
             --font-button-weight: 500;
             --color-button: #fff;
             --color-button-text: #000;
-            --color-button-border: #000;
+            --color-button-border: #fff;
             --color-button-hover: #000;
             --color-button-text-hover: #fff;
             --color-button-border-hover: #000;
@@ -49,7 +49,7 @@
             --color-secondary-button-border: #000;
             --color-secondary-button-hover: #fff;
             --color-secondary-button-text-hover: #000;
-            --color-secondary-button-border-hover: #000;
+            --color-secondary-button-border-hover: #fff;
             
             --font-cta-weight:500;
             --color-cta: #000;
@@ -536,108 +536,146 @@
 
         <main id="MainContent" class="content-for-layout">
             <!-- slideshow start -->
-            <slider-component>
-                <div class="swiper slideshow-section position-relative">
-                    <div class="swiper-wrapper slideshow-active activate-slider">
+            <hero-slider>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
                     <!-- Slides -->
-                        <div class="swiper-slide slide-item slide-item-bag position-relative">
-                            <div class="content-absolute content-slide">
-                                <div class="container slide-container">
-                                    <div class="content-box slide-content">
-                                        <h2 class="text text_48 semibold animate__animated animate__fadeInUp"
-                                            data-animation="animate__animated animate__fadeInUp">
-                                            Home Decoration For Everyone.
-                                        </h2>
-                                        <div class="slider-buttons">
-                                            <a 
-                                            class="button button-primary animate__animated animate__fadeInUp"
-                                            href="collection-left-sidebar.html"
-                                            data-animation="animate__animated animate__fadeInUp"
-                                            aria-label="slider button"
-                                            >
-                                                Shop rugs
-                                            </a>
-                                            <a 
-                                            class="button button-secondary animate__animated animate__fadeInUp"
-                                            href="collection-left-sidebar.html"
-                                            data-animation="animate__animated animate__fadeInUp"
-                                            aria-label="slider button"
-                                            >
-                                                SHOP BEDS
-                                            </a>
+                        <div class="swiper-slide">
+                            <div class="slide-item slide-item-bag position-relative">
+                                <img 
+                                    src="assets/img/slideshow/Slider.jpg"
+                                    alt="image" 
+                                    width="100%" 
+                                    height="100%"
+                                    loading="eager"
+                                >
+                                <div class="content-absolute content-slide">
+                                    <div class="container slide-container">
+                                        <div class="content-box slide-content">
+                                            <h4 class="slider-subheading text text_18 medium animate__animated       animate__fadeInUp">Special Offer</h4>
+                                            <h2 class="slider-heading text text_48 semibold animate__animated       animate__fadeInUp"
+                                                data-animation="animate__animated animate__fadeInUp">
+                                                Home Decoration For Everyone.
+                                            </h2>
+                                            <p class="slider-text text text_14 animate__animated       animate__fadeInUp">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+                                            <div class="slider-buttons">
+                                                <a 
+                                                class="button button-primary animate__animated animate__fadeInUp"
+                                                href="collection-left-sidebar.html"
+                                                data-animation="animate__animated animate__fadeInUp"
+                                                aria-label="slider button"
+                                                >
+                                                    Shop rugs
+                                                </a>
+                                                <a 
+                                                class="button button-secondary animate__animated animate__fadeInUp"
+                                                href="collection-left-sidebar.html"
+                                                data-animation="animate__animated animate__fadeInUp"
+                                                aria-label="slider button"
+                                                >
+                                                    SHOP BEDS
+                                                </a>
+                                            </div>
+                                            
                                         </div>
-                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide slide-item slide-item-bag position-relative">
-                            <div class="content-absolute content-slide">
-                                <div class="container slide-container">
-                                    <div class="content-box slide-content">
-                                        <h2 class="text text_48 semibold animate__animated animate__fadeInUp"
-                                            data-animation="animate__animated animate__fadeInUp">
-                                            Home Decoration For Everyone.
-                                        </h2>
-                                        <div class="slider-buttons">
-                                            <a 
-                                            class="button button-primary animate__animated animate__fadeInUp"
-                                            href="collection-left-sidebar.html"
-                                            data-animation="animate__animated animate__fadeInUp"
-                                            aria-label="slider button"
-                                            >
-                                                Shop rugs
-                                            </a>
-                                            <a 
-                                            class="button button-secondary animate__animated animate__fadeInUp"
-                                            href="collection-left-sidebar.html"
-                                            data-animation="animate__animated animate__fadeInUp"
-                                            aria-label="slider button"
-                                            >
-                                                SHOP BEDS
-                                            </a>
+                        <div class="swiper-slide">
+                            <div class="slide-item slide-item-bag position-relative">
+                                <img 
+                                    src="assets/img/slideshow/Slider (1).jpg"
+                                    alt="image" 
+                                    width="100%" 
+                                    height="100%"
+                                    loading="lazy"
+                                >
+                                <div class="content-absolute content-slide">
+                                    <div class="container slide-container">
+                                        <div class="content-box slide-content">
+                                            <h4 class="slider-subheading text text_18 medium animate__animated       animate__fadeInUp">Special Offer</h4>
+                                            <h2 class="slider-heading text text_48 semibold animate__animated       animate__fadeInUp"
+                                                data-animation="animate__animated animate__fadeInUp">
+                                                Home Decoration For Everyone.
+                                            </h2>
+                                            <p class="slider-text text text_14 animate__animated       animate__fadeInUp">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+                                            <div class="slider-buttons">
+                                                <a 
+                                                class="button button-primary animate__animated animate__fadeInUp"
+                                                href="collection-left-sidebar.html"
+                                                data-animation="animate__animated animate__fadeInUp"
+                                                aria-label="slider button"
+                                                >
+                                                    Shop rugs
+                                                </a>
+                                                <a 
+                                                class="button button-secondary animate__animated animate__fadeInUp"
+                                                href="collection-left-sidebar.html"
+                                                data-animation="animate__animated animate__fadeInUp"
+                                                aria-label="slider button"
+                                                >
+                                                    SHOP BEDS
+                                                </a>
+                                            </div>
+                                            
                                         </div>
-                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide slide-item slide-item-bag position-relative">
-                            <div class="content-absolute content-slide">
-                                <div class="container slide-container">
-                                    <div class="content-box slide-content">
-                                        <h2 class="text text_48 semibold animate__animated animate__fadeInUp"
-                                            data-animation="animate__animated animate__fadeInUp">
-                                            Home Decoration For Everyone.
-                                        </h2>
-                                        <div class="slider-buttons">
-                                            <a 
-                                            class="button button-primary animate__animated animate__fadeInUp"
-                                            href="collection-left-sidebar.html"
-                                            data-animation="animate__animated animate__fadeInUp"
-                                            aria-label="slider button"
-                                            >
-                                                Shop rugs
-                                            </a>
-                                            <a 
-                                            class="button button-secondary animate__animated animate__fadeInUp"
-                                            href="collection-left-sidebar.html"
-                                            data-animation="animate__animated animate__fadeInUp"
-                                            aria-label="slider button"
-                                            >
-                                                SHOP BEDS
-                                            </a>
+                        <div class="swiper-slide">
+                            <div class="slide-item slide-item-bag position-relative">
+                                <img 
+                                    src="assets/img/slideshow/Slider.jpg"
+                                    alt="image" 
+                                    width="100%" 
+                                    height="100%"
+                                    loading="lazy"
+                                >
+                                <div class="content-absolute content-slide">
+                                    <div class="container slide-container">
+                                        <div class="content-box slide-content">
+                                            <h4 class="slider-subheading text text_18 medium animate__animated       animate__fadeInUp">Special Offer</h4>
+                                            <h2 class="slider-heading text text_48 semibold animate__animated       animate__fadeInUp"
+                                                data-animation="animate__animated animate__fadeInUp">
+                                                Home Decoration For Everyone.
+                                            </h2>
+                                            <p class="slider-text text text_14 animate__animated       animate__fadeInUp">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+                                            <div class="slider-buttons">
+                                                <a 
+                                                class="button button-primary animate__animated animate__fadeInUp"
+                                                href="collection-left-sidebar.html"
+                                                data-animation="animate__animated animate__fadeInUp"
+                                                aria-label="slider button"
+                                                >
+                                                    Shop rugs
+                                                </a>
+                                                <a 
+                                                class="button button-secondary animate__animated animate__fadeInUp"
+                                                href="collection-left-sidebar.html"
+                                                data-animation="animate__animated animate__fadeInUp"
+                                                aria-label="slider button"
+                                                >
+                                                    SHOP BEDS
+                                                </a>
+                                            </div>
+                                            
                                         </div>
-                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--pagination -->
+                    <div class="arrow-prev slider-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="icon-arrow-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </div>
+                    <div class="arrow-next slider-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="icon-arrow-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
                     <div class="swiper-pagination slideshow-dots"></div>
                 </div>
-            </slider-component>
+            </hero-slider>
             <!-- slideshow end -->
         </main>
 

@@ -1,18 +1,33 @@
 .slider-arrow {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: -2%;
     right: auto;
     z-index: 9;
     cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
 
     @include prefix(transform, translateY(-50%), ms webkit spec);
+    @include prefix(transition, all ease 0.3s, ms webkit spec);
 
 }
 
 .arrow-next {
     left: auto;
+    right: -2%;
+}
+
+hero-slider:hover .slider-arrow{    
+    opacity: 1;
+    visibility: visible;
+    right: auto;
+    left: 0
+}
+
+hero-slider:hover .arrow-next{
     right: 0;
+    left: auto;
 }
 
 .slideshow-dots .swiper-pagination-bullet {
@@ -20,11 +35,14 @@
     height: 8px;
     background: #000;
     opacity: 0.4;
-    margin: 0 6px;
     border-radius: 8px;
     cursor: pointer;
     transition: all ease 0.3s;
     bottom: 16px;
+}
+
+.swiper-horizontal > .slideshow-dots.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 6px;
 }
 
 .slideshow-dots .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -61,8 +79,41 @@
 .slide-container {
     display: flex;
     height: inherit;
-    justify-content: center;
     align-items: center;
+}
+
+.slider-media img {
+    min-height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide-container.slide-1 {
+    justify-content: center;
+}
+
+.slide-container.slide-2 {
+    justify-content: flex-start;
+}
+
+.slide-2 .slide-content {
+    text-align: left;
+}
+
+.slide-2 .slider-buttons {
+    justify-content: flex-start;
+}
+
+.slide-container.slide-3 {
+    justify-content: flex-end;
+}
+
+.slide-3 .slide-content {
+    text-align: right;
+}
+
+.slide-3 .slider-buttons {
+    justify-content: flex-end;
 }
 
 .slide-content {
@@ -87,4 +138,40 @@
     justify-content: center;
     gap: 24px;
     margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .slider-subheading {
+        font-size: 16px;
+    }
+
+    .slide-content .text_48 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 991px) {
+    .slider-subheading {
+        font-size: 14px;
+    }
+
+    .slider-heading  {
+        font-size: 28px;
+    }
+
+    .slider-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider-subheading {
+        font-size: 12px;
+    }
+
+    .slider-heading  {
+        font-size: 20px;
+    }
 }

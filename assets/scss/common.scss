@@ -75,10 +75,13 @@ iframe {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: normal;
+  letter-spacing: 1.2px;
   text-decoration: none;
   padding-left: 20px;
   padding-right: 20px;
+  text-transform: uppercase;
+  border: var(--button-border-width) solid;
+
   @include prefix(border-radius, var(--button-radius), ms webkit spec);
   @include prefix(display, inline-flex, ms webkit spec);
   @include prefix(align-items, center, ms webkit spec);
@@ -91,26 +94,26 @@ iframe {
 .button-primary{
   color: var(--color-button-text);
   background-color: var(--color-button);
-  border: var(--button-border-width) solid var(--color-button-border);
+  border-color: var(--color-button-border);
 }
 
 .button-secondary{
   color: var(--color-secondary-button-text);
   background-color: var(--color-secondary-button);
-  border: var(--button-border-width) solid var(--color-secondary-button-border);
+  border-color: var(--color-secondary-button-border);
 }
 
 .button-primary:hover,
 .button-primary:focus{
   color: var(--color-button-text-hover);
-  border: var(--button-border-width) solid var(--color-button-border-hover);
+  border-color: var(--color-button-border-hover);
   background-color: var(--color-button-hover);
 }
 
 .button-secondary:hover,
 .button-secondary:focus {
   color: var(--color-secondary-button-text-hover);
-  border: var(--button-border-width) solid var(--color-secondary-button-border-hover);
+  border-color: var(--color-secondary-button-border-hover);
   background-color: var(--color-secondary-button-hover);
 }
 
@@ -150,7 +153,12 @@ input[type="number"] {
 }
 
 // icon
-.icon {
+.icon_20{
+  width: 20px;
+  height: 20px;
+}
+
+.icon_24 {
   width: 24px;
   height: 24px;
 }
@@ -204,6 +212,10 @@ body {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.relative{
+  position: relative;
 }
 
 // Typography

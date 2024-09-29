@@ -15,7 +15,7 @@
 
 .announcement-contact {
     display: flex;
-    gap: 12px;
+    gap: 20px;
 }
 
 .announcement-bar .text {
@@ -49,6 +49,11 @@
     min-width: 20px;
     max-width: 20px;
     margin-right: 4px;
+}
+
+.currency-list-item,
+.language-list-item {
+    padding: 3px 5px;
 }
 
 .language-list,

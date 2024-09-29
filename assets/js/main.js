@@ -80,3 +80,8 @@ class HeroSlider extends HTMLElement{
 }
 
 customElements.define('hero-slider', HeroSlider)
+
+// toggle footer menu
+$('.footer-heading').on('click', function () {
+  $(this).siblings().slideToggle();
+});

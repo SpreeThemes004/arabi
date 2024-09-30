@@ -19,7 +19,7 @@
 }
 
 .footer-style-2 .footer-logo {
-    margin-bottom: 12px;
+    margin-bottom: 32px;
 }
 
 .footer-logo img {
@@ -192,6 +192,44 @@
 .top-newsletter-2 .footer-newsletter-btn {
     background-color: var(--color-background);
     color: var(--color-primary);
+}
+
+// Home style bag
+.home-bag .footer-top-newsletter .footer-newsletter-form {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.home-bag .footer-top-newsletter {
+    background: #F7F7F7;
+}
+
+.home-bag .footer-top {
+    background: #000;
+}
+
+.home-bag .footer-top .text {
+    color: #fff;
+}
+
+.home-bag .footer-social svg {
+    color: #fff;
+}
+
+.home-bag .footer-top-social {
+    justify-content: center;
+}
+
+.home-bag  .footer-newsletter-form {
+    max-width: 524px;
+}
+
+.home-bag .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: #000;
+}
+
+.home-bag .footer-bottom-inner .text {
+    color: var(--color-secondary);
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {

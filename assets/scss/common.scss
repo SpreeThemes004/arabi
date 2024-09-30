@@ -437,7 +437,16 @@ button,
   z-index: 1000;
   cursor: pointer;
 }
+
 #scrollup.show {
   opacity: 1;
   visibility: visible;
+}
+
+.accordion-opener * {
+  pointer-events: none;
+}
+
+input, textarea {
+  border-radius: var(--input-radius);
 }

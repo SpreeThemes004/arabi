@@ -81,28 +81,22 @@ class HeroSlider extends HTMLElement{
 
 customElements.define('hero-slider', HeroSlider)
 
-// toggle footer menu
-// $('.footer-heading').on('click', function () {
-//   $(this).siblings().slideToggle();
-// });
 
 // Footer menu
-class footerMenu extends HTMLElement{
+class Accordion extends HTMLElement{
   constructor(){
     super();
 
-    this.openBtn = this.querySelectorAll('.footer-heading');
+    this.opener = this.querySelectorAll('.accordion-opener');
 
-
-    this.openBtn.forEach(items => {
-      items.addEventListener('click', this.toggleMenu.bind(this))
+    this.opener.forEach(item => {
+      item.addEventListener('click', this.toggleMenu.bind(this))
     })
   }
 
-  toggleMenu(event){
-    console.log(event.target)
+  toggleMenu(event) {
     event.target.nextElementSibling.classList.toggle('open');
   }
 } 
 
-customElements.define('footer-menu', footerMenu)
+customElements.define('accordion-menu', Accordion)

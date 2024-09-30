@@ -97,7 +97,7 @@
 
 .footer-top-newsletter .footer-newsletter-btn {
     width: 260px;
-    min-width: 260px;
+    max-width: 260px;
 }
 
 .newsletter-btn-white {
@@ -158,6 +158,7 @@
     flex-wrap: wrap;
     gap: 8px;
     margin: 0;
+    justify-content: center;
 }
 
 .footer-top-social {
@@ -192,4 +193,62 @@
 .top-newsletter-2 .footer-newsletter-btn {
     background-color: var(--color-background);
     color: var(--color-primary);
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .footer-social-text {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    .footer-social-text {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer-top-newsletter .footer-newsletter-btn {
+        width: 180px;
+        max-width: 180px;
+    }
+
+    .footer-social-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-menu {
+        display: none;
+        padding-bottom: 25px;
+    }
+    .footer-menu.open {
+        display: block;
+    }
+
+    .footer-style-2 .footer-heading {
+        margin-bottom: 20px;
+    }
+
+    .footer-menu-item {
+        padding: 6px 0;
+    }
+
+    .footer-widget {
+        margin-bottom: 32px;
+        margin-top: 0;
+    }
+
+    .footer-bottom-inner {
+        justify-content: center;
+    }
+
+    .footer-newsletter {
+        margin-top: 24px;
+    }
+
+    .footer-heading * {
+        pointer-events: none;
+    }
 }

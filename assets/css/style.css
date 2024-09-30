@@ -926,7 +926,7 @@ header {
   .header-2 .main-menu > .menu-list-item {
     padding: 32px 8px; }
   .header-1 .main-menu > .menu-list-item {
-    padding: 32px 14px; }
+    padding: 32px 12px; }
   .header-2 .header-logo {
     padding: 0px 8px;
     max-width: 90px; }
@@ -3612,7 +3612,7 @@ blockquote {
 
 .footer-top-newsletter .footer-newsletter-btn {
   width: 260px;
-  min-width: 260px; }
+  max-width: 260px; }
 
 .newsletter-btn-white {
   background-color: #fff;
@@ -3681,7 +3681,10 @@ blockquote {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 0; }
+  margin: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .footer-top-social {
   display: -webkit-box;
@@ -3723,6 +3726,43 @@ blockquote {
 .top-newsletter-2 .footer-newsletter-btn {
   background-color: var(--color-background);
   color: var(--color-primary); }
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .footer-social-text {
+    font-size: 28px; } }
+
+@media (min-width: 991px) and (max-width: 1199px) {
+  .footer-social-text {
+    font-size: 26px; } }
+
+@media (max-width: 991px) {
+  .footer-top-newsletter .footer-newsletter-btn {
+    width: 180px;
+    max-width: 180px; }
+  .footer-social-text {
+    font-size: 18px; } }
+
+@media (max-width: 767px) {
+  .footer-menu {
+    display: none;
+    padding-bottom: 25px; }
+  .footer-menu.open {
+    display: block; }
+  .footer-style-2 .footer-heading {
+    margin-bottom: 20px; }
+  .footer-menu-item {
+    padding: 6px 0; }
+  .footer-widget {
+    margin-bottom: 32px;
+    margin-top: 0; }
+  .footer-bottom-inner {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .footer-newsletter {
+    margin-top: 24px; }
+  .footer-heading * {
+    pointer-events: none; } }
 
 .mt-48 {
   margin-top: 48px; }
@@ -4175,8 +4215,6 @@ blockquote {
   .footer-heading {
     cursor: pointer;
     margin: 0 0 25px; }
-  .footer-widget {
-    margin-top: 0; }
   .footer-widget-inner {
     -ms-border-top: 1px solid rgba(255, 255, 255, 0.4);
     -webkit-border-top: 1px solid rgba(255, 255, 255, 0.4);
@@ -4191,9 +4229,6 @@ blockquote {
     -webkit-border-top: 0;
     border-top: 0;
     padding-top: 0; }
-  .footer-menu {
-    display: none;
-    padding-bottom: 25px; }
   .footer-top {
     padding: 100px 0 65px; }
   .mt-100 {

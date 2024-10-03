@@ -100,3 +100,44 @@ class Accordion extends HTMLElement{
 } 
 
 customElements.define('accordion-menu', Accordion)
+
+// increament-decreament button
+// $(".qty-btn").on('click', function () {
+//   var qtyInput = $(this).parent().find('input');
+
+//   if ($(this).hasClass('inc-qty')) {
+//     qtyInput.val(parseInt(qtyInput.val()) + 1);
+//   } else if (qtyInput.val() >= 1) {
+//     qtyInput.val(parseInt(qtyInput.val()) - 1);
+//   }
+// });
+
+// increament-decreament button
+class cartDrawer extends HTMLElement{
+  constructor(){
+    super();
+    
+    this.number = 1;
+    this.numberInput = this.querySelectorAll('.qty-input');
+    this.incBtn = this.querySelectorAll('.inc-qty');    
+    this.decBtn = this.querySelectorAll('.dec-qty');
+
+    this.incBtn.forEach(item => {
+      item.addEventListener('click', this.increment());
+    })
+
+    this.decBtn.forEach(items => {
+      items.addEventListener('click', this.decrement());
+    })
+  }
+
+
+}
+
+customElements.define('cart-drawer', cartDrawer);
+
+
+
+
+
+

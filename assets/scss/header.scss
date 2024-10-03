@@ -56,6 +56,21 @@ header {
     justify-content: flex-end;
 }
 
+.header-cart .cart-badge {
+    position: absolute;
+    font-size: 11px;
+    color: rgba(var(--color-background), 1);
+    background-color: rgba(var(--color-foreground), 1);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -40%;
+    right: -45%;
+}
+
 .header-menu-logo {
     display: flex;
     justify-content: center;
@@ -83,7 +98,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 99;
-    background-color: #fff;
+    background-color: var(--color-background);
     width: 100%;
     height: auto;
 }
@@ -113,12 +128,12 @@ header {
     gap: 8px;
 }
 
-.category-title .text {
-    color: var(--color-primary);
+.category-title-text {
+    color: rgba(var(--color-foreground), 1);;
 }
 
-.category-dropdwon-title .text {
-    color: var(--color-primary);
+.category-dropdwon-text {
+    color: rgba(var(--color-foreground), 1);;
 }
 
 .header-category-widget .icon-dropdown {
@@ -224,10 +239,10 @@ header {
     top: 100%;
     z-index: 9;
     opacity: 0;
-    @include prefix(border-bottom, 1px solid rgba(0, 0, 0, 0.1), ms webkit spec);
-    @include prefix(transition, all 0.4s, ms webkit spec);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
 
-    &.search-appear {
+    .search-appear {
         max-height: 70px;
         opacity: 1;
     }
@@ -237,14 +252,14 @@ header {
     }
 
     .search-form {
-        @include prefix(border, none !important, ms webkit spec);
-        @include prefix(outline, none !important, ms webkit spec);
+        border: none;
+        outline: none;
 
         .search-input {
             flex: 0 0 90%;
-            @include prefix(flex, 0 0 calc(100% - 90px), ms webkit spec);
-            @include prefix(border, none !important, ms webkit spec);
-            @include prefix(outline, none !important, ms webkit spec);
+            flex: 0 0 calc(100% - 90px);
+            border: none;
+            outline: none;
 
             input {
                 width: 100%;
@@ -267,7 +282,7 @@ header {
             padding: 17px 0 20px;
             border: none;
             outline: none;
-            @include prefix(flex, 0 0 40px, ms webkit spec);
+            flex: 0 0 40px;
 
             &:hover,
             &:active,
@@ -280,10 +295,10 @@ header {
         .search-close {
             padding: 20px 0;
             cursor: pointer;
-            @include prefix(outline, none !important, ms webkit spec);
-            @include prefix(display, flex, ms webkit spec);
-            @include prefix(justify-content, flex-end, ms webkit spec);
-            @include prefix(flex, 0 0 50px, ms webkit spec);
+            outline: none;
+            display: flex;
+            justify-content: flex-end;
+            flex: 0 0 50px;
         }
     }
 }

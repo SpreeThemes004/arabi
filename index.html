@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- all css -->
+     
+    <link rel="stylesheet" href="assets/css/vendor.css">
     <style>
         :root {
 
@@ -52,7 +54,7 @@
             --color-secondary-button-text-hover: 0, 0, 0;
             --color-secondary-button-border-hover: 255, 255, 255;
             
-            --font-cta-weight:500;
+            --font-cta-weight: 500;
             --color-cta: 0, 0, 0;
             --color-cta-hover: 0, 0, 0;
 
@@ -63,11 +65,13 @@
             --bs-gutter-y: 24px;
 
             --input-radius: 12px;
+
+            --color-overlay: 0, 0, 0;
+            --opacity-overlay: 0.2;
         }
     </style>
-
-    <link rel="stylesheet" href="assets/css/vendor.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -543,10 +547,9 @@
                     <div class="swiper-wrapper">
                     <!-- Slides -->
                         <div class="swiper-slide">
-                            <div class="slide-item slide-item-bag relative">
+                            <div class="slide-item slide-item-bag relative overlay">
                                 <picture class="slider-media">
                                     <source media="(max-width: 767px)" srcset="assets/img/slideshow/slider-1-sm.jpg">
-                                    <source media="(max-width: 1280px)" srcset="assets/img/slideshow/slider-1-md.jpg">
                                     <img 
                                         src="assets/img/slideshow/slider-1.jpg"
                                         alt="image" 
@@ -559,14 +562,16 @@
                                 <div class="content-absolute content-slide">
                                     <div class="container slide-container slide-1">
                                         <div class="content-box slide-content">
-                                            <div class="slider-subheading text text_18 medium animate__animated       animate__fadeInUp">
+                                            <div class="slider-subheading text text_18 medium animate__animated      animate__fadeInUp">
                                                 <span>Special Offer</span>
                                             </div>
                                             <h2 class="slider-heading text text_48 semibold animate__animated       animate__fadeInUp"
                                                 data-animation="animate__animated animate__fadeInUp">
                                                 Home Decoration For Everyone.
                                             </h2>
-                                            <p class="slider-text text text_14 animate__animated       animate__fadeInUp">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+                                            <p class="slider-text text text_14 animate__animated       animate__fadeInUp">
+                                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.
+                                            </p>
                                             <div class="slider-buttons">
                                                 <a 
                                                 class="button button-secondary animate__animated animate__fadeInUp"
@@ -592,10 +597,9 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="slide-item slide-item-bag relative">
+                            <div class="slide-item slide-item-bag relative overlay">
                                 <picture class="slider-media">
                                     <source media="(max-width: 767px)" srcset="assets/img/slideshow/slider-2-sm.jpg">
-                                    <source media="(max-width: 1280px)" srcset="assets/img/slideshow/slider-2-md.jpg">
                                     <img 
                                         src="assets/img/slideshow/slider-2.jpg"
                                         alt="image" 
@@ -640,10 +644,9 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="slide-item slide-item-bag relative">
+                            <div class="slide-item slide-item-bag relative overlay">
                                 <picture class="slider-media">
                                     <source media="(max-width: 767px)" srcset="assets/img/slideshow/slider-3-sm.jpg">
-                                    <source media="(max-width: 1280px)" srcset="assets/img/slideshow/slider-3-md.jpg">
                                     <img 
                                         src="assets/img/slideshow/slider-3.jpg"
                                         alt="image" 
@@ -700,11 +703,12 @@
             <!-- slideshow end -->
 
             <!-- Collage start -->
-             <div class="section-collage">
-                <div class="container">
+             <div class="section-collage mt-100 ">
+                <div class="container-fluid">
                     <div class="collage-wrap">
-                        <div class="collage-grid">
-                            <div class="grid-one">
+                        <!-- Collage has two grid item -->
+                        <div class="collage-grid d-none">
+                            <div class="collage-grid-item relative">
                                 <div class="collage-media">
                                     <img 
                                         src="assets/img/collection/Collection 1.jpg" 
@@ -713,10 +717,18 @@
                                         height="100%"
                                     >
                                 </div>
-                                <div class="collage-content"></div>
+                                <div class="content-absolute">
+                                    <div class="collage-content flex-bannar">
+                                        <div class="content-box">
+                                            <h4 class="heading-collage text text_32">Lounge</h4>
+                                            <h5 class="subheading-collage text text_18">Make yourself at home</h5>
+                                            <a href="#" class="button-collage button-cta button-reset">SHOP NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="grid-two">
-                                <div class="collage-media"></div>
+                            <div class="collage-grid-item relative">
+                                <div class="collage-media">
                                     <img 
                                         src="assets/img/collection/Collection 4.jpg" 
                                         alt="image" 
@@ -724,7 +736,255 @@
                                         height="100%"
                                     >
                                 </div>
-                                <div class="collage-content"></div>
+                                <div class="content-absolute">
+                                    <div class="collage-content flex-bannar">
+                                        <div class="content-box">
+                                            <h4 class="heading-collage text text_32">Baby collections</h4>
+                                            <h5 class="subheading-collage text text_18">Comfort of your little ones</h5>
+                                            <a href="#" class="button-collage button-cta button-reset">SHOP NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Collage has three grid item -->
+                        <div class="collage-grid grid-style-2 d-none">
+                            <div class="collage-grid-item relative">
+                                <div class="collage-media">
+                                    <img 
+                                        src="assets/img/collection/Collection 1.jpg" 
+                                        alt="image" 
+                                        width="100%" 
+                                        height="100%"
+                                    >
+                                </div>
+                                <div class="content-absolute">
+                                    <div class="collage-content flex-bannar">
+                                        <div class="content-box">
+                                            <h4 class="heading-collage text text_32">Lounge</h4>
+                                            <h5 class="subheading-collage text text_18">Make yourself at home</h5>
+                                            <a href="#" class="button-collage button-cta button-reset">SHOP NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collage-grid-item relative">
+                                <div class="collage-media">
+                                    <img 
+                                        src="assets/img/collection/Collection 4.jpg" 
+                                        alt="image" 
+                                        width="100%" 
+                                        height="100%"
+                                    >
+                                </div>
+                                <div class="content-absolute">
+                                    <div class="collage-content flex-bannar">
+                                        <div class="content-box">
+                                            <h4 class="heading-collage text text_32">Baby collections</h4>
+                                            <h5 class="subheading-collage text text_18">Comfort of your little ones</h5>
+                                            <a href="#" class="button-collage button-cta button-reset">SHOP NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collage-grid-item relative">
+                                <div class="collage-media">
+                                    <img src="assets/img/collection/Collection 4.jpg"
+                                        src="" 
+                                        alt="image" 
+                                        width="100%" 
+                                        height="100%"
+                                    >
+                                </div>
+                                <div class="content-absolute">
+                                    <div class="collage-content flex-bannar">
+                                        <div class="content-box">
+                                            <h4 class="heading-collage text text_32">Baby collections</h4>
+                                            <h5 class="subheading-collage text text_18">Comfort of your little ones</h5>
+                                            <a href="#" class="button-collage button-cta button-reset">SHOP NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Collage has four grid item -->
+                        <div class="collage-grid grid-style-3">
+                            <div class="collage-grid-item relative">
+                                <div class="collage-media">
+                                    <img 
+                                        src="assets/img/collection/Collection 1.jpg" 
+                                        alt="image" 
+                                        width="100%" 
+                                        height="100%"
+                                    >
+                                </div>
+                                <div class="content-absolute">
+                                    <div class="collage-content flex-bannar">
+                                        <div class="content-box">
+                                            <h4 class="heading-collage text text_32">Lounge</h4>
+                                            <h5 class="subheading-collage text text_18">Make yourself at home</h5>
+                                            <a href="#" class="button-collage button-cta button-reset">SHOP NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collage-grid-item relative">
+                                <div class="collage-media">
+                                    <img 
+                                        src="assets/img/collection/Collection 4.jpg" 
+                                        alt="image" 
+                                        width="100%" 
+                                        height="100%"
+                                    >
+                                </div>
+                                <div class="content-absolute">
+                                    <div class="collage-content flex-bannar">
+                                        <div class="content-box">
+                                            <h4 class="heading-collage text text_32">Baby collections</h4>
+                                            <h5 class="subheading-collage text text_18">Comfort of your little ones</h5>
+                                            <a href="#" class="button-collage button-cta button-reset">SHOP NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collage-grid-item relative">
+                                <div class="collage-media">
+                                    <img src="assets/img/collection/Collection 2.jpg"
+                                        src="" 
+                                        alt="image" 
+                                        width="100%" 
+                                        height="100%"
+                                    >
+                                </div>
+                                <div class="content-absolute">
+                                    <div class="collage-content flex-bannar">
+                                        <div class="content-box">
+                                            <h4 class="heading-collage text text_32">Plants</h4>
+                                            <h5 class="subheading-collage text text_18">Add life to your home</h5>
+                                            <a href="#" class="button-collage button-cta button-reset">SHOP NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collage-grid-item relative">
+                                <div class="collage-media">
+                                    <img src="assets/img/collection/Collection 3.jpg"
+                                        src="" 
+                                        alt="image" 
+                                        width="100%" 
+                                        height="100%"
+                                    >
+                                </div>
+                                <div class="content-absolute">
+                                    <div class="collage-content flex-bannar">
+                                        <div class="content-box">
+                                            <h4 class="heading-collage text text_32">For little ones</h4>
+                                            <h5 class="subheading-collage text text_18">Sleep like a baby</h5>
+                                            <a href="#" class="button-collage button-cta button-reset">SHOP NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- Collage has five grid item -->
+                         <div class="collage-grid grid-style-4 d-none">
+                            <div class="collage-grid-item relative">
+                                <div class="collage-media">
+                                    <img 
+                                        src="assets/img/collection/Collection 1.jpg" 
+                                        alt="image" 
+                                        width="100%" 
+                                        height="100%"
+                                    >
+                                </div>
+                                <div class="content-absolute">
+                                    <div class="collage-content flex-bannar">
+                                        <div class="content-box">
+                                            <h4 class="heading-collage text text_32">Lounge</h4>
+                                            <h5 class="subheading-collage text text_18">Make yourself at home</h5>
+                                            <a href="#" class="button-collage button-cta button-reset">SHOP NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collage-grid-item relative">
+                                <div class="collage-media">
+                                    <img 
+                                        src="assets/img/collection/Collection 4.jpg" 
+                                        alt="image" 
+                                        width="100%" 
+                                        height="100%"
+                                    >
+                                </div>
+                                <div class="content-absolute">
+                                    <div class="collage-content flex-bannar">
+                                        <div class="content-box">
+                                            <h4 class="heading-collage text text_32">Baby collections</h4>
+                                            <h5 class="subheading-collage text text_18">Comfort of your little ones</h5>
+                                            <a href="#" class="button-collage button-cta button-reset">SHOP NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collage-grid-item relative">
+                                <div class="collage-media">
+                                    <img src="assets/img/collection/Collection 2.jpg"
+                                        src="" 
+                                        alt="image" 
+                                        width="100%" 
+                                        height="100%"
+                                    >
+                                </div>
+                                <div class="content-absolute">
+                                    <div class="collage-content flex-bannar">
+                                        <div class="content-box">
+                                            <h4 class="heading-collage text text_32">Plants</h4>
+                                            <h5 class="subheading-collage text text_18">Add life to your home</h5>
+                                            <a href="#" class="button-collage button-cta button-reset">SHOP NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collage-grid-item relative">
+                                <div class="collage-media">
+                                    <img src="assets/img/collection/Collection 3.jpg"
+                                        src="" 
+                                        alt="image" 
+                                        width="100%" 
+                                        height="100%"
+                                    >
+                                </div>
+                                <div class="content-absolute">
+                                    <div class="collage-content flex-bannar">
+                                        <div class="content-box">
+                                            <h4 class="heading-collage text text_32">For little ones</h4>
+                                            <h5 class="subheading-collage text text_18">Sleep like a baby</h5>
+                                            <a href="#" class="button-collage button-cta button-reset">SHOP NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collage-grid-item relative">
+                                <div class="collage-media">
+                                    <img src="assets/img/collection/Collection 2.jpg"
+                                        src="" 
+                                        alt="image" 
+                                        width="100%" 
+                                        height="100%"
+                                    >
+                                </div>
+                                <div class="content-absolute">
+                                    <div class="collage-content flex-bannar">
+                                        <div class="content-box">
+                                            <h4 class="heading-collage text text_32">Plants</h4>
+                                            <h5 class="subheading-collage text text_18">Add life to your home</h5>
+                                            <a href="#" class="button-collage button-cta button-reset">SHOP NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1782,10 +2042,9 @@
         <!-- drawer menu end -->
 
         <!-- drawer cart start -->
-        <cart-drawer>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="drawer-cart">
                 <div class="offcanvas-header cart-drawer-header">
-                    <h5 class="cart-drawer-heading text_16">Your Cart (04)</h5>
+                    <h5 class="cart-drawer-heading text text_16 semibold">Your Cart (04)</h5>
                     <button 
                         type="button" 
                         class="btn-close text-reset" 
@@ -1798,7 +2057,7 @@
                     <div class="cart-content-area d-flex justify-content-between flex-column">
                         <div class="minicart-loop custom-scrollbar">
                             <!-- minicart item -->
-                            <div class="minicart-item d-flex">
+                            <div class="minicart-item">
                                 <div class="mini-img-wrapper">
                                     <img 
                                         class="mini-img" 
@@ -1810,37 +2069,40 @@
                                     >
                                 </div>
                                 <div class="product-info">
-                                    <h2 class="product-title"><a href="#">Eliot Reversible Sectional</a></h2>
-                                    <p class="product-vendor">XS / Dove Gray</p>
-                                    <div class="misc d-flex align-items-end justify-content-between">
-                                        <div class="quantity d-flex align-items-center justify-content-between">
-                                            <button class="qty-btn dec-qty">
-                                                <img 
-                                                    src="assets/img/icon/minus.svg"
-                                                    alt="minus"
-                                                    width="100%"
-                                                    height="100%"
-                                                >
-                                            </button>
-                                            <input class="qty-input" type="number" name="qty" value="1" min="0">
-                                            <button class="qty-btn inc-qty">
-                                                <img 
-                                                    src="assets/img/icon/plus.svg"
-                                                    alt="plus"
-                                                    width="100%"
-                                                    height="100%"
-                                                >
-                                            </button>
-                                        </div>
+                                    <h2 class="product-title">
+                                        <a href="#" class="text text_16">Eliot Reversible Sectional</a>
+                                    </h2>
+                                    <p class="product-vendor text text_14">XS / Dove Gray</p>
+                                    <div class="misc">
+                                        <quantity-input>
+                                            <div class="quantity">
+                                                <button class="qty-btn dec-qty" name="minus">
+                                                    <img 
+                                                        src="assets/img/icon/minus.svg"
+                                                        alt="minus"
+                                                        width="100%"
+                                                        height="100%"
+                                                    >
+                                                </button>
+                                                <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                                <button class="qty-btn inc-qty" name="plus">
+                                                    <img 
+                                                        src="assets/img/icon/plus.svg"
+                                                        alt="plus"
+                                                        width="100%"
+                                                        height="100%">
+                                                    </button>
+                                            </div>
+                                        </quantity-input>
                                         <div class="product-remove-area d-flex flex-column align-items-end">
-                                            <div class="product-price">$580.00</div>
-                                            <a href="#" class="product-remove">Remove</a>
+                                            <div class="product-price text text_14">$580.00</div>
+                                            <a href="#" class="product-remove text text_12">Remove</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- minicart item -->
-                            <div class="minicart-item d-flex">
+                            <div class="minicart-item">
                                 <div class="mini-img-wrapper">
                                     <img 
                                         class="mini-img" 
@@ -1852,36 +2114,40 @@
                                     >
                                 </div>
                                 <div class="product-info">
-                                    <h2 class="product-title"><a href="#">Vita Lounge Chair</a></h2>
-                                    <p class="product-vendor">XS / Pink</p>
-                                    <div class="misc d-flex align-items-end justify-content-between">
-                                        <div class="quantity d-flex align-items-center justify-content-between">
-                                            <button class="qty-btn dec-qty">
-                                                <img 
-                                                    src="assets/img/icon/minus.svg"
-                                                    alt="minus"
-                                                    width="100%"
-                                                    height="100%"
-                                                >
-                                            </button>
-                                            <input class="qty-input" type="number" name="qty" value="1" min="0">
-                                            <button class="qty-btn inc-qty">
-                                                <img 
-                                                    src="assets/img/icon/plus.svg"
-                                                    alt="plus"
-                                                    width="100%"
-                                                    height="100%">
+                                    <h2 class="product-title">
+                                        <a href="#" class="text text_16">Eliot Reversible Sectional</a>
+                                    </h2>
+                                    <p class="product-vendor text text_14">XS / Dove Gray</p>
+                                    <div class="misc">
+                                        <quantity-input>
+                                            <div class="quantity">
+                                                <button class="qty-btn dec-qty" name="minus">
+                                                    <img 
+                                                        src="assets/img/icon/minus.svg"
+                                                        alt="minus"
+                                                        width="100%"
+                                                        height="100%"
+                                                    >
                                                 </button>
-                                        </div>
+                                                <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                                <button class="qty-btn inc-qty" name="plus">
+                                                    <img 
+                                                        src="assets/img/icon/plus.svg"
+                                                        alt="plus"
+                                                        width="100%"
+                                                        height="100%">
+                                                    </button>
+                                            </div>
+                                        </quantity-input>
                                         <div class="product-remove-area d-flex flex-column align-items-end">
-                                            <div class="product-price">$580.00</div>
-                                            <a href="#" class="product-remove">Remove</a>
+                                            <div class="product-price text text_14">$580.00</div>
+                                            <a href="#" class="product-remove text text_12">Remove</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- minicart item -->
-                            <div class="minicart-item d-flex">
+                            <div class="minicart-item">
                                 <div class="mini-img-wrapper">
                                     <img 
                                         class="mini-img" 
@@ -1893,37 +2159,40 @@
                                     >
                                 </div>
                                 <div class="product-info">
-                                    <h2 class="product-title"><a href="#">Sarno Dining Chair</a></h2>
-                                    <p class="product-vendor">XS / Dove Gray</p>
-                                    <div class="misc d-flex align-items-end justify-content-between">
-                                        <div class="quantity d-flex align-items-center justify-content-between">
-                                            <button class="qty-btn dec-qty">
-                                                <img 
-                                                    src="assets/img/icon/minus.svg"
-                                                    alt="minus"
-                                                    width="100%"
-                                                    height="100%"
-                                                >
-                                            </button>
-                                            <input class="qty-input" type="number" name="qty" value="1" min="0">
-                                            <button class="qty-btn inc-qty">
-                                                <img 
-                                                    src="assets/img/icon/plus.svg"
-                                                    alt="plus"
-                                                    width="100%"
-                                                    height="100%"
-                                                >
+                                    <h2 class="product-title">
+                                        <a href="#" class="text text_16">Eliot Reversible Sectional</a>
+                                    </h2>
+                                    <p class="product-vendor text text_14">XS / Dove Gray</p>
+                                    <div class="misc">
+                                        <quantity-input>
+                                            <div class="quantity">
+                                                <button class="qty-btn dec-qty" name="minus">
+                                                    <img 
+                                                        src="assets/img/icon/minus.svg"
+                                                        alt="minus"
+                                                        width="100%"
+                                                        height="100%"
+                                                    >
                                                 </button>
-                                        </div>
+                                                <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                                <button class="qty-btn inc-qty" name="plus">
+                                                    <img 
+                                                        src="assets/img/icon/plus.svg"
+                                                        alt="plus"
+                                                        width="100%"
+                                                        height="100%">
+                                                    </button>
+                                            </div>
+                                        </quantity-input>
                                         <div class="product-remove-area d-flex flex-column align-items-end">
-                                            <div class="product-price">$580.00</div>
-                                            <a href="#" class="product-remove">Remove</a>
+                                            <div class="product-price text text_14">$580.00</div>
+                                            <a href="#" class="product-remove text text_12">Remove</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- minicart item -->
-                            <div class="minicart-item d-flex">
+                            <div class="minicart-item">
                                 <div class="mini-img-wrapper">
                                     <img 
                                         class="mini-img" 
@@ -1935,31 +2204,34 @@
                                     >
                                 </div>
                                 <div class="product-info">
-                                    <h2 class="product-title"><a href="#">Vita Lounge Chair</a></h2>
-                                    <p class="product-vendor">XS / Dove Gray</p>
-                                    <div class="misc d-flex align-items-end justify-content-between">
-                                        <div class="quantity d-flex align-items-center justify-content-between">
-                                            <button class="qty-btn dec-qty">
-                                                <img 
-                                                    src="assets/img/icon/minus.svg"
-                                                    alt="minus"
-                                                    width="100%"
-                                                    height="100%"
-                                                >
-                                            </button>
-                                            <input class="qty-input" type="number" name="qty" value="1" min="0">
-                                            <button class="qty-btn inc-qty">
-                                                <img 
-                                                    src="assets/img/icon/plus.svg"
-                                                    alt="plus"
-                                                    width="100%"
-                                                    height="100%"
-                                                >
-                                            </button>
-                                        </div>
+                                    <h2 class="product-title">
+                                        <a href="#" class="text text_16">Eliot Reversible Sectional</a>
+                                    </h2>
+                                    <p class="product-vendor text text_14">XS / Dove Gray</p>
+                                    <div class="misc">
+                                        <quantity-input>
+                                            <div class="quantity">
+                                                <button class="qty-btn dec-qty" name="minus">
+                                                    <img 
+                                                        src="assets/img/icon/minus.svg"
+                                                        alt="minus"
+                                                        width="100%"
+                                                        height="100%"
+                                                    >
+                                                </button>
+                                                <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                                <button class="qty-btn inc-qty" name="plus">
+                                                    <img 
+                                                        src="assets/img/icon/plus.svg"
+                                                        alt="plus"
+                                                        width="100%"
+                                                        height="100%">
+                                                    </button>
+                                            </div>
+                                        </quantity-input>
                                         <div class="product-remove-area d-flex flex-column align-items-end">
-                                            <div class="product-price">$580.00</div>
-                                            <a href="#" class="product-remove">Remove</a>
+                                            <div class="product-price text text_14">$580.00</div>
+                                            <a href="#" class="product-remove text text_12">Remove</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1967,14 +2239,14 @@
                         </div>
                         <div class="minicart-footer">
                             <div class="minicart-calc-area">
-                                <div class="minicart-calc d-flex align-items-center justify-content-between">
+                                <div class="minicart-calc">
                                     <span class="text_16 medium">Subtotal</span>
                                     <span class="text_16 medium">$1548.00</span>
                                 </div>
                                 <p class="cart-taxes text_12">Taxes and shipping will be calculated at checkout.
                                 </p>
                             </div>
-                            <div class="minicart-btn-area d-flex align-items-center justify-content-between">
+                            <div class="minicart-btn-area">
                                 <a 
                                     class="button button-secondary animate__animated animate__fadeInUp"
                                     href="cart.html"
@@ -2005,11 +2277,10 @@
                                 <line x1="15" y1="9" x2="15.01" y2="9"></line>
                             </svg>
                         </div>
-                        <p class="cart-empty">You have no items in your cart</p>
+                        <p class="cart-empty text text_16">You have no items in your cart</p>
                     </div>
                 </div>
             </div>
-        </cart-drawer>
         <!-- drawer cart end -->
 
         <!-- product quickview start -->

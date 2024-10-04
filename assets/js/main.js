@@ -25,14 +25,14 @@ class MobileSubmenu extends HTMLElement {
   }
 
   close(event) {
-    event.target.parentElement.parentElement.classList.remove('active');
+    event.target.closest('.submenu-transform').classList.remove('active');
   }
 }
 
 customElements.define('mobile-submenu', MobileSubmenu);
 
 // header search
-class headerSearch extends HTMLElement{
+class HeaderSearch extends HTMLElement{
   constructor(){
     super();
 
@@ -49,7 +49,7 @@ class headerSearch extends HTMLElement{
   }
 }
 
-customElements.define('header-search', headerSearch);
+customElements.define('header-search', HeaderSearch);
 
 // Hero slider
 class HeroSlider extends HTMLElement{
@@ -101,40 +101,28 @@ class Accordion extends HTMLElement{
 
 customElements.define('accordion-menu', Accordion)
 
-// increament-decreament button
-// $(".qty-btn").on('click', function () {
-//   var qtyInput = $(this).parent().find('input');
-
-//   if ($(this).hasClass('inc-qty')) {
-//     qtyInput.val(parseInt(qtyInput.val()) + 1);
-//   } else if (qtyInput.val() >= 1) {
-//     qtyInput.val(parseInt(qtyInput.val()) - 1);
-//   }
-// });
-
-// increament-decreament button
-class cartDrawer extends HTMLElement{
-  constructor(){
+// Cart drawer increament-decreament input
+class QuantityInput extends HTMLElement {
+  constructor() {
     super();
-    
-    this.number = 1;
-    this.numberInput = this.querySelectorAll('.qty-input');
-    this.incBtn = this.querySelectorAll('.inc-qty');    
-    this.decBtn = this.querySelectorAll('.dec-qty');
-
-    this.incBtn.forEach(item => {
-      item.addEventListener('click', this.increment());
-    })
-
-    this.decBtn.forEach(items => {
-      items.addEventListener('click', this.decrement());
-    })
+    this.input = this.querySelector('input');
+    this.querySelectorAll('button').forEach((button) =>
+      button.addEventListener('click', this.onButtonClick.bind(this))
+    );
   }
 
-
+  onButtonClick(event) {
+    event.preventDefault();
+    console.log(this.input)
+    if (event.target.name === 'plus') {      
+      this.input.stepUp();
+    } else {
+      this.input.stepDown();
+    }
+  }
 }
 
-customElements.define('cart-drawer', cartDrawer);
+customElements.define('quantity-input', QuantityInput);
 
 
 

@@ -28,7 +28,7 @@
 @media (min-width: 992px) {
     .main-menu .menu-list-item.active .icon,
     .main-menu .menu-list-item:hover .icon {
-        stroke: var(--color-primary);
+        stroke: rgba(var(--color-foreground), 1);
     }
 
     .header-bottom {
@@ -267,7 +267,7 @@
 
     .main-menu .menu-list-item.active>.mega-menu-header .icon,
     .main-menu .menu-list-item:hover>.mega-menu-header .icon {
-        stroke: var(--color-primary);
+        stroke: rgba(var(--color-foreground), 1);
     }
 
     .submenu-transform>.container {

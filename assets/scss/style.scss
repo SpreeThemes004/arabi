@@ -10,12 +10,13 @@ Version: 1.0.1
 
 // global
 @import 'common';
+@import 'base';
 @import 'announcement-bar';
 @import 'header';
 @import 'navigation';
 @import 'drawer';
 @import 'slideshow';
+@import 'collage';
 @import 'footer';
 
-@import 'base';
 @import 'responsive';

@@ -59,16 +59,16 @@ header {
 .header-cart .cart-badge {
     position: absolute;
     font-size: 11px;
-    color: rgba(var(--color-background), 1);
-    background-color: rgba(var(--color-foreground), 1);
+    color: #fff;
+    background-color: #000;
     width: 18px;
     height: 18px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -40%;
-    right: -45%;
+    top: -6px;
+    right: -8px;
 }
 
 .header-menu-logo {
@@ -98,7 +98,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 99;
-    background-color: var(--color-background);
+    background-color: rgba(var(--color-background), 1);
     width: 100%;
     height: auto;
 }
@@ -242,7 +242,7 @@ header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     transition: all 0.4s;
 
-    .search-appear {
+    &.search-appear {
         max-height: 70px;
         opacity: 1;
     }

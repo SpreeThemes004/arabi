@@ -1,0 +1,248 @@
+.tab-heading {
+    margin-bottom: 24px;
+}
+
+.tab-button.text {
+    color: rgba(var(--color-foreground), 0.7);
+    text-transform: uppercase;
+}
+
+.tab-button.text.active {
+    color: rgba(var(--color-foreground), 1);
+    text-decoration: underline;
+}
+
+.custom-tablist {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    margin-top: 48px;
+}
+
+.product-card-details {
+    margin-top: 20px;
+}
+
+.new-badge,
+.discount-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 9;
+}
+
+.new-badge-text,
+.discount-badge-text {
+    color: #fff;
+    background-color: #E4494A;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.new-badge-text{
+    background-color: #2D9CDB;
+}
+
+.product-card-image {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.card-action {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    bottom: -24px;
+    left: auto;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.product-card:hover .card-action {
+    opacity: 1;
+    visibility: visible;
+    bottom: 8px;
+}
+
+.card-wishlist {
+    position: absolute;
+    top: 8px;
+    right: -24px;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.product-card:hover .card-wishlist {
+    opacity: 1;
+    visibility: visible;
+    right: 8px;
+}
+
+.card-cart-button {
+    background-color: rgba(var(--color-background), 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    text-transform: uppercase;
+    width: 226px;
+    height: 56px;
+}
+
+.card-quickview-icon {
+    width: 56px;
+    height: 56px;
+    background-color: rgba(var(--color-background), 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+}
+
+.product-card-details .rating-icon {
+    color: #F7F8F7;
+}
+
+.product-card-details .rating-list {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.product-card-details .card-price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-top: 4px;
+}
+
+.product-card-details .card-price-compare {
+    color: rgba(var(--color-foreground), 0.7);
+    text-decoration: line-through;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .card-cart-button {
+        width: 190px;
+        height: 48px;
+    }
+
+    .card-quickview-icon {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .card-cart-button {
+        width: 215px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .card-action {
+        gap: 6px;
+    }
+
+    .card-cart-button {
+        width: 150px;
+        height: 48px;
+        gap: 8px;
+    }
+
+    .card-quickview-icon {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 767px) {
+    .card-cart-button {
+        width: 200px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 575px) {
+    .custom-tablist {
+        gap: 18px;
+    }
+
+    .tab-button.text.text_14 {
+        font-size: 12px;
+    }
+
+    .new-badge-text,
+    .discount-badge-text {
+        padding: 4px 8px;
+    }
+
+    .new-badge-text.text_12,
+    .discount-badge-text.text_12 {
+        font-size: 10px;;
+    }
+
+    .card-cart-button {
+        width: 180px;
+        height: 48px;
+    }
+
+    .card-title .text_16 {
+        font-size: 14px;
+    }
+
+    .card-price-regular.text_14,
+    .card-price-compare.text_14 {
+        font-size: 12px;
+    }
+
+    .rating-icon .icon_14 {
+        width: 12px;
+        height: 12px;
+    }
+
+    .rating-number.text_12 {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .card-cart-button {
+        width: 132px;
+        height: 42px;
+    }
+
+    .cart-button-text.text_14 {
+        font-size: 11px;
+    }
+
+    .card-cart-icon .icon_24 {
+        width: 20px;
+        height: 20px;
+    }
+
+    .card-wishlist .icon-wishlist {
+        width: 20px;
+        height: 20px;
+    }
+}

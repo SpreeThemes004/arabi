@@ -1,6 +1,6 @@
 .collage-grid {
     display: grid;
-    grid-template-columns: 45% 54%;
+    grid-template-columns: 45% auto;
     grid-template-rows: auto;
     grid-template-areas: "first second";
     column-gap: var(--bs-gutter-x);
@@ -9,7 +9,7 @@
 .collage-grid.grid-style-2 {
     --bs-gutter-y: 24px;
     display: grid;
-    grid-template-columns: 45% 54%;
+    grid-template-columns: 45% auto;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
         "first second"
@@ -21,7 +21,7 @@
 .collage-grid.grid-style-3 {
     --bs-gutter-y: 24px;
     display: grid;
-    grid-template-columns: 45% 26% 26%;
+    grid-template-columns: 45% auto auto;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "first third fourth"
         "first second second";
@@ -32,7 +32,7 @@
 .collage-grid.grid-style-4 {
     --bs-gutter-y: 24px;
     display: grid;
-    grid-template-columns: 45% 26% 26%;
+    grid-template-columns: 45% auto auto;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "first second third"
         "first fifth fourth";

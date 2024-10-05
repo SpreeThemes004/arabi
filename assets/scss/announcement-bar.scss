@@ -29,6 +29,11 @@
     color: inherit;
 }
 
+.language-list-option *,
+.currency-list-option * {
+    color: rgba( var(--color-link), 1);
+}
+
 .announcement-meta {
     display: flex;
     position: relative;

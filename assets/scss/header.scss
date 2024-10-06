@@ -248,7 +248,8 @@ header {
     }
 
     .header-1 & {
-        top: 102%;
+        top: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .search-form {

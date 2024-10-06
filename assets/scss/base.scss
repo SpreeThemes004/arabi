@@ -217,7 +217,7 @@ body {
 .button-secondary{
   color: rgba(var(--color-secondary-button-text), 1);
   background-color: rgba(var(--color-secondary-button), 1);
-  border-color: rgba(var(--color-secondary-button-border), 1);
+  border-color: rgba(var(--color-secondary-button-border), 1) !important;
 }
 
 .button-primary:hover,

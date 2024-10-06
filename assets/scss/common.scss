@@ -76,13 +76,6 @@ img {
   }
 }
 
-button,
-.offcanvas {
-  @include prefix(border, none !important, ms webkit spec);
-  @include prefix(outline, none !important, ms webkit spec);
-  @include prefix(box-shadow, none !important, ms webkit spec);
-}
-
 // show second image on hover
 .hover-switch {
   position: relative;

@@ -123,7 +123,7 @@ class QuantityInput extends HTMLElement {
 
 customElements.define('quantity-input', QuantityInput);
 
-
+// Modal openar
 class ModalOpener extends HTMLElement {
   constructor() {
     super();
@@ -139,6 +139,7 @@ class ModalOpener extends HTMLElement {
 }
 customElements.define('modal-opener', ModalOpener);
 
+// Modal dialog
 class ModalDialog extends HTMLElement {
   constructor() {
     super();

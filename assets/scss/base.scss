@@ -147,6 +147,10 @@ body {
   }
 }
 
+.text-gray{
+  color: rgba(var(--color-foreground), 0.7);
+}
+
 .medium{
     font-weight: 500;
 }

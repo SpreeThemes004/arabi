@@ -43,3 +43,22 @@
 
 .newsletter-content-2 {
   max-width: 558px; }
+
+.newsletter-input-box input {
+  width: calc(100% - 150px);
+  min-height: 40px; }
+
+.newsletter-input-box button {
+  max-width: 140px;
+  margin-left: 10px; }
+
+.newsletter-modal-misc {
+  line-height: 1.5; }
+
+.newsletter-modal-content {
+  outline: 6px solid var(--primary-color); }
+
+.newsletter-modal-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px; }

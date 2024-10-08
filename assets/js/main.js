@@ -143,7 +143,7 @@ customElements.define('modal-opener', ModalOpener);
 class ModalDialog extends HTMLElement {
   constructor() {
     super();
-    this.querySelector('#ModalClose').addEventListener('click', this.hide.bind(this, false));
+    this.querySelector('.product-popup-modal__toggle').addEventListener('click', this.hide.bind(this, false));
     this.addEventListener('keyup', (event) => {
       if (event.code.toUpperCase() === 'ESCAPE') this.hide();
     });
@@ -183,6 +183,25 @@ class ModalDialog extends HTMLElement {
   }
 }
 customElements.define('modal-dialog', ModalDialog);
+
+var swiper = new Swiper(".mySwiper", {
+  direction: "vertical",
+  scrollPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+  
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  freeMode: true,
+  watchSlidesProgress: true,
+  thumbs: {
+    swiper: swiper,
+  },
+});
 
 
 

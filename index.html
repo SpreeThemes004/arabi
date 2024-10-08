@@ -5555,289 +5555,391 @@
         <!-- drawer cart end -->
 
         <!-- product quickview start -->
-        <modal-dialog class="product_modal aos-init aos-animate" id="PopupModal" data-aos="fade-up" data-aos-duration="700">
+        <modal-dialog class="product_modal" id="PopupModal">
             <div
-              role="dialog"
-              aria-modal="true"
-              class="product-popup-modal__content"
-              tabindex="-1"
+                role="dialog"
+                aria-modal="true"
+                class="product-popup-modal__content"
+                tabindex="-1"
             >
-                <button
-                id="ModalClose"
+            <button
                 type="button"
                 class="product-popup-modal__toggle"
                 >
                     <svg class="icon icon_24 icon-close"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><line x1="200" y1="56" x2="56" y2="200" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="200" y1="200" x2="56" y2="56" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
                     </svg>
-                </button>
-                <div class="product-popup-modal__content-info">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 col-12">
-                            <div class="product-gallery">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <div class="product-img-thumb">
-                                            <div class="img-thumb">
-                                                <img 
-                                                    src="assets/img/products/bags/39.jpg" 
-                                                    alt="img"
-                                                    width="100%"
-                                                    height="100%"
-                                                >
-                                            </div>
-
-                                            <div class="img-thumb">
-                                                <img 
-                                                    src="assets/img/products/bags/39.jpg" 
-                                                    alt="img"
-                                                    width="100%"
-                                                    height="100%"
-                                                >
-                                            </div>
-
-                                            <div class="img-thumb">
-                                                <img 
-                                                    src="assets/img/products/bags/39.jpg" 
-                                                    alt="img"
-                                                    width="100%"
-                                                    height="100%"
-                                                >
-                                            </div>
-                                        </div>
+            </button>
+            <div class="product-popup-modal__content-info">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="product-details-slider">
+                            <div thumbsSlider="" class="swiper mySwiper img-gallery-thumb">
+                                <div class="swiper-wrapper product-img-thumb">
+                                    <div class="swiper-slide img-thumb-slide">
+                                        <img 
+                                            src="assets/img/products/furniture/1.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                            loading="lazy"
+                                        >
                                     </div>
-                                    <div class="col-lg-10">
-                                        <div class="product-img-large">
-                                            <div class="qv-large-slider">
-                                                <div class="img-large-wrapper">
-                                                    <img 
-                                                        src="assets/img/products/bags/39.jpg" 
-                                                        alt="img"
-                                                        width="100%"
-                                                        height="100%"
-                                                    >
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="swiper-slide img-thumb-slide">
+                                        <img 
+                                            src="assets/img/products/furniture/2.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="swiper-slide img-thumb-slide">
+                                        <img 
+                                            src="assets/img/products/furniture/3.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="swiper-slide img-thumb-slide">
+                                        <img 
+                                            src="assets/img/products/furniture/4.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="swiper-slide img-thumb-slide">
+                                        <img 
+                                            src="assets/img/products/furniture/5.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="swiper-slide img-thumb-slide">
+                                        <img 
+                                            src="assets/img/products/furniture/6.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="swiper-slide img-thumb-slide">
+                                        <img 
+                                            src="assets/img/products/furniture/7.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="swiper-slide img-thumb-slide">
+                                        <img 
+                                            src="assets/img/products/furniture/8.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                            loading="lazy"
+                                        >
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper mySwiper2 img-gallery-large">
+                                <div class="swiper-wrapper product-img-large">
+                                    <div class="swiper-slide img-large-slide">
+                                        <img 
+                                            src="assets/img/products/furniture/1.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="swiper-slide img-large-slide">
+                                        <img 
+                                            src="assets/img/products/furniture/2.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="swiper-slide img-large-slide">
+                                        <img 
+                                            src="assets/img/products/furniture/3.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="swiper-slide img-large-slide">
+                                        <img 
+                                            src="assets/img/products/furniture/4.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="swiper-slide img-large-slide">
+                                        <img 
+                                            src="assets/img/products/furniture/5.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="swiper-slide img-large-slide">
+                                        <img 
+                                            src="assets/img/products/furniture/6.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="swiper-slide img-large-slide">
+                                        <img 
+                                            src="assets/img/products/furniture/7.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="swiper-slide img-large-slide">
+                                        <img 
+                                            src="assets/img/products/furniture/8.jpg" 
+                                            alt="img"
+                                            width="100%"
+                                            height="100%"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-12">
-                            <div class="product-details">
-                                <div class="card-rating">
-                                    <ul class="rating-list list-unstyled">
-                                        <li class="review-icon review-yellow">
-                                            <svg class="icon icon_14 icon-star" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="currentColor">
-                                                <g clip-path="url(#clip0_7557_6855)">
-                                                <path d="M6.99999 1.66675L8.80249 5.31841L12.8333 5.90758L9.91666 8.74841L10.605 12.7617L6.99999 10.8659L3.39499 12.7617L4.08332 8.74841L1.16666 5.90758L5.19749 5.31841L6.99999 1.66675Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_7557_6855">
-                                                <rect width="14" height="14" fill="currentColor" transform="translate(0 0.5)"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="product-details">
+                            <div class="card-rating">
+                                <ul class="rating-list list-unstyled">
+                                    <li class="review-icon review-yellow">
+                                        <svg class="icon icon_14 icon-star" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="currentColor">
+                                            <g clip-path="url(#clip0_7557_6855)">
+                                            <path d="M6.99999 1.66675L8.80249 5.31841L12.8333 5.90758L9.91666 8.74841L10.605 12.7617L6.99999 10.8659L3.39499 12.7617L4.08332 8.74841L1.16666 5.90758L5.19749 5.31841L6.99999 1.66675Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_7557_6855">
+                                            <rect width="14" height="14" fill="currentColor" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </li>
+                                    <li class="review-icon review-yellow">
+                                        <svg class="icon icon_14 icon-star" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="currentColor">
+                                            <g clip-path="url(#clip0_7557_6855)">
+                                            <path d="M6.99999 1.66675L8.80249 5.31841L12.8333 5.90758L9.91666 8.74841L10.605 12.7617L6.99999 10.8659L3.39499 12.7617L4.08332 8.74841L1.16666 5.90758L5.19749 5.31841L6.99999 1.66675Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_7557_6855">
+                                            <rect width="14" height="14" fill="currentColor" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </li>
+                                    <li class="review-icon review-yellow">
+                                        <svg class="icon icon_14 icon-star" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="currentColor">
+                                            <g clip-path="url(#clip0_7557_6855)">
+                                            <path d="M6.99999 1.66675L8.80249 5.31841L12.8333 5.90758L9.91666 8.74841L10.605 12.7617L6.99999 10.8659L3.39499 12.7617L4.08332 8.74841L1.16666 5.90758L5.19749 5.31841L6.99999 1.66675Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_7557_6855">
+                                            <rect width="14" height="14" fill="currentColor" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </li>
+                                    <li class="review-icon review-yellow">
+                                        <svg class="icon icon_14 icon-star" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="currentColor">
+                                            <g clip-path="url(#clip0_7557_6855)">
+                                            <path d="M6.99999 1.66675L8.80249 5.31841L12.8333 5.90758L9.91666 8.74841L10.605 12.7617L6.99999 10.8659L3.39499 12.7617L4.08332 8.74841L1.16666 5.90758L5.19749 5.31841L6.99999 1.66675Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_7557_6855">
+                                            <rect width="14" height="14" fill="currentColor" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </li>
+                                    <li class="review-icon review-yellow">
+                                        <svg class="icon icon_14 icon-star" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="currentColor">
+                                            <g clip-path="url(#clip0_7557_6855)">
+                                            <path d="M6.99999 1.66675L8.80249 5.31841L12.8333 5.90758L9.91666 8.74841L10.605 12.7617L6.99999 10.8659L3.39499 12.7617L4.08332 8.74841L1.16666 5.90758L5.19749 5.31841L6.99999 1.66675Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_7557_6855">
+                                            <rect width="14" height="14" fill="currentColor" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <span class="rating-number text text_12">(6)</span>
+                            </div>
+                            <h2 class="product-title text text_32 semibold">Yellow Winter Jacket For Men</h2>
+                            <div class="vendor-sku-wrap">
+                                <span class="product-vendor text text_16 text-gray">Toutique Fragrances</span>
+                                <span class="product-sku text text_16 text-gray">SKU:T-10</span>
+                            </div>
+                            <div class="product-stock">
+                                <span class="label text text_16">Stock:</span>
+                                <span class="text text_16 text-gray">32 units left</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="regular-price text text_42 semibold">$1,040</span>
+                                <div class="compare-price-wrap">
+                                    <del class="compare-price text text_18 text-gray">$1,240</del>
+                                    <span class="discount-badge text text_12">Save 12%</span>
+                                </div>
+                                
+                            </div>
+                            <div class="product-variant-wrapper">
+                                <div class="product-variant product-variant-color">
+                                    <div class="variant-heading">
+                                        <span class="label text text_16">Color:</span>
+                                        <span class="text text_16 text-gray">yellow</span>
+                                    </div>
+
+                                    <ul class="variant-list list-unstyled">
+                                        <li class="variant-item">
+                                            <input type="radio" value="yellow" checked>
+                                            <label class="variant-label swatch-yellow"></label>
                                         </li>
-                                        <li class="review-icon review-yellow">
-                                            <svg class="icon icon_14 icon-star" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="currentColor">
-                                                <g clip-path="url(#clip0_7557_6855)">
-                                                <path d="M6.99999 1.66675L8.80249 5.31841L12.8333 5.90758L9.91666 8.74841L10.605 12.7617L6.99999 10.8659L3.39499 12.7617L4.08332 8.74841L1.16666 5.90758L5.19749 5.31841L6.99999 1.66675Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_7557_6855">
-                                                <rect width="14" height="14" fill="currentColor" transform="translate(0 0.5)"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
+                                        <li class="variant-item">
+                                            <input type="radio" value="gray">
+                                            <label class="variant-label swatch-gray"></label>
                                         </li>
-                                        <li class="review-icon review-yellow">
-                                            <svg class="icon icon_14 icon-star" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="currentColor">
-                                                <g clip-path="url(#clip0_7557_6855)">
-                                                <path d="M6.99999 1.66675L8.80249 5.31841L12.8333 5.90758L9.91666 8.74841L10.605 12.7617L6.99999 10.8659L3.39499 12.7617L4.08332 8.74841L1.16666 5.90758L5.19749 5.31841L6.99999 1.66675Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_7557_6855">
-                                                <rect width="14" height="14" fill="currentColor" transform="translate(0 0.5)"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
+                                        <li class="variant-item">
+                                            <input type="radio" value="black">
+                                            <label class="variant-label swatch-black"></label>
                                         </li>
-                                        <li class="review-icon review-yellow">
-                                            <svg class="icon icon_14 icon-star" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="currentColor">
-                                                <g clip-path="url(#clip0_7557_6855)">
-                                                <path d="M6.99999 1.66675L8.80249 5.31841L12.8333 5.90758L9.91666 8.74841L10.605 12.7617L6.99999 10.8659L3.39499 12.7617L4.08332 8.74841L1.16666 5.90758L5.19749 5.31841L6.99999 1.66675Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_7557_6855">
-                                                <rect width="14" height="14" fill="currentColor" transform="translate(0 0.5)"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
+                                        <li class="variant-item">
+                                            <input type="radio" value="blue">
+                                            <label class="variant-label swatch-blue"></label>
                                         </li>
-                                        <li class="review-icon review-yellow">
-                                            <svg class="icon icon_14 icon-star" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="currentColor">
-                                                <g clip-path="url(#clip0_7557_6855)">
-                                                <path d="M6.99999 1.66675L8.80249 5.31841L12.8333 5.90758L9.91666 8.74841L10.605 12.7617L6.99999 10.8659L3.39499 12.7617L4.08332 8.74841L1.16666 5.90758L5.19749 5.31841L6.99999 1.66675Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_7557_6855">
-                                                <rect width="14" height="14" fill="currentColor" transform="translate(0 0.5)"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
+                                        <li class="variant-item">
+                                            <input type="radio" value="red">
+                                            <label class="variant-label swatch-red"></label>
                                         </li>
                                     </ul>
-                                    <span class="rating-number text text_12">(6)</span>
                                 </div>
-                                <h2 class="product-title text text_32 semibold">Yellow Winter Jacket For Men</h2>
-                                <div class="vendor-sku-wrap">
-                                    <span class="product-vendor text text_16 text-gray">Toutique Fragrances</span>
-                                    <span class="product-sku text text_16 text-gray">SKU:T-10</span>
-                                </div>
-                                <div class="product-stock">
-                                    <span class="label text text_16">Stock:</span>
-                                    <span class="text text_16 text-gray">32 units left</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="regular-price text text_42 semibold">$1,040</span>
-                                    <div class="compare-price-wrap">
-                                        <del class="compare-price text text_18 text-gray">$1,240</del>
-                                        <span class="discount-badge text text_12">Save 12%</span>
+                                <div class="product-variant product-variant-size">
+                                    <div class="variant-heading">
+                                        <span class="label text text_16">Size:</span>
+                                        <span class="text text_16 text-gray">XS</span>
                                     </div>
-                                    
-                                </div>
-                                <div class="product-variant-wrapper">
-                                    <div class="product-variant product-variant-color">
-                                        <div class="variant-heading">
-                                            <span class="label text text_16">Color:</span>
-                                            <span class="text text_16 text-gray">yellow</span>
-                                        </div>
-
+                                    <div class="product-variant-size-guide">
                                         <ul class="variant-list list-unstyled">
                                             <li class="variant-item">
-                                                <input type="radio" value="yellow" checked>
-                                                <label class="variant-label swatch-yellow"></label>
+                                                <input type="radio" value="XS" checked>
+                                                <label class="variant-label text text_16">XS</label>
                                             </li>
                                             <li class="variant-item">
-                                                <input type="radio" value="gray">
-                                                <label class="variant-label swatch-gray"></label>
+                                                <input type="radio" value="L">
+                                                <label class="variant-label text text_16">L</label>
                                             </li>
                                             <li class="variant-item">
-                                                <input type="radio" value="black">
-                                                <label class="variant-label swatch-black"></label>
+                                                <input type="radio" value="M">
+                                                <label class="variant-label text text_16">M</label>
                                             </li>
                                             <li class="variant-item">
-                                                <input type="radio" value="blue">
-                                                <label class="variant-label swatch-blue"></label>
-                                            </li>
-                                            <li class="variant-item">
-                                                <input type="radio" value="red">
-                                                <label class="variant-label swatch-red"></label>
+                                                <input type="radio" value="XXL">
+                                                <label class="variant-label text text_16">XXL</label>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="product-variant product-variant-size">
-                                        <div class="variant-heading">
-                                            <span class="label text text_16">Size:</span>
-                                            <span class="text text_16 text-gray">XS</span>
-                                        </div>
-                                        <div class="product-variant-size-guide">
-                                            <ul class="variant-list list-unstyled">
-                                                <li class="variant-item">
-                                                    <input type="radio" value="XS" checked>
-                                                    <label class="variant-label">XS</label>
-                                                </li>
-                                                <li class="variant-item">
-                                                    <input type="radio" value="L">
-                                                    <label class="variant-label">L</label>
-                                                </li>
-                                                <li class="variant-item">
-                                                    <input type="radio" value="M">
-                                                    <label class="variant-label">M</label>
-                                                </li>
-                                                <li class="variant-item">
-                                                    <input type="radio" value="XXL">
-                                                    <label class="variant-label">XXL</label>
-                                                </li>
-                                            </ul>
-                                            <a href="#" class="product-size-guide">
-                                                <svg class="icon icon_24 icon-scissor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="60" cy="76" r="28" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="60" cy="180" r="28" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="136" y1="128" x2="83.11" y2="164.19" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="232" y1="62.32" x2="164.33" y2="108.61" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="232" y1="193.68" x2="83.11" y2="91.81" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
-                                                <span  class="button-cta">Size Guide</span>
-                                            </a>
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="product-quantity">
-                                    <div class="quantity-heading">
-                                        <span class="label text text_16">Quantity:</span>
-                                    </div>
-                                    <quantity-input>
-                                        <div class="quantity">
-                                            <button class="qty-btn dec-qty" name="minus">
-                                                <img 
-                                                    src="assets/img/icon/minus.svg" 
-                                                    alt="minus"
-                                                    width="100%"
-                                                    height="100%"
-                                                >
-                                            </button>
-                                            <input class="qty-input" type="number" name="qty" value="1" min="1">
-                                            <button class="qty-btn inc-qty" name="plus">
-                                                <img 
-                                                    src="assets/img/icon/plus.svg" 
-                                                    alt="plus"
-                                                    width="100%"
-                                                    height="100%"
-                                                >
-                                            </button>
-                                        </div>
-                                    </quantity-input>
+                            </div>
+                            <div class="product-quantity">
+                                <div class="quantity-heading">
+                                    <span class="label text text_16">Quantity:</span>
                                 </div>
-
-                                <div class="button-compare-wishlist">
-                                    <a href="#" class="button-compare">
-                                        <svg class="icon icon_24 icon-bar-chart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M18 20V10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M12 20V4" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M6 20V14" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <span class="button-cta">Add to compare</span>
-                                    </a>
-                                    <a href="#" class="button-wishlist">
-                                        <svg class="icon icon_24 icon-wishlist" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M20.84 4.61C20.3292 4.09901 19.7228 3.69365 19.0554 3.41709C18.3879 3.14052 17.6725 2.99818 16.95 2.99818C16.2275 2.99818 15.5121 3.14052 14.8446 3.41709C14.1772 3.69365 13.5708 4.09901 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.57831 8.50903 2.99871 7.05 2.99871C5.59096 2.99871 4.19169 3.57831 3.16 4.61C2.1283 5.64169 1.54871 7.04097 1.54871 8.5C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6054C22.3095 9.9379 22.4518 9.22249 22.4518 8.5C22.4518 7.77751 22.3095 7.06211 22.0329 6.39465C21.7563 5.72719 21.351 5.12076 20.84 4.61V4.61Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <span class="button-cta">Add to Wishlist</span>
-                                    </a>
-                                </div>
-
-                                <form class="product-form-buttons" action="#">
-                                    <div class="add-to-cart-button">
-                                        <button 
-                                            type="submit" 
-                                            class="relative button button-secondary loader"
-                                        >
-                                            ADD TO CART
+                                <quantity-input>
+                                    <div class="quantity">
+                                        <button class="qty-btn dec-qty" name="minus">
+                                            <img 
+                                                src="assets/img/icon/minus.svg" 
+                                                alt="minus"
+                                                width="100%"
+                                                height="100%"
+                                            >
+                                        </button>
+                                        <input class="qty-input" type="number" name="qty" value="1" min="1">
+                                        <button class="qty-btn inc-qty" name="plus">
+                                            <img 
+                                                src="assets/img/icon/plus.svg" 
+                                                alt="plus"
+                                                width="100%"
+                                                height="100%"
+                                            >
                                         </button>
                                     </div>
-                                    <div class="buy-it-now-btn">
-                                        <button 
-                                            type="submit" 
-                                            class="relative button button-primary"
-                                            aria-label="buy button"
-                                        >
-                                        BUY IT NOW
-                                    </button>
-                                    </div>
-                                </form>   
+                                </quantity-input>
                             </div>
+
+                            <div class="button-compare-wishlist">
+                                <a href="#" class="button-compare">
+                                    <svg class="icon icon_24 icon-bar-chart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M18 20V10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 20V4" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6 20V14" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span class="button-cta">Add to compare</span>
+                                </a>
+                                <a href="#" class="button-wishlist">
+                                    <svg class="icon icon_24 icon-wishlist" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20.84 4.61C20.3292 4.09901 19.7228 3.69365 19.0554 3.41709C18.3879 3.14052 17.6725 2.99818 16.95 2.99818C16.2275 2.99818 15.5121 3.14052 14.8446 3.41709C14.1772 3.69365 13.5708 4.09901 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.57831 8.50903 2.99871 7.05 2.99871C5.59096 2.99871 4.19169 3.57831 3.16 4.61C2.1283 5.64169 1.54871 7.04097 1.54871 8.5C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6054C22.3095 9.9379 22.4518 9.22249 22.4518 8.5C22.4518 7.77751 22.3095 7.06211 22.0329 6.39465C21.7563 5.72719 21.351 5.12076 20.84 4.61V4.61Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span class="button-cta">Add to Wishlist</span>
+                                </a>
+                            </div>
+
+                            <form class="product-form-buttons" action="#">
+                                <div class="add-to-cart-button">
+                                    <button 
+                                        type="submit" 
+                                        class="relative button button-secondary loader"
+                                    >
+                                        ADD TO CART
+                                    </button>
+                                </div>
+                                <div class="buy-it-now-btn">
+                                    <button 
+                                        type="submit" 
+                                        class="relative button button-primary"
+                                        aria-label="buy button"
+                                    >
+                                    BUY IT NOW
+                                </button>
+                                </div>
+                            </form>   
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
         </modal-dialog>
         <!-- product quickview end -->
-
         <!-- newsletter subscribe modal start -->
         <div class="modal fade" tabindex="-1" id="modal-subscribe">
             <div class="modal-dialog modal-dialog-centered">

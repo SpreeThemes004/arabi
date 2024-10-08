@@ -378,3 +378,50 @@ input, textarea {
     transform: translateY(0);
     }
 }
+
+// Product modal css 
+.product_modal:not([open]) {
+  display: none;
+}
+
+.product_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  background: rgba(var(--color-background), 0.4);
+}
+
+.product-popup-modal__content {
+  position: relative;
+  background: transparent;
+  width: 95%;
+  max-width: 1140px;
+  margin: 0 auto;
+  border: none;
+  outline: none !important;
+  box-shadow: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 90vh;
+}
+
+.product-popup-modal__toggle {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  outline: none;
+  z-index: 2;
+}
+
+.product-popup-modal__content-info {
+  background: #fff;
+  padding: 40px 20px;
+}

@@ -38,7 +38,25 @@
 
 .thumb-image-slide {
     display: flex;
-    width: 100px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.swiper-slide-thumb-active .thumb-image-slide {
+    border-color: #000;
+}
+
+.nav-thumb {
+    display: flex;
+}
+
+.nav-thumb > div {
+    position: static;
+}
+
+.thumb-img-wrap .swiper-vertical {
+    min-height: 100%;
+    padding: 2px 3px;
 }
 
 .product-details-nav {

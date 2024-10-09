@@ -465,6 +465,10 @@ input, textarea {
   background: #fff;
   padding: 40px 20px; }
 
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none; }
+
 .anounce-bg-black {
   --color-background: 0, 0, 0;
   --color-foreground: 255, 255, 255;
@@ -2085,7 +2089,23 @@ hero-slider:hover .arrow-next {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100px; }
+  border: 1px solid transparent;
+  cursor: pointer; }
+
+.swiper-slide-thumb-active .thumb-image-slide {
+  border-color: #000; }
+
+.nav-thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.nav-thumb > div {
+  position: static; }
+
+.thumb-img-wrap .swiper-vertical {
+  min-height: 100%;
+  padding: 2px 3px; }
 
 .product-details-nav {
   grid-area: nav;

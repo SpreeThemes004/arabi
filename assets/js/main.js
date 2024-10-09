@@ -187,33 +187,46 @@ class productSlider extends HTMLElement{
 
     this.swiperLarge = this.querySelector('.swiper-large');
     this.swiperThumb = this.querySelector('.swiper-thumb');
-    this.navNext = this.querySelector('.arrow-next');
-    this.navPrev = this.querySelector('.arrow-prev');
+
+    this.navNextLarge = this.querySelector('.nav-large .swiper-button-next');
+    this.navPrevLarge = this.querySelector('.nav-large .swiper-button-prev');
+    this.navNextThumb = this.querySelector('.nav-thumb .swiper-button-next');
+    this.navPrevThumb = this.querySelector('.nav-thumb .swiper-button-prev');
+
+    this.direction = this.swiperThumb.dataset.direction;
+    this.vertical = null;
+
+    if(this.direction == 'vertical') {
+      this.vertical = {
+        768: {
+          direction: 'vertical'
+        }
+      }
+    }
 
     this.init();
-
-    const resizeObserver = new ResizeObserver((entries) => this.init());
-    resizeObserver.observe(this);
   }
 
   init(){
     this.sliderThumb = new Swiper(this.swiperThumb, {
-      direction: 'vertical',
       spaceBetween: 10,
       slidesPerView: 4,
       freeMode: true,
       watchSlidesProgress: true,
-      watchOverflow: true,
-      watchSlidesVisibility: true,
-      // navigation: {
-      //   nextEl: this.navNext,
-      //   prevEl: this.navPrev,
-      // },
+      autoHeight: true,
+      navigation: {
+        nextEl: this.navNextThumb,
+        prevEl: this.navPrevThumb,
+      },
+      breakpoints: this.vertical
     });
 
     this.sliderLarge  = new Swiper(this.swiperLarge, {
-      direction: "horizontal",
       spaceBetween: 10,
+      navigation: {
+        nextEl: this.navNextLarge,
+        prevEl: this.navPrevLarge,
+      },
       thumbs: {
         swiper: this.sliderThumb,
       },

@@ -219,6 +219,10 @@ body {
   width: 14px;
   height: 14px; }
 
+.icon_18 {
+  width: 18px;
+  height: 18px; }
+
 .icon_20 {
   width: 20px;
   height: 20px; }
@@ -446,24 +450,28 @@ input, textarea {
   border: none;
   outline: none !important;
   -webkit-box-shadow: none;
-  box-shadow: none;
-  overflow-y: auto;
-  overflow-x: hidden;
-  max-height: 90vh; }
+  box-shadow: none; }
 
 .product-popup-modal__toggle {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: -20px;
+  right: -16px;
   cursor: pointer;
   border: none;
-  background: transparent;
+  background: #000;
   outline: none;
-  z-index: 2; }
+  z-index: 2;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px; }
 
 .product-popup-modal__content-info {
   background: #fff;
-  padding: 40px 20px; }
+  padding: 40px 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 90vh; }
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
@@ -1538,6 +1546,9 @@ hero-slider:hover .arrow-next {
   -ms-flex-align: start;
   align-items: flex-start; }
 
+.subheading-collage {
+  margin-top: 8px; }
+
 .button-collage {
   margin-top: 24px;
   display: inline-block; }
@@ -1936,6 +1947,10 @@ hero-slider:hover .arrow-next {
   color: rgba(var(--color-foreground), 1);
   border: 2px solid rgba(var(--color-foreground), 1); }
 
+.product-card-3 .card-cart-button:hover,
+.product-card-3 .card-quickview-button:hover {
+  background-color: rgba(var(--color-background), 1); }
+
 .product-card-3 .card-action {
   gap: 16px;
   -webkit-box-pack: center;
@@ -2063,15 +2078,16 @@ hero-slider:hover .arrow-next {
   --color-foreground: 255, 255, 255;
   --color-background: 227, 73, 73; }
 
-.product-details-nav .arrow-prev,
-.product-details-nav .arrow-next,
 .product-variant-size label:hover,
 .product-variant-size input:checked + label {
   --color-background: 0, 0, 0;
   --color-foreground:255, 255, 255; }
 
-.product-form-buttons .button-secondary {
+.form-buttons-wrap .add-to-cart-button .button-secondary {
   --color-secondary-button-border: 0, 0, 0; }
+
+.form-buttons-wrap {
+  margin-top: 30px; }
 
 .product-details-slider {
   display: -webkit-box;
@@ -2096,16 +2112,35 @@ hero-slider:hover .arrow-next {
   border-color: #000; }
 
 .nav-thumb {
+  position: relative; }
+
+.nav-thumb > div {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  top: 4px; }
+
+.nav-thumb .swiper-button-next {
+  right: 16px;
+  left: auto; }
+
+.nav-thumb .swiper-button-prev {
+  right: auto;
+  left: 16px; }
+
+.nav-thumb > div > svg {
+  width: 18px;
+  height: 18px; }
+
+.thumb-img-wrap .swiper-vertical {
+  min-height: 100%; }
+
+.thumb-img-wrap .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-
-.nav-thumb > div {
-  position: static; }
-
-.thumb-img-wrap .swiper-vertical {
-  min-height: 100%;
-  padding: 2px 3px; }
 
 .product-details-nav {
   grid-area: nav;
@@ -2226,7 +2261,7 @@ hero-slider:hover .arrow-next {
   background-color: rgba(var(--color-background), 1);
   color: rgba(var(--color-foreground), 1); }
 
-.product-form-buttons,
+.form-buttons-wrap,
 .button-compare,
 .button-wishlist,
 .button-compare-wishlist {
@@ -2256,14 +2291,14 @@ hero-slider:hover .arrow-next {
 
 @media (max-width: 767px) {
   .product-details-slider {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    row-gap: 24px; } }
+    row-gap: 24px; }
+  .thumb-img-wrap,
+  .large-img-wrap {
+    width: 100%; } }
 
 @media (max-width: 575px) {
   .product-popup-modal__content-info .product-details .product-title {
@@ -2301,7 +2336,13 @@ hero-slider:hover .arrow-next {
   .add-to-cart-button .button {
     width: 100%; }
   .product-form-buttons {
-    gap: 20px; } }
+    gap: 20px; }
+  .product-sku {
+    padding-left: 0;
+    margin-left: 0;
+    display: block; }
+  .product-sku::before {
+    content: none; } }
 
 .footer-style-2 .footer-heading {
   color: rgba(var(--color-foreground), 1);
@@ -2401,7 +2442,8 @@ hero-slider:hover .arrow-next {
 
 .footer-top-newsletter .footer-newsletter-btn {
   width: 260px;
-  max-width: 260px; }
+  max-width: 260px;
+  border: inherit; }
 
 .newsletter-btn-white {
   background-color: rgba(var(--color-background), 1);

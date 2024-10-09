@@ -205,11 +205,14 @@ class productSlider extends HTMLElement{
     }
 
     this.init();
+
+    const resizeObserver = new ResizeObserver((entries) => this.init());
+    resizeObserver.observe(this);
   }
 
   init(){
     this.sliderThumb = new Swiper(this.swiperThumb, {
-      spaceBetween: 10,
+      spaceBetween: 8,
       slidesPerView: 4,
       freeMode: true,
       watchSlidesProgress: true,

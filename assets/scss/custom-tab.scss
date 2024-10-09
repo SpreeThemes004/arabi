@@ -304,6 +304,11 @@
     border: 2px solid rgba(var(--color-foreground), 1);
 }
 
+.product-card-3 .card-cart-button:hover,
+.product-card-3 .card-quickview-button:hover {
+    background-color: rgba(var(--color-background), 1);
+}
+
 .product-card-3 .card-action{
     gap: 16px;
     justify-content: center;

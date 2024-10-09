@@ -170,38 +170,62 @@ class ModalDialog extends HTMLElement {
     document.body.classList.add('overflow-hidden');
     this.setAttribute('open', '');
     if (popup) popup.loadContent();
-    trapFocus(this, this.querySelector('[role="dialog"]'));
-    window.pauseAllMedia();
   }
 
   hide() {
     document.body.classList.remove('overflow-hidden');
     document.body.dispatchEvent(new CustomEvent('modalClosed'));
     this.removeAttribute('open');
-    removeTrapFocus(this.openedBy);
-    window.pauseAllMedia();
   }
 }
 customElements.define('modal-dialog', ModalDialog);
 
-var swiper = new Swiper(".mySwiper", {
-  direction: "vertical",
-  scrollPerView: 4,
-  freeMode: true,
-  watchSlidesProgress: true,
-  
-});
-var swiper2 = new Swiper(".mySwiper2", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  freeMode: true,
-  watchSlidesProgress: true,
-  thumbs: {
-    swiper: swiper,
-  },
-});
+// Product details slider
+class productSlider extends HTMLElement{
+  constructor(){
+    super()
+
+    this.swiperLarge = this.querySelector('.swiper-large');
+    this.swiperThumb = this.querySelector('.swiper-thumb');
+    this.navNext = this.querySelector('.arrow-next');
+    this.navPrev = this.querySelector('.arrow-prev');
+
+    this.init();
+
+    const resizeObserver = new ResizeObserver((entries) => this.init());
+    resizeObserver.observe(this);
+  }
+
+  init(){
+    this.sliderThumb = new Swiper(this.swiperThumb, {
+      direction: 'vertical',
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+      watchOverflow: true,
+      watchSlidesVisibility: true,
+      // navigation: {
+      //   nextEl: this.navNext,
+      //   prevEl: this.navPrev,
+      // },
+    });
+
+    this.sliderLarge  = new Swiper(this.swiperLarge, {
+      direction: "horizontal",
+      spaceBetween: 10,
+      thumbs: {
+        swiper: this.sliderThumb,
+      },
+    });
+  }
+}
+
+customElements.define('product-details-slider', productSlider);
+
+
+
+
 
 
 

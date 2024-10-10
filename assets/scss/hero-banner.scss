@@ -1,0 +1,38 @@
+.hero-fixed-bg{
+    --color-background: 0, 0, 0;
+    --color-foreground: 255, 255, 255;
+    --color-secondary-button-text: 255, 255, 255;
+    --color-heading: 255, 255, 255;
+}
+
+.hero-fixed-bg{
+    --color-secondary-button-text-hover: 255, 255, 255;
+}
+
+.hero-fixed-bg {
+    background-image: url("/../assets/img/banner/hero.jpg");
+    width: 100%;
+    height: 700px;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-fixed-bg .flex-bannar {
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+
+.hero-fixed-bg .content-box {
+    max-width: 610px;
+}
+
+.hero-fixed-bg .hero-heading {
+    margin-bottom: 8px;
+}
+
+.hero-fixed-bg .hero-text {
+    margin-bottom: 32px;
+}

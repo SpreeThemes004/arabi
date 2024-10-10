@@ -188,8 +188,6 @@ class productSlider extends HTMLElement{
     this.swiperLarge = this.querySelector('.swiper-large');
     this.swiperThumb = this.querySelector('.swiper-thumb');
 
-    this.navNextLarge = this.querySelector('.nav-large .swiper-button-next');
-    this.navPrevLarge = this.querySelector('.nav-large .swiper-button-prev');
     this.navNextThumb = this.querySelector('.nav-thumb .swiper-button-next');
     this.navPrevThumb = this.querySelector('.nav-thumb .swiper-button-prev');
 

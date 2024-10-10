@@ -47,9 +47,14 @@
     align-items: center;
 }
 
-.minicart-item .product-title,
+
 .minicart-item .product-vendor {
-    margin-bottom: 4px;
+    margin-bottom: 12px;
+}
+
+.minicart-item .product-title {
+    margin-bottom: 3px;
+    display: flex;
 }
 
 .product-remove {
@@ -57,7 +62,7 @@
 }
 
 .product-remove:hover {
-    color: #E80000;
+    color: rgba(var(--color-foreground), 0.7);
 }
 
 .qty-btn,

@@ -33,6 +33,11 @@
     margin: 0;
 }
 
+.footer-menu .footer-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 .footer-newsletter-form {
     width: 100%;
     height: 54px;
@@ -40,10 +45,14 @@
     overflow: hidden;
 }
 
+.footer-newsletter .footer-newsletter-form,
 .footer-top-newsletter .footer-newsletter-form {
-    margin-top: 0;
     border: 1px solid rgba(0, 0, 0, 0.7);
     border-radius: var(--input-radius);
+}
+
+.footer-top-newsletter .footer-newsletter-form {
+    margin-top: 0;
 }
 
 .top-newsletter-2 .footer-newsletter-form {
@@ -95,7 +104,6 @@
     background-color: rgba(var(--color-foreground), 1);
     color: rgba(var(--color-background), 1);
     height: inherit;
-    border-radius: none;
 }
 
 .footer-top-newsletter .footer-newsletter-btn {
@@ -232,6 +240,10 @@
 
     .footer-menu-item {
         padding: 6px 0;
+    }
+
+    .footer-menu .footer-link:hover {
+        text-decoration: none;
     }
 
     .footer-widget {

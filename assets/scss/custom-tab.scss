@@ -44,14 +44,16 @@
     margin-bottom: 24px;
 }
 
-.tab-button.text {
+.tab-button {
     color: rgba(var(--color-foreground), 0.7);
     text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-.tab-button.text.active {
+.tab-button.active {
     color: rgba(var(--color-foreground), 1);
     text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .custom-tablist {

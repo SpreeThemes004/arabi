@@ -67,7 +67,7 @@
 .product-card-3,
 .product-card-2,
 .product-card {
-    margin-top: 48px;
+    margin-top: 42px;
 }
 
 .product-card-details {
@@ -244,6 +244,11 @@
 
 .swatch-red{
     background-color: rgba(var(--color-background), 1);
+}
+
+.custom-tab-button {
+    text-align: center;
+    margin-top: 42px;
 }
 
 // Product cart style 2
@@ -426,6 +431,14 @@
 
     .rating-number.text_12 {
         font-size: 10px;
+    }
+
+    .custom-tab-button .button, 
+    .custom-tab-button .button:hover, 
+    .custom-tab-button .button:focus {
+        min-width: 170px;
+        height: 48px;
+        font-size: 12px;
     }
 }
 

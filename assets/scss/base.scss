@@ -168,6 +168,13 @@ body {
     height: 100%;
 }
 
+.flex-bannar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+
 // icon
 .icon_14{
     width: 14px;

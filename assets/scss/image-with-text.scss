@@ -1,0 +1,125 @@
+.image-text-card{
+    --color-background: 0, 0, 0;
+    --color-foreground: 255, 255, 255;
+    --color-secondary-button-text: 255, 255, 255;
+    --color-heading: 255, 255, 255;
+    --opacity-overlay: 0.3;
+}
+
+.image-text-card{
+    --color-secondary-button-text-hover: 255, 255, 255;
+}
+
+.image-text-card {
+    overflow: hidden;
+}
+
+.image-text-media img {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.image-text-card:hover > .image-text-media img {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+.image-text-card .text-content-box {
+    max-width: 378px;
+    text-align: center;
+}
+
+.image-text-card .image-text-text {
+    margin-bottom: 24px;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .image-text-card .text-content-box {
+        max-width: 280px;
+    }
+
+    .image-text-heading {
+        font-size: 28px;
+    }
+
+    .image-text-card .image-text-text {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .image-text-button.button, 
+    .image-text-button.button:hover, 
+    .image-text-button.button:focus {
+        min-width: 170px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .image-text-card {
+        margin-top: 42px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .image-text-card .text-content-box {
+        max-width: 280px;
+    }
+
+    .image-text-heading {
+        font-size: 28px;
+    }
+
+    .image-text-card .image-text-text {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .image-text-button.button, 
+    .image-text-button.button:hover, 
+    .image-text-button.button:focus {
+        min-width: 170px;
+        height: 48px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .image-text-card .text-content-box {
+        max-width: 320px;
+    }
+
+    .image-text-heading {
+        font-size: 38px;
+    }
+
+    .image-text-button.button, 
+    .image-text-button.button:hover, 
+    .image-text-button.button:focus {
+        min-width: 170px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 425px) {
+    .image-text-card .text-content-box {
+        max-width: 230px;
+    }
+
+    .image-text-heading {
+        font-size: 20px;
+    }
+
+    .image-text-card .image-text-text {
+        margin-bottom: 16px;
+        font-size: 10px;
+    }
+
+    .image-text-button.button, 
+    .image-text-button.button:hover, 
+    .image-text-button.button:focus {
+        min-width: 140px;
+        height: 40px;
+        font-size: 12px;
+    }
+}

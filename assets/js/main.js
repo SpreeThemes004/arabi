@@ -238,6 +238,34 @@ class productSlider extends HTMLElement{
 customElements.define('product-details-slider', productSlider);
 
 
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  spaceBetween: 24,
+  navigation: {
+    nextEl: '.product-nav-next',
+    prevEl: '.product-nav-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    425: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+    991: {
+      slidesPerView: 4,
+      spaceBetween: 14,
+    },
+  },
+});
+
+
 
 
 

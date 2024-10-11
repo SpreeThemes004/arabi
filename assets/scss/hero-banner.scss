@@ -20,9 +20,7 @@
 }
 
 .hero-fixed-bg .flex-bannar {
-    display: flex;
-    align-items: center;
-    height: inherit;
+    justify-content: flex-start;
 }
 
 .hero-fixed-bg .content-box {
@@ -35,4 +33,56 @@
 
 .hero-fixed-bg .hero-text {
     margin-bottom: 32px;
+}
+
+@media (max-width: 991px) {
+    .hero-fixed-bg .hero-heading {
+        font-size: 42px;
+    }
+
+    .hero-fixed-bg .hero-text {
+        max-width: 520px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-fixed-bg {
+        height: 600px;
+    }
+
+    .hero-fixed-bg .hero-heading {
+        font-size: 38px;
+    }
+
+    .hero-fixed-bg .hero-text {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-fixed-bg .hero-heading {
+        font-size: 28px;
+    }
+
+    .hero-fixed-bg .hero-text {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero-fixed-bg .hero-heading {
+        font-size: 20px;
+    }
+
+    .hero-fixed-bg .hero-text {
+        font-size: 12px;
+    }
+
+    .hero-fixed-bg .button, 
+    .hero-fixed-bg .button:hover, 
+    .hero-fixed-bg .button:focus {
+        min-width: 170px;
+        height: 48px;
+        font-size: 12px;
+    }
 }

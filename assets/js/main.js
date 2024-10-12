@@ -237,33 +237,47 @@ class productSlider extends HTMLElement{
 
 customElements.define('product-details-slider', productSlider);
 
+class newProductSlider extends HTMLElement{
+  constructor(){
+    super();
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
-  spaceBetween: 24,
-  navigation: {
-    nextEl: '.product-nav-next',
-    prevEl: '.product-nav-prev',
-  },
-  breakpoints: {
-    320: {
+    this.productSwiper = this.querySelector('.swiper');
+    this.navNext = this.querySelector('.product-nav-next');
+    this.navPrev = this.querySelector('.product-nav-prev');
+
+    this.init();
+  }
+
+  init(){
+    this.productSlider = new Swiper(this.productSwiper, {
       slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    425: {
-      slidesPerView: 2,
-      spaceBetween: 16,
-    },
-    768: {
-      slidesPerView: 3,
       spaceBetween: 24,
-    },
-    991: {
-      slidesPerView: 4,
-      spaceBetween: 14,
-    },
-  },
-});
+      navigation: {
+        nextEl: this.navNext,
+        prevEl: this.navPrev,
+      },
+      breakpoints: {
+        425: {
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+        991: {
+          slidesPerView: 4,
+          spaceBetween: 24,
+        },
+      },
+    });
+  }
+}
+
+customElements.define('product-slider', newProductSlider);
+
+
+
 
 
 

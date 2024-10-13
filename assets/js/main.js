@@ -277,6 +277,37 @@ class newProductSlider extends HTMLElement{
 customElements.define('product-slider', newProductSlider);
 
 
+class testimonialSlider extends HTMLElement{
+  constructor(){
+    super();
+
+    this.swiper = this.querySelector('.swiper');
+    this.testimonialNext = this.querySelector('.testimonial-next')
+    this.testimonialprev = this.querySelector('.testimonial-prev')
+
+    this.init();
+  }
+
+  init(){
+    this.slider = new Swiper(this.swiper, {
+      loop: true,
+      pagination: {
+        el: '.testimonial-pagination',
+      },
+      navigation: {
+        nextEl: this.testimonialNext,
+        prevEl: this.testimonialprev,
+      },
+    });
+    
+  }
+}
+
+
+
+customElements.define('testimonial-slider', testimonialSlider);
+
+
 
 
 

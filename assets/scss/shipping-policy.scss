@@ -1,0 +1,50 @@
+.shipping-policy-item{
+    --color-background: 0, 0, 0;
+}
+
+.shipping-policy-item {
+    text-align: center;
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+.shipping-policy-item > div + div {
+    margin-top: 24px;
+}
+
+.shipping-button,
+.shipping-text {
+    margin-top: 16px;
+    display: block;
+}
+
+.shipping-policy-icon svg {
+    color: rgba(var(--color-foreground), 0.7);
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .shipping-title {
+        font-size: 16px;
+    }
+
+    .shipping-button, 
+    .shipping-text {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 991px) {
+    .shipping-policy-item{
+        margin-top: 24px;
+    }
+}
+@media (max-width: 425px) {
+    .shipping-title {
+        font-size: 16px;
+    }
+
+    .shipping-button, 
+    .shipping-text {
+        font-size: 13px;
+    }
+}

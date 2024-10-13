@@ -1,5 +1,19 @@
+.blog-subheading {
+    --font-subheading-weight: 600;
+}
+
+.blog-subheading {
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 8px;
+}
+
+.article-card {
+    margin-top: 48px;
+}
+
 .article-button{
-    --button-cta-weight: 400;
+    --font-cta-weight: 400;
 }
 
 .article-content {
@@ -87,4 +101,68 @@
 
 .article-card-2:hover .article-publish {
     background: rgba(var(--color-background), 1);
+}
+
+// Article card 3
+.article-card-3 {
+    display: flex;
+    column-gap: var(--bs-gutter-x);
+}
+
+.article-card-3 .article-publish {
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .article-card-3 .article-button,
+    .article-card-3 .article-text,
+    .article-card-3 .article-publish {
+        font-size: 13px;
+    }
+
+    .article-card-3 .article-title{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .article-button,
+    .article-text,
+    .article-publish {
+        font-size: 13px;
+    }
+
+
+    .article-card-2 .article-publish {
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+
+    .article-title{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+    .article-card-3 {
+        display: block;
+    }
+}
+
+@media (max-width: 425px) {
+    .article-button,
+    .article-text,
+    .article-publish {
+        font-size: 13px;
+    }
+
+    .article-card-2 .article-publish {
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+
+    .article-title{
+        font-size: 18px;
+    }
 }

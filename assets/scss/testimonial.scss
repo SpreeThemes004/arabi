@@ -1,8 +1,21 @@
+.testimonial-pagination{
+    --color-background: 0, 0, 0;
+}
+
+.testimonial-next:hover, 
+.testimonial-prev:hover {
+    --color-background: 0, 0, 0;
+    --color-foreground: 255, 255, 255;
+}
+
+.section-testimonial {
+    display: block;
+}
+
 .testimonial-wrap {
-    max-width: 856px;
     text-align: center;
-    margin: 0 auto;
     margin-top: 48px;
+    display: block;
 }
 
 .testimonial-image img {
@@ -36,28 +49,41 @@
     transform: translateY(-50%);
     width: 42px;
     height: 42px;
-    border: 1px solid rgba(var(--color-button-border), 0.4);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     background: transparent;
     transition: all 0.4s;
+    box-shadow: 0 0 4px -1px;
+    color: rgba(var(--color-foreground), 1);
+    
 }
 
 .testimonial-next:hover, 
 .testimonial-prev:hover {
     background-color: rgba(var(--color-background), 1);
+    color: rgba(var(--color-foreground), 1);
 }
 
 .testimonial-prev{
     right: auto;
-    left: -40px;
+    left: 12%;
 }
 
 .testimonial-next {
     left: auto;
-    right: -40px;
+    right: 12%;
+}
+
+.container-narrow ~ .testimonial-nav .testimonial-next {
+    left: auto;
+    right: 23%;
+}
+
+.container-narrow ~ .testimonial-nav .testimonial-prev {
+    right: auto;
+    left: 23%;
 }
 
 .testimonial-next.swiper-button-disabled:hover,
@@ -73,7 +99,7 @@
 .testimonial-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 8px;
-    background: rgba(var(--color-foreground), 0.7);
+    background: rgba(var(--color-background), 0.7);
     border-radius: 8px;
     cursor: pointer;
     transition: all ease 0.3s;

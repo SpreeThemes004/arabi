@@ -142,7 +142,6 @@ hero-slider:hover .arrow-next{
     flex-wrap: wrap;
 }
 
-
 @media (min-width: 992px) and (max-width: 1200px) {
     .slider-subheading {
         font-size: 16px;
@@ -175,4 +174,22 @@ hero-slider:hover .arrow-next{
     .slider-text.text_14 {
         font-size: 12px;
     }
+    
+    .slider-buttons .button,
+    .slider-buttons .button:hover,
+    .slider-buttons .button:focus {
+        min-width: 170px;
+        height: 48px;
+    }
+
+}
+
+@media (max-width: 424px) {
+    .slider-buttons .button, 
+    .slider-buttons .button:hover, 
+    .slider-buttons .button:focus {
+        min-width: 152px;
+        height: 42px;
+    }
+
 }

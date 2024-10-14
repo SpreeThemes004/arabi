@@ -193,6 +193,8 @@ class productSlider extends HTMLElement{
 
     this.direction = this.swiperThumb.dataset.direction;
     this.vertical = null;
+   
+
 
     if(this.direction == 'vertical') {
       this.vertical = {
@@ -244,6 +246,7 @@ class newProductSlider extends HTMLElement{
     this.productSwiper = this.querySelector('.swiper');
     this.navNext = this.querySelector('.product-nav-next');
     this.navPrev = this.querySelector('.product-nav-prev');
+    this.productDots = this.querySelector('.product-slide-dots');
 
     this.init();
   }
@@ -251,7 +254,10 @@ class newProductSlider extends HTMLElement{
   init(){
     this.productSlider = new Swiper(this.productSwiper, {
       slidesPerView: 1,
-      spaceBetween: 24,
+      spaceBetween: 24,  
+      pagination: {
+        el: this.productDots,
+      },
       navigation: {
         nextEl: this.navNext,
         prevEl: this.navPrev,
@@ -284,15 +290,22 @@ class testimonialSlider extends HTMLElement{
     this.swiper = this.querySelector('.swiper');
     this.testimonialNext = this.querySelector('.testimonial-next')
     this.testimonialprev = this.querySelector('.testimonial-prev')
+    this.testimonialDots = this.querySelector('.testimonial-pagination')
+
+    this.slidesPerView = 1;
+    if(this.getAttribute('data-slidesPerView')){
+      this.slidesPerView = parseFloat(this.getAttribute('data-slidesPerView'));
+    }
 
     this.init();
   }
 
   init(){
     this.slider = new Swiper(this.swiper, {
+      slidesPerView: this.slidesPerView,
       loop: true,
       pagination: {
-        el: '.testimonial-pagination',
+        el: this.testimonialDots,
       },
       navigation: {
         nextEl: this.testimonialNext,

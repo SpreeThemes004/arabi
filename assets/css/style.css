@@ -92,6 +92,10 @@ img {
     padding-left: var(--bs-gutter-x, 0.75rem);
     padding-right: var(--bs-gutter-x, 0.75rem); } }
 
+.container-narrow {
+  max-width: 856px;
+  margin: 0 auto; }
+
 /*============================================================================
     Template Common CSS
 ==============================================================================*/
@@ -1635,7 +1639,19 @@ hero-slider:hover .arrow-next {
   .slider-heading.text_48 {
     font-size: 28px; }
   .slider-text.text_14 {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .slider-buttons .button,
+  .slider-buttons .button:hover,
+  .slider-buttons .button:focus {
+    min-width: 170px;
+    height: 48px; } }
+
+@media (max-width: 424px) {
+  .slider-buttons .button,
+  .slider-buttons .button:hover,
+  .slider-buttons .button:focus {
+    min-width: 152px;
+    height: 42px; } }
 
 .collage-grid {
   display: -ms-grid;
@@ -2751,6 +2767,17 @@ hero-slider:hover .arrow-next {
     height: 48px;
     font-size: 12px; } }
 
+.product-nav-next:hover,
+.product-nav-prev:hover {
+  --color-background: 0, 0, 0;
+  --color-foreground: 255, 255, 255; }
+
+.product-slide-dots {
+  --color-background: 0, 0, 0; }
+
+.section-product-slider {
+  display: block; }
+
 .product-slider .product-card-3,
 .product-slider .product-card-2,
 .product-slider .product-card {
@@ -2767,7 +2794,6 @@ hero-slider:hover .arrow-next {
   transform: translateY(-50%);
   width: 42px;
   height: 42px;
-  border: 1px solid rgba(var(--color-button-border), 0.4);
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2781,41 +2807,79 @@ hero-slider:hover .arrow-next {
   background: transparent;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  color: rgba(var(--color-foreground), 1);
+  -webkit-box-shadow: 0px 0px 4px -1px;
+  box-shadow: 0px 0px 4px -1px; }
 
 .product-nav-next:hover,
 .product-nav-prev:hover {
-  background-color: rgba(var(--color-background), 1); }
+  background-color: rgba(var(--color-background), 1);
+  color: rgba(var(--color-foreground), 1); }
 
 .product-nav-next {
   left: auto;
-  right: -45px; }
+  right: 10%; }
 
-.product-slider:hover .product-nav-next {
+.section-product-slider:hover .product-nav-next {
   left: auto;
-  right: 5px; }
+  right: 12%;
+  opacity: 1;
+  visibility: visible; }
 
 .product-nav-prev {
   right: auto;
-  left: -45px; }
+  left: 10%; }
 
-.product-slider:hover .product-nav-prev {
+.section-product-slider:hover .product-nav-prev {
   right: auto;
-  left: 5px; }
+  left: 12%;
+  opacity: 1;
+  visibility: visible; }
 
 .product-nav-next.swiper-button-disabled:hover,
 .product-nav-prev.swiper-button-disabled:hover {
-  background: transparent; }
+  background-color: rgba(var(--color-background), 0.5);
+  color: rgba(var(--color-foreground), 0.8); }
 
-.product-nav-next.swiper-button-disabled,
-.product-nav-prev.swiper-button-disabled {
-  border: 1px solid rgba(var(--color-button-border), 0.1); }
+.product-slide-dots {
+  text-align: center; }
+
+.product-slide-dots .swiper-pagination-bullet {
+  width: 12px;
+  height: 8px;
+  background: rgba(var(--color-background), 0.7);
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  bottom: 16px; }
+
+.swiper-horizontal > .product-slide-dots.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 6px; }
+
+.product-slide-dots .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 24px;
+  opacity: 1; }
+
+.testimonial-pagination {
+  --color-background: 0, 0, 0; }
+
+.testimonial-next:hover,
+.testimonial-prev:hover {
+  --color-background: 0, 0, 0;
+  --color-foreground: 255, 255, 255; }
+
+.section-testimonial {
+  display: block; }
 
 .testimonial-wrap {
-  max-width: 856px;
   text-align: center;
-  margin: 0 auto;
-  margin-top: 48px; }
+  margin-top: 48px;
+  display: block; }
 
 .testimonial-image img {
   width: 100px;
@@ -2854,7 +2918,6 @@ hero-slider:hover .arrow-next {
   transform: translateY(-50%);
   width: 42px;
   height: 42px;
-  border: 1px solid rgba(var(--color-button-border), 0.4);
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2868,19 +2931,31 @@ hero-slider:hover .arrow-next {
   background: transparent;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+  -webkit-box-shadow: 0 0 4px -1px;
+  box-shadow: 0 0 4px -1px;
+  color: rgba(var(--color-foreground), 1); }
 
 .testimonial-next:hover,
 .testimonial-prev:hover {
-  background-color: rgba(var(--color-background), 1); }
+  background-color: rgba(var(--color-background), 1);
+  color: rgba(var(--color-foreground), 1); }
 
 .testimonial-prev {
   right: auto;
-  left: -40px; }
+  left: 12%; }
 
 .testimonial-next {
   left: auto;
-  right: -40px; }
+  right: 12%; }
+
+.container-narrow ~ .testimonial-nav .testimonial-next {
+  left: auto;
+  right: 23%; }
+
+.container-narrow ~ .testimonial-nav .testimonial-prev {
+  right: auto;
+  left: 23%; }
 
 .testimonial-next.swiper-button-disabled:hover,
 .testimonial-prev.swiper-button-disabled:hover {
@@ -2893,7 +2968,7 @@ hero-slider:hover .arrow-next {
 .testimonial-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 8px;
-  background: rgba(var(--color-foreground), 0.7);
+  background: rgba(var(--color-background), 0.7);
   border-radius: 8px;
   cursor: pointer;
   -webkit-transition: all ease 0.3s;

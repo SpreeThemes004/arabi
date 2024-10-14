@@ -1,0 +1,102 @@
+.testimonial-wrap {
+  max-width: 856px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 48px; }
+
+.testimonial-image img {
+  width: 100px;
+  height: 100px; }
+
+.testimonial-icon-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 16px; }
+
+.testimonial-text {
+  margin-top: 24px; }
+
+.testimonial-reviewer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 24px; }
+
+.testimonial-prev,
+.testimonial-next {
+  position: absolute;
+  top: 50%;
+  left: auto;
+  z-index: 2;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(var(--color-button-border), 0.4);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: transparent;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+
+.testimonial-next:hover,
+.testimonial-prev:hover {
+  background-color: rgba(var(--color-background), 1); }
+
+.testimonial-prev {
+  right: auto;
+  left: -40px; }
+
+.testimonial-next {
+  left: auto;
+  right: -40px; }
+
+.testimonial-next.swiper-button-disabled:hover,
+.testimonial-prev.swiper-button-disabled:hover {
+  background: transparent; }
+
+.testimonial-next.swiper-button-disabled,
+.testimonial-prev.swiper-button-disabled {
+  border: 1px solid rgba(var(--color-button-border), 0.1); }
+
+.testimonial-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 8px;
+  background: rgba(var(--color-foreground), 0.7);
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  bottom: 16px; }
+
+.swiper-horizontal > .testimonial-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 6px; }
+
+.testimonial-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 24px;
+  opacity: 1; }
+
+@media (max-width: 425px) {
+  .reviewer-desig,
+  .reviewer-name,
+  .testimonial-text {
+    font-size: 14px; } }

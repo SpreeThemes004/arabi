@@ -125,10 +125,31 @@
     color: #000;
 }
 
-.site-navigation .nav-link:hover,
-.site-navigation .nav-link-sub:hover {
-    text-decoration: underline;
-    text-underline-offset: 3px;
+.site-navigation .nav-link,
+.site-navigation .nav-link-sub {
+    position: relative;
+}
+
+
+.site-navigation .nav-link:after,
+.site-navigation .nav-link-sub:after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    right: 0;
+    position: absolute;
+    background-color: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    left: auto;
+}
+
+.site-navigation .nav-link:hover:after,
+.site-navigation .nav-link-sub:hover:after {
+    left: 0;
+    width: 100%;
+
 }
 
 .nav-item-mega:last-child a {
@@ -142,6 +163,7 @@
 .img-menu-heading {
     font-weight: 500;
     margin-top: 8px;
+    display: inline-block;
 }
 
 .img-menu-action:hover span,

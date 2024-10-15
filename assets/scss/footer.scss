@@ -33,9 +33,26 @@
     margin: 0;
 }
 
-.footer-menu .footer-link:hover {
-    text-decoration: underline;
-    text-underline-offset: 3px;
+.footer-menu .footer-link {
+    position: relative;
+}
+
+.footer-menu .footer-link::after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    right: 0;
+    position: absolute;
+    background-color: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    left: auto;
+}
+
+.footer-menu .footer-link:hover::after {
+    left: 0;
+    width: 100%;
 }
 
 .footer-newsletter-form {

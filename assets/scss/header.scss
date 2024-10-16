@@ -236,8 +236,8 @@ header {
     opacity: 1;
 }
 
-.header-1 .search-wrapper,
-.header-3 .search-wrapper {
+
+header .search-wrapper {
     top: 100%;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -245,10 +245,11 @@ header {
 .search-form {
     border: none;
     outline: none;
+    display: flex;
+    align-items: center;
 }
 
-.header-1 .search-form .search-input,
-.header-3 .search-form .search-input {
+header .search-form .search-input {
     flex: 0 0 90%;
     flex: 0 0 calc(100% - 90px);
     border: none;

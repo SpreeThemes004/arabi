@@ -16,50 +16,55 @@
     <!-- all css -->
     <style>
         :root {
-            --color-primary: #000;
-            --color-secondary: #fff;
+            --color-primary: 0, 0, 0;
+            --color-secondary: 255, 255, 255;
 
-            --color-foreground: #000;
-            --color-background: #fff;
+            --color-foreground: 0, 0, 0;
+            --color-background: 255, 255, 255;
             --font-body-family: "Poppins", sans-serif;
             --font-body-weight: 400;
 
-            --color-heading: #000;
+            --color-heading: 0, 0, 0;
             --font-heading-family: "Josefin Sans", sans-serif;
             --font-heading-weight: 700;
 
-            --color-subheading: #000;
+            --color-subheading: 0, 0, 0;
             --font-subheading-weight: 500;
 
-            --button-radius: 0;            
+            --button-radius: 40px;            
             --button-border-width: 2px;
             --font-button-weight: 500;
-            --color-button: #fff;
-            --color-button-text: #000;
-            --color-button-border: #000;
-            --color-button-hover: #000;
-            --color-button-text-hover: #fff;
-            --color-button-border-hover: #000;
+            --color-button: 0, 0, 0;
+            --color-button-text: 255, 255, 255;
+            --color-button-border: 0, 0, 0;
+            --color-button-hover: 0, 0, 0;
+            --color-button-text-hover: 255, 255, 255;
+            --color-button-border-hover: 0, 0, 0;
 
-            --secondary-button-radius: 0;            
+            --secondary-button-radius: 40px;            
             --secondary-button-border-width: 2px;
             --font-secondary-button-weight: 500;
-            --color-secondary-button: #000;
-            --color-secondary-button-text: #fff;
-            --color-secondary-button-border: #000;
-            --color-secondary-button-hover: #fff;
-            --color-secondary-button-text-hover: #000;
-            --color-secondary-button-border-hover: #000;
-            
-            --font-cta-weight:500;
-            --color-cta: #000;
-            --color-cta-hover: #000;
+            --color-secondary-button: transparent;
+            --color-secondary-button-text: 0, 0, 0;
+            --color-secondary-button-border: 255, 255, 255;
+            --color-secondary-button-hover: transparent;
+            --color-secondary-button-text-hover: 0, 0, 0;
+            --color-secondary-button-border-hover: 255, 255, 255;
 
-            --color-link: #000;
-            --color-link-hover: #000;
+            --font-cta-weight: 500;
+            --color-cta: 0, 0, 0;
+            --color-cta-hover: 0, 0, 0;
+
+            --color-link: 0, 0, 0;
+            --color-link-hover: 0, 0, 0;
 
             --bs-gutter-x: 24px;
             --bs-gutter-y: 24px;
+
+            --input-radius: 12px;
+
+            --color-overlay: 0, 0, 0;
+            --opacity-overlay: 0.2;
         }
     </style>
 
@@ -211,7 +216,7 @@
                     <div class="header-grid">
                         <div class="header-logo">
                             <a href="index.html" class="logo-main">
-                                <img src="assets/img/Logo.png" 
+                                <img src="assets/img/logo.png" 
                                     loading="eager" 
                                     alt="Arabi" 
                                     width="100%" 
@@ -224,7 +229,7 @@
                                 <ul class="main-menu list-unstyled">
                                     <li class="menu-list-item nav-item has-dropdown">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="index.html">
+                                            <a class="nav-link text text_16" href="index.html">
                                                 Home
                                             </a>
                                             <span class="open-submenu">
@@ -255,7 +260,7 @@
                                     </li>
                                     <li class="menu-list-item nav-item has-megamenu">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="collection-left-sidebar.html">
+                                            <a class="nav-link text text_16" href="collection-left-sidebar.html">
                                                 Shop
                                             </a>
                                             <span class="open-submenu">
@@ -373,14 +378,14 @@
                                                     <li class="menu-list-item nav-item-sub">
                                                         <div
                                                             class="mega-menu-header">
-                                                            <a class="mega-menu-img nav-link-sub text"
+                                                            <a class="mega-menu-img text"
                                                                 href="collection-left-sidebar.html">
                                                                 <img class="menu-img" src="assets/img/menu/1.jpg" alt="img" width="100%" height="100%" loading="lazy">
                                                                 <h2 class="img-menu-heading text_16">Featured
                                                                     Collection</h2>
                                                                 <div
                                                                     class="img-menu-action text_12">
-                                                                    <span>DISCOVER NOW</span>
+                                                                    <span class="nav-link-sub">DISCOVER NOW</span>
                                                                     <span>
                                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                                             width="30" height="18" fill="#000"
@@ -399,12 +404,12 @@
                                     </li>
                                     <li class="menu-list-item nav-item has-dropdown">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="about-us.html">Portfolio</a>
+                                            <a class="nav-link text text_16" href="about-us.html">Portfolio</a>
                                         </div>
                                     </li>
                                     <li class="menu-list-item nav-item has-dropdown">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="blog.html">
+                                            <a class="nav-link text text_16" href="blog.html">
                                                 Blog
                                             </a>
                                             <span class="open-submenu">
@@ -426,7 +431,9 @@
                                         </div>
                                     </li>
                                     <li class="menu-list-item nav-item">
-                                        <a class="text text_16" href="contact.html">Contact</a>
+                                        <div class="mega-menu-header">
+                                            <a class="nav-link text text_16" href="contact.html">Contact</a>
+                                        </div>
                                     </li>
                                 </ul>
                             </nav>
@@ -454,7 +461,6 @@
                                     </a>
                                     <a 
                                         class="header-action-item header-wishlist d-none d-lg-block" href="wishlist.html"
-                                        data-bs-toggle="offcanvas"
                                         aria-label="Wishlist icon"
                                     >
                                         <svg class="icon icon-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -463,8 +469,7 @@
                                     </a>
                                     <a 
                                         class="header-action-item header-bar-chart d-none d-lg-block" 
-                                        href="#"
-                                        data-bs-toggle="offcanvas"
+                                        href="compare.html"
                                         aria-label="Compare icon"
                                     >
                                         <svg class="icon icon-bar-chart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -474,7 +479,7 @@
                                         </svg>
                                     </a>
                                     <a 
-                                        class="header-action-item header-cart d-none d-lg-block" 
+                                        class="header-action-item header-cart relative" 
                                         href="#drawer-cart"
                                         data-bs-toggle="offcanvas"
                                         aria-label="Cart drawer icon"
@@ -484,6 +489,7 @@
                                             <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
+                                        <span class="cart-badge">4</span>
                                     </a>
                                     <a class="header-action-item header-hamburger d-lg-none" href="#drawer-menu"
                                         data-bs-toggle="offcanvas"
@@ -504,7 +510,7 @@
                 </div>
                 <div class="search-wrapper">
                     <div class="container">
-                        <form action="#" class="search-form d-flex align-items-center">
+                        <form action="#" class="search-form">
                             <button 
                                 type="submit" 
                                 class="search-submit bg-transparent pl-0 text-start" 
@@ -539,7 +545,7 @@
                         <div class="header-logo d-flex d-lg-none">
                             <a href="index.html" class="logo-main">
                                 <img 
-                                    src="assets/img/Logo.png" 
+                                    src="assets/img/logo.png" 
                                     loading="eager" 
                                     alt="Arabi"
                                     width="100%"
@@ -569,7 +575,7 @@
                                 <ul class="main-menu list-unstyled">
                                     <li class="menu-list-item nav-item has-dropdown active">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="index.html">
+                                            <a class="nav-link text text_16" href="index.html">
                                                 Home
                                             </a>
                                             <span class="open-submenu">
@@ -600,7 +606,7 @@
                                     </li>
                                     <li class="menu-list-item nav-item has-megamenu">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="collection-left-sidebar.html">
+                                            <a class="nav-link text text_16" href="collection-left-sidebar.html">
                                                 Shop
                                             </a>
                                             <span class="open-submenu">
@@ -718,14 +724,14 @@
                                                     <li class="menu-list-item nav-item-sub">
                                                         <div
                                                             class="mega-menu-header">
-                                                            <a class="mega-menu-img nav-link-sub text"
+                                                            <a class="mega-menu-img text"
                                                                 href="collection-left-sidebar.html">
                                                                 <img class="menu-img" src="assets/img/menu/1.jpg" alt="img">
                                                                 <h2 class="img-menu-heading text_16">Featured
                                                                     Collection</h2>
                                                                 <div
                                                                     class="img-menu-action text_12">
-                                                                    <span>DISCOVER NOW</span>
+                                                                    <span class="nav-link-sub">DISCOVER NOW</span>
                                                                     <span>
                                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                                             width="30" height="18" fill="#000"
@@ -746,7 +752,7 @@
                                 <div class="header-logo d-flex justify-content-center">
                                     <a href="index.html" class="logo-main">
                                         <img 
-                                            src="assets/img/Logo.png" 
+                                            src="assets/img/logo.png" 
                                             loading="eager" 
                                             alt="Arabi"
                                             width="100%"
@@ -757,7 +763,7 @@
                                 <ul class="main-menu list-unstyled justify-content-center">
                                     <li class="menu-list-item nav-item has-dropdown">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="blog.html">
+                                            <a class="nav-link text text_16" href="blog.html">
                                                 Blog
                                             </a>
                                             <span class="open-submenu">
@@ -779,7 +785,9 @@
                                         </div>
                                     </li>
                                     <li class="menu-list-item nav-item">
-                                        <a class="text text_16" href="contact.html">Contact</a>
+                                        <div class="mega-menu-header">
+                                            <a class="nav-link text_16" href="contact.html">Contact</a>
+                                        </div>
                                     </li>
                                 </ul>
                             </nav>
@@ -787,16 +795,14 @@
                         <div class="header-actions">
                             <div class="header-action-wrapper">
                                 <div class="header-action">
-                                    <a 
-                                        class="header-action-item header-search d-block d-lg-none" 
-                                        href="javascript:void(0)" 
-                                        aria-label="Open search box"
+                                    <header-search 
+                                        class="header-action-item header-search d-flex d-lg-none"
                                     >
                                         <svg class="icon icon-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M21 21L16.65 16.65" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
-                                    </a>
+                                    </header-search>
                                     <a 
                                         class="header-action-item header-user d-none d-lg-block"
                                         href="login.html" 
@@ -810,7 +816,6 @@
                                     <a 
                                         class="header-action-item header-wishlist d-none d-lg-block" 
                                         href="wishlist.html"
-                                        data-bs-toggle="offcanvas" 
                                         aria-label="Wishlist icon"
                                     >
                                         <svg class="icon icon-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -819,8 +824,7 @@
                                     </a>
                                     <a 
                                         class="header-action-item header-bar-chart d-none d-lg-block" 
-                                        href="#"
-                                        data-bs-toggle="offcanvas" 
+                                        href="compare.html" 
                                         aria-label="Compare Icon"
                                     >
                                         <svg class="icon icon-bar-chart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -830,8 +834,8 @@
                                         </svg>
                                     </a>
                                     <a 
-                                        class="header-action-item header-cart d-none d-lg-block" 
-                                        href="#"
+                                        class="header-action-item header-cart relative" 
+                                        href="#drawer-cart"
                                         data-bs-toggle="offcanvas"
                                         aria-label="Cart drawer icon"
                                     >
@@ -840,6 +844,7 @@
                                             <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
+                                        <span class="cart-badge">4</span>
                                     </a>
                                     <a class="header-action-item header-hamburger d-lg-none" href="#drawer-menu"
                                         data-bs-toggle="offcanvas">
@@ -856,6 +861,35 @@
                         </div>
                     </div>
                 </div>
+                <div class="search-wrapper">
+                    <div class="container">
+                        <form action="#" class="search-form">
+                            <button 
+                                type="submit" 
+                                class="search-submit bg-transparent pl-0 text-start" 
+                                aria-label="Submit search button"
+                            >
+                                <svg class="icon icon-search" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.75 0.250183C11.8838 0.250183 15.25 3.61639 15.25 7.75018C15.25 9.54608 14.6201 11.1926 13.5625 12.4846L19.5391 18.4611L18.4609 19.5392L12.4844 13.5627C11.1924 14.6203 9.5459 15.2502 7.75 15.2502C3.61621 15.2502 0.25 11.884 0.25 7.75018C0.25 3.61639 3.61621 0.250183 7.75 0.250183ZM7.75 1.75018C4.42773 1.75018 1.75 4.42792 1.75 7.75018C1.75 11.0724 4.42773 13.7502 7.75 13.7502C11.0723 13.7502 13.75 11.0724 13.75 7.75018C13.75 4.42792 11.0723 1.75018 7.75 1.75018Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                            <div class="search-input mr-4">
+                                <input type="text" placeholder="Search your products..." autocomplete="off">
+                            </div>
+                            <div class="search-close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon icon-close">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </header>
             <!-- Header Three -->
             <header class="header-3">
@@ -866,7 +900,7 @@
                                 <ul class="main-menu list-unstyled">
                                     <li class="menu-list-item nav-item has-dropdown active">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="index.html">
+                                            <a class="nav-link text text_16" href="index.html">
                                                 Home
                                             </a>
                                             <span class="open-submenu">
@@ -897,7 +931,7 @@
                                     </li>
                                     <li class="menu-list-item nav-item has-megamenu">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="collection-left-sidebar.html">
+                                            <a class="nav-link text text_16" href="collection-left-sidebar.html">
                                                 Shop
                                             </a>
                                             <span class="open-submenu">
@@ -1015,14 +1049,14 @@
                                                     <li class="menu-list-item nav-item-sub">
                                                         <div
                                                             class="mega-menu-header">
-                                                            <a class="mega-menu-img nav-link-sub text"
+                                                            <a class="mega-menu-img text"
                                                                 href="collection-left-sidebar.html">
                                                                 <img class="menu-img" src="assets/img/menu/1.jpg" alt="img" width="100%" height="100%" loading="lazy">
                                                                 <h2 class="img-menu-heading text_16">Featured
                                                                     Collection</h2>
                                                                 <div
                                                                     class="img-menu-action text_12">
-                                                                    <span>DISCOVER NOW</span>
+                                                                    <span class="nav-link-sub">DISCOVER NOW</span>
                                                                     <span>
                                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                                             width="30" height="18" fill="#000"
@@ -1041,12 +1075,12 @@
                                     </li>
                                     <li class="menu-list-item nav-item has-dropdown">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="about-us.html">Portfolio</a>
+                                            <a class="nav-link text text_16" href="about-us.html">Portfolio</a>
                                         </div>
                                     </li>
                                     <li class="menu-list-item nav-item has-dropdown">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="blog.html">
+                                            <a class="nav-link text text_16" href="blog.html">
                                                 Blog
                                             </a>
                                             <span class="open-submenu">
@@ -1068,7 +1102,9 @@
                                         </div>
                                     </li>
                                     <li class="menu-list-item nav-item">
-                                        <a class="text text_16" href="contact.html">Contact</a>
+                                        <div class="mega-menu-header">
+                                            <a class="nav-link text text_16" href="contact.html">Contact</a>
+                                        </div>
                                     </li>
                                 </ul>
                             </nav>
@@ -1076,7 +1112,7 @@
                         <div class="header-logo">
                             <a href="index.html" class="logo-main">
                                 <img 
-                                    src="assets/img/Logo.png" 
+                                    src="assets/img/logo.png" 
                                     loading="eager" 
                                     alt="Arabi"
                                     width="100%"
@@ -1108,7 +1144,6 @@
                                     <a 
                                         class="header-action-item header-wishlist d-none d-lg-block" 
                                         href="wishlist.html"
-                                        data-bs-toggle="offcanvas"
                                         aria-label="wishlist icon"
                                     >
                                         <svg class="icon icon-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1117,8 +1152,7 @@
                                     </a>
                                     <a 
                                         class="header-action-item header-bar-chart d-none d-lg-block" 
-                                        href="#"
-                                        data-bs-toggle="offcanvas"
+                                        href="compare.html"
                                         aria-label="header compare icon"
                                     >
                                         <svg class="icon icon-bar-chart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1128,8 +1162,8 @@
                                         </svg>
                                     </a>
                                     <a 
-                                        class="header-action-item header-cart d-none d-lg-block" 
-                                        href="#"
+                                        class="header-action-item header-cart relative" 
+                                        href="#drawer-cart"
                                         data-bs-toggle="offcanvas"
                                         aria-label="header cart"
                                     >
@@ -1138,6 +1172,7 @@
                                             <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
+                                        <span class="cart-badge">4</span>
                                     </a>
                                     <a 
                                         class="header-action-item header-hamburger d-lg-none" 
@@ -1160,7 +1195,7 @@
                 </div>
                 <div class="search-wrapper">
                     <div class="container">
-                        <form action="#" class="search-form d-flex align-items-center">
+                        <form action="#" class="search-form">
                             <button 
                                 type="submit" 
                                 class="search-submit bg-transparent pl-0 text-start" 
@@ -1189,7 +1224,7 @@
                 </div>
             </header> 
              <!-- Header Four -->
-             <header class="header-4">
+             <header class="header-4"> 
                 <div class="container-fluid">
                     <div class="header-grid">
                         <div class="header-search d-none d-lg-flex">
@@ -1212,7 +1247,7 @@
                         <div class="header-logo">
                             <a href="index.html" class="logo-main">
                                 <img 
-                                    src="assets/img/Logo.png" 
+                                    src="assets/img/logo.png" 
                                     loading="eager"
                                     alt="Arabi"
                                     width="100%"
@@ -1223,16 +1258,14 @@
                         <div class="header-actions">
                             <div class="header-action-wrapper">
                                 <div class="header-action">
-                                    <a 
-                                        class="header-action-item header-search d-block d-lg-none" 
-                                        href="javascript:void(0)"
-                                        aria-label="header search icon"
+                                    <header-search 
+                                        class="header-action-item header-search d-flex d-lg-none"
                                     >
                                         <svg class="icon icon-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M21 21L16.65 16.65" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
-                                    </a>
+                                    </header-search>
                                     <a 
                                         class="header-action-item header-user d-none d-lg-block"
                                         aria-label="header login user"
@@ -1246,7 +1279,6 @@
                                     <a 
                                         class="header-action-item header-wishlist d-none d-lg-block" 
                                         href="wishlist.html"
-                                        data-bs-toggle="offcanvas"
                                         aria-label="header wishlist icon"
                                     >
 
@@ -1256,8 +1288,7 @@
                                     </a>
                                     <a 
                                         class="header-action-item header-bar-chart d-none d-lg-block" 
-                                        href="#"
-                                        data-bs-toggle="offcanvas"
+                                        href="compare.html"
                                         aria-label="header compare icon"
                                     >
                                         <svg class="icon icon-bar-chart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1267,8 +1298,8 @@
                                         </svg>
                                     </a>
                                     <a 
-                                        class="header-action-item header-cart d-none d-lg-block" 
-                                        href="#"
+                                        class="header-action-item header-cart relative" 
+                                        href="#drawer-cart"
                                         data-bs-toggle="offcanvas"
                                         aria-label="header cart icon"
                                     >
@@ -1277,6 +1308,7 @@
                                             <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
+                                        <span class="cart-badge">4</span>
                                     </a>
                                     <a 
                                         class="header-action-item header-hamburger d-lg-none" 
@@ -1300,7 +1332,7 @@
                                 <ul class="main-menu list-unstyled">
                                     <li class="menu-list-item nav-item has-dropdown active">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="index.html">
+                                            <a class="nav-link text text_16" href="index.html">
                                                 Home
                                             </a>
                                             <span class="open-submenu">
@@ -1331,7 +1363,7 @@
                                     </li>
                                     <li class="menu-list-item nav-item has-megamenu">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="collection-left-sidebar.html">
+                                            <a class="nav-link text text_16" href="collection-left-sidebar.html">
                                                 Shop
                                             </a>
                                             <span class="open-submenu">
@@ -1449,14 +1481,14 @@
                                                     <li class="menu-list-item nav-item-sub">
                                                         <div
                                                             class="mega-menu-header">
-                                                            <a class="mega-menu-img nav-link-sub text"
+                                                            <a class="mega-menu-img text"
                                                                 href="collection-left-sidebar.html">
                                                                 <img class="menu-img" src="assets/img/menu/1.jpg" alt="img" width="100%" height="100%" loading="lazy">
                                                                 <h2 class="img-menu-heading text_16">Featured
                                                                     Collection</h2>
                                                                 <div
                                                                     class="img-menu-action text_12">
-                                                                    <span>DISCOVER NOW</span>
+                                                                    <span class="nav-link-sub">DISCOVER NOW</span>
                                                                     <span>
                                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                                             width="30" height="18" fill="#000"
@@ -1475,12 +1507,12 @@
                                     </li>
                                     <li class="menu-list-item nav-item has-dropdown">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="about-us.html">Portfolio</a>
+                                            <a class="nav-link text text_16" href="about-us.html">Portfolio</a>
                                         </div>
                                     </li>
                                     <li class="menu-list-item nav-item has-dropdown">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="blog.html">
+                                            <a class="nav-link text text_16" href="blog.html">
                                                 Blog
                                             </a>
                                             <span class="open-submenu">
@@ -1502,11 +1534,42 @@
                                         </div>
                                     </li>
                                     <li class="menu-list-item nav-item">
-                                        <a class="text text_16" href="contact.html">Contact</a>
+                                        <div class="mega-menu-header">
+                                            <a class="nav-link text text_16" href="contact.html">Contact</a>
+                                        </div>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
+                    </div>
+                </div>
+                <div class="search-wrapper">
+                    <div class="container">
+                        <form action="#" class="search-form">
+                            <button 
+                                type="submit" 
+                                class="search-submit bg-transparent pl-0 text-start" 
+                                aria-label="Submit search button"
+                            >
+                                <svg class="icon icon-search" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.75 0.250183C11.8838 0.250183 15.25 3.61639 15.25 7.75018C15.25 9.54608 14.6201 11.1926 13.5625 12.4846L19.5391 18.4611L18.4609 19.5392L12.4844 13.5627C11.1924 14.6203 9.5459 15.2502 7.75 15.2502C3.61621 15.2502 0.25 11.884 0.25 7.75018C0.25 3.61639 3.61621 0.250183 7.75 0.250183ZM7.75 1.75018C4.42773 1.75018 1.75 4.42792 1.75 7.75018C1.75 11.0724 4.42773 13.7502 7.75 13.7502C11.0723 13.7502 13.75 11.0724 13.75 7.75018C13.75 4.42792 11.0723 1.75018 7.75 1.75018Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                            <div class="search-input mr-4">
+                                <input type="text" placeholder="Search your products..." autocomplete="off">
+                            </div>
+                            <div class="search-close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon icon-close">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </header>  
@@ -1517,7 +1580,7 @@
                         <div class="header-logo">
                             <a href="index.html" class="logo-main">
                                 <img 
-                                    src="assets/img/Logo.png" 
+                                    src="assets/img/logo.png" 
                                     loading="eager" 
                                     alt="Arabi"
                                     width="100%"
@@ -1545,16 +1608,14 @@
                         <div class="header-actions">
                             <div class="header-action-wrapper">
                                 <div class="header-action">
-                                    <a 
-                                        class="header-action-item header-search  d-block d-lg-none" 
-                                        href="javascript:void(0)"
-                                        aria-label="header search icon"
+                                    <header-search 
+                                        class="header-action-item header-search d-block d-lg-none"
                                     >
                                         <svg class="icon icon-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M21 21L16.65 16.65" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
-                                    </a>
+                                    </header-search>
                                     <a 
                                         class="header-action-item header-user d-none d-lg-block"
                                         href="login.html"
@@ -1568,7 +1629,6 @@
                                     <a 
                                         class="header-action-item header-wishlist d-none d-lg-block" 
                                         href="wishlist.html"
-                                        data-bs-toggle="offcanvas"
                                         aria-label="header wishlist icon"
                                     >
                                         <svg class="icon icon-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1577,8 +1637,7 @@
                                     </a>
                                     <a 
                                         class="header-action-item header-bar-chart d-none d-lg-block" 
-                                        href="#"
-                                        data-bs-toggle="offcanvas"
+                                        href="compare.html"
                                         aria-label="header compare icon"
                                     >
                                         <svg class="icon icon-bar-chart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1588,8 +1647,8 @@
                                         </svg>
                                     </a>
                                     <a 
-                                        class="header-action-item header-cart d-none d-lg-block" 
-                                        href="#"
+                                        class="header-action-item header-cart relative" 
+                                        href="#drawer-cart"
                                         data-bs-toggle="offcanvas"
                                         aria-label="header cart icon"
                                     >
@@ -1598,9 +1657,10 @@
                                             <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
+                                        <span class="cart-badge">4</span>
                                     </a>
                                     <a 
-                                    class="header-action-item header-hamburger ms-4 d-lg-none" 
+                                    class="header-action-item header-hamburger d-lg-none" 
                                     href="#drawer-menu"
                                     data-bs-toggle="offcanvas"
                                     aria-label="header hamburger icon"
@@ -1890,7 +1950,7 @@
                                 <ul class="main-menu list-unstyled">
                                     <li class="menu-list-item nav-item has-dropdown active">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="index.html">
+                                            <a class="nav-link text text_16" href="index.html">
                                                 Home
                                             </a>
                                             <span class="open-submenu">
@@ -1921,7 +1981,7 @@
                                     </li>
                                     <li class="menu-list-item nav-item has-megamenu">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="collection-left-sidebar.html">
+                                            <a class="nav-link text text_16" href="collection-left-sidebar.html">
                                                 Shop
                                             </a>
                                             <span class="open-submenu">
@@ -2039,14 +2099,14 @@
                                                     <li class="menu-list-item nav-item-sub">
                                                         <div
                                                             class="mega-menu-header">
-                                                            <a class="mega-menu-img nav-link-sub text"
+                                                            <a class="mega-menu-img text"
                                                                 href="collection-left-sidebar.html">
                                                                 <img class="menu-img" src="assets/img/menu/1.jpg" alt="img" width="100%" height="100%" loading="lazy">
                                                                 <h2 class="img-menu-heading text_16">Featured
                                                                     Collection</h2>
                                                                 <div
                                                                     class="img-menu-action text_12">
-                                                                    <span>DISCOVER NOW</span>
+                                                                    <span class="nav-link-sub">DISCOVER NOW</span>
                                                                     <span>
                                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                                             width="30" height="18" fill="#000"
@@ -2065,12 +2125,12 @@
                                     </li>
                                     <li class="menu-list-item nav-item has-dropdown">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="about-us.html">Portfolio</a>
+                                            <a class="nav-link text text_16" href="about-us.html">Portfolio</a>
                                         </div>
                                     </li>
                                     <li class="menu-list-item nav-item has-dropdown">
                                         <div class="mega-menu-header">
-                                            <a class="text text_16" href="blog.html">
+                                            <a class="nav-link text text_16" href="blog.html">
                                                 Blog
                                             </a>
                                             <span class="open-submenu">
@@ -2092,11 +2152,42 @@
                                         </div>
                                     </li>
                                     <li class="menu-list-item nav-item">
-                                        <a class="text text_16" href="contact.html">Contact</a>
+                                        <div class="mega-menu-header">
+                                            <a class="nav-link text text_16" href="contact.html">Contact</a>
+                                        </div>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
+                    </div>
+                </div>
+                <div class="search-wrapper">
+                    <div class="container">
+                        <form action="#" class="search-form">
+                            <button 
+                                type="submit" 
+                                class="search-submit bg-transparent pl-0 text-start" 
+                                aria-label="Submit search button"
+                            >
+                                <svg class="icon icon-search" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.75 0.250183C11.8838 0.250183 15.25 3.61639 15.25 7.75018C15.25 9.54608 14.6201 11.1926 13.5625 12.4846L19.5391 18.4611L18.4609 19.5392L12.4844 13.5627C11.1924 14.6203 9.5459 15.2502 7.75 15.2502C3.61621 15.2502 0.25 11.884 0.25 7.75018C0.25 3.61639 3.61621 0.250183 7.75 0.250183ZM7.75 1.75018C4.42773 1.75018 1.75 4.42792 1.75 7.75018C1.75 11.0724 4.42773 13.7502 7.75 13.7502C11.0723 13.7502 13.75 11.0724 13.75 7.75018C13.75 4.42792 11.0723 1.75018 7.75 1.75018Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                            <div class="search-input mr-4">
+                                <input type="text" placeholder="Search your products..." autocomplete="off">
+                            </div>
+                            <div class="search-close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon icon-close">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </header>
@@ -2733,151 +2824,197 @@
         </div>
         <!-- drawer menu end -->
 
-        <!-- drawer cart start -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="drawer-cart">
-            <div class="offcanvas-header border-btm-black">
-                <h5 class="cart-drawer-heading text_16">Your Cart (04)</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
+         <!-- drawer cart start -->
+         <div class="offcanvas offcanvas-end" tabindex="-1" id="drawer-cart">
+            <div class="offcanvas-header cart-drawer-header">
+                <h5 class="cart-drawer-heading text text_16 semibold">Your Cart (04)</h5>
+                <button 
+                    type="button" 
+                    class="btn-close text-reset" 
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                >
+            </button>
             </div>
             <div class="offcanvas-body p-0">
                 <div class="cart-content-area d-flex justify-content-between flex-column">
                     <div class="minicart-loop custom-scrollbar">
                         <!-- minicart item -->
-                        <div class="minicart-item d-flex">
+                        <div class="minicart-item">
                             <div class="mini-img-wrapper">
-                                <img class="mini-img" src="assets/img/products/furniture/1.jpg" alt="img" width="100%" height="100%" loading="lazy">
+                                <img 
+                                    class="mini-img" 
+                                    src="assets/img/products/furniture/1.jpg" 
+                                    alt="img" 
+                                    width="100%" 
+                                    height="100%" 
+                                    loading="lazy"
+                                >
                             </div>
                             <div class="product-info">
-                                <h2 class="product-title"><a href="#">Eliot Reversible Sectional</a></h2>
-                                <p class="product-vendor">XS / Dove Gray</p>
-                                <div class="misc d-flex align-items-end justify-content-between">
-                                    <div class="quantity d-flex align-items-center justify-content-between">
-                                        <button class="qty-btn dec-qty">
-                                            <img 
-                                                src="assets/img/icon/minus.svg"
-                                                alt="minus"
-                                                width="100%"
-                                                height="100%"
-                                            >
-                                        </button>
-                                        <input class="qty-input" type="number" name="qty" value="1" min="0">
-                                        <button class="qty-btn inc-qty">
-                                            <img 
-                                                src="assets/img/icon/plus.svg"
-                                                alt="plus"
-                                                width="100%"
-                                                height="100%"
-                                            >
-                                        </button>
-                                    </div>
-                                    <div class="product-remove-area d-flex flex-column align-items-end">
-                                        <div class="product-price">$580.00</div>
-                                        <a href="#" class="product-remove">Remove</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- minicart item -->
-                        <div class="minicart-item d-flex">
-                            <div class="mini-img-wrapper">
-                                <img class="mini-img" src="assets/img/products/furniture/2.jpg" alt="img" width="100%" height="100%" loading="lazy">
-                            </div>
-                            <div class="product-info">
-                                <h2 class="product-title"><a href="#">Vita Lounge Chair</a></h2>
-                                <p class="product-vendor">XS / Pink</p>
-                                <div class="misc d-flex align-items-end justify-content-between">
-                                    <div class="quantity d-flex align-items-center justify-content-between">
-                                        <button class="qty-btn dec-qty">
-                                            <img 
-                                                src="assets/img/icon/minus.svg"
-                                                alt="minus"
-                                                width="100%"
-                                                height="100%"
-                                            >
-                                        </button>
-                                        <input class="qty-input" type="number" name="qty" value="1" min="0">
-                                        <button class="qty-btn inc-qty">
-                                            <img 
-                                                src="assets/img/icon/plus.svg"
-                                                alt="plus"
-                                                width="100%"
-                                                height="100%">
+                                <h2 class="product-title">
+                                    <a href="#" class="text text_16">Eliot Reversible Sectional</a>
+                                </h2>
+                                <p class="product-vendor text text_14">XS / Dove Gray</p>
+                                <div class="misc">
+                                    <quantity-input>
+                                        <div class="quantity">
+                                            <button class="qty-btn dec-qty" name="minus">
+                                                <img 
+                                                    src="assets/img/icon/minus.svg"
+                                                    alt="minus"
+                                                    width="100%"
+                                                    height="100%"
+                                                >
                                             </button>
-                                    </div>
+                                            <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                            <button class="qty-btn inc-qty" name="plus">
+                                                <img 
+                                                    src="assets/img/icon/plus.svg"
+                                                    alt="plus"
+                                                    width="100%"
+                                                    height="100%">
+                                                </button>
+                                        </div>
+                                    </quantity-input>
                                     <div class="product-remove-area d-flex flex-column align-items-end">
-                                        <div class="product-price">$580.00</div>
-                                        <a href="#" class="product-remove">Remove</a>
+                                        <div class="product-price text text_14">$580.00</div>
+                                        <a href="#" class="product-remove text text_12">Remove</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- minicart item -->
-                        <div class="minicart-item d-flex">
+                        <div class="minicart-item">
                             <div class="mini-img-wrapper">
-                                <img class="mini-img" src="assets/img/products/furniture/3.jpg" alt="img" width="100%" height="100%" loading="lazy">
+                                <img 
+                                    class="mini-img" 
+                                    src="assets/img/products/furniture/2.jpg" 
+                                    alt="img" 
+                                    width="100%" 
+                                    height="100%" 
+                                    loading="lazy"
+                                >
                             </div>
                             <div class="product-info">
-                                <h2 class="product-title"><a href="#">Sarno Dining Chair</a></h2>
-                                <p class="product-vendor">XS / Dove Gray</p>
-                                <div class="misc d-flex align-items-end justify-content-between">
-                                    <div class="quantity d-flex align-items-center justify-content-between">
-                                        <button class="qty-btn dec-qty">
-                                            <img 
-                                                src="assets/img/icon/minus.svg"
-                                                alt="minus"
-                                                width="100%"
-                                                height="100%"
-                                            >
-                                        </button>
-                                        <input class="qty-input" type="number" name="qty" value="1" min="0">
-                                        <button class="qty-btn inc-qty">
-                                            <img 
-                                                src="assets/img/icon/plus.svg"
-                                                alt="plus"
-                                                width="100%"
-                                                height="100%"
-                                            >
+                                <h2 class="product-title">
+                                    <a href="#" class="text text_16">Eliot Reversible Sectional</a>
+                                </h2>
+                                <p class="product-vendor text text_14">XS / Dove Gray</p>
+                                <div class="misc">
+                                    <quantity-input>
+                                        <div class="quantity">
+                                            <button class="qty-btn dec-qty" name="minus">
+                                                <img 
+                                                    src="assets/img/icon/minus.svg"
+                                                    alt="minus"
+                                                    width="100%"
+                                                    height="100%"
+                                                >
                                             </button>
-                                    </div>
+                                            <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                            <button class="qty-btn inc-qty" name="plus">
+                                                <img 
+                                                    src="assets/img/icon/plus.svg"
+                                                    alt="plus"
+                                                    width="100%"
+                                                    height="100%">
+                                                </button>
+                                        </div>
+                                    </quantity-input>
                                     <div class="product-remove-area d-flex flex-column align-items-end">
-                                        <div class="product-price">$580.00</div>
-                                        <a href="#" class="product-remove">Remove</a>
+                                        <div class="product-price text text_14">$580.00</div>
+                                        <a href="#" class="product-remove text text_12">Remove</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- minicart item -->
-                        <div class="minicart-item d-flex">
+                        <div class="minicart-item">
                             <div class="mini-img-wrapper">
-                                <img class="mini-img" src="assets/img/products/furniture/4.jpg" alt="img" width="100%" height="100%" loading="lazy">
+                                <img 
+                                    class="mini-img" 
+                                    src="assets/img/products/furniture/3.jpg" 
+                                    alt="img" 
+                                    width="100%" 
+                                    height="100%" 
+                                    loading="lazy"
+                                >
                             </div>
                             <div class="product-info">
-                                <h2 class="product-title"><a href="#">Vita Lounge Chair</a></h2>
-                                <p class="product-vendor">XS / Dove Gray</p>
-                                <div class="misc d-flex align-items-end justify-content-between">
-                                    <div class="quantity d-flex align-items-center justify-content-between">
-                                        <button class="qty-btn dec-qty">
-                                            <img 
-                                                src="assets/img/icon/minus.svg"
-                                                alt="minus"
-                                                width="100%"
-                                                height="100%"
-                                            >
-                                        </button>
-                                        <input class="qty-input" type="number" name="qty" value="1" min="0">
-                                        <button class="qty-btn inc-qty">
-                                            <img 
-                                                src="assets/img/icon/plus.svg"
-                                                alt="plus"
-                                                width="100%"
-                                                height="100%"
-                                            >
-                                        </button>
-                                    </div>
+                                <h2 class="product-title">
+                                    <a href="#" class="text text_16">Eliot Reversible Sectional</a>
+                                </h2>
+                                <p class="product-vendor text text_14">XS / Dove Gray</p>
+                                <div class="misc">
+                                    <quantity-input>
+                                        <div class="quantity">
+                                            <button class="qty-btn dec-qty" name="minus">
+                                                <img 
+                                                    src="assets/img/icon/minus.svg"
+                                                    alt="minus"
+                                                    width="100%"
+                                                    height="100%"
+                                                >
+                                            </button>
+                                            <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                            <button class="qty-btn inc-qty" name="plus">
+                                                <img 
+                                                    src="assets/img/icon/plus.svg"
+                                                    alt="plus"
+                                                    width="100%"
+                                                    height="100%">
+                                                </button>
+                                        </div>
+                                    </quantity-input>
                                     <div class="product-remove-area d-flex flex-column align-items-end">
-                                        <div class="product-price">$580.00</div>
-                                        <a href="#" class="product-remove">Remove</a>
+                                        <div class="product-price text text_14">$580.00</div>
+                                        <a href="#" class="product-remove text text_12">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- minicart item -->
+                        <div class="minicart-item">
+                            <div class="mini-img-wrapper">
+                                <img 
+                                    class="mini-img" 
+                                    src="assets/img/products/furniture/4.jpg" 
+                                    alt="img" 
+                                    width="100%" 
+                                    height="100%" 
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-title">
+                                    <a href="#" class="text text_16">Eliot Reversible Sectional</a>
+                                </h2>
+                                <p class="product-vendor text text_14">XS / Dove Gray</p>
+                                <div class="misc">
+                                    <quantity-input>
+                                        <div class="quantity">
+                                            <button class="qty-btn dec-qty" name="minus">
+                                                <img 
+                                                    src="assets/img/icon/minus.svg"
+                                                    alt="minus"
+                                                    width="100%"
+                                                    height="100%"
+                                                >
+                                            </button>
+                                            <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                            <button class="qty-btn inc-qty" name="plus">
+                                                <img 
+                                                    src="assets/img/icon/plus.svg"
+                                                    alt="plus"
+                                                    width="100%"
+                                                    height="100%">
+                                                </button>
+                                        </div>
+                                    </quantity-input>
+                                    <div class="product-remove-area d-flex flex-column align-items-end">
+                                        <div class="product-price text text_14">$580.00</div>
+                                        <a href="#" class="product-remove text text_12">Remove</a>
                                     </div>
                                 </div>
                             </div>
@@ -2885,16 +3022,30 @@
                     </div>
                     <div class="minicart-footer">
                         <div class="minicart-calc-area">
-                            <div class="minicart-calc d-flex align-items-center justify-content-between">
-                                <span class="cart-subtotal mb-0">Subtotal</span>
-                                <span class="cart-subprice">$1548.00</span>
+                            <div class="minicart-calc">
+                                <span class="text_16 medium">Subtotal</span>
+                                <span class="text_16 medium">$1548.00</span>
                             </div>
-                            <p class="cart-taxes text-center my-4">Taxes and shipping will be calculated at checkout.
+                            <p class="cart-taxes text_12">Taxes and shipping will be calculated at checkout.
                             </p>
                         </div>
-                        <div class="minicart-btn-area d-flex align-items-center justify-content-between">
-                            <a href="cart.html" class="minicart-btn btn-secondary">View Cart</a>
-                            <a href="checkout.html" class="minicart-btn btn-primary">Checkout</a>
+                        <div class="minicart-btn-area">
+                            <a 
+                                class="button button-secondary animate__animated animate__fadeInUp"
+                                href="cart.html"
+                                data-animation="animate__animated animate__fadeInUp"
+                                aria-label="slider button"
+                            >
+                                View Cart
+                            </a>
+                            <a 
+                                class="button button-primary animate__animated animate__fadeInUp"
+                                href="checkout.html"
+                                data-animation="animate__animated animate__fadeInUp"
+                                aria-label="slider button"
+                            >
+                                Checkout
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -2909,11 +3060,11 @@
                             <line x1="15" y1="9" x2="15.01" y2="9"></line>
                         </svg>
                     </div>
-                    <p class="cart-empty">You have no items in your cart</p>
+                    <p class="cart-empty text text_16">You have no items in your cart</p>
                 </div>
             </div>
         </div>
-        <!-- drawer cart end -->
+         <!-- drawer cart end -->
 
         <!-- product quickview start -->
         <div class="modal fade" tabindex="-1" id="quickview-modal">

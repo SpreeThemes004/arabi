@@ -2,6 +2,11 @@
     border-bottom: 1px solid rgba(var(--color-foreground), 0.1);
 }
 
+.cart-drawer-header .btn-close {
+    box-shadow: none;
+    opacity: 1;
+}
+
 .cart-content-area {
     height: 100%;
 }
@@ -72,42 +77,46 @@
     border: none;
     outline: none;
     background: transparent;
+}
 
-    &:hover,
-    &:focus,
-    &:active {
-        border: none;
-        outline: none;
-        background: transparent;
-    }
+.qty-input:hover,
+.qty-btn:hover,
+.qty-input:focus,
+.qty-btn:focus,
+.qty-input:active,
+.qty-btn:active {
+    border: none;
+    outline: none;
+    background: transparent;
+}
 
-    &::-webkit-inner-spin-button {
-        display: none;
-    }
+.qty-btn::-webkit-inner-spin-button,
+.qty-input::-webkit-inner-spin-button {
+    display: none;
 }
 
 .quantity {
     width: 100px;
     border: 1px solid rgba(var(--color-foreground), 0.2);
+}
 
-    .qty-btn {
-        width: 25px;
-        padding: 4px 5px 6px;
-        cursor: pointer;
+.quantity .qty-btn {
+    width: 25px;
+    padding: 4px 5px 6px;
+    cursor: pointer;
+}
 
-        img {
-            max-width: 12px;
-            pointer-events: none;
-        }
+.quantity .qty-btn  img {
+    max-width: 12px;
+    pointer-events: none;
+}
 
-        &.dec-qty {
-            border-right: 1px solid rgba(var(--color-foreground), 0.2) !important;
-        }
+.qty-btn .dec-qty {
+    border-right: 1px solid rgba(var(--color-foreground), 0.2) !important;
+}
 
-        &.inc-qty {
-            border-left: 1px solid rgba(var(--color-foreground), 0.2) !important;
-        }
-    }
+.qty-btn.inc-qty {
+    border-left: 1px solid rgba(var(--color-foreground), 0.2) !important;
 }
 
 .cart-taxes {
@@ -135,4 +144,35 @@
     min-width: 170px;
     height: 48px;
     font-size: 12px;
+}
+
+@media (max-width: 425px) {
+    .minicart-calc .text_16,
+    .product-title .text_16 {
+        font-size: 14px;
+    }
+
+    .product-price,
+    .product-vendor {
+        font-size: 12px;
+    }
+
+    .cart-taxes,
+    .product-remove {
+        font-size: 11px;
+    }
+
+    .quantity .qty-btn {
+        padding: 2px 4px 2px;
+    }
+
+    .minicart-footer {
+        padding: 14px;
+    }
+
+    .minicart-btn-area .button,
+    .minicart-btn-area .button:hover {
+        min-width: 144px;
+        height: 48px;
+    }
 }

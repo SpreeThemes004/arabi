@@ -45,18 +45,6 @@
 
 
 // color
-a,
-a:focus,
-a:hover {
-  text-decoration: none;
-  border: none;
-  outline: none;
-  @include prefix(transition, all 0.3s, ms webkit spec);
-}
-
-img {
-  max-width: 100%;
-}
 
 .custom-scrollbar {
   &::-webkit-scrollbar {
@@ -74,36 +62,4 @@ img {
   &::-webkit-scrollbar-thumb:hover {
     background: #888;
   }
-}
-
-// show second image on hover
-.hover-switch {
-  position: relative;
-  display: block;
-
-  .primary-img,
-  .secondary-img {
-    @include prefix(transition, all 0.7s ease, ms webkit spec);
-  }
-}
-
-.secondary-img {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.product-card:hover .secondary-img {
-  opacity: 1;
-  visibility: visible;
-}
-
-.product-card:hover .secondary-img+.primary-img {
-  opacity: 0;
-  visibility: hidden;
 }

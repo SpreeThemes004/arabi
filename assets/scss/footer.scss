@@ -29,8 +29,12 @@
 .footer-menu {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 13px;
     margin: 0;
+}
+
+.footer-social-item:hover .icon {
+    opacity: 0.6;
 }
 
 .footer-menu .footer-link {

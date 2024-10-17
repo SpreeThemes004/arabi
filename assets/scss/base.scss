@@ -1,24 +1,10 @@
 // custom container
-.container-fluid {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-@media (max-width: 1800px) {
+@media (min-width: 1280px) {
     .container-fluid {
         padding-left: 5%;
         padding-right: 5%;
     }
 }
-
-
-@media (max-width: 575px) {
-    .container-fluid {
-        padding-left: var(--bs-gutter-x, .75rem);
-        padding-right: var(--bs-gutter-x, .75rem);
-    }
-}
-
 
 .container-narrow {
   max-width: 856px;
@@ -47,13 +33,6 @@ body {
   font-family: var(--font-body-family);
   letter-spacing: 0.5px;
   padding-right: 0 !important;
-}
-
-.body-wrapper {
-  position: relative;
-  max-width: 1920px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .relative{
@@ -413,8 +392,14 @@ a:hover {
     pointer-events: none;
 }
 
-.mt-100{
+.section-mt{
   margin-top: 100px;
+}
+
+@media (max-width: 767px) {
+  .section-mt{
+    margin-top: 60px;
+  }
 }
   
 // animation
@@ -440,7 +425,7 @@ img {
 
 .primary-image,
 .secondary-image {
-  transition: all 0.6s ease;
+  transition: all 0.3s ease;
 }
 
 .secondary-image {

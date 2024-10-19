@@ -246,18 +246,13 @@ class newProductSlider extends HTMLElement{
     this.productSwiper = this.querySelector('.swiper');
     this.navNext = this.querySelector('.product-nav-next');
     this.navPrev = this.querySelector('.product-nav-prev');
-    this.productDots = this.querySelector('.product-slide-dots');
-
     this.init();
   }
 
   init(){
     this.productSlider = new Swiper(this.productSwiper, {
       slidesPerView: 1,
-      spaceBetween: 24,  
-      pagination: {
-        el: this.productDots,
-      },
+      spaceBetween: 24,
       navigation: {
         nextEl: this.navNext,
         prevEl: this.navPrev,
@@ -290,11 +285,28 @@ class testimonialSlider extends HTMLElement{
     this.swiper = this.querySelector('.swiper');
     this.testimonialNext = this.querySelector('.testimonial-next')
     this.testimonialprev = this.querySelector('.testimonial-prev')
-    this.testimonialDots = this.querySelector('.testimonial-pagination')
 
     this.slidesPerView = 1;
+    this.breakpoints ={
+                        0: {
+                          slidesPerView: 1,
+                        }
+                      };
     if(this.getAttribute('data-slidesPerView')){
       this.slidesPerView = parseFloat(this.getAttribute('data-slidesPerView'));
+      this.breakpoints ={
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        991: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        }
+      };
     }
 
     this.init();
@@ -303,14 +315,13 @@ class testimonialSlider extends HTMLElement{
   init(){
     this.slider = new Swiper(this.swiper, {
       slidesPerView: this.slidesPerView,
+      spaceBetween: 24,
       loop: true,
-      pagination: {
-        el: this.testimonialDots,
-      },
       navigation: {
         nextEl: this.testimonialNext,
         prevEl: this.testimonialprev,
       },
+      breakpoints: this.breakpoints,
     });
     
   }

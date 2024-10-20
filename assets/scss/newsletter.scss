@@ -133,6 +133,13 @@
     }
 }
 
+@media (max-width: 767px) {
+
+    .newsletter-text {
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width: 575px) {
     .newsletter-social-wrap {
         gap: 12px;

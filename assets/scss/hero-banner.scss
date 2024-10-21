@@ -1,12 +1,18 @@
-.hero-fixed-bg{
+.hero-banner{
     --color-background: 0, 0, 0;
     --color-foreground: 255, 255, 255;
     --color-secondary-button-text: 255, 255, 255;
     --color-heading: 255, 255, 255;
+    --color-secondary-button-text-hover: 255, 255, 255;
 }
 
-.hero-fixed-bg{
-    --color-secondary-button-text-hover: 255, 255, 255;
+.hero-banner-2{
+    --color-background: 255, 255, 255;
+    --color-foreground: 0, 0, 0;
+    --color-secondary-button-text: 0, 0, 0;
+    --color-heading: 0, 0, 0;
+    --color-secondary-button-border: 0, 0, 0;
+    --color-secondary-button-text-hover: 0, 0, 0;
 }
 
 .hero-fixed-bg {
@@ -19,68 +25,163 @@
     position: relative;
 }
 
-.hero-fixed-bg .flex-bannar {
+.hero-banner-2 .flex-bannar,
+.hero-banner .flex-bannar {
     justify-content: flex-start;
 }
 
-.hero-fixed-bg .content-box {
+.hero-banner .content-box {
     max-width: 610px;
 }
 
-.hero-fixed-bg .hero-heading {
+.hero-banner .hero-heading {
     margin-bottom: 8px;
 }
 
-.hero-fixed-bg .hero-text {
+.hero-banner .hero-text {
     margin-bottom: 32px;
 }
 
+// Hero banner style 2
+.hero-banner-2 .content-box {
+    max-width: 550px;
+    background-color: rgba(var(--color-background), 1);
+    text-align: center;
+    padding: 120px 90px;
+}
+
+.hero-banner-2 .hero-subheading {
+    margin-bottom: 16px;
+}
+
+.hero-banner-2 .hero-text,
+.hero-banner-2 .hero-heading {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 1199px) {
+    .hero-banner-2 .content-box {
+        max-width: 480px;
+        padding: 100px 55px;
+    }
+}
+
 @media (max-width: 991px) {
-    .hero-fixed-bg .hero-heading {
+    .hero-banner .hero-heading {
         font-size: 42px;
     }
 
-    .hero-fixed-bg .hero-text {
+    .hero-banner .hero-text {
         max-width: 520px;
+    }
+
+    .hero-banner-2 .content-box {
+        max-width: 400px;
+        padding: 90px 40px;
+    }
+
+    .hero-banner-2 .hero-subheading {
+        font-size: 16px;
+    }
+
+    .hero-banner-2 .hero-heading {
+        font-size: 28px;
+    }
+
+    .hero-banner-2 .hero-text {
+        font-size: 14px;
+    }
+
+    .hero-banner-2 .button, 
+    .hero-banner-2 .button:hover, 
+    .hero-banner-2 .button:focus {
+        min-width: 180px;
     }
 }
 
 @media (max-width: 767px) {
+
     .hero-fixed-bg {
         height: 600px;
     }
 
-    .hero-fixed-bg .hero-heading {
+    .hero-banner .hero-heading {
         font-size: 38px;
     }
 
-    .hero-fixed-bg .hero-text {
+    .hero-banner .hero-text {
         max-width: 450px;
     }
-}
 
-@media (max-width: 575px) {
-    .hero-fixed-bg .hero-heading {
-        font-size: 28px;
+    .hero-banner-2 .content-box {
+        max-width: 330px;
+        padding: 60px 25px;
     }
 
-    .hero-fixed-bg .hero-text {
+    .hero-banner-2 .hero-subheading {
+        font-size: 14px;
+    }
+
+    .hero-banner-2 .hero-heading {
+        font-size: 24px;
+    }
+
+    .hero-banner-2 .hero-text {
+        font-size: 12px;
+    }
+
+    .hero-banner-2 .button, 
+    .hero-banner-2 .button:hover, 
+    .hero-banner-2 .button:focus {
+        min-width: 170px;
+        height: 50px;
         font-size: 13px;
     }
 }
 
-@media (max-width: 425px) {
-    .hero-fixed-bg .hero-heading {
-        font-size: 20px;
+@media (max-width: 575px) {
+    .hero-banner .hero-heading {
+        font-size: 28px;
     }
 
-    .hero-fixed-bg .hero-text {
+    .hero-banner .hero-text {
+        font-size: 13px;
+    }
+
+    .hero-banner-2 .content-box {
+        max-width: 240px;
+        padding: 40px 10px;
+    }
+
+    .hero-banner-2 .hero-subheading {
         font-size: 12px;
     }
 
-    .hero-fixed-bg .button, 
-    .hero-fixed-bg .button:hover, 
-    .hero-fixed-bg .button:focus {
+    .hero-banner-2 .hero-heading {
+        font-size: 18px;
+    }
+
+    .hero-banner-2 .button, 
+    .hero-banner-2 .button:hover, 
+    .hero-banner-2 .button:focus {
+        min-width: 160px;
+        height: 48px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero-banner .hero-heading {
+        font-size: 20px;
+    }
+
+    .hero-banner .hero-text {
+        font-size: 12px;
+    }
+
+    .hero-banner .button, 
+    .hero-banner .button:hover, 
+    .hero-banner .button:focus {
         min-width: 170px;
         height: 48px;
         font-size: 12px;

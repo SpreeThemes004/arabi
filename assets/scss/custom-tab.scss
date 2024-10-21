@@ -126,6 +126,7 @@
     overflow: hidden;
 }
 
+.product-card-4 .card-action,
 .product-card-3 .card-action,
 .product-card .card-action {
     align-items: center;
@@ -344,6 +345,25 @@
 .product-card-3 .card-action{
     gap: 16px;
     justify-content: center;
+}
+
+// Product cart style 4
+.product-card-4 .product-card-details {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    transition: all 0.3s;
+}
+
+.product-card-4:hover > .product-card-details {
+    bottom: 56px;
+    opacity: 0;
+    visibility: hidden;
 }
   
 

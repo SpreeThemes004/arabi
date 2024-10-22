@@ -176,6 +176,11 @@ body {
   box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.15);
 }
 
+.flex-start{
+  display: flex;
+  justify-content: flex-start;
+}
+
 // icon
 .icon_14{
     width: 14px;

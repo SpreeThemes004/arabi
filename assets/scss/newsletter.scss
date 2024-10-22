@@ -24,8 +24,20 @@
 .newsletter-social-wrap {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 20px;
     flex-wrap: wrap;
+}
+
+
+.newsletter-social-wrap .social-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.newsletter-social-wrap .social-item svg {
+    color: rgba(var(--color-foreground), 1);
 }
 
 .newsletter-form {

@@ -47,7 +47,7 @@
     max-width: 550px;
     background-color: rgba(var(--color-background), 1);
     text-align: center;
-    padding: 120px 90px;
+    padding: 130px 90px;
 }
 
 .hero-banner-2 .hero-subheading {
@@ -100,7 +100,6 @@
 }
 
 @media (max-width: 767px) {
-
     .hero-fixed-bg {
         height: 600px;
     }

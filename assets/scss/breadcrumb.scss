@@ -1,17 +1,26 @@
-.icon-breadcrumb {
-    width: 16px;
-    height: 16px;
-    margin: 0 7px;
+.section-breadcrumb {
+    --color-background: 0, 0, 0;
 }
 
-.breadcrumb li,
-.breadcrumb li a {
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    color: #000000;
-}
-.breadcrumb {
-    margin-bottom: 0;
+.section-breadcrumb {
     margin-top: 30px;
+}
+
+.breadcrumb-list {
+    display: flex;
+    gap: 32px;
+    position: relative;
+    margin: 0;
+}
+
+.breadcrumb-element:not(:first-child):before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    background: rgba(var(--color-background), 0.4);
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -18px;
+    rotate: 20deg;
 }

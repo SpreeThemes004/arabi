@@ -21,7 +21,7 @@
     margin-bottom: 30px;
 }
 
-.footer-style-2 .footer-heading {
+.footer-heading {
     color: rgba(var(--color-foreground), 1);
     display: flex;
     justify-content: space-between;
@@ -33,7 +33,7 @@
     max-width: 190px;
 }
 
-.footer-style-2 .footer-text {
+.footer-text {
     width: 100%;
 }
 
@@ -41,7 +41,7 @@
     margin-bottom: 32px;
 }
 
-.footer-style-2 .footer-logo {
+.footer-logo {
     margin-bottom: 32px;
 }
 
@@ -90,14 +90,14 @@
     margin-top: 24px;
 }
 
-.footer-social {
+.footer-social-wrapper .social-list {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
     margin: 0;
 }
 
-.footer-social-item svg {
+.footer-social-wrapper .social-item svg {
     color: rgba(var(--color-foreground), 1);
 }
 
@@ -131,7 +131,7 @@
     margin-top: 40px;
 }
 
-.footer-payment {
+.payment-list {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -169,7 +169,7 @@
         display: block;
     }
 
-    .footer-style-2 .footer-heading {
+    .footer-heading {
         margin-bottom: 20px;
     }
 

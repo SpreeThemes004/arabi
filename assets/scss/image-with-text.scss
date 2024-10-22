@@ -4,10 +4,19 @@
     --color-secondary-button-text: 255, 255, 255;
     --color-heading: 255, 255, 255;
     --opacity-overlay: 0.3;
+    --color-secondary-button-text-hover: 255, 255, 255;
 }
 
-.image-text-card{
-    --color-secondary-button-text-hover: 255, 255, 255;
+.image-with-text-2 {
+    --color-secondary-button-border: 0, 0, 0;
+}
+
+.image-with-text-2 .image-text-left {
+    --color-background: 248, 236, 223;
+}
+
+.image-with-text-2 .image-text-right {
+    --color-background: 223, 225, 248;
 }
 
 .image-text-card {
@@ -19,6 +28,8 @@
     transition: all 0.5s ease-in-out;
 }
 
+.image-with-text-2 .image-text-right:hover .image-text-media img,
+.image-with-text-2 .image-text-left:hover .image-text-media img,
 .image-text-card:hover > .image-text-media img {
     transform: scale(1.1);
     transform-origin: center;
@@ -31,6 +42,35 @@
 
 .image-text-card .image-text-text {
     margin-bottom: 24px;
+}
+
+// Image with text 2
+.image-with-text-2 {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 24px;
+    row-gap: var(--bs-gutter-x);
+    justify-content: center;
+}
+
+.image-with-text-2 .image-text-left {
+    background-color: rgba(var(--color-background), 1);
+}
+
+.image-with-text-2 .image-text-right {
+    background-color: rgba(var(--color-background), 1);
+}
+
+.image-with-text-2 .image-text-right-wrap,
+.image-with-text-2 .image-text-left-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.image-with-content * + * {
+    margin-top: 24px;
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -53,11 +93,39 @@
         min-width: 170px;
         height: 48px;
     }
+
+    .image-with-text-2 .image-with-subheading {
+        font-size: 16px;
+    }
+
+    .image-with-text-2 .image-with-heading {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 1199px) {
     .image-text-card {
         margin-top: 42px;
+    }
+
+    .image-with-text-2 .image-with-subheading {
+        font-size: 14px;
+    }
+
+    .image-with-text-2 .image-with-heading {
+        font-size: 26px;
+    }
+
+    .image-with-text-2 .image-text-button.button, 
+    .image-with-text-2 .image-text-button.button:hover, 
+    .image-with-text-2 .image-text-button.button:focus {
+        min-width: 172px;
+        height: 50px;
+        font-size: 12px;
+    }
+
+    .image-with-content * + * {
+        margin-top: 20px;
     }
 }
 
@@ -81,8 +149,53 @@
         min-width: 170px;
         height: 48px;
     }
+
+    .image-with-text-2 .image-with-subheading {
+        font-size: 12px;
+    }
+
+    .image-with-text-2 .image-with-heading {
+        font-size: 20px;
+    }
+
+    .image-with-text-2 .image-text-button.button, 
+    .image-with-text-2 .image-text-button.button:hover, 
+    .image-with-text-2 .image-text-button.button:focus {
+        min-width: 145px;
+        height: 46px;
+        font-size: 9px;
+    }
+
+    .image-with-content * + * {
+        margin-top: 16px;
+    }
 }
 
+@media (max-width: 767px) {
+    .image-with-text-2 {
+        flex-wrap: wrap;
+    }
+
+    .image-with-text-2 .image-with-subheading {
+        font-size: 16px;
+    }
+
+    .image-with-text-2 .image-with-heading {
+        font-size: 32px;
+    }
+
+    .image-with-text-2 .image-text-button.button, 
+    .image-with-text-2 .image-text-button.button:hover, 
+    .image-with-text-2 .image-text-button.button:focus {
+        min-width: 180px;
+        height: 56px;
+        font-size: 13px;
+    }
+
+    .image-with-content * + * {
+        margin-top: 24px;
+    }
+}
 
 @media (max-width: 575px) {
     .image-text-card .text-content-box {
@@ -98,6 +211,26 @@
     .image-text-button.button:focus {
         min-width: 170px;
         height: 48px;
+    }
+
+    .image-with-text-2 .image-with-subheading {
+        font-size: 14px;
+    }
+
+    .image-with-text-2 .image-with-heading {
+        font-size: 25px;
+    }
+
+    .image-with-text-2 .image-text-button.button, 
+    .image-with-text-2 .image-text-button.button:hover, 
+    .image-with-text-2 .image-text-button.button:focus {
+        min-width: 170px;
+        height: 52px;
+        font-size: 11px;
+    }
+
+    .image-with-content * + * {
+        margin-top: 22px;
     }
 }
 
@@ -121,5 +254,25 @@
         min-width: 140px;
         height: 40px;
         font-size: 12px;
+    }
+
+    .image-with-text-2 .image-with-subheading {
+        font-size: 13px;
+    }
+
+    .image-with-text-2 .image-with-heading {
+        font-size: 20px;
+    }
+
+    .image-with-text-2 .image-text-button.button, 
+    .image-with-text-2 .image-text-button.button:hover, 
+    .image-with-text-2 .image-text-button.button:focus {
+        min-width: 144px;
+        height: 42px;
+        font-size: 9px;
+    }
+
+    .image-with-content * + * {
+        margin-top: 12px;
     }
 }

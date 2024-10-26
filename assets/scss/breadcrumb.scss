@@ -24,3 +24,13 @@
     margin-left: -18px;
     rotate: 20deg;
 }
+
+.breadcrumb-bg-img img {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.breadcrumb-style-2 .breadcrumb-list {
+    justify-content: center;
+}

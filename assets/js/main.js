@@ -96,6 +96,7 @@ class Accordion extends HTMLElement{
 
   toggleMenu(event) {
     event.target.nextElementSibling.classList.toggle('open');
+    event.target.classList.toggle('minus');
   }
 } 
 

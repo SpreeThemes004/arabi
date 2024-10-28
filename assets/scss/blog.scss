@@ -8,6 +8,62 @@
     margin-top: 8px;
 }
 
+// Blog page css
+.blog-wrap {
+    display: flex;
+    column-gap: 100px;
+}
+
+.blog-list {
+    width: 78%;
+    display: flex;
+    margin-left: -24px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    width: 33.33%;
+    padding-left: 24px;
+}
+
+.blog-sidebar-wrap > div + div {
+    margin-top: 48px;
+}
+
+.blog-sidebar {
+    width: 22%;
+}
+
+.blog-page .article-card {
+    margin: 0;
+}
+
+.blog-page .article-title {
+    margin-top: 8px;
+    display: block;
+}
+
+.latest-post-item .article-image {
+    width: 30%;
+}
+
+.latest-post-item .article-content {
+    width: calc(70% - 16px);
+    margin: 0;
+}
+
+.latest-post-item .article-publish,
+.latest-post-item .article-title {
+    margin-top: 0;
+}
+
+.latest-post-item  .article-card-3 {
+    column-gap: 16px;
+    align-items: center;
+}
+
+// Article card css
 .article-card {
     margin-top: 48px;
 }

@@ -181,6 +181,10 @@ body {
   justify-content: flex-start;
 }
 
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
 // icon
 .icon_14{
     width: 14px;
@@ -522,4 +526,75 @@ img {
 .swiper-button-next:after, 
 .swiper-button-prev:after {
   display: none;
+}
+
+// fileter widget
+.filter-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+
+.filter-list {
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+.filter-label input {
+  display: none;
+}
+
+.filter-label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+
+.filter-checkbox {
+  position: relative;
+  border: 1.5px solid #000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.filter-checkbox:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 11px;
+  top: 2px;
+  left: 7px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  display: none;
+}
+
+.filter-label > input:checked + .filter-checkbox:after {
+  display: block;
+}
+
+.filter-label > input:checked + .filter-checkbox {
+  background-color: #000;
+}
+
+.filter-value {
+  margin-left: auto;
+}
+
+.filter-list > li + li {
+  margin-top: 24px;
+}
+
+.filter-content {
+  display: none;
+}
+
+.filter-content.open {
+  display: block;
 }

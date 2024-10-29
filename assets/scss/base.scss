@@ -529,6 +529,14 @@ img {
 }
 
 // fileter widget
+.filter-checkbox {
+  --color-background: 0, 0, 0;
+}
+
+.input-field {
+  --color-background: 247, 247, 247;
+}
+
 .filter-heading {
   display: flex;
   align-items: center;
@@ -536,7 +544,7 @@ img {
   cursor: pointer;
 }
 
-
+.filter-price-wrap,
 .filter-list {
   margin-top: 32px;
   margin-bottom: 0;
@@ -580,7 +588,15 @@ img {
 }
 
 .filter-label > input:checked + .filter-checkbox {
-  background-color: #000;
+  background-color: rgba(var(--color-background), 1);
+}
+
+.filter-label > input:checked + .filter-checkbox.purple,
+.filter-label > input:checked + .filter-checkbox.orange,
+.filter-label > input:checked + .filter-checkbox.blue,
+.filter-label > input:checked + .filter-checkbox.yellow {
+  background-color: rgba(var(--color-background), 1);
+  border-color: transparent;
 }
 
 .filter-value {
@@ -597,4 +613,22 @@ img {
 
 .filter-content.open {
   display: block;
+}
+
+.filter-price {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.filter-field {
+  width: 100%;
+}
+
+.input-field {
+  background: rgba(var(--color-background), 1);
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 6px;
 }

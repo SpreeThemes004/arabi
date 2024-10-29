@@ -155,3 +155,91 @@
         font-size: 12px;
     }
 }
+
+
+// collection-left-sidebar page css start
+.filter-checkbox.yellow {
+    --color-background: 255, 199, 60;
+}
+.filter-checkbox.blue {
+    --color-background: 47, 128, 237;
+}
+.filter-checkbox.orange {
+    --color-background: 242, 153, 74;
+}
+.filter-checkbox.purple {
+    --color-background: 155, 81, 224;
+}
+
+.collection-wrap {
+    display: flex;
+    gap: 100px;
+}
+
+.collection-wrap .product-list-wrap {
+    width: calc(75% - 100px);
+}
+
+.collection-sidebar {
+    width: 25%;
+}
+
+.collection-wrap .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px;
+}
+
+.collection-wrap .product-card {
+    width: 33.33%;
+    padding-left: 24px;
+}
+
+.collection-wrap .filter-sort-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collection-layout {
+    display: flex;
+    background: #f7f7f7;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.collection-layout .layout-list {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.collection-layout .layout-list:hover {
+    background: rgba(var(--color-background), 1);
+}
+
+.filter-sort .sort-btn {
+    width: 180px;
+    height: 48px;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.filter-sort .sort-list {
+    width: 100%;
+    border-color: #f7f7f7;
+}
+
+.filter-sort .sort-item {
+    padding: 6px 10px;
+}
+
+.collection-sidebar-wrap > div + div {
+    margin-top: 42px;
+}

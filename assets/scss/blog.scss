@@ -14,8 +14,11 @@
     column-gap: 100px;
 }
 
-.blog-list {
+.blog-list-wrap{
     width: 78%;
+}
+
+.blog-list {
     display: flex;
     margin-left: -24px;
     row-gap: 30px;

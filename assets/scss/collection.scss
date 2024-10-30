@@ -243,3 +243,46 @@
 .collection-sidebar-wrap > div + div {
     margin-top: 42px;
 }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .collection-wrap {
+        gap: 50px;
+    }
+
+    .collection-wrap .product-list-wrap {
+        width: calc(75% - 50px);
+    }
+
+    .collection-wrap .card-cart-button {
+        gap: 8px;
+    }
+
+    .collection-wrap .cart-button-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 991px) {
+    .collection-wrap .product-list-wrap {
+        width: 100%;
+    }
+    
+    .drawer-filter.offcanvas {
+        width: 100%;
+        border: none;
+    }
+
+    .collection-wrap .product-card {
+        width: 50%;
+    }
+
+    .collection-sidebar {
+        width: 100%;
+        padding: 20px;
+        overflow-y: scroll;
+    }
+
+    .offcanvas-header.filter-heading {
+        padding: 0;
+    }
+}

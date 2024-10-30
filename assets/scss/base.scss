@@ -632,3 +632,21 @@ img {
   padding: 0 10px;
   border-radius: 6px;
 }
+
+.filter-btn .icon-filter {
+  transform: rotate(90deg);
+}
+
+.filter-product-info {
+  width: calc(100% - 80px);
+}
+
+.filter-item .minicart-item {
+  padding: 0;
+  align-items: center;
+  gap: 16px;
+}
+
+.filter-product-info > * + * {
+  margin-top: 8px;
+}

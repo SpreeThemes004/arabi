@@ -1,3 +1,7 @@
+.pagination-item{
+    --color-background: 247, 247, 247;
+}
+
 .pagination-wrap {
     display: flex;
     justify-content: center;
@@ -16,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f7f7f7;
+    background: rgba(var(--color-background), 1);
     cursor: pointer;
     border-radius: 12px;
     transition: all 0.3s;
@@ -34,4 +38,15 @@
 
 .pagination-item.disabled .pagination-link {
     opacity: 0.3;
+}
+
+@media (max-width: 575px) {
+    .pagination-item {
+        width: 30px;
+        height: 30px;
+    }
+
+    .pagination-link {
+        font-size: 14px;
+    }
 }

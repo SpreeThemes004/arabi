@@ -82,7 +82,7 @@ class HeroSlider extends HTMLElement{
 customElements.define('hero-slider', HeroSlider)
 
 
-// Footer menu
+// Accordian 
 class Accordion extends HTMLElement{
   constructor(){
     super();
@@ -90,13 +90,13 @@ class Accordion extends HTMLElement{
     this.opener = this.querySelectorAll('.accordion-opener');
 
     this.opener.forEach(item => {
-      item.addEventListener('click', this.toggleMenu.bind(this))
+      item.addEventListener('click', this.toggleMenu.bind(this));
     })
   }
 
   toggleMenu(event) {
     event.target.nextElementSibling.classList.toggle('open');
-    event.target.classList.toggle('minus');
+    event.target.classList.toggle('minus');      
   }
 } 
 
@@ -240,6 +240,7 @@ class productSlider extends HTMLElement{
 
 customElements.define('product-details-slider', productSlider);
 
+// Product slider
 class newProductSlider extends HTMLElement{
   constructor(){
     super();
@@ -278,7 +279,7 @@ class newProductSlider extends HTMLElement{
 
 customElements.define('product-slider', newProductSlider);
 
-
+// Testmonial slider 
 class testimonialSlider extends HTMLElement{
   constructor(){
     super();
@@ -327,8 +328,6 @@ class testimonialSlider extends HTMLElement{
     
   }
 }
-
-
 
 customElements.define('testimonial-slider', testimonialSlider);
 

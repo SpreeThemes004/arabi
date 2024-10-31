@@ -8,7 +8,7 @@
 
 .discount-badge{
     --color-foreground: 255, 255, 255;
-    --color-background: 227, 73, 73;
+    --color-background: 179, 0, 0;
 }
 
 
@@ -142,7 +142,7 @@
 }
 
 .discount-badge{
-    background: rgba(var(--color-background), 1);
+    background-color: rgba(var(--color-background), 1);
     color: rgba(var(--color-foreground), 1);;
     padding: 4px 12px;
     border-radius: 4px;

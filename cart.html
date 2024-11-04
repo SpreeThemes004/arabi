@@ -571,7 +571,7 @@
         <main id="MainContent" class="content-for-layout">
             <!-- cart page start -->
             <!-- section progress bar -->
-            <div class="section-progress-bar section-mt">
+            <!-- <div class="section-progress-bar section-mt">
                 <div class="container-fluid">
                     <ul class="probar list-unstyled">
                         <li class="probar-item complete">
@@ -585,7 +585,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <!-- cart table -->
             <div class="cart-table section-mt">
                 <div class="container">
@@ -788,72 +788,15 @@
             </div>
             <div class="cart-misc section-mt">
                 <div class="container">
-                    <div class="cart-misc-grid">
-                        <div class="cart-misc-item">
-                            <div class="cart-shipping-address">
-                                <h3 class="cart-shipping-heading subheading text_20">Shipping Address</h3>
-                                <div class="cart-shipping-wrap">
-                                    <div class="shipping-country relative">
-                                        <button type="button" class="shipping-country-btn button-reset"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            <span class="text text_16">United States</span>
-                                            <span>
-                                                <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
-                                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                                </svg>
-                                            </span>
-                                        </button>
-                                        <ul class="country-list dropdown-menu dropdown-menu-end">
-                                            <li class="country-list-item">
-                                                <a class="country-list-option" href="#" data-value="English">
-                                                    <span class="text text_16">Austria</span>
-                                                </a>
-                                            </li>
-                                            <li class="country-list-item">
-                                                <a class="country-list-option" href="#" data-value="Français">
-                                                    <span class="text text_16">Denmark</span>
-                                                </a>
-                                            </li>
-                                            <li class="country-list-item">
-                                                <a class="country-list-option" href="#" data-value="English">
-                                                    <span class="text text_16">Switzerland</span>
-                                                </a>
-                                            </li>
-                                            <li class="country-list-item">
-                                                <a class="country-list-option" href="#" data-value="Français">
-                                                    <span class="text text_16">Spain</span>
-                                                </a>
-                                            </li>
-                                            <li class="country-list-item ">
-                                                <a class="country-list-option" href="#" data-value="English">
-                                                    <span class="text text_16">France</span>
-                                                </a>
-                                            </li>
-                                            <li class="country-list-item">
-                                                <a class="country-list-option" href="#" data-value="Français">
-                                                    <span class="text text_16">Germany</span>
-                                                </a>
-                                            </li>
-                                            <li class="country-list-item">
-                                                <a class="country-list-option" href="#" data-value="English">
-                                                    <span class="text text_16">United Kingdom (UK)</span>
-                                                </a>
-                                            </li>
-                                            <li class="country-list-item">
-                                                <a class="country-list-option" href="#" data-value="Français">
-                                                    <span class="text text_16">Poland</span>
-                                                </a>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div> 
-                                    <div class="shipping-city-zip">
-                                        <div class="shipping-city relative">
-                                            <button type="button" class="shipping-city-btn button-reset"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                <span class="text text_16">New York</span>
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <div class="cart-shipping-address">
+                                    <h3 class="cart-shipping-heading subheading text_20">Shipping Address</h3>
+                                    <div class="cart-shipping-wrap">
+                                        <div class="shipping-country relative">
+                                            <button type="button" class="shipping-country-btn button-reset"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="text text_16">United States</span>
                                                 <span>
                                                     <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
                                                         width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -862,96 +805,153 @@
                                                     </svg>
                                                 </span>
                                             </button>
-                                        <ul class="city-list dropdown-menu dropdown-menu-end">
-                                            <li class="city-list-item ">
-                                                <a class="city-list-option" href="#" data-value="English">
-                                                    <span class="text text_16">Alabama</span>
-                                                </a>
-                                            </li>
-                                            <li class="city-list-item ">
-                                                <a class="city-list-option" href="#" data-value="English">
-                                                    <span class="text text_16">Alaska</span>
-                                                </a>
-                                            </li>
-                                            <li class="city-list-item ">
-                                                <a class="city-list-option" href="#" data-value="English">
-                                                    <span class="text text_16">Arizona</span>
-                                                </a>
-                                            </li>
-                                            <li class="city-list-item ">
-                                                <a class="city-list-option" href="#" data-value="English">
-                                                    <span class="text text_16">California</span>
-                                                </a>
-                                            </li>
-                                            <li class="city-list-item ">
-                                                <a class="city-list-option" href="#" data-value="English">
-                                                    <span class="text text_16">Florida</span>
-                                                </a>
-                                            </li>
-                                            <li class="city-list-item ">
-                                                <a class="city-list-option" href="#" data-value="English">
-                                                    <span class="text text_16">Georgia</span>
-                                                </a>
-                                            </li>
-                                            <li class="city-list-item ">
-                                                <a class="city-list-option" href="#" data-value="English">
+                                            <ul class="country-list dropdown-menu dropdown-menu-end">
+                                                <li class="country-list-item">
+                                                    <a class="country-list-option" href="#" data-value="English">
+                                                        <span class="text text_16">Austria</span>
+                                                    </a>
+                                                </li>
+                                                <li class="country-list-item">
+                                                    <a class="country-list-option" href="#" data-value="Français">
+                                                        <span class="text text_16">Denmark</span>
+                                                    </a>
+                                                </li>
+                                                <li class="country-list-item">
+                                                    <a class="country-list-option" href="#" data-value="English">
+                                                        <span class="text text_16">Switzerland</span>
+                                                    </a>
+                                                </li>
+                                                <li class="country-list-item">
+                                                    <a class="country-list-option" href="#" data-value="Français">
+                                                        <span class="text text_16">Spain</span>
+                                                    </a>
+                                                </li>
+                                                <li class="country-list-item ">
+                                                    <a class="country-list-option" href="#" data-value="English">
+                                                        <span class="text text_16">France</span>
+                                                    </a>
+                                                </li>
+                                                <li class="country-list-item">
+                                                    <a class="country-list-option" href="#" data-value="Français">
+                                                        <span class="text text_16">Germany</span>
+                                                    </a>
+                                                </li>
+                                                <li class="country-list-item">
+                                                    <a class="country-list-option" href="#" data-value="English">
+                                                        <span class="text text_16">United Kingdom (UK)</span>
+                                                    </a>
+                                                </li>
+                                                <li class="country-list-item">
+                                                    <a class="country-list-option" href="#" data-value="Français">
+                                                        <span class="text text_16">Poland</span>
+                                                    </a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div> 
+                                        <div class="shipping-city-zip">
+                                            <div class="shipping-city relative">
+                                                <button type="button" class="shipping-city-btn button-reset"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
                                                     <span class="text text_16">New York</span>
-                                                </a>
-                                            </li>
-                                            <li class="city-list-item ">
-                                                <a class="city-list-option" href="#" data-value="English">
-                                                    <span class="text text_16">Oklahoma</span>
-                                                </a>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                        <div class="shipping-zip">
-                                            <input type="text" placeholder="zip code" class="input-reset">
+                                                    <span>
+                                                        <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
+                                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            <ul class="city-list dropdown-menu dropdown-menu-end">
+                                                <li class="city-list-item ">
+                                                    <a class="city-list-option" href="#" data-value="English">
+                                                        <span class="text text_16">Alabama</span>
+                                                    </a>
+                                                </li>
+                                                <li class="city-list-item ">
+                                                    <a class="city-list-option" href="#" data-value="English">
+                                                        <span class="text text_16">Alaska</span>
+                                                    </a>
+                                                </li>
+                                                <li class="city-list-item ">
+                                                    <a class="city-list-option" href="#" data-value="English">
+                                                        <span class="text text_16">Arizona</span>
+                                                    </a>
+                                                </li>
+                                                <li class="city-list-item ">
+                                                    <a class="city-list-option" href="#" data-value="English">
+                                                        <span class="text text_16">California</span>
+                                                    </a>
+                                                </li>
+                                                <li class="city-list-item ">
+                                                    <a class="city-list-option" href="#" data-value="English">
+                                                        <span class="text text_16">Florida</span>
+                                                    </a>
+                                                </li>
+                                                <li class="city-list-item ">
+                                                    <a class="city-list-option" href="#" data-value="English">
+                                                        <span class="text text_16">Georgia</span>
+                                                    </a>
+                                                </li>
+                                                <li class="city-list-item ">
+                                                    <a class="city-list-option" href="#" data-value="English">
+                                                        <span class="text text_16">New York</span>
+                                                    </a>
+                                                </li>
+                                                <li class="city-list-item ">
+                                                    <a class="city-list-option" href="#" data-value="English">
+                                                        <span class="text text_16">Oklahoma</span>
+                                                    </a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                            <div class="shipping-zip">
+                                                <input type="text" placeholder="zip code" class="input-reset">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="cart-misc-item">
-                            <div class="cart-coupon">
-                                <h3 class="cart-shipping-heading subheading text_20">Coupon</h3>
-                                <div class="cart-coupon-wrap">
-                                    <input type="text" placeholder="Cupon Code" class="input-reset">
-                                    <button type="button" class="coupon-button button button-primary">Apply Coupon</button>
+                            <div class="col-md-4 col-12">
+                                <div class="cart-coupon">
+                                    <h3 class="cart-shipping-heading subheading text_20">Coupon</h3>
+                                    <div class="cart-coupon-wrap">
+                                        <input type="text" placeholder="Cupon Code" class="input-reset">
+                                        <button type="button" class="coupon-button button button-primary">Apply Coupon</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="cart-total">
+                                    <h3 class="cart-total-heading subheading text_20">Order Summary</h3>
+                                    <div class="cart-total-wrap">
+                                        <div class="cart-total-item text text_16">
+                                            <span>Subtotal</span>
+                                            <span>$100</span>
+                                        </div>
+                                        <div class="cart-total-item text text_16">
+                                            <span>Shipping</span>
+                                            <span>+$10</span>
+                                        </div>
+                                        <div class="cart-total-item text text_16">
+                                            <span>Discount</span>
+                                            <span>-$0</span>
+                                        </div>
+                                        <div class="cart-total-item total text text_16">
+                                            <span>Total</span>
+                                            <span>$110</span>
+                                        </div>
+                                        <button class="cart-chekcout-button button button-primary">Checkout Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="cart-note">
+                                    <textarea name="note" placeholder="Add a note" rows="3"></textarea>
                                 </div>
                             </div>
                         </div>
-                        <div class="cart-misc-item">
-                            <div class="cart-total">
-                                <h3 class="cart-total-heading subheading text_20">Order Summary</h3>
-                                <div class="cart-total-wrap">
-                                    <div class="cart-total-item text text_16">
-                                        <span>Subtotal</span>
-                                        <span>$100</span>
-                                    </div>
-                                    <div class="cart-total-item text text_16">
-                                        <span>Shipping</span>
-                                        <span>+$10</span>
-                                    </div>
-                                    <div class="cart-total-item text text_16">
-                                        <span>Discount</span>
-                                        <span>-$0</span>
-                                    </div>
-                                    <div class="cart-total-item total text text_16">
-                                        <span>Total</span>
-                                        <span>$110</span>
-                                    </div>
-                                    <button class="cart-chekcout-button button button-primary">Checkout Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cart-misc-item">
-                            <div class="cart-note">
-                                <textarea name="note" placeholder="Add a note" rows="3"></textarea>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <!-- Cart page end -->

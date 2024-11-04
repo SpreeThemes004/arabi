@@ -1,63 +1,63 @@
-// progress bar css
-.probar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 50%;
-    margin: 0 auto;
-    background: #f7f7f7;
-    height: 8px;
-}
+// // progress bar css
+// .probar {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     max-width: 50%;
+//     margin: 0 auto;
+//     background: #f7f7f7;
+//     height: 8px;
+// }
 
-.probar-item:first-child {
-    flex: 1;
-}
+// .probar-item:first-child {
+//     flex: 1;
+// }
 
-.probar-item:first-child > span {
-    margin-left: -3px;
-}
+// .probar-item:first-child > span {
+//     margin-left: -3px;
+// }
 
-.probar-item {
-    position: relative;
-    flex: 2;
-    display: flex;
-}
+// .probar-item {
+//     position: relative;
+//     flex: 2;
+//     display: flex;
+// }
 
-.probar-item span {
-    width: 32px;
-    height: 32px;
-    background: #ddd;
-    display: block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    z-index: 2;
-    border: 1px solid #999;
-}
+// .probar-item span {
+//     width: 32px;
+//     height: 32px;
+//     background: #ddd;
+//     display: block;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border-radius: 50%;
+//     z-index: 2;
+//     border: 1px solid #999;
+// }
 
-.probar-item.active:before {
-    content: "";
-    position: absolute;
-    background: #000;
-    right: 50%;
-    width: 100%;
-    top: 50%;
-    height: 8px;
-    transform: translateY(-50%);
-}
+// .probar-item.active:before {
+//     content: "";
+//     position: absolute;
+//     background: #000;
+//     right: 50%;
+//     width: 100%;
+//     top: 50%;
+//     height: 8px;
+//     transform: translateY(-50%);
+// }
 
-.probar-item.active {
-    display: flex;
-    justify-content: center;
-}
+// .probar-item.active {
+//     display: flex;
+//     justify-content: center;
+// }
 
-.probar-item:last-child {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: -3px;
-}
+// .probar-item:last-child {
+//     flex: 1;
+//     display: flex;
+//     justify-content: flex-end;
+//     margin-right: -3px;
+// }
 
 // -----------
 
@@ -169,6 +169,7 @@
 .cart-shipping-address {
     background-color: #f7f7f7;
     padding: 32px;
+    border-radius: 6px;
 }
 
 .cart-shipping-wrap > div + div {
@@ -272,6 +273,7 @@
     max-width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 8px;
+    border-radius: 6px;
 }
 
 .cart-note textarea:focus {

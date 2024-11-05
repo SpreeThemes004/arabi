@@ -24,6 +24,11 @@
     width: 70%;
 }
 
+.checkout-profile .user-img img {
+    min-width: 100px;
+    width: 100px;
+}
+
 .checkout-profile .edit-button:hover {
     background: #fff;
 }
@@ -117,4 +122,126 @@
 
 .checkout-total-area .minicart-item:not(:last-child) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 991px) {
+    .checkout-profile {
+        padding: 20px;
+    }
+
+    .checkout-profile .user-name {
+        font-size: 18px;
+    }
+
+    .checkout-profile .edit-text {
+        font-size: 12px;
+    }
+
+    .checkout-profile .button, 
+    .checkout-profile .button:hover, 
+    .checkout-profile .button:focus {
+        min-width: 150px;
+        height: 48px;
+    }
+
+    .checkout-form-heading {
+        font-size: 18px;
+    }
+
+    .checkout-form label {
+        font-size: 13px;
+    }
+
+    .checkbox-text {
+        font-size: 14px;
+    }
+
+    .cart-total-heading,
+    .cart-shipping-heading {
+        font-size: 18px;
+    }
+
+    .cart-coupon .coupon-button {
+        font-size: 12px;
+    }
+
+    .checkout-total-area {
+        padding: 12px;
+    }
+
+    .checkout-total-area .product-info {
+        margin-top: 0;
+        padding-left: 10px;
+    }
+
+    .cart-total-item,
+    .checkout-total-area .product-title .text_16 {
+        font-size: 13px;
+    }
+
+    .checkout-total-area .product-vendor .text_14 {
+        font-size: 11px;
+    }
+
+    .cart-chekcout-button {
+        height: 48px;
+    }
+
+    .checkout-button .button, 
+    .checkout-button .button:hover, 
+    .checkout-button .button:focus {
+        height: 52px;
+    }
+}
+
+@media (max-width: 767px) {
+    .checkout-sidebar {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 425px) {
+    .checkout-profile {
+        flex-wrap: wrap;
+    }
+
+    .checkout-profile .user-profile {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .checkout-profile .button, 
+    .checkout-profile .button:hover, 
+    .checkout-profile .button:focus {        
+        height: 44px;
+        margin-top: 16px;
+        font-size: 13px;
+    }
+
+    .checkout-form-heading,
+    .checkout-form-heading {
+        font-size: 14px;
+    }
+
+    .checkout-form label {
+        font-size: 12px;
+    }
+
+    .checkout-form select, 
+    .checkout-form input {
+        font-size: 13px;
+    }
+
+    .checkout-button {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .checkout-button .button, 
+    .checkout-button .button:hover, 
+    .checkout-button .button:focus {
+        height: 48px;
+        font-size: 13px;
+        width: 100%;
+    }
 }

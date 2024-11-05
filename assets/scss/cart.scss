@@ -1,65 +1,76 @@
-// // progress bar css
-// .probar {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     max-width: 50%;
-//     margin: 0 auto;
-//     background: #f7f7f7;
-//     height: 8px;
-// }
+.probar-item {
+    --color-background: 247, 247, 247;
+}
 
-// .probar-item:first-child {
-//     flex: 1;
-// }
+.probar-item.is-complete {
+    --color-background: 0, 0, 0;
+}
 
-// .probar-item:first-child > span {
-//     margin-left: -3px;
-// }
+.probar-item.is-complete:before {
+    --color-foreground: 255, 255, 255;
+}
 
-// .probar-item {
-//     position: relative;
-//     flex: 2;
-//     display: flex;
-// }
+.probar {
+    width: 80%;
+    margin: 0 auto;
+    counter-reset: step;
+    overflow: hidden;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
 
-// .probar-item span {
-//     width: 32px;
-//     height: 32px;
-//     background: #ddd;
-//     display: block;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     border-radius: 50%;
-//     z-index: 2;
-//     border: 1px solid #999;
-// }
+.probar-item {
+    position: relative;
+    width: 33.33%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
 
-// .probar-item.active:before {
-//     content: "";
-//     position: absolute;
-//     background: #000;
-//     right: 50%;
-//     width: 100%;
-//     top: 50%;
-//     height: 8px;
-//     transform: translateY(-50%);
-// }
+.probar-item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background-color: rgba(var(--color-background), 1);
+    left: 50%;
+    z-index: -1;
+    bottom: 52px;
+}
 
-// .probar-item.active {
-//     display: flex;
-//     justify-content: center;
-// }
+.probar-item.is-complete:after {
+    background-color: rgba(var(--color-background), 1);
+}
 
-// .probar-item:last-child {
-//     flex: 1;
-//     display: flex;
-//     justify-content: flex-end;
-//     margin-right: -3px;
-// }
+.probar-item:before {
+    content: counter(step);
+    width: 32px;
+    height: 32px;
+    background-color: rgba(var(--color-background), 1);
+    counter-increment: step;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba( var(--color-foreground), 1);
+    bottom: 40px;
+    position: absolute;
+    left: 45%;
+    font-size: 16px;
+}
 
-// -----------
+.probar-item.is-complete:before {
+    background-color: rgba(var(--color-background), 1);
+    color: rgba( var(--color-foreground), 1);
+}
+
+.probar-item.is-active:before {
+    border: 1px solid #000;
+}
 
 .cart-list {
     width: 100%;
@@ -246,6 +257,7 @@
     width: 100%;
     height: 44px;
     margin-top: 8px;
+    min-width: 100%;
 }
 
 .cart-total-item {
@@ -265,7 +277,7 @@
 
 .cart-chekcout-button {
     width: 100%;
-    margin-top: 8px;
+    margin-top: 20px;
 }
 
 .cart-note textarea {
@@ -278,5 +290,39 @@
 
 .cart-note textarea:focus {
     outline: none;
+}
+
+@media (max-width: 991px) {
+    .probar-item .text_16 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .probar {
+        margin: 0;
+        padding-top: 0;
+        flex-wrap: wrap;
+    }
+
+    .probar-item {
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+
+    .probar-item .text_16 {
+        font-size: 16px;
+    }
+
+    .probar-item:not(:last-child):after {
+        content: none;
+    }
+
+    .probar-item:before {
+        left: 0;
+        bottom: -5px;
+    }
 }
 

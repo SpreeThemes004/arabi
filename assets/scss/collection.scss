@@ -1,11 +1,30 @@
+// Collection without sidebar
 .collection-grid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 24px;
 }
 
 .collection-content-inner {
-    max-width: 468px;
+    padding-top: 70px;
+}
+
+.content-last {
+    order: 9999;
+}
+
+.content-first {
+    order: -9999;
+}
+
+.collection-content-inner.place-end {
+    place-self: start end;
+    padding-left: 70px;
+}
+
+.collection-content-inner.place-start {
+    place-self: start start;
+    padding-right: 70px;
 }
 
 .collection-content-inner > * + * {
@@ -29,89 +48,11 @@
     letter-spacing: 5px;
 }
 
-@media (min-width: 1200px) and (max-width: 1399px){
-    .collection-grid {
-        column-gap: 150px;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px){
-    .collection-grid {
-        column-gap: 125px;
-    }
-
-    .collection-content-inner > * + * {
-        margin-top: 14px;
-    }
-
-    .collection-image-title,
-    .collection-subheading {
-        font-size: 16px;
-    }
-
-    .collection-heading {
-        font-size: 28px;
-    }
-
-    .collection-text {
-        font-size: 12px;
-    }
-
-    .collection-button.button, 
-    .collection-button.button:hover, 
-    .collection-button.button:focus {
-        min-width: 180px;
-        height: 56px;
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 767px) and (max-width: 991px){
-    .collection-grid {
-        column-gap: 95px;
-    }
-
-    .collection-content-inner > * + * {
-        margin-top: 14px;
-    }
-
-    .collection-image-title,
-    .collection-subheading {
-        font-size: 14px;
-    }
-
-    .collection-heading {
-        font-size: 22px;
-    }
-
-    .collection-text {
-        font-size: 12px;
-    }
-
-    .collection-button.button, 
-    .collection-button.button:hover, 
-    .collection-button.button:focus {
-        min-width: 170px;
-        height: 48px;
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 767px) {
-    .collection-grid {
-        align-items: flex-start;
-        flex-direction: column-reverse;
-    }
-
-    .collection-image-title {
-        margin-top: 18px;
-    }
-
+@media (min-width: 992px) and (max-width: 1199px) {
     .collection-content-inner {
-        margin-top: 30px;
+        padding-top: 50px;
     }
-
-    .collection-image-title,
+    
     .collection-subheading {
         font-size: 16px;
     }
@@ -124,37 +65,88 @@
         font-size: 13px;
     }
 
-    .collection-button.button, 
-    .collection-button.button:hover, 
-    .collection-button.button:focus {
-        min-width: 180px;
+    .collection-button {
         height: 52px;
-        font-size: 13px;
     }
 }
 
-@media (max-width: 425px) {
-    .collection-image-title,
+@media (min-width: 768px) and (max-width: 991px) {
+    .collection-content-inner {
+        padding-top: 10px;
+    }
+
+    .collection-content-inner > * + * {
+        margin-top: 8px;
+    }
+
     .collection-subheading {
         font-size: 14px;
     }
 
     .collection-heading {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .collection-text {
         font-size: 12px;
     }
 
-    .collection-button.button, 
-    .collection-button.button:hover, 
-    .collection-button.button:focus {
-        min-width: 170px;
+    .collection-image-title {
+        font-size: 14px;
+    }
+
+    .collection-button {
+        min-width: 180px;
         height: 48px;
-        font-size: 12px;
+        font-size: 13px;
     }
 }
+
+@media (max-width: 767px) {
+    .collection-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-first {
+        order: 9999;
+    }
+
+    .collection-content-inner.place-end {
+        padding-left: 0;
+    }
+
+    .collection-content-inner.place-start {
+        padding-right: 0;
+    }
+
+    .collection-content-inner {
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    .collection-subheading {
+        font-size: 16px;
+    }
+
+    .collection-heading {
+        font-size: 28px;
+    }
+
+    .collection-text {
+        font-size: 13px;
+    }
+
+    .collection-button {
+        height: 52px;
+    }
+
+    .collection-image-title {
+        font-size: 14px;
+    }
+}
+
 
 
 // collection-left-sidebar page css start

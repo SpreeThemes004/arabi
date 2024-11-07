@@ -331,7 +331,35 @@ class testimonialSlider extends HTMLElement{
 
 customElements.define('testimonial-slider', testimonialSlider);
 
+// video section
+class DeferredMedia extends HTMLElement {
+  constructor() {
+    super();
+    const poster = this.querySelector('.deferred-poster-button');
 
+    poster.addEventListener('click', this.loadContent.bind(this));
+  }
+
+  loadContent(focus = true) {
+    this.querySelector('.video-section-poster').style.display = "none";
+
+    if (!this.getAttribute('loaded')) {
+      // window.pauseAllMedia();
+      const content = document.createElement('div');
+      content.appendChild(this.querySelector('template').content.firstElementChild.cloneNode(true));
+
+      this.setAttribute('loaded', true);
+      const deferredElement = this.appendChild(content.querySelector('video, model-viewer, iframe'));
+      if (focus) deferredElement.focus();
+      if (deferredElement.nodeName == 'VIDEO' && deferredElement.getAttribute('autoplay')) {
+        // force autoplay for safari
+        deferredElement.play();
+      }
+    }
+  }
+}
+
+customElements.define('deferred-media', DeferredMedia);
 
 
 

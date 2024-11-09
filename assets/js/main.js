@@ -88,14 +88,24 @@ class Accordion extends HTMLElement{
     super();
 
     this.opener = this.querySelectorAll('.accordion-opener');
+    this.faqOpener = this.querySelectorAll('.faq-header');
 
     this.opener.forEach(item => {
       item.addEventListener('click', this.toggleMenu.bind(this));
     })
+
+    // for faq page only
+    this.faqOpener.forEach(item => {
+      item.addEventListener('click', this.toggleFaq.bind(this));
+    })
   }
 
   toggleMenu(event) {
-    event.target.nextElementSibling.classList.toggle('open');
+    event.target.nextElementSibling.classList.toggle('open');   
+  }
+
+  // for faq page only
+  toggleFaq(event) {
     event.target.classList.toggle('minus');      
   }
 } 
@@ -335,16 +345,13 @@ customElements.define('testimonial-slider', testimonialSlider);
 class DeferredMedia extends HTMLElement {
   constructor() {
     super();
-    const poster = this.querySelector('.deferred-poster-button');
-
+    const poster = this.querySelector('[id^="Deferred-Poster-"]');
     poster.addEventListener('click', this.loadContent.bind(this));
   }
 
   loadContent(focus = true) {
-    this.querySelector('.video-section-poster').style.display = "none";
-
+    window.pauseAllMedia();
     if (!this.getAttribute('loaded')) {
-      // window.pauseAllMedia();
       const content = document.createElement('div');
       content.appendChild(this.querySelector('template').content.firstElementChild.cloneNode(true));
 

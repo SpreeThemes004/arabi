@@ -345,6 +345,7 @@ customElements.define('testimonial-slider', testimonialSlider);
 class DeferredMedia extends HTMLElement {
   constructor() {
     super();
+
     const poster = this.querySelector('[id^="Deferred-Poster-"]');
     poster.addEventListener('click', this.loadContent.bind(this));
   }
@@ -367,6 +368,68 @@ class DeferredMedia extends HTMLElement {
 }
 
 customElements.define('deferred-media', DeferredMedia);
+
+// counter up 
+class counterUp extends HTMLElement{
+  constructor(){
+    super();
+
+    this.counterWrap = this.querySelector('.about-counter-up');
+   
+    this.counterWrap.addEventListener('scroll', this.updateCounter.bind(this))
+  
+
+  }
+  updateCounter(){
+    this.counters = this.querySelectorAll('.count-number');
+
+    this.counters.forEach(counter =>{
+      const speed = 200;
+    
+      const upCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const value = +counter.innerText;
+    
+        const increament = target / speed;
+        if(value < target){
+          counter.innerText = Math.ceil(value + increament);
+          setTimeout(upCount, 10)
+        }else{
+          counter.innerText = value;
+        }
+      }
+      upCount();
+    })
+  }
+  
+}
+
+customElements.define('counter-up', counterUp);
+
+// const counters = document.querySelectorAll('.count-number');
+
+// counters.forEach(counter =>{
+//   counter.innerText = 0;
+//   const speed = 200;
+
+//   const updateCounter = () => {
+//     const target = +counter.getAttribute('data-target');
+//     const value = +counter.innerText;
+
+//     const increament = target/speed;
+//     if(value < target){
+//       counter.innerText = Math.ceil(value + increament);
+//       setTimeout(updateCounter, 10)
+//     }else{
+//       counter.innerText = value;
+//     }
+//   }
+//   updateCounter();
+// })
+
+
+
+
 
 
 

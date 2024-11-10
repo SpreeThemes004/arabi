@@ -342,6 +342,45 @@
     margin-left: -11px;
 }
 
+// product details style 2
+.product-details-slider.product-details-2 {
+    flex-direction: column-reverse;
+    row-gap: 24px;
+}
+
+.product-details-2 .thumb-img-wrap {
+    position: relative;
+}
+
+.product-details-2 .nav-thumb {
+    position: static;
+}
+
+.product-details-2 .thumb-img-wrap,
+.product-details-2 .large-img-wrap{
+    width: 100%;
+}
+
+.product-details-2 .nav-thumb > div {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.product-details-2 .nav-thumb .swiper-button-next {
+    right: -20px;
+}
+
+.product-details-2 .nav-thumb .swiper-button-prev {
+    left: -20px;
+}
+
+.product-details-tab .product-info-content {
+    display: block;
+    margin-top: 32px;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
     .product-info-heading .text_20,
     .facility-text {

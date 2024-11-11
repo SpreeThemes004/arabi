@@ -375,9 +375,16 @@ class counterUp extends HTMLElement{
     super();
 
     this.counterWrap = this.querySelector('.about-counter-up');
+    this.activated = false;
    
-    this.counterWrap.addEventListener('scroll', this.updateCounter.bind(this))
-  
+    window.onscroll = () => {
+      if(window.scrollY = this.counterWrap.offsetTop){
+        if(!this.activated){
+          this.updateCounter();
+        };
+        this.activated = true;
+      };
+    };
 
   }
   updateCounter(){
@@ -389,11 +396,11 @@ class counterUp extends HTMLElement{
       const upCount = () => {
         const target = +counter.getAttribute('data-target');
         const value = +counter.innerText;
-    
         const increament = target / speed;
+
         if(value < target){
           counter.innerText = Math.ceil(value + increament);
-          setTimeout(upCount, 10)
+          setTimeout(upCount, 2000 / target)
         }else{
           counter.innerText = value;
         }
@@ -405,28 +412,6 @@ class counterUp extends HTMLElement{
 }
 
 customElements.define('counter-up', counterUp);
-
-// const counters = document.querySelectorAll('.count-number');
-
-// counters.forEach(counter =>{
-//   counter.innerText = 0;
-//   const speed = 200;
-
-//   const updateCounter = () => {
-//     const target = +counter.getAttribute('data-target');
-//     const value = +counter.innerText;
-
-//     const increament = target/speed;
-//     if(value < target){
-//       counter.innerText = Math.ceil(value + increament);
-//       setTimeout(updateCounter, 10)
-//     }else{
-//       counter.innerText = value;
-//     }
-//   }
-//   updateCounter();
-// })
-
 
 
 

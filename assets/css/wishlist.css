@@ -1,2 +1,9 @@
-.wishlist-page-inner {
-  margin-top: -15px; }
+.wishlist-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px; }
+
+.wishlist-item .mini-img-wrapper {
+  width: 120px;
+  overflow: hidden; }

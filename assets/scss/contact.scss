@@ -129,6 +129,34 @@
     display: block;
 }
 
+.content-map {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+}
+
+.content-address {
+    max-width: 220px;
+    width: 220px;
+    background: #fff;
+    text-align: center;
+    padding: 24px 0;
+    border-radius: 6px;
+}
+
+.address-logo {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
     .contact-info-wrap {
         height: 280px;

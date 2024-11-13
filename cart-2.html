@@ -365,22 +365,22 @@
                                                             <ul class="megamenu list-unstyled">
                                                                 <li class="menu-list-item nav-item-sub">
                                                                     <a class="nav-link-sub text text_14" href="checkout.html">
-                                                                        Checkout
+                                                                       Checkout
                                                                     </a>
                                                                 </li>
                                                                 <li class="menu-list-item nav-item-sub">
                                                                     <a class="nav-link-sub text text_14" href="cart.html">
-                                                                        Cart
+                                                                       Cart
                                                                     </a>
                                                                 </li>
                                                                 <li class="menu-list-item nav-item-sub">
                                                                     <a class="nav-link-sub text text_14" href="cart-2.html">
-                                                                        Cart 2
+                                                                       Cart 2
                                                                     </a>
                                                                 </li>
                                                                 <li class="menu-list-item nav-item-sub">
                                                                     <a class="nav-link-sub text text_14" href="contact.html">
-                                                                        Contact
+                                                                       Contact
                                                                     </a>
                                                                 </li>
                                                             </ul>
@@ -430,7 +430,7 @@
                                                                 </li>
                                                                 <li class="menu-list-item nav-item-sub">
                                                                     <a class="nav-link-sub text text_14"
-                                                                        href="collection-without-sidebar.html">4 Column
+                                                                        href="collection-4-column.html">4 Column
                                                                         Layout</a>
                                                                 </li>
                                                                 <li class="menu-list-item nav-item-sub">
@@ -732,13 +732,13 @@
                     <div class="progress-bar-wrap">
                         <ol class="probar list-unstyled">
                             <li class="probar-item is-complete">
-                                <a href="cart.html" class="text text_16">Add to cart</a>
+                                <a href="cart.html" class="text text_16" aria-label="progress bar link">Add to cart</a>
                             </li>
                             <li class="probar-item is-active">
-                                <a href="checkout.html" class="text text_16">Checkout</a>
+                                <a href="checkout.html" class="text text_16" aria-label="progress bar link">Checkout</a>
                             </li>
                             <li class="probar-item">
-                                <a href="checkout.html" class="text text_16">Purchased</a>
+                                <a href="checkout.html" class="text text_16" aria-label="progress bar link">Purchased</a>
                             </li>
                         </ol>
                     </div>
@@ -765,7 +765,7 @@
                                                 <td class="cart-item-media">
                                                     <a href="#" class="cart-link"> 
                                                         <img 
-                                                            src="assets/img/products/furniture/1.jpg" 
+                                                            src="assets/img/cart/1.jpg" 
                                                             alt="image" 
                                                             width="100%" 
                                                             height="100%" 
@@ -786,18 +786,26 @@
                                                                         height="100%"
                                                                     >
                                                                 </button>
-                                                                <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                                                <input 
+                                                                    class="qty-input text text_14" 
+                                                                    type="number" 
+                                                                    name="qty"
+                                                                    value="1" 
+                                                                    min="1" 
+                                                                    aria-label="quantity"
+                                                                >
                                                                 <button class="qty-btn inc-qty" name="plus">
                                                                     <img 
                                                                         src="assets/img/icon/plus.svg"
                                                                         alt="plus"
                                                                         width="100%"
-                                                                        height="100%">
-                                                                    </button>
+                                                                        height="100%"
+                                                                    >
+                                                                </button>
                                                             </div>
                                                         </quantity-input>
                                                         <div class="cart-item-icon">
-                                                            <a href="#" class="cart-icon-link text">
+                                                            <a href="#" class="cart-icon-link text" aria-label="edit link">
                                                                 <svg class="icon icon_16 icon-edit" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                                     <g opacity="0.6" clip-path="url(#clip0_1098_13322)">
                                                                     <path d="M7.33301 2.66699H2.66634C2.31272 2.66699 1.97358 2.80747 1.72353 3.05752C1.47348 3.30756 1.33301 3.6467 1.33301 4.00033V13.3337C1.33301 13.6873 1.47348 14.0264 1.72353 14.2765C1.97358 14.5265 2.31272 14.667 2.66634 14.667H11.9997C12.3533 14.667 12.6924 14.5265 12.9425 14.2765C13.1925 14.0264 13.333 13.6873 13.333 13.3337V8.66699" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -810,7 +818,7 @@
                                                                     </defs>
                                                                 </svg>
                                                             </a>
-                                                            <a href="#" class="cart-icon-link text">
+                                                            <a href="#" class="cart-icon-link text" aria-label="trash link">
                                                                 <svg class="icon icon_16 icon-trash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><line x1="216" y1="56" x2="40" y2="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="104" y1="104" x2="104" y2="168" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="152" y1="104" x2="152" y2="168" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M200,56V208a8,8,0,0,1-8,8H64a8,8,0,0,1-8-8V56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M168,56V40a16,16,0,0,0-16-16H104A16,16,0,0,0,88,40V56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
                                                                 </svg>
                                                             </a>
@@ -829,7 +837,7 @@
                                                                     height="100%"
                                                                 >
                                                             </button>
-                                                            <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                                            <input class="qty-input text text_14" type="number" name="qty" value="1" min="1" aria-label="quantity">
                                                             <button class="qty-btn inc-qty" name="plus">
                                                                 <img 
                                                                     src="assets/img/icon/plus.svg"
@@ -846,7 +854,7 @@
                                                 <td class="cart-item-media">
                                                     <a href="#" class="cart-link"> 
                                                         <img 
-                                                            src="assets/img/products/furniture/2.jpg" 
+                                                            src="assets/img/cart/2.jpg" 
                                                             alt="image" 
                                                             width="100%" 
                                                             height="100%" 
@@ -854,9 +862,9 @@
                                                         >
                                                     </a>
                                                     <div class="cart-media-content">
-                                                        <a href="#" class="cart-item-title text text_16">Winter jacket for man</a>
-                                                        <span class="cart-item-color text text_12">Color: Yellow</span>
-                                                        <span class="cart-item-size text text_12">Size: XL</span>
+                                                        <a href="#" class="cart-item-title text text_16">Gray winter full slave shirt</a>
+                                                        <span class="cart-item-color text text_12">Color: Gray</span>
+                                                        <span class="cart-item-size text text_12">Size: XXL</span>
                                                         <quantity-input class="d-block d-lg-none">
                                                             <div class="quantity d-flex">
                                                                 <button class="qty-btn dec-qty" name="minus">
@@ -867,7 +875,7 @@
                                                                         height="100%"
                                                                     >
                                                                 </button>
-                                                                <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                                                <input class="qty-input text text_14" type="number" name="qty" value="1" min="1" aria-label="quantity">
                                                                 <button class="qty-btn inc-qty" name="plus">
                                                                     <img 
                                                                         src="assets/img/icon/plus.svg"
@@ -878,7 +886,7 @@
                                                             </div>
                                                         </quantity-input>
                                                         <div class="cart-item-icon">
-                                                            <a href="#" class="cart-icon-link text">
+                                                            <a href="#" class="cart-icon-link text" aria-label="edit link">
                                                                 <svg class="icon icon_16 icon-edit" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                                     <g opacity="0.6" clip-path="url(#clip0_1098_13322)">
                                                                     <path d="M7.33301 2.66699H2.66634C2.31272 2.66699 1.97358 2.80747 1.72353 3.05752C1.47348 3.30756 1.33301 3.6467 1.33301 4.00033V13.3337C1.33301 13.6873 1.47348 14.0264 1.72353 14.2765C1.97358 14.5265 2.31272 14.667 2.66634 14.667H11.9997C12.3533 14.667 12.6924 14.5265 12.9425 14.2765C13.1925 14.0264 13.333 13.6873 13.333 13.3337V8.66699" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -891,7 +899,7 @@
                                                                     </defs>
                                                                 </svg>
                                                             </a>
-                                                            <a href="#" class="cart-icon-link text">
+                                                            <a href="#" class="cart-icon-link text" aria-label="trash link">
                                                                 <svg class="icon icon_16 icon-trash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><line x1="216" y1="56" x2="40" y2="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="104" y1="104" x2="104" y2="168" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="152" y1="104" x2="152" y2="168" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M200,56V208a8,8,0,0,1-8,8H64a8,8,0,0,1-8-8V56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M168,56V40a16,16,0,0,0-16-16H104A16,16,0,0,0,88,40V56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
                                                                 </svg>
                                                             </a>
@@ -910,7 +918,7 @@
                                                                     height="100%"
                                                                 >
                                                             </button>
-                                                            <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                                            <input class="qty-input text text_14" type="number" name="qty" value="1" min="1" aria-label="quantity">
                                                             <button class="qty-btn inc-qty" name="plus">
                                                                 <img 
                                                                     src="assets/img/icon/plus.svg"
@@ -927,7 +935,7 @@
                                                 <td class="cart-item-media">
                                                     <a href="#" class="cart-link"> 
                                                         <img 
-                                                            src="assets/img/products/furniture/3.jpg" 
+                                                            src="assets/img/cart/3.jpg" 
                                                             alt="image" 
                                                             width="100%" 
                                                             height="100%" 
@@ -936,8 +944,8 @@
                                                     </a>
                                                     <div class="cart-media-content">
                                                         <a href="#" class="cart-item-title text text_16">Winter jacket for man</a>
-                                                        <span class="cart-item-color text text_12">Color: Yellow</span>
-                                                        <span class="cart-item-size text text_12">Size: XL</span>
+                                                        <span class="cart-item-color text text_12">Color: Mint Gray</span>
+                                                        <span class="cart-item-size text text_12">Size: M</span>
                                                         <quantity-input class="d-block d-lg-none">
                                                             <div class="quantity d-flex">
                                                                 <button class="qty-btn dec-qty" name="minus">
@@ -948,7 +956,7 @@
                                                                         height="100%"
                                                                     >
                                                                 </button>
-                                                                <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                                                <input class="qty-input text text_14" type="number" name="qty" value="1" min="1" aria-label="quantity">
                                                                 <button class="qty-btn inc-qty" name="plus">
                                                                     <img 
                                                                         src="assets/img/icon/plus.svg"
@@ -959,7 +967,7 @@
                                                             </div>
                                                         </quantity-input>
                                                         <div class="cart-item-icon">
-                                                            <a href="#" class="cart-icon-link text">
+                                                            <a href="#" class="cart-icon-link text" aria-label="edit link">
                                                                 <svg class="icon icon_16 icon-edit" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                                     <g opacity="0.6" clip-path="url(#clip0_1098_13322)">
                                                                     <path d="M7.33301 2.66699H2.66634C2.31272 2.66699 1.97358 2.80747 1.72353 3.05752C1.47348 3.30756 1.33301 3.6467 1.33301 4.00033V13.3337C1.33301 13.6873 1.47348 14.0264 1.72353 14.2765C1.97358 14.5265 2.31272 14.667 2.66634 14.667H11.9997C12.3533 14.667 12.6924 14.5265 12.9425 14.2765C13.1925 14.0264 13.333 13.6873 13.333 13.3337V8.66699" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -972,7 +980,7 @@
                                                                     </defs>
                                                                 </svg>
                                                             </a>
-                                                            <a href="#" class="cart-icon-link text">
+                                                            <a href="#" class="cart-icon-link text" aria-label="trash link">
                                                                 <svg class="icon icon_16 icon-trash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><line x1="216" y1="56" x2="40" y2="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="104" y1="104" x2="104" y2="168" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="152" y1="104" x2="152" y2="168" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M200,56V208a8,8,0,0,1-8,8H64a8,8,0,0,1-8-8V56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M168,56V40a16,16,0,0,0-16-16H104A16,16,0,0,0,88,40V56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
                                                                 </svg>
                                                             </a>
@@ -991,7 +999,7 @@
                                                                     height="100%"
                                                                 >
                                                             </button>
-                                                            <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                                            <input class="qty-input text text_14" type="number" name="qty" value="1" min="1" aria-label="quantity">
                                                             <button class="qty-btn inc-qty" name="plus">
                                                                 <img 
                                                                     src="assets/img/icon/plus.svg"
@@ -1019,7 +1027,7 @@
                                     <div class="cart-shipping-wrap">
                                         <div class="shipping-country">
                                             <fieldset>
-                                                <select class="form-select">
+                                                <select class="form-select" aria-label="select country">
                                                     <option selected="USA">United State</option>
                                                     <option value="AU">Australia</option>
                                                     <option value="CA">Canada</option>
@@ -1031,7 +1039,7 @@
                                         <div class="shipping-city-zip">
                                             <div class="shipping-city relative">
                                                 <fieldset>
-                                                    <select class="form-select">
+                                                    <select class="form-select" aria-label="select city">
                                                         <option selected="NY">New York</option>
                                                         <option value="AL">Alabama</option>
                                                         <option value="AZ">Arizona</option>
@@ -1041,7 +1049,7 @@
                                                 </fieldset>
                                         </div>
                                             <div class="shipping-zip">
-                                                <input type="text" placeholder="zip code" class="input-reset">
+                                                <input type="text" placeholder="zip code" class="input-reset"  aria-label="zip code">
                                             </div>
                                         </div>
                                     </div>
@@ -1049,7 +1057,7 @@
                                 <div class="cart-coupon">
                                     <h3 class="cart-shipping-heading subheading text_20">Coupon</h3>
                                     <div class="cart-coupon-wrap">
-                                        <input type="text" placeholder="Cupon Code" class="input-reset">
+                                        <input type="text" placeholder="Cupon Code" class="input-reset"  aria-label="coupon">
                                         <a href="cart.html" class="coupon-button button button-primary" aria-label="coupon button">Apply Coupon</a>
                                     </div>
                                 </div>
@@ -1933,245 +1941,245 @@
         <!-- drawer menu end -->
 
         <!-- drawer cart start -->
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="drawer-cart">
-                <div class="offcanvas-header cart-drawer-header">
-                    <h5 class="cart-drawer-heading text text_16 semibold">Your Cart (04)</h5>
-                    <button 
-                        type="button" 
-                        class="btn-close text-reset" 
-                        data-bs-dismiss="offcanvas"
-                        aria-label="Close"
-                    >
-                </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="drawer-cart">
+            <div class="offcanvas-header cart-drawer-header">
+                <h5 class="cart-drawer-heading text text_16 semibold">Your Cart (04)</h5>
+                <button 
+                    type="button" 
+                    class="btn-close text-reset" 
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                >
+            </button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <div class="cart-content-area d-flex justify-content-between flex-column">
+                    <div class="minicart-loop custom-scrollbar">
+                        <!-- minicart item -->
+                        <div class="minicart-item">
+                            <div class="mini-img-wrapper">
+                                <img 
+                                    class="mini-img" 
+                                    src="assets/img/products/furniture/1.jpg" 
+                                    alt="img" 
+                                    width="100%" 
+                                    height="100%" 
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-title">
+                                    <a href="#" class="text text_16">Eliot Reversible Sectional</a>
+                                </h2>
+                                <p class="product-vendor text text_14">XS / Dove Gray</p>
+                                <div class="misc">
+                                    <quantity-input>
+                                        <div class="quantity">
+                                            <button class="qty-btn dec-qty" name="minus">
+                                                <img 
+                                                    src="assets/img/icon/minus.svg"
+                                                    alt="minus"
+                                                    width="100%"
+                                                    height="100%"
+                                                >
+                                            </button>
+                                            <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                            <button class="qty-btn inc-qty" name="plus">
+                                                <img 
+                                                    src="assets/img/icon/plus.svg"
+                                                    alt="plus"
+                                                    width="100%"
+                                                    height="100%">
+                                                </button>
+                                        </div>
+                                    </quantity-input>
+                                    <div class="product-remove-area d-flex flex-column align-items-end">
+                                        <div class="product-price text text_14">$580.00</div>
+                                        <a href="#" class="product-remove text text_12">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- minicart item -->
+                        <div class="minicart-item">
+                            <div class="mini-img-wrapper">
+                                <img 
+                                    class="mini-img" 
+                                    src="assets/img/products/furniture/2.jpg" 
+                                    alt="img" 
+                                    width="100%" 
+                                    height="100%" 
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-title">
+                                    <a href="#" class="text text_16">Eliot Reversible Sectional</a>
+                                </h2>
+                                <p class="product-vendor text text_14">XS / Dove Gray</p>
+                                <div class="misc">
+                                    <quantity-input>
+                                        <div class="quantity">
+                                            <button class="qty-btn dec-qty" name="minus">
+                                                <img 
+                                                    src="assets/img/icon/minus.svg"
+                                                    alt="minus"
+                                                    width="100%"
+                                                    height="100%"
+                                                >
+                                            </button>
+                                            <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                            <button class="qty-btn inc-qty" name="plus">
+                                                <img 
+                                                    src="assets/img/icon/plus.svg"
+                                                    alt="plus"
+                                                    width="100%"
+                                                    height="100%">
+                                                </button>
+                                        </div>
+                                    </quantity-input>
+                                    <div class="product-remove-area d-flex flex-column align-items-end">
+                                        <div class="product-price text text_14">$580.00</div>
+                                        <a href="#" class="product-remove text text_12">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- minicart item -->
+                        <div class="minicart-item">
+                            <div class="mini-img-wrapper">
+                                <img 
+                                    class="mini-img" 
+                                    src="assets/img/products/furniture/3.jpg" 
+                                    alt="img" 
+                                    width="100%" 
+                                    height="100%" 
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-title">
+                                    <a href="#" class="text text_16">Eliot Reversible Sectional</a>
+                                </h2>
+                                <p class="product-vendor text text_14">XS / Dove Gray</p>
+                                <div class="misc">
+                                    <quantity-input>
+                                        <div class="quantity">
+                                            <button class="qty-btn dec-qty" name="minus">
+                                                <img 
+                                                    src="assets/img/icon/minus.svg"
+                                                    alt="minus"
+                                                    width="100%"
+                                                    height="100%"
+                                                >
+                                            </button>
+                                            <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                            <button class="qty-btn inc-qty" name="plus">
+                                                <img 
+                                                    src="assets/img/icon/plus.svg"
+                                                    alt="plus"
+                                                    width="100%"
+                                                    height="100%">
+                                                </button>
+                                        </div>
+                                    </quantity-input>
+                                    <div class="product-remove-area d-flex flex-column align-items-end">
+                                        <div class="product-price text text_14">$580.00</div>
+                                        <a href="#" class="product-remove text text_12">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- minicart item -->
+                        <div class="minicart-item">
+                            <div class="mini-img-wrapper">
+                                <img 
+                                    class="mini-img" 
+                                    src="assets/img/products/furniture/4.jpg" 
+                                    alt="img" 
+                                    width="100%" 
+                                    height="100%" 
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-title">
+                                    <a href="#" class="text text_16">Eliot Reversible Sectional</a>
+                                </h2>
+                                <p class="product-vendor text text_14">XS / Dove Gray</p>
+                                <div class="misc">
+                                    <quantity-input>
+                                        <div class="quantity">
+                                            <button class="qty-btn dec-qty" name="minus">
+                                                <img 
+                                                    src="assets/img/icon/minus.svg"
+                                                    alt="minus"
+                                                    width="100%"
+                                                    height="100%"
+                                                >
+                                            </button>
+                                            <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
+                                            <button class="qty-btn inc-qty" name="plus">
+                                                <img 
+                                                    src="assets/img/icon/plus.svg"
+                                                    alt="plus"
+                                                    width="100%"
+                                                    height="100%">
+                                                </button>
+                                        </div>
+                                    </quantity-input>
+                                    <div class="product-remove-area d-flex flex-column align-items-end">
+                                        <div class="product-price text text_14">$580.00</div>
+                                        <a href="#" class="product-remove text text_12">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="minicart-footer">
+                        <div class="minicart-calc-area">
+                            <div class="minicart-calc">
+                                <span class="text_16 medium">Subtotal</span>
+                                <span class="text_16 medium">$1548.00</span>
+                            </div>
+                            <p class="cart-taxes text_12">Taxes and shipping will be calculated at checkout.
+                            </p>
+                        </div>
+                        <div class="minicart-btn-area">
+                            <a 
+                                class="button button-secondary animate__animated animate__fadeInUp"
+                                href="cart.html"
+                                data-animation="animate__animated animate__fadeInUp"
+                                aria-label="slider button"
+                            >
+                                View Cart
+                            </a>
+                            <a 
+                                class="button button-primary animate__animated animate__fadeInUp"
+                                href="checkout.html"
+                                data-animation="animate__animated animate__fadeInUp"
+                                aria-label="slider button"
+                            >
+                                Checkout
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="offcanvas-body p-0">
-                    <div class="cart-content-area d-flex justify-content-between flex-column">
-                        <div class="minicart-loop custom-scrollbar">
-                            <!-- minicart item -->
-                            <div class="minicart-item">
-                                <div class="mini-img-wrapper">
-                                    <img 
-                                        class="mini-img" 
-                                        src="assets/img/products/furniture/1.jpg" 
-                                        alt="img" 
-                                        width="100%" 
-                                        height="100%" 
-                                        loading="lazy"
-                                    >
-                                </div>
-                                <div class="product-info">
-                                    <h2 class="product-title">
-                                        <a href="#" class="text text_16">Eliot Reversible Sectional</a>
-                                    </h2>
-                                    <p class="product-vendor text text_14">XS / Dove Gray</p>
-                                    <div class="misc">
-                                        <quantity-input>
-                                            <div class="quantity">
-                                                <button class="qty-btn dec-qty" name="minus">
-                                                    <img 
-                                                        src="assets/img/icon/minus.svg"
-                                                        alt="minus"
-                                                        width="100%"
-                                                        height="100%"
-                                                    >
-                                                </button>
-                                                <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
-                                                <button class="qty-btn inc-qty" name="plus">
-                                                    <img 
-                                                        src="assets/img/icon/plus.svg"
-                                                        alt="plus"
-                                                        width="100%"
-                                                        height="100%">
-                                                    </button>
-                                            </div>
-                                        </quantity-input>
-                                        <div class="product-remove-area d-flex flex-column align-items-end">
-                                            <div class="product-price text text_14">$580.00</div>
-                                            <a href="#" class="product-remove text text_12">Remove</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- minicart item -->
-                            <div class="minicart-item">
-                                <div class="mini-img-wrapper">
-                                    <img 
-                                        class="mini-img" 
-                                        src="assets/img/products/furniture/2.jpg" 
-                                        alt="img" 
-                                        width="100%" 
-                                        height="100%" 
-                                        loading="lazy"
-                                    >
-                                </div>
-                                <div class="product-info">
-                                    <h2 class="product-title">
-                                        <a href="#" class="text text_16">Eliot Reversible Sectional</a>
-                                    </h2>
-                                    <p class="product-vendor text text_14">XS / Dove Gray</p>
-                                    <div class="misc">
-                                        <quantity-input>
-                                            <div class="quantity">
-                                                <button class="qty-btn dec-qty" name="minus">
-                                                    <img 
-                                                        src="assets/img/icon/minus.svg"
-                                                        alt="minus"
-                                                        width="100%"
-                                                        height="100%"
-                                                    >
-                                                </button>
-                                                <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
-                                                <button class="qty-btn inc-qty" name="plus">
-                                                    <img 
-                                                        src="assets/img/icon/plus.svg"
-                                                        alt="plus"
-                                                        width="100%"
-                                                        height="100%">
-                                                    </button>
-                                            </div>
-                                        </quantity-input>
-                                        <div class="product-remove-area d-flex flex-column align-items-end">
-                                            <div class="product-price text text_14">$580.00</div>
-                                            <a href="#" class="product-remove text text_12">Remove</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- minicart item -->
-                            <div class="minicart-item">
-                                <div class="mini-img-wrapper">
-                                    <img 
-                                        class="mini-img" 
-                                        src="assets/img/products/furniture/3.jpg" 
-                                        alt="img" 
-                                        width="100%" 
-                                        height="100%" 
-                                        loading="lazy"
-                                    >
-                                </div>
-                                <div class="product-info">
-                                    <h2 class="product-title">
-                                        <a href="#" class="text text_16">Eliot Reversible Sectional</a>
-                                    </h2>
-                                    <p class="product-vendor text text_14">XS / Dove Gray</p>
-                                    <div class="misc">
-                                        <quantity-input>
-                                            <div class="quantity">
-                                                <button class="qty-btn dec-qty" name="minus">
-                                                    <img 
-                                                        src="assets/img/icon/minus.svg"
-                                                        alt="minus"
-                                                        width="100%"
-                                                        height="100%"
-                                                    >
-                                                </button>
-                                                <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
-                                                <button class="qty-btn inc-qty" name="plus">
-                                                    <img 
-                                                        src="assets/img/icon/plus.svg"
-                                                        alt="plus"
-                                                        width="100%"
-                                                        height="100%">
-                                                    </button>
-                                            </div>
-                                        </quantity-input>
-                                        <div class="product-remove-area d-flex flex-column align-items-end">
-                                            <div class="product-price text text_14">$580.00</div>
-                                            <a href="#" class="product-remove text text_12">Remove</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- minicart item -->
-                            <div class="minicart-item">
-                                <div class="mini-img-wrapper">
-                                    <img 
-                                        class="mini-img" 
-                                        src="assets/img/products/furniture/4.jpg" 
-                                        alt="img" 
-                                        width="100%" 
-                                        height="100%" 
-                                        loading="lazy"
-                                    >
-                                </div>
-                                <div class="product-info">
-                                    <h2 class="product-title">
-                                        <a href="#" class="text text_16">Eliot Reversible Sectional</a>
-                                    </h2>
-                                    <p class="product-vendor text text_14">XS / Dove Gray</p>
-                                    <div class="misc">
-                                        <quantity-input>
-                                            <div class="quantity">
-                                                <button class="qty-btn dec-qty" name="minus">
-                                                    <img 
-                                                        src="assets/img/icon/minus.svg"
-                                                        alt="minus"
-                                                        width="100%"
-                                                        height="100%"
-                                                    >
-                                                </button>
-                                                <input class="qty-input text text_14" type="number" name="qty" value="1" min="1">
-                                                <button class="qty-btn inc-qty" name="plus">
-                                                    <img 
-                                                        src="assets/img/icon/plus.svg"
-                                                        alt="plus"
-                                                        width="100%"
-                                                        height="100%">
-                                                    </button>
-                                            </div>
-                                        </quantity-input>
-                                        <div class="product-remove-area d-flex flex-column align-items-end">
-                                            <div class="product-price text text_14">$580.00</div>
-                                            <a href="#" class="product-remove text text_12">Remove</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="minicart-footer">
-                            <div class="minicart-calc-area">
-                                <div class="minicart-calc">
-                                    <span class="text_16 medium">Subtotal</span>
-                                    <span class="text_16 medium">$1548.00</span>
-                                </div>
-                                <p class="cart-taxes text_12">Taxes and shipping will be calculated at checkout.
-                                </p>
-                            </div>
-                            <div class="minicart-btn-area">
-                                <a 
-                                    class="button button-secondary animate__animated animate__fadeInUp"
-                                    href="cart.html"
-                                    data-animation="animate__animated animate__fadeInUp"
-                                    aria-label="slider button"
-                                >
-                                    View Cart
-                                </a>
-                                <a 
-                                    class="button button-primary animate__animated animate__fadeInUp"
-                                    href="checkout.html"
-                                    data-animation="animate__animated animate__fadeInUp"
-                                    aria-label="slider button"
-                                >
-                                    Checkout
-                                </a>
-                            </div>
-                        </div>
+                <div class="cart-empty-area text-center py-5 d-none">
+                    <div class="cart-empty-icon pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            >
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M16 16s-1.5-2-4-2-4 2-4 2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg>
                     </div>
-                    <div class="cart-empty-area text-center py-5 d-none">
-                        <div class="cart-empty-icon pb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                                >
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <path d="M16 16s-1.5-2-4-2-4 2-4 2"></path>
-                                <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                                <line x1="15" y1="9" x2="15.01" y2="9"></line>
-                            </svg>
-                        </div>
-                        <p class="cart-empty text text_16">You have no items in your cart</p>
-                    </div>
+                    <p class="cart-empty text text_16">You have no items in your cart</p>
                 </div>
             </div>
+        </div>
         <!-- drawer cart end -->
 
         <!-- newsletter subscribe modal start -->

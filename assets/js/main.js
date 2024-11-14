@@ -225,6 +225,7 @@ class productSlider extends HTMLElement{
     this.sliderThumb = new Swiper(this.swiperThumb, {
       spaceBetween: 8,
       slidesPerView: 4,
+      loop: true,
       freeMode: true,
       watchSlidesProgress: true,
       autoHeight: true,
@@ -237,6 +238,7 @@ class productSlider extends HTMLElement{
 
     this.sliderLarge  = new Swiper(this.swiperLarge, {
       spaceBetween: 10,
+      loop: true,
       navigation: {
         nextEl: this.navNextLarge,
         prevEl: this.navPrevLarge,

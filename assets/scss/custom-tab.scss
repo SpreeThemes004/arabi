@@ -156,6 +156,7 @@
     bottom: 8px;
 }
 
+.card-compare,
 .card-wishlist {
     position: absolute;
     top: 14px;
@@ -165,6 +166,13 @@
     visibility: hidden;
 }
 
+.card-compare {
+    top: 52px;
+    transition-duration: 0.5s;
+}
+
+.product-card-3:hover .card-compare,
+.product-card:hover .card-compare,
 .product-card-3:hover .card-wishlist,
 .product-card:hover .card-wishlist {
     opacity: 1;

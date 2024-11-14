@@ -1,3 +1,7 @@
+.condition-button {
+    --font-cta-weight: 400;
+}
+
 .cart-drawer-header{
     border-bottom: 1px solid rgba(var(--color-foreground), 0.1);
 }
@@ -17,7 +21,7 @@
 }
 
 .minicart-item {
-    padding: 10px 16px;
+    padding: 14px 16px;
     display: flex;
 }
 
@@ -26,13 +30,13 @@
 }
 
 .mini-img-wrapper {
-    width: 80px;
+    width: 100px;
     overflow: hidden;
 }
 
 .mini-img {
-    min-width: 80px;
-    height: 100px;
+    min-width: 100px;
+    height: 100%;
     object-fit: cover;
     object-position: top;
 }
@@ -40,6 +44,15 @@
 .minicart-item>.product-info {
     width: calc(100% - 80px);
     padding-left: 20px;
+}
+
+.cart-content-area .product-info > * + * {
+    padding-top: 8px;
+    padding-bottom: 0;
+}
+
+.cart-content-area .product-info > div:not(:last-child) {
+    border-bottom: none;
 }
 
 .minicart-footer .minicart-btn-area,
@@ -52,6 +65,9 @@
     align-items: center;
 }
 
+.cart-content-area .minicart-item .product-vendor {
+    margin-bottom: 0;
+}
 
 .minicart-item .product-vendor {
     margin-bottom: 12px;
@@ -63,11 +79,11 @@
 }
 
 .product-remove {
-    text-decoration: underline;
+    color: rgba(var(--color-foreground),0.6);
 }
 
 .product-remove:hover {
-    color: rgba(var(--color-foreground), 0.7);
+    color: rgba(var(--color-foreground), 1);
 }
 
 .qty-btn,
@@ -120,8 +136,7 @@
 }
 
 .cart-taxes {
-    text-align: center;
-    margin: 20px 0 !important;
+    margin: 8px 0 24px;
 }
 
 .minicart-footer {
@@ -158,7 +173,8 @@
     }
 
     .cart-taxes,
-    .product-remove {
+    .condition-form .checkbox-text,
+    .condition-form .checkbox-text .condition-button {
         font-size: 11px;
     }
 

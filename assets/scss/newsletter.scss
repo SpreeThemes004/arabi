@@ -113,6 +113,11 @@
     border: inherit;
 }
 
+.section-newsletter-2 .newsletter-btn {
+    height: inherit;
+    margin: 0;
+}
+
 .newsletter-btn-white {
     background-color: rgba(var(--color-background), 1);
     color: rgba(var(--color-foreground), 1);

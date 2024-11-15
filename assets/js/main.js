@@ -415,6 +415,39 @@ class counterUp extends HTMLElement{
 
 customElements.define('counter-up', counterUp);
 
+// Scroll up 
+class scrollUp extends HTMLElement{
+  constructor(){
+    super();
+
+    window.onscroll = () => {
+      this.scrollUpFunc();
+    };
+
+    window.onload = () => {
+      this.scrollUpFunc();
+    }; 
+  }
+
+  scrollUpFunc(){
+    let srcollUpDiv = document.querySelector('#scroll-up-wrap');
+    let position = document.documentElement.scrollTop;
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrollVal = Math.round((position * 100) / calcHeight);
+    if(position > 100) {
+      srcollUpDiv.classList.add('show');
+    } else {
+      srcollUpDiv.classList.remove('show');
+    };
+
+    srcollUpDiv.addEventListener('click', () => {
+      document.documentElement.scrollTop = 0;
+    });
+    srcollUpDiv.style.background =`conic-gradient(#000 ${scrollVal}%, #F7F7F7 ${scrollVal}%)`;
+  }
+}
+
+customElements.define('scroll-up', scrollUp);
 
 
 

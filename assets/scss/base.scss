@@ -350,35 +350,35 @@ a:hover {
     color: rgba( var(--color-link), 1);
 }
 
-// Custom scroll
-.scroll-horizontal {
-    overflow: hidden;
-    overflow-x: auto;
+// Custom scroll up
+#scroll-up-wrap.show {
+  bottom: 30px;
+}
+
+#scroll-up-wrap {
+  position: fixed;
+  bottom: -60px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
 }
 
 #scrollup {
-    position: fixed;
-    display: inline-block;
-    background-color: #000;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-radius: 4px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-    cursor: pointer;
+  background-color: rgba(var(--color-background), 1);
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
 }
-  
-#scrollup.show {
-    opacity: 1;
-    visibility: visible;
-}
+
 
 // overlay
 .overlay {

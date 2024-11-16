@@ -189,6 +189,7 @@ class ModalDialog extends HTMLElement {
     this.removeAttribute('open');
   }
 }
+
 customElements.define('modal-dialog', ModalDialog);
 
 // Product details slider
@@ -415,7 +416,7 @@ class counterUp extends HTMLElement{
 
 customElements.define('counter-up', counterUp);
 
-// Scroll up 
+// Scroll up button
 class scrollUp extends HTMLElement{
   constructor(){
     super();
@@ -448,6 +449,54 @@ class scrollUp extends HTMLElement{
 }
 
 customElements.define('scroll-up', scrollUp);
+
+// Newsletter popup
+class modalPopUp extends HTMLElement{
+  constructor(){
+    super();
+
+    
+    this.popup = document.querySelector('.newsletter-popup');
+    this.overlay = this.querySelector('.overlay-popup');
+    this.closeButton = this.querySelector('.product-popup-modal__toggle');
+
+    window.addEventListener('load', this.openPopup.bind(this));
+
+    window.addEventListener('keydown', this.escapeBtn.bind(this));
+
+    this.closeButton.addEventListener('click', this.closePopup.bind(this));
+    this.overlay.addEventListener('click', this.closePopup.bind(this));
+
+    this.popup.addEventListener('wheel', function(event){
+      event.preventDefault();
+    },false);
+    
+  }
+
+  openPopup(){
+    setTimeout(() => {
+      this.popup.classList.remove('hidden');
+      this.overlay.classList.remove('hidden');
+    }, 2000);
+  };
+
+  closePopup(){
+    this.popup.classList.add('hidden');
+    this.overlay.classList.add('hidden');
+  };
+
+  escapeBtn(e){
+    if( e.key === 'Escape' && !this.popup.classList.contains('hidden')){
+      this.popup.classList.add('hidden');
+      this.overlay.classList.add('hidden');
+    }
+  };
+
+}
+
+customElements.define('modal-popup', modalPopUp);
+
+
 
 
 

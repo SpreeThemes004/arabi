@@ -1,11 +1,50 @@
-.login-form {
-    width: 100%;
-    max-width: 450px;
-    background: #FEFEFE;
-    box-shadow: 0px 0px 8px rgba(12, 18, 38, 0.06);
-    border-radius: 4px;
-    padding: 40px;
+.login-wrap {
+    --color-background: 247, 247, 247;
 }
-.btn-signin {
+
+.register-link.button-cta {
+    --font-cta-weight: 400;
+}
+
+.login-wrap {
     width: 100%;
+    max-width: 556px;
+    margin: 0 auto;
+    background: rgba(var(--color-background), 1);
+    padding: 40px 60px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-header {
+    text-align: center;
+}
+
+.login-wrap > div {
+    margin-top: 24px;
+}
+
+.login-wrap .login-button {
+    width: 100%;
+}
+
+.login-wrap .register-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.login-wrap .register-link.button-cta {
+    font-weight: var(--font-cta-weight);
+}
+
+.login-wrap .login-text {
+    margin-top: 10px;
+    display: block;
+}
+
+@media (max-width: 425px) {
+    .login-wrap {
+        padding: 30px;
+    }
 }

@@ -1,0 +1,109 @@
+.compare-close-btn {
+    --color-background: 0, 0, 0;
+}
+
+.compare-close-btn {
+    --color-foreground: 255, 255, 255;
+}
+
+.compare-wrapper .product-card {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.compare-wrapper .product-card-details {
+    padding: 24px 16px;
+}
+
+.compare-close-btn {
+    width: 44px;
+    height: 44px;
+    background: rgba(var(--color-background), 1);
+    border-radius: 50%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(var(--color-foreground), 1);
+    position: absolute;
+    top: 14px;
+    right: -50px;
+    transition: all 0.3s;
+}
+
+.product-card:hover .compare-close-btn {
+    right: 14px;
+}
+
+.compare-varient {
+    margin-top: 16px;
+}
+
+.compare-varient > div + div {
+    margin-top: 16px;
+}
+
+.compare-varient .single-varient {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.compare-varient .single-varient:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+
+.compare-varient .single-varient .color-lists {
+    margin: 0;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .compare-wrapper .card-title-link {
+        font-size: 24px;
+    }
+
+    .compare-wrapper .card-price-regular {
+        font-size: 16px;
+    }
+
+    .compare-wrapper .card-price-compare {
+        font-size: 14px;
+    }
+
+    .compare-wrapper .varient-heading {
+        font-size: 14px;
+    }
+
+    .compare-wrapper .varient-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+    .compare-wrapper .product-card-details {
+        padding: 20px 6px;
+    }
+
+    .compare-wrapper .card-title-link {
+        font-size: 24px;
+    }
+
+    .compare-wrapper .card-price-regular {
+        font-size: 16px;
+    }
+
+    .compare-wrapper .card-price-compare {
+        font-size: 14px;
+    }
+
+    .compare-wrapper .varient-heading {
+        font-size: 14px;
+    }
+
+    .compare-wrapper .varient-text {
+        font-size: 12px;
+    }
+}

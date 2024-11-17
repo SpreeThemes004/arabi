@@ -376,7 +376,7 @@ a:hover {
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 2;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.4s;
@@ -6534,6 +6534,143 @@ hero-slider:hover .arrow-next {
 .wishlist-item .button-cta {
   font-size: 12px;
   font-weight: 500; }
+
+.compare-close-btn {
+  --color-background: 0, 0, 0; }
+
+.compare-close-btn {
+  --color-foreground: 255, 255, 255; }
+
+.compare-wrapper .product-card {
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden; }
+
+.compare-wrapper .product-card-details {
+  padding: 24px 16px; }
+
+.compare-close-btn {
+  width: 44px;
+  height: 44px;
+  background: rgba(var(--color-background), 1);
+  border-radius: 50%;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: rgba(var(--color-foreground), 1);
+  position: absolute;
+  top: 14px;
+  right: -50px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.product-card:hover .compare-close-btn {
+  right: 14px; }
+
+.compare-varient {
+  margin-top: 16px; }
+
+.compare-varient > div + div {
+  margin-top: 16px; }
+
+.compare-varient .single-varient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.compare-varient .single-varient:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px; }
+
+.compare-varient .single-varient .color-lists {
+  margin: 0; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .compare-wrapper .card-title-link {
+    font-size: 24px; }
+  .compare-wrapper .card-price-regular {
+    font-size: 16px; }
+  .compare-wrapper .card-price-compare {
+    font-size: 14px; }
+  .compare-wrapper .varient-heading {
+    font-size: 14px; }
+  .compare-wrapper .varient-text {
+    font-size: 12px; } }
+
+@media (max-width: 575px) {
+  .compare-wrapper .product-card-details {
+    padding: 20px 6px; }
+  .compare-wrapper .card-title-link {
+    font-size: 24px; }
+  .compare-wrapper .card-price-regular {
+    font-size: 16px; }
+  .compare-wrapper .card-price-compare {
+    font-size: 14px; }
+  .compare-wrapper .varient-heading {
+    font-size: 14px; }
+  .compare-wrapper .varient-text {
+    font-size: 12px; } }
+
+.login-wrap {
+  --color-background: 247, 247, 247; }
+
+.register-link.button-cta {
+  --font-cta-weight: 400; }
+
+.login-wrap {
+  width: 100%;
+  max-width: 556px;
+  margin: 0 auto;
+  background: rgba(var(--color-background), 1);
+  padding: 40px 60px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+
+.login-header {
+  text-align: center; }
+
+.login-wrap > div {
+  margin-top: 24px; }
+
+.login-wrap .login-button {
+  width: 100%; }
+
+.login-wrap .register-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.login-wrap .register-link.button-cta {
+  font-weight: var(--font-cta-weight); }
+
+.login-wrap .login-text {
+  margin-top: 10px;
+  display: block; }
+
+@media (max-width: 425px) {
+  .login-wrap {
+    padding: 30px; } }
 
 .footer-top {
   padding: 60px 0;

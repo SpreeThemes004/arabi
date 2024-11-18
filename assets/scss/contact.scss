@@ -157,6 +157,47 @@
     margin-bottom: 16px;
 }
 
+.content-map > svg {
+    color: #ff0000;
+}
+
+// contact style 2
+.contact-style-2 .contact-map-wrap {
+    background: transparent;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.contact-style-2 .contact-map {
+    max-width: 768px;
+    width: 768px;
+    display: flex;
+}
+
+.contact-style-2 .contact-details-wrap {
+    max-width: 416px;
+}
+
+.contact-style-2 .contact-details {
+    margin-top: 48px;
+}
+
+.contact-style-2 .contact-details > div + div {
+    margin-top: 24px;
+}
+
+.contact-style-2 .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+@media (max-width: 991px) {
+    .contact-style-2 .contact-map-wrap {
+        flex-wrap: wrap;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
     .contact-info-wrap {
         height: 280px;
@@ -256,5 +297,9 @@
         min-width: 170px;
         height: 52px;
         
+    }
+
+    .contact-item .text_16 {
+        font-size: 14px;
     }
 }

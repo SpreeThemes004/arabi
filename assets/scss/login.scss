@@ -43,6 +43,11 @@
     display: block;
 }
 
+.login-wrap .forget-password {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
 @media (max-width: 425px) {
     .login-wrap {
         padding: 30px;

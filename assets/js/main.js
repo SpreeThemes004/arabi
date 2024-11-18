@@ -281,7 +281,7 @@ class newProductSlider extends HTMLElement{
           slidesPerView: 3,
           spaceBetween: 24,
         },
-        991: {
+        992: {
           slidesPerView: 4,
           spaceBetween: 24,
         },

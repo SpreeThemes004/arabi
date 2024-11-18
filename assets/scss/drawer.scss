@@ -63,6 +63,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 6px;
 }
 
 .cart-content-area .minicart-item .product-vendor {
@@ -88,7 +89,7 @@
 
 .qty-btn,
 .qty-input {
-    width: 48px;
+    width: 24px;
     text-align: center;
     border: none;
     outline: none;
@@ -112,27 +113,22 @@
 }
 
 .quantity {
-    width: 100px;
+    width: 90px;
     border: 1px solid rgba(var(--color-foreground), 0.2);
 }
 
 .quantity .qty-btn {
-    width: 25px;
-    padding: 4px 5px 6px;
+    width: 32px;
+    padding: 8px 4px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .quantity .qty-btn  img {
     max-width: 12px;
     pointer-events: none;
-}
-
-.qty-btn.dec-qty {
-    border-right: 1px solid rgba(var(--color-foreground), 0.2) !important;
-}
-
-.qty-btn.inc-qty {
-    border-left: 1px solid rgba(var(--color-foreground), 0.2) !important;
 }
 
 .cart-taxes {

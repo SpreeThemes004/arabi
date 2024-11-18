@@ -159,12 +159,17 @@
 }
 
 @media (max-width: 767px) {
-    .collage-grid.grid-style-4,
-    .collage-grid.grid-style-3,
-    .collage-grid.grid-style-2,
+    .collage-grid.grid-style-4, 
+    .collage-grid.grid-style-3, 
+    .collage-grid.grid-style-2, 
     .collage-grid {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 85%);
+        grid-template-rows: none;
+        grid-template-areas: "first second third fourth";
+        overflow: hidden;
+        overflow-x: scroll;
     }
 
     .collage-content.flex-bannar {
@@ -191,14 +196,14 @@
     }
 
     .heading-collage.text_32 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .subheading-collage.text_18 {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .button-collage.button-cta {
-        font-size: 13px;
+        font-size: 12px;
     }
 }

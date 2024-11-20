@@ -3350,6 +3350,18 @@ hero-slider:hover .arrow-next {
   .image-with-content * + * {
     margin-top: 24px; } }
 
+@media (min-width: 576px) and (max-width: 767px) {
+  .image-text-heading {
+    font-size: 24px; }
+  .image-text-text {
+    font-size: 12px; }
+  .image-text-button {
+    min-width: 160px;
+    height: 44px;
+    font-size: 13px; }
+  .image-text-card .image-text-text {
+    margin-bottom: 16px; } }
+
 @media (max-width: 575px) {
   .image-text-card .text-content-box {
     max-width: 320px; }
@@ -4242,6 +4254,13 @@ hero-slider:hover .arrow-next {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .blog-title {
+    font-size: 18px; }
+  .blog-text,
+  .blog-publish {
+    font-size: 12px; } }
 
 @media (max-width: 575px) {
   .article-page .article-blog-wrap .blog-title {
@@ -5674,6 +5693,13 @@ hero-slider:hover .arrow-next {
     -ms-flex-pack: center;
     justify-content: center; } }
 
+@media (min-width: 576px) and (max-width: 767px) {
+  .blog-title {
+    font-size: 18px; }
+  .blog-text,
+  .blog-publish {
+    font-size: 12px; } }
+
 @media (max-width: 575px) {
   .article-page .article-blog-wrap .blog-title {
     font-size: 16px; } }
@@ -6498,6 +6524,30 @@ hero-slider:hover .arrow-next {
   height: 48px;
   border: none;
   margin-right: 3px; }
+
+.about-style-2 .deferred-poster-content {
+  position: static;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  margin: 0; }
+
+.about-style-2 .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: inherit; }
+
+.team-info {
+  text-align: center;
+  margin-top: 16px; }
 
 @media (max-width: 991px) {
   .deferred-poster-content {

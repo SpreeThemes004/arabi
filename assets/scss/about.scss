@@ -164,7 +164,25 @@
     border: none;
     margin-right: 3px;
 }
+// About Style 2
+.about-style-2 .deferred-poster-content {
+    position: static;
+    transform: none;
+    margin: 0;
+}
 
+.about-style-2 .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+
+.team-info {
+    text-align: center;
+    margin-top: 16px;
+}
 
 @media (max-width: 991px) {
     .deferred-poster-content {

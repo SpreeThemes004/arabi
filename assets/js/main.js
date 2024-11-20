@@ -273,8 +273,12 @@ class newProductSlider extends HTMLElement{
         prevEl: this.navPrev,
       },
       breakpoints: {
-        425: {
-          slidesPerView: 2,
+        320: {
+          slidesPerView: 1.8,
+          spaceBetween: 16,
+        },
+        575: {
+          slidesPerView: 2.8,
           spaceBetween: 16,
         },
         768: {

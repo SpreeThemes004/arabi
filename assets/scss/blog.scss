@@ -20,6 +20,10 @@
     width: calc(78% - 100px);
 }
 
+.blog-list-wrap.blog-grid {
+    width: 100%;
+}
+
 .blog-list {
     display: flex;
     margin-left: -24px;
@@ -35,6 +39,22 @@
 .blog-page .blog-card {
     width: 33.33%;
     padding-left: 24px;
+}
+
+.blog-page .blog-list .blog-card.blog-card-3 {
+    width: 50%;
+}
+
+.blog-page .blog-list .blog-card-3 .blog-image {
+    display: flex;
+    overflow: hidden;
+    width: 33.33%;
+    height: 100%;
+}
+
+.blog-page .blog-list .blog-card-3 .blog-content {
+    margin-top: 0;
+    width: calc(66.66% - 24px);
 }
 
 .blog-sidebar-wrap > div + div {
@@ -75,9 +95,44 @@
     margin-top: 0;
 }
 
-.filter-widget  .blog-card-3 {
+.filter-widget .blog-card-3 {
     align-items: center;
     gap: 0;
+    display: flex;
+}
+
+.filter-widget .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-top: 32px;
+    margin-bottom: 0;
+    max-width: 300px;
+}
+
+.filter-widget .tag-link {
+    background-color: #f7f7f7;
+    padding: 8px 16px;
+    margin-top: 8px;
+    display: inline-block;
+    margin-left: 8px;
+    text-transform: lowercase;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.blog-sidebar-button button {
+    background: #f7f7f7;
+    width: 190px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 32px;
+    transition: all 0.4s;
 }
 
 // Blog card css
@@ -93,6 +148,7 @@
     margin-top: 16px;
 }
 
+
 .blog-image {
     display: flex;
     overflow: hidden;
@@ -101,6 +157,8 @@
 .blog-image img {
     width: 100%;
     transition: all 0.4s ease-in-out;
+    object-fit: cover;
+    object-position: center;
 }
 
 .blog-card-2:hover .blog-image img,
@@ -352,6 +410,7 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     .blog-card-3 .blog-button,
     .blog-card-3 .blog-text,
+    .blog-text,
     .blog-card-3 .blog-publish {
         font-size: 13px;
     }
@@ -465,6 +524,21 @@
     .article-share .newsletter-text {
         font-size: 14px;
     }
+
+    .blog-card-3 .blog-title,
+    .blog-card-2 .blog-title {
+        font-size: 16px;
+    }
+
+    .blog-card-2 .blog-publish {
+        padding: 6px 4px;
+        font-size: 10px;
+        gap: 8px;
+    }
+
+    .blog-card-3 .blog-publish {
+        font-size: 11px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -472,12 +546,6 @@
     .blog-text,
     .blog-publish {
         font-size: 13px;
-    }
-
-
-    .blog-card-2 .blog-publish {
-        padding: 6px 10px;
-        font-size: 10px;
     }
 
     .blog-title{
@@ -507,6 +575,21 @@
         margin-bottom: 20px;
         justify-content: center;
     }
+
+    .blog-card-2 .blog-button {
+        font-size: 12px;
+    }
+
+    .blog-page .blog-list .blog-card.blog-card-3 {
+        flex-wrap: wrap;
+        row-gap: 24px;
+        height: 100%;
+    }
+
+    .blog-page .blog-list .blog-card-3 .blog-content,
+    .blog-page .blog-list .blog-card-3 .blog-image {
+        width: 100%;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -522,6 +605,19 @@
 
 @media (max-width: 575px) {
     .article-page .article-blog-wrap .blog-title {
+        font-size: 16px;
+    }
+
+    .blog-page .blog-card-3 .blog-publish {
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+
+    .blog-button {
+        font-size: 12px;
+    }
+
+    .blog-sidebar-button .text_18 {
         font-size: 16px;
     }
 }
@@ -542,8 +638,16 @@
     }
 
     .blog-card-2 .blog-publish {
-        padding: 6px 10px;
-        font-size: 10px;
+        padding: 4px 4px;
+        font-size: 8px;
+        gap: 8px;
+        left: 4px;
+        top: 4px;
+    }
+
+    .blog-card-2 .blog-publish .icon_16 {
+        width: 12px;
+        height: 12px;
     }
 
     .blog-title{
@@ -579,6 +683,19 @@
 
     .comment-text {
         font-size: 14px;
+    }
+
+    .blog-page .blog-card-3 .blog-publish {
+        gap: 0;
+    }
+
+    .blog-page .blog-card-3 .blog-date:before {
+        content: none;
+    }
+
+    .blog-page .blog-card-3 .blog-date {
+        padding-left: 0;
+        width: 100%;
     }
 
 }

@@ -810,12 +810,18 @@
                                                     <svg class="icon icon_24 icon-close"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><line x1="200" y1="56" x2="56" y2="200" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="200" y1="200" x2="56" y2="56" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
                                                     </svg>
                                             </button>
-                                            <div class="product-popup-modal__content-info">
-                                                <deferred-media class="video-section-media">
-                                                    <template>
-                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/krDWc30PAGg?si=oJm01_tfGNT7RghE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                                    </template>
-                                                </deferred-media>
+                                            <div class="product-popup-modal__content-info video-popup">
+                                                <div class="video-box">
+                                                    <video 
+                                                        class="video"
+                                                        src="assets/img/video/v1.mp4" 
+                                                        width="100%" 
+                                                        height="100%"
+                                                        preload="none"
+                                                        controls
+                                                    >
+                                                    </video>
+                                                </div>
                                             </div>
                                         </div>
                                     </modal-dialog>

@@ -562,15 +562,31 @@
         <!-- breadcrumb end -->
 
         <main id="MainContent" class="content-for-layout">
-            <!-- blog page start -->
+            <!-- article page start -->
             <div class="article-page section-mt">
                 <div class="container-fluid">
+                    <!-- filter drawer button -->
+                    <div class="blog-sidebar-button d-flex d-lg-none justify-content-end">
+                        <button 
+                            type="button" 
+                            class="sort-btn filter-btn button-reset"
+                            href="#drawer-filter"
+                            data-bs-toggle="offcanvas"
+                            aria-label="Open hamburger menu"
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false">
+                            <span class="text text_18">Sidebar</span>
+                            <span>
+                                <svg class="icon icon_24 icon-filter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><line x1="128" y1="120" x2="128" y2="216" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="128" y1="40" x2="128" y2="88" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="200" y1="200" x2="200" y2="216" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="200" y1="40" x2="200" y2="168" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="224" y1="168" x2="176" y2="168" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="56" y1="168" x2="56" y2="216" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="56" y1="40" x2="56" y2="136" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="32" y1="136" x2="80" y2="136" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="152" y1="88" x2="104" y2="88" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+                            </span>
+                        </button>
+                    </div>
                     <div class="article-wrap">
                         <div class="article-inner">
                             <div class="article-heading">
                                 <h2 class="article-title heading text_42">Understanding color theory: the color wheel and finding good complementary colors</h2>
                                 <div class="article-publish">
-                                    <span class="article-publish-date text text_12">April 10, 2022</span>
+                                    <span class="article-publish-date text text_12">April 10, 2024</span>
                                     <span class="article-time relative text text_12">3 min read </span>
                                 </div>
                             </div>
@@ -590,13 +606,63 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.
                             </p>
                             <div class="article-media">
-                                <img 
-                                    src="assets/img/blog/b2.jpg" 
-                                    alt="bloge-image" 
-                                    width="100%" 
-                                    height="100%" 
-                                    loading="lazy"
-                                >
+                                <div class="video-section-media relative">
+                                    <div class="video-section-poster">
+                                        <div class="deferred-media-poster overlay">
+                                            <img 
+                                                src="assets/img/video/1.jpg" 
+                                                alt="poster image" 
+                                                width="100%" 
+                                                height="100%" 
+                                                loading="lazy"
+                                            >
+                                        </div>
+                                        <modal-opener class="deferred-poster-content" data-modal="#PopupModal">
+                                            <button
+                                                id="Deferred-Poster-Modal"
+                                                class="deferred-poster-button button-reset"
+                                                type="button"
+                                                aria-label="poster button"
+                                            >
+                                                <svg class="icon icon_40 icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M72,39.88V216.12a8,8,0,0,0,12.15,6.69l144.08-88.12a7.82,7.82,0,0,0,0-13.38L84.15,33.19A8,8,0,0,0,72,39.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+                                                </svg>
+                                            </button>
+                                            <div class="poster-content-text">
+                                                <h2 class="poster-heading heading text_42">Discover Our Journey</h2>
+                                                <p class="poster-text text text_14">Amet minim mollit non deserunt some more ullamco est sit aliqua dolor amet sint.</p>
+                                            </div>
+                                        </modal-opener>
+                                    </div>
+                                    <modal-dialog class="product_modal" id="PopupModal">
+                                        <div
+                                            role="dialog"
+                                            aria-modal="true"
+                                            class="product-popup-modal__content"
+                                            tabindex="-1"
+                                        >
+                                            <button
+                                                type="button"
+                                                class="product-popup-modal__toggle"
+                                                >
+                                                    <svg class="icon icon_24 icon-close"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><line x1="200" y1="56" x2="56" y2="200" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="200" y1="200" x2="56" y2="56" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+                                                    </svg>
+                                            </button>
+                                            <div class="product-popup-modal__content-info video-popup">
+                                                <div class="video-box">
+                                                    <video 
+                                                        class="video"
+                                                        src="assets/img/video/v1.mp4" 
+                                                        width="100%" 
+                                                        height="100%"
+                                                        preload="none"
+                                                        controls
+                                                    >
+                                                    </video>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </modal-dialog>
+                                </div>
                             </div>
                             <p class="article-text-content text text_16">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.
@@ -613,12 +679,7 @@
                                         <ul class="social-list list-unstyled">
                                             <li class="social-item">
                                                 <a href="#" aria-label="Twitter">
-                                                    <svg class="icon icon_20 icon-twitter" width="20" height="20"
-                                                        viewBox="0 0 20 20" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M17.1452 6.62529C17.1452 6.79391 17.1452 6.94848 17.1452 7.08899C17.1452 8.35363 16.9063 9.60422 16.4286 10.8407C15.9789 12.0492 15.3185 13.1593 14.4473 14.171C13.6042 15.1827 12.4941 16.0117 11.1171 16.6581C9.76815 17.2763 8.27869 17.5855 6.64871 17.5855C4.59719 17.5855 2.71429 17.0375 1 15.9415C1.28103 15.9696 1.57611 15.9836 1.88525 15.9836C3.59953 15.9836 5.13115 15.4637 6.48009 14.4239C5.66511 14.3958 4.93443 14.1429 4.28806 13.6651C3.66979 13.1874 3.24824 12.5831 3.02342 11.8525C3.24824 11.9087 3.47307 11.9368 3.69789 11.9368C4.03513 11.9368 4.35831 11.8806 4.66745 11.7681C3.82436 11.5995 3.12178 11.178 2.55972 10.5035C1.99766 9.82904 1.71663 9.05621 1.71663 8.18501C1.71663 8.15691 1.71663 8.14286 1.71663 8.14286C2.25059 8.42389 2.81265 8.57845 3.40281 8.60656C2.30679 7.84777 1.75878 6.82201 1.75878 5.52927C1.75878 4.8548 1.9274 4.23653 2.26464 3.67447C3.19204 4.79859 4.30211 5.69789 5.59485 6.37237C6.91569 7.04684 8.33489 7.42623 9.85246 7.51054C9.79625 7.22951 9.76815 6.94848 9.76815 6.66745C9.76815 5.65574 10.1194 4.79859 10.822 4.09602C11.5527 3.36534 12.4239 3 13.4356 3C14.5035 3 15.4028 3.37939 16.1335 4.13817C16.9766 3.96956 17.7635 3.67447 18.4941 3.25293C18.2131 4.12412 17.6651 4.79859 16.8501 5.27635C17.6089 5.19204 18.3255 5.00937 19 4.72834C18.4941 5.45902 17.8759 6.09133 17.1452 6.62529Z"
-                                                            fill="currentColor" />
+                                                    <svg class="icon icon_20 icon-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polygon points="48 40 96 40 208 216 160 216 48 40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="113.88" y1="143.53" x2="48" y2="216" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="208" y1="40" x2="142.12" y2="112.47" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
                                                     </svg>
                                                 </a>
                                             </li>
@@ -700,120 +761,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="comment-area section-mt">
-                                <div class="comment-area-wrap">
-                                    <div class="comment-item">
-                                        <div class="comment-img">
-                                            <img 
-                                                src="assets/img/testimonial/1.jpg" 
-                                                alt="image" 
-                                                width="100%" 
-                                                height="100%" 
-                                                loading="lazy"
-                                            >
-                                        </div>
-                                        <div class="comment-main">
-                                            <div class="comment-main-content">
-                                                <div class="commentator-heading">
-                                                    <h3 class="commentator-name heading text_16">Robert Fox</h3>
-                                                    <span class="comment-date text text_12">April 10, 2022</span>
-                                                </div>
-                                                <p class="comment-text text text_16">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.</p>
-                                                <a href="#" class="comment-reply">
-                                                    <svg class="icon icon_16 icon-reply" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                                        <path d="M5.99935 9.83366L2.66602 6.50033L5.99935 3.16699" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path d="M13.3327 13.8333V9.16667C13.3327 8.45942 13.0517 7.78115 12.5516 7.28105C12.0515 6.78095 11.3733 6.5 10.666 6.5H2.66602" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>
-                                                    <span class="reply-text text text_14 medium">Reply</span>
-                                                </a>
-                                            </div>
-                                            <div class="comment-item">
-                                                <div class="comment-img">
-                                                    <img 
-                                                        src="assets/img/testimonial/2.jpg" 
-                                                        alt="image" 
-                                                        width="100%" 
-                                                        height="100%" 
-                                                        loading="lazy"
-                                                    >
-                                                </div>
-                                                <div class="comment-main">
-                                                    <div class="comment-main-content">
-                                                        <div class="commentator-heading">
-                                                            <h3 class="commentator-name heading text_16">Courtney Henry</h3>
-                                                            <span class="comment-date text text_12">April 10, 2022</span>
-                                                        </div>
-                                                        <p class="comment-text text text_16">Class aptent taciti sociosqu ad litora torquent per conubia nostra</p>
-                                                        <a href="#" class="comment-reply">
-                                                            <svg class="icon icon_16 icon-reply" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                                                <path d="M5.99935 9.83366L2.66602 6.50033L5.99935 3.16699" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                <path d="M13.3327 13.8333V9.16667C13.3327 8.45942 13.0517 7.78115 12.5516 7.28105C12.0515 6.78095 11.3733 6.5 10.666 6.5H2.66602" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            </svg>
-                                                            <span class="reply-text text text_14 medium">Reply</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment-item">
-                                        <div class="comment-img">
-                                            <img 
-                                                src="assets/img/testimonial/3.jpg" 
-                                                alt="image" 
-                                                width="100%" 
-                                                height="100%" 
-                                                loading="lazy"
-                                            >
-                                        </div>
-                                        <div class="comment-main">
-                                            <div class="comment-main-content">
-                                                <div class="commentator-heading">
-                                                    <h3 class="commentator-name heading text_16">Jane Cooper</h3>
-                                                    <span class="comment-date text text_12">April 10, 2022</span>
-                                                </div>
-                                                <p class="comment-text text text_16">Class aptent taciti sociosqu ad litora torquent per.</p>
-                                                <a href="#" class="comment-reply">
-                                                    <svg class="icon icon_16 icon-reply" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                                        <path d="M5.99935 9.83366L2.66602 6.50033L5.99935 3.16699" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path d="M13.3327 13.8333V9.16667C13.3327 8.45942 13.0517 7.78115 12.5516 7.28105C12.0515 6.78095 11.3733 6.5 10.666 6.5H2.66602" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>
-                                                    <span class="reply-text text text_14 medium">Reply</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment-item">
-                                        <div class="comment-img">
-                                            <img 
-                                                src="assets/img/testimonial/4.jpg" 
-                                                alt="image" 
-                                                width="100%" 
-                                                height="100%" 
-                                                loading="lazy"
-                                            >
-                                        </div>
-                                        <div class="comment-main">
-                                            <div class="comment-main-content">
-                                                <div class="commentator-heading">
-                                                    <h3 class="commentator-name heading text_16">Dianne Russell</h3>
-                                                    <span class="comment-date text text_12">April 10, 2022</span>
-                                                </div>
-                                                <p class="comment-text text text_16">Class aptent taciti sociosqu ad litora torquent per.litora torquent per litora torquent per</p>
-                                                <a href="#" class="comment-reply">
-                                                    <svg class="icon icon_16 icon-reply" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                                        <path d="M5.99935 9.83366L2.66602 6.50033L5.99935 3.16699" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path d="M13.3327 13.8333V9.16667C13.3327 8.45942 13.0517 7.78115 12.5516 7.28105C12.0515 6.78095 11.3733 6.5 10.666 6.5H2.66602" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>
-                                                    <span class="reply-text text text_14 medium">Reply</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <accordion-menu class="article-sidebar">
+                        <accordion-menu class="article-sidebar d-none d-lg-block">
                             <div class="blog-sidebar-wrap">
                                 <div class="filter-widget">
                                     <div class="filter-blogger">
@@ -862,7 +811,7 @@
                                             </li>
                                             <li class="filter-item">
                                                 <label class="filter-label">
-                                                    <input type="checkbox">
+                                                    <input type="checkbox" checked>
                                                     <span class="filter-checkbox"></span>
                                                     <span class="filter-text text text_16">Soft Pants</span>
                                                     <span class="filter-value text text_14">(14)</span>
@@ -996,10 +945,51 @@
                                     </div>
                                 </div>
                                 <div class="filter-widget">
+                                    <div class="filter-heading accordion-opener text text_18 medium">
+                                        <span>Tags</span>
+                                        <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00234D"
+                                            stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="filter-content open">
+                                        <div class="filter-tag">
+                                            <ul class="tag-list list-unstyled">
+                                                <li class="tag-item">
+                                                    <a href="#" class="tag-link text text_12" aria-label="tag link">Fashion</a>
+                                                </li>
+                                                <li class="tag-item">
+                                                    <a href="#" class="tag-link text text_12" aria-label="tag link">blog</a>
+                                                </li>
+                                                <li class="tag-item">
+                                                    <a href="#" class="tag-link text text_12" aria-label="tag link">minimalism</a>
+                                                </li>
+                                                <li class="tag-item">
+                                                    <a href="#" class="tag-link text text_12" aria-label="tag link">furniture</a>
+                                                </li>
+                                                <li class="tag-item">
+                                                    <a href="#" class="tag-link text text_12" aria-label="tag link">trends</a>
+                                                </li>
+                                                <li class="tag-item">
+                                                    <a href="#" class="tag-link text text_12" aria-label="tag link">
+                                                        pop</a>
+                                                </li>
+                                                <li class="tag-item">
+                                                    <a href="#" class="tag-link text text_12" aria-label="tag link">coding</a>
+                                                </li>
+                                                <li class="tag-item">
+                                                    <a href="#" class="tag-link text text_12" aria-label="tag link">design</a>
+                                                </li>
+                                            </ul>                                   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-widget">
                                     <div class="image-banner">
                                         <a href="product-details.html" class="image-banner-link">
                                             <img 
-                                                src="assets/img/banner/text-banner.jpg" 
+                                                src="assets/img/banner/text-banner-4.jpg" 
                                                 alt="image" 
                                                 width="100%" 
                                                 height="100%" 
@@ -1072,9 +1062,145 @@
                             </div>
                         </div>
                     </div>
+                    <div class="comment-area section-mt">
+                        <h2 class="section-heading flex-start">Thoughts On This Article</h2>
+                        <div class="comment-area-wrap">
+                            <div class="comment-item">
+                                <div class="comment-img">
+                                    <img 
+                                        src="assets/img/testimonial/1.jpg" 
+                                        alt="image" 
+                                        width="100%" 
+                                        height="100%" 
+                                        loading="lazy"
+                                    >
+                                </div>
+                                <div class="comment-main">
+                                    <div class="comment-main-content">
+                                        <div class="commentator-heading">
+                                            <h3 class="commentator-name heading text_16">Robert Fox</h3>
+                                            <span class="comment-date text text_12">April 10, 2024</span>
+                                        </div>
+                                        <p class="comment-text text text_16">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.</p>
+                                        <a href="#" class="comment-reply">
+                                            <svg class="icon icon_16 icon-reply" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                                <path d="M5.99935 9.83366L2.66602 6.50033L5.99935 3.16699" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M13.3327 13.8333V9.16667C13.3327 8.45942 13.0517 7.78115 12.5516 7.28105C12.0515 6.78095 11.3733 6.5 10.666 6.5H2.66602" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span class="reply-text text text_14 medium">Reply</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-item">
+                                        <div class="comment-img">
+                                            <img 
+                                                src="assets/img/testimonial/2.jpg" 
+                                                alt="image" 
+                                                width="100%" 
+                                                height="100%" 
+                                                loading="lazy"
+                                            >
+                                        </div>
+                                        <div class="comment-main">
+                                            <div class="comment-main-content">
+                                                <div class="commentator-heading">
+                                                    <h3 class="commentator-name heading text_16">Courtney Henry</h3>
+                                                    <span class="comment-date text text_12">April 10, 2024</span>
+                                                </div>
+                                                <p class="comment-text text text_16">Class aptent taciti sociosqu ad litora torquent per conubia nostra</p>
+                                                <a href="#" class="comment-reply">
+                                                    <svg class="icon icon_16 icon-reply" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                                        <path d="M5.99935 9.83366L2.66602 6.50033L5.99935 3.16699" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M13.3327 13.8333V9.16667C13.3327 8.45942 13.0517 7.78115 12.5516 7.28105C12.0515 6.78095 11.3733 6.5 10.666 6.5H2.66602" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <span class="reply-text text text_14 medium">Reply</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-img">
+                                    <img 
+                                        src="assets/img/testimonial/3.jpg" 
+                                        alt="image" 
+                                        width="100%" 
+                                        height="100%" 
+                                        loading="lazy"
+                                    >
+                                </div>
+                                <div class="comment-main">
+                                    <div class="comment-main-content">
+                                        <div class="commentator-heading">
+                                            <h3 class="commentator-name heading text_16">Jane Cooper</h3>
+                                            <span class="comment-date text text_12">April 10, 2024</span>
+                                        </div>
+                                        <p class="comment-text text text_16">Class aptent taciti sociosqu ad litora torquent per.</p>
+                                        <a href="#" class="comment-reply">
+                                            <svg class="icon icon_16 icon-reply" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                                <path d="M5.99935 9.83366L2.66602 6.50033L5.99935 3.16699" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M13.3327 13.8333V9.16667C13.3327 8.45942 13.0517 7.78115 12.5516 7.28105C12.0515 6.78095 11.3733 6.5 10.666 6.5H2.66602" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span class="reply-text text text_14 medium">Reply</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-item">
+                                <div class="comment-img">
+                                    <img 
+                                        src="assets/img/testimonial/4.jpg" 
+                                        alt="image" 
+                                        width="100%" 
+                                        height="100%" 
+                                        loading="lazy"
+                                    >
+                                </div>
+                                <div class="comment-main">
+                                    <div class="comment-main-content">
+                                        <div class="commentator-heading">
+                                            <h3 class="commentator-name heading text_16">Dianne Russell</h3>
+                                            <span class="comment-date text text_12">April 10, 2024</span>
+                                        </div>
+                                        <p class="comment-text text text_16">Class aptent taciti sociosqu ad litora torquent per.litora torquent per litora torquent per</p>
+                                        <a href="#" class="comment-reply">
+                                            <svg class="icon icon_16 icon-reply" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                                <path d="M5.99935 9.83366L2.66602 6.50033L5.99935 3.16699" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M13.3327 13.8333V9.16667C13.3327 8.45942 13.0517 7.78115 12.5516 7.28105C12.0515 6.78095 11.3733 6.5 10.666 6.5H2.66602" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span class="reply-text text text_14 medium">Reply</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- section contact form start -->
+                        <div class="section-contact-form">
+                            <div class="contact-form-header">
+                                <h2 class="section-heading flex-start">Leave Us A Message</h2>
+                            </div>
+                            <form method="post" action="#" class="contact-form">
+                                <div class="input-in-row">
+                                    <div class="contact-field">
+                                        <label for="form-first-name">First Name</label>
+                                        <input type="text" class="input-reset" placeholder="Your first name" id="form-first-name">
+                                    </div>
+                                    <div class="contact-field">
+                                        <label for="form-last-name">Last Name</label>
+                                        <input type="text" class="input-reset" placeholder="Your last name" id="form-last-name">
+                                    </div>
+                                </div>
+                                <div class="contact-field field-textarea">
+                                    <label for="form-Message">Message</label>
+                                    <textarea rows="1" class="form-textarea input-reset"placeholder="Write Your Message"></textarea>
+                                </div>
+                                <button type="button" class="contact-form-button button button-primary">Post</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- blog page end -->
+            <!-- article page end -->
         </main>
 
         <!-- footer start -->
@@ -1101,12 +1227,7 @@
                                         <ul class="social-list list-unstyled">
                                             <li class="social-item">
                                                 <a href="#" aria-label="Twitter">
-                                                    <svg class="icon icon_20 icon-twitter" width="20" height="20"
-                                                        viewBox="0 0 20 20" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M17.1452 6.62529C17.1452 6.79391 17.1452 6.94848 17.1452 7.08899C17.1452 8.35363 16.9063 9.60422 16.4286 10.8407C15.9789 12.0492 15.3185 13.1593 14.4473 14.171C13.6042 15.1827 12.4941 16.0117 11.1171 16.6581C9.76815 17.2763 8.27869 17.5855 6.64871 17.5855C4.59719 17.5855 2.71429 17.0375 1 15.9415C1.28103 15.9696 1.57611 15.9836 1.88525 15.9836C3.59953 15.9836 5.13115 15.4637 6.48009 14.4239C5.66511 14.3958 4.93443 14.1429 4.28806 13.6651C3.66979 13.1874 3.24824 12.5831 3.02342 11.8525C3.24824 11.9087 3.47307 11.9368 3.69789 11.9368C4.03513 11.9368 4.35831 11.8806 4.66745 11.7681C3.82436 11.5995 3.12178 11.178 2.55972 10.5035C1.99766 9.82904 1.71663 9.05621 1.71663 8.18501C1.71663 8.15691 1.71663 8.14286 1.71663 8.14286C2.25059 8.42389 2.81265 8.57845 3.40281 8.60656C2.30679 7.84777 1.75878 6.82201 1.75878 5.52927C1.75878 4.8548 1.9274 4.23653 2.26464 3.67447C3.19204 4.79859 4.30211 5.69789 5.59485 6.37237C6.91569 7.04684 8.33489 7.42623 9.85246 7.51054C9.79625 7.22951 9.76815 6.94848 9.76815 6.66745C9.76815 5.65574 10.1194 4.79859 10.822 4.09602C11.5527 3.36534 12.4239 3 13.4356 3C14.5035 3 15.4028 3.37939 16.1335 4.13817C16.9766 3.96956 17.7635 3.67447 18.4941 3.25293C18.2131 4.12412 17.6651 4.79859 16.8501 5.27635C17.6089 5.19204 18.3255 5.00937 19 4.72834C18.4941 5.45902 17.8759 6.09133 17.1452 6.62529Z"
-                                                            fill="currentColor" />
+                                                    <svg class="icon icon_20 icon-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polygon points="48 40 96 40 208 216 160 216 48 40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polygon><line x1="113.88" y1="143.53" x2="48" y2="216" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="208" y1="40" x2="142.12" y2="112.47" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
                                                     </svg>
                                                 </a>
                                             </li>
@@ -1388,10 +1509,14 @@
         </footer>
         <!-- footer end -->
 
+        
         <!-- scrollup start -->
-        <button id="scrollup">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>  
-        </button>
+        <scroll-up id="scroll-up-wrap">
+            <button id="scrollup" class="button-reset" aria-label="scroll-up-button">
+                <svg class="icon icon_28 icon-arrow-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><line x1="128" y1="216" x2="128" y2="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="56 112 128 40 200 112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+                </svg>
+            </button>
+         </scroll-up>
         <!-- scrollup end -->
 
         <!-- drawer menu start -->
@@ -2099,6 +2224,261 @@
             </div>
         </div>
         <!-- newsletter subscribe modal end -->
+
+        <!-- drawer filter start -->
+        <div class="drawer-filter offcanvas offcanvas-start d-flex d-lg-none" tabindex="-1" id="drawer-filter">
+            <div class="offcanvas-wrapper">
+                <accordion-menu class="collection-sidebar">
+                    <div class="collection-sidebar-wrap">
+                        <div class="filter-widget">
+                            <div class="offcanvas-header filter-heading text text_18 medium">
+                                <span>Filter By</span>
+                                <button type="button" class="button-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close">
+                                    <svg class="icon icon_24 icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><line x1="200" y1="56" x2="56" y2="200" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="200" y1="200" x2="56" y2="56" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="filter-widget">
+                            <div class="filter-blogger">
+                                <div class="blogger-image">
+                                    <img 
+                                        src="assets/img/testimonial/1.jpg" 
+                                        alt="testimonial-image" 
+                                        width="100%" 
+                                        height="100%" 
+                                        loading="lazy"
+                                    >
+                                </div>
+                                <div class="blogger-details">
+                                    <div class="blogger-name-wrap">
+                                        <h6 class="blogger-name subheading text_20">Mohammad Salah</h6>
+                                    </div>
+                                    <div class="blogger-desig-wrap">
+                                        <span class="blogger-desig text text_16">Designer </span>
+                                        <span class="blogger-desig text text_16">Developer </span>
+                                        <span class="blogger-desig text text_16">IT Professional</span>
+                                    </div>
+                                    <div class="blogger-read-btn">
+                                        <a href="#" class="button-cta">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-widget">
+                            <div class="filter-heading accordion-opener text text_18 medium">
+                                <span>Categories</span>
+                                <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00234D"
+                                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="filter-content open">
+                                <ul class="filter-list list-unstyled">
+                                    <li class="filter-item">
+                                        <label class="filter-label">
+                                            <input type="checkbox" checked>
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-text text text_16">Cotton Shirt</span>
+                                            <span class="filter-value text text_14">(36)</span>
+                                        </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-text text text_16">Soft Pants</span>
+                                            <span class="filter-value text text_14">(14)</span>
+                                        </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-text text text_16">Camera Bag</span>
+                                            <span class="filter-value text text_14">(7)</span>
+                                        </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-text text text_16">Ladies shirt</span>
+                                            <span class="filter-value text text_14">(7)</span>
+                                        </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-text text text_16">Sneakers</span>
+                                            <span class="filter-value text text_14">(7)</span>
+                                        </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-text text text_16">Soft T-shirt</span>
+                                            <span class="filter-value text text_14">(7)</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-widget">
+                            <div class="sidebar-blog-post">
+                                <div class="filter-heading accordion-opener text text_18 medium">
+                                    <span>Latest Posts</span>
+                                    <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00234D"
+                                        stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="filter-content open">
+                                    <ul class="latest-post-list filter-list list-unstyled">
+                                        <li class="latest-post-item">
+                                            <div class="blog-card blog-card-3">
+                                                <a href="article.html" class="blog-image" aria-label="blog image">
+                                                    <img 
+                                                        src="assets/img/blog/s1.jpg" 
+                                                        alt="blog-image" 
+                                                        width="100%" 
+                                                        height="100%" 
+                                                        loading="lazy"
+                                                    >
+                                                </a>
+                                                <div class="blog-content">
+                                                    <a href="article.html" class="blog-title text text_16">There are many variations of Lorem Ipsum.</a>
+                                                    <p class="blog-publish text text_12">
+                                                        <span class="blog-date relative">on April 4, 2022</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="latest-post-item">
+                                            <div class="blog-card blog-card-3">
+                                                <a href="article.html" class="blog-image" aria-label="blog image">
+                                                    <img 
+                                                        src="assets/img/blog/s2.jpg" 
+                                                        alt="blog-image" 
+                                                        width="100%" 
+                                                        height="100%" 
+                                                        loading="lazy"
+                                                    >
+                                                </a>
+                                                <div class="blog-content">
+                                                    <a href="article.html" class="blog-title text text_16">There are many variations of Lorem Ipsum.</a>
+                                                    <p class="blog-publish text text_12">
+                                                        <span class="blog-date relative">on April 4, 2022</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="latest-post-item">
+                                            <div class="blog-card blog-card-3">
+                                                <a href="article.html" class="blog-image" aria-label="article image">
+                                                    <img 
+                                                        src="assets/img/blog/s3.jpg" 
+                                                        alt="blog-image" 
+                                                        width="100%" 
+                                                        height="100%" 
+                                                        loading="lazy"
+                                                    >
+                                                </a>
+                                                <div class="blog-content">
+                                                    <a href="article.html" class="blog-title text text_16">There are many variations of Lorem Ipsum.</a>
+                                                    <p class="blog-publish text text_12">
+                                                        <span class="blog-date relative">on April 4, 2022</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="latest-post-item">
+                                            <div class="blog-card blog-card-3">
+                                                <a href="article.html" class="blog-image" aria-label="blog image">
+                                                    <img 
+                                                        src="assets/img/blog/s4.jpg" 
+                                                        alt="blog-image" 
+                                                        width="100%" 
+                                                        height="100%" 
+                                                        loading="lazy"
+                                                    >
+                                                </a>
+                                                <div class="blog-content">
+                                                    <a href="article.html" class="blog-title text text_16">There are many variations of Lorem Ipsum.</a>
+                                                    <p class="blog-publish text text_12">
+                                                        <span class="blog-date relative">on April 4, 2022</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-widget">
+                            <div class="filter-heading accordion-opener text text_18 medium">
+                                <span>Tags</span>
+                                <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00234D"
+                                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="filter-content open">
+                                <div class="filter-tag">
+                                    <ul class="tag-list list-unstyled">
+                                        <li class="tag-item">
+                                            <a href="#" class="tag-link text text_12" aria-label="tag link">Fashion</a>
+                                        </li>
+                                        <li class="tag-item">
+                                            <a href="#" class="tag-link text text_12" aria-label="tag link">blog</a>
+                                        </li>
+                                        <li class="tag-item">
+                                            <a href="#" class="tag-link text text_12" aria-label="tag link">minimalism</a>
+                                        </li>
+                                        <li class="tag-item">
+                                            <a href="#" class="tag-link text text_12" aria-label="tag link">furniture</a>
+                                        </li>
+                                        <li class="tag-item">
+                                            <a href="#" class="tag-link text text_12" aria-label="tag link">trends</a>
+                                        </li>
+                                        <li class="tag-item">
+                                            <a href="#" class="tag-link text text_12" aria-label="tag link">
+                                                pop</a>
+                                        </li>
+                                        <li class="tag-item">
+                                            <a href="#" class="tag-link text text_12" aria-label="tag link">coding</a>
+                                        </li>
+                                        <li class="tag-item">
+                                            <a href="#" class="tag-link text text_12" aria-label="tag link">design</a>
+                                        </li>
+                                    </ul>                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-widget">
+                            <div class="image-banner">
+                                <a href="product-details.html" class="image-banner-link">
+                                    <img 
+                                        src="assets/img/banner/text-banner-3.jpg" 
+                                        alt="image" 
+                                        width="100%" 
+                                        height="100%" 
+                                        loading="lazy"
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </accordion-menu>
+            </div>
+        </div>
+        <!-- drawer filter end -->
 
         <!-- all js -->
         <script src="assets/js/vendor.js"></script>

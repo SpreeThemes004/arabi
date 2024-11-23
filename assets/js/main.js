@@ -141,12 +141,19 @@ class ModalOpener extends HTMLElement {
 
     const button = this.querySelector('button');
 
+    this.media = button.closest('.video-section-media').querySelector('.video');
+
     if (!button) return;
     button.addEventListener('click', () => {
       const modal = document.querySelector(this.getAttribute('data-modal'));
       if (modal) modal.show(button);
+
+      if(this.media){
+        this.media.play();
+      }
     });
   }
+
 }
 customElements.define('modal-opener', ModalOpener);
 
@@ -154,7 +161,11 @@ customElements.define('modal-opener', ModalOpener);
 class ModalDialog extends HTMLElement {
   constructor() {
     super();
+
     this.querySelector('.product-popup-modal__toggle').addEventListener('click', this.hide.bind(this, false));
+
+    this.media = this.querySelector('.video');
+
     this.addEventListener('keyup', (event) => {
       if (event.code.toUpperCase() === 'ESCAPE') this.hide();
     });
@@ -187,6 +198,10 @@ class ModalDialog extends HTMLElement {
     document.body.classList.remove('overflow-hidden');
     document.body.dispatchEvent(new CustomEvent('modalClosed'));
     this.removeAttribute('open');
+    
+    if(this.media){
+      this.media.pause();
+    }
   }
 }
 
@@ -349,32 +364,26 @@ class testimonialSlider extends HTMLElement{
 customElements.define('testimonial-slider', testimonialSlider);
 
 // video section
-class DeferredMedia extends HTMLElement {
+class myMedia extends HTMLElement {
   constructor() {
     super();
 
-    const poster = this.querySelector('[id^="Deferred-Poster-"]');
-    poster.addEventListener('click', this.loadContent.bind(this));
+    this.playBtn = this.querySelector('.deferred-poster-button');
+    this.closeBtn = this.querySelector('.product-popup-modal__toggle');
+    this.media =this.closest('section-media').querySelector('iframe');
+    console.log(this.media);
+    
+
+    this.playBtn.addEventListener('click', this.playMedia.bind(this));
   }
 
-  loadContent(focus = true) {
-    window.pauseAllMedia();
-    if (!this.getAttribute('loaded')) {
-      const content = document.createElement('div');
-      content.appendChild(this.querySelector('template').content.firstElementChild.cloneNode(true));
-
-      this.setAttribute('loaded', true);
-      const deferredElement = this.appendChild(content.querySelector('video, model-viewer, iframe'));
-      if (focus) deferredElement.focus();
-      if (deferredElement.nodeName == 'VIDEO' && deferredElement.getAttribute('autoplay')) {
-        // force autoplay for safari
-        deferredElement.play();
-      }
-    }
+  playMedia(){
+    this.querySelector('.myFrame').play();
   }
+  
 }
 
-customElements.define('deferred-media', DeferredMedia);
+customElements.define('section-media', myMedia);
 
 // counter up 
 class counterUp extends HTMLElement{

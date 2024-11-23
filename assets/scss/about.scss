@@ -38,11 +38,13 @@
     margin-left: 32px;
 }
 
-.video-section-media {
-    display: block;
+.product-popup-modal__content-info.video-popup {
+    padding: 10px;
+}
+
+.product-popup-modal__content-info.video-popup .video-box {
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 
 .about-grid {

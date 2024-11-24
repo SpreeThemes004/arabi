@@ -162,6 +162,20 @@
 .newsletter-popup .newsletter-style-3 {
     justify-content: space-between;
     gap: 42px;
+    min-height: 50vh;
+}
+
+.newsletter-popup .newsletter-style-3 > div {
+    height: 100%;
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-image img {
+    min-height: inherit;
+    object-fit: cover;
+    object-position: center;
 }
 
 .newsletter-popup .newsletter-style-3 .newsletter-content-inner {

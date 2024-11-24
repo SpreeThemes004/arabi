@@ -141,16 +141,10 @@ class ModalOpener extends HTMLElement {
 
     const button = this.querySelector('button');
 
-    this.media = button.closest('.video-section-media').querySelector('.video');
-
     if (!button) return;
     button.addEventListener('click', () => {
       const modal = document.querySelector(this.getAttribute('data-modal'));
       if (modal) modal.show(button);
-
-      if(this.media){
-        this.media.play();
-      }
     });
   }
 
@@ -191,17 +185,37 @@ class ModalDialog extends HTMLElement {
     const popup = this.querySelector('.template-popup');
     document.body.classList.add('overflow-hidden');
     this.setAttribute('open', '');
-    if (popup) popup.loadContent();
+    if (popup) {
+      popup.loadContent();
+      this.playMedia();
+    };
   }
 
   hide() {
     document.body.classList.remove('overflow-hidden');
     document.body.dispatchEvent(new CustomEvent('modalClosed'));
     this.removeAttribute('open');
-    
-    if(this.media){
-      this.media.pause();
-    }
+    this.pauseMedia();
+  }
+
+  playMedia() {
+    this.querySelectorAll('.js-youtube').forEach((video) => {
+      video.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+    });
+    this.querySelectorAll('.js-vimeo').forEach((video) => {
+      video.contentWindow.postMessage('{"method":"play"}', '*');
+    });
+    this.querySelectorAll('video').forEach((video) => video.play());
+  }
+
+  pauseMedia() {
+    this.querySelectorAll('.js-youtube').forEach((video) => {
+      video.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+    });
+    this.querySelectorAll('.js-vimeo').forEach((video) => {
+      video.contentWindow.postMessage('{"method":"pause"}', '*');
+    });
+    this.querySelectorAll('video').forEach((video) => video.pause());
   }
 }
 
@@ -293,7 +307,7 @@ class newProductSlider extends HTMLElement{
           spaceBetween: 16,
         },
         575: {
-          slidesPerView: 2.8,
+          slidesPerView: 2.6,
           spaceBetween: 16,
         },
         768: {
@@ -363,27 +377,6 @@ class testimonialSlider extends HTMLElement{
 
 customElements.define('testimonial-slider', testimonialSlider);
 
-// video section
-class myMedia extends HTMLElement {
-  constructor() {
-    super();
-
-    this.playBtn = this.querySelector('.deferred-poster-button');
-    this.closeBtn = this.querySelector('.product-popup-modal__toggle');
-    this.media =this.closest('section-media').querySelector('iframe');
-    console.log(this.media);
-    
-
-    this.playBtn.addEventListener('click', this.playMedia.bind(this));
-  }
-
-  playMedia(){
-    this.querySelector('.myFrame').play();
-  }
-  
-}
-
-customElements.define('section-media', myMedia);
 
 // counter up 
 class counterUp extends HTMLElement{

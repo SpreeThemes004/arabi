@@ -109,8 +109,7 @@
 }
 
 .footer-bottom {
-    border-top: 1px solid #ddd;
-    background-color: #F7F7F7;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -138,6 +137,11 @@
     gap: 8px;
     margin: 0;
     justify-content: center;
+}
+
+.payment-item svg {
+    width: 40px;
+    height: 40px;
 }
 
 @media (max-width: 991px) {

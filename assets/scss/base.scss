@@ -532,6 +532,20 @@ img {
   display: none;
 }
 
+@media (max-width: 575px) {
+  .product-popup-modal__toggle {
+      top: -8px;
+      right: -6px;
+      width: 35px;
+      height: 35px;
+  }
+
+  .product-popup-modal__toggle svg {
+      width: 20px;
+      height: 20px;
+  }
+}
+
 // fileter widget
 .filter-checkbox {
   --color-background: 0, 0, 0;

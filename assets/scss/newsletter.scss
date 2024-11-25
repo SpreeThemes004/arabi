@@ -251,6 +251,7 @@
         padding: 32px;
         max-width: 100%;
         text-align: center;
+        margin: 0;
     }
 
     .newsletter-popup .section-heading.flex-start {
@@ -267,5 +268,9 @@
 @media (max-width: 425px) {
     .newsletter-btn {
         font-size: 12px;
+    }
+
+    .newsletter-popup .newsletter-style-3 .newsletter-content-inner {
+        padding: 20px;
     }
 }

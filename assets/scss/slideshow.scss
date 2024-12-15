@@ -89,37 +89,8 @@ hero-slider:hover .arrow-next{
     object-position: center;
 }
 
-.slide-container.slide-1 {
-    justify-content: center;
-}
-
-.slide-container.slide-2 {
-    justify-content: flex-start;
-}
-
-.slide-2 .slide-content {
-    text-align: left;
-}
-
-.slide-2 .slider-buttons {
-    justify-content: flex-start;
-}
-
-.slide-container.slide-3 {
-    justify-content: flex-end;
-}
-
-.slide-3 .slide-content {
-    text-align: right;
-}
-
-.slide-3 .slider-buttons {
-    justify-content: flex-end;
-}
-
 .slide-content {
     max-width: 510px;
-    text-align: center;
 }
 
 .slider-subheading {
@@ -136,7 +107,6 @@ hero-slider:hover .arrow-next{
 
 .slider-buttons {
     display: flex;
-    justify-content: center;
     gap: 24px;
     margin-top: 32px;
     flex-wrap: wrap;

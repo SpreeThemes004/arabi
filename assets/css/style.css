@@ -195,6 +195,28 @@ body {
   -ms-flex-pack: start;
   justify-content: flex-start; }
 
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.flex-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.text-center {
+  text-align: center; }
+
+.text-end {
+  text-align: end; }
+
 .row-reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -713,7 +735,7 @@ img {
   margin-left: -10px; }
 
 .anounce-bg-black .announcement-contact:last-child a::before {
-  background: rgba(255, 255, 255, 0.7); }
+  background: rgba(255, 255, 255, 0.4); }
 
 .announcement-bar * {
   color: inherit; }
@@ -721,6 +743,17 @@ img {
 .language-list-option *,
 .currency-list-option * {
   color: rgba(var(--color-link), 1); }
+
+.currency-list-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .announcement-meta {
   display: -webkit-box;
@@ -743,10 +776,10 @@ img {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  margin-left: -12px; }
+  margin-left: -14px; }
 
 .anounce-bg-black .announcement-meta > div + div:before {
-  background: rgba(255, 255, 255, 0.7); }
+  background: rgba(255, 255, 255, 0.4); }
 
 .flag {
   min-width: 20px;
@@ -1855,40 +1888,8 @@ hero-slider:hover .arrow-next {
   -o-object-position: center;
   object-position: center; }
 
-.slide-container.slide-1 {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
-.slide-container.slide-2 {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
-
-.slide-2 .slide-content {
-  text-align: left; }
-
-.slide-2 .slider-buttons {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
-
-.slide-container.slide-3 {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
-
-.slide-3 .slide-content {
-  text-align: right; }
-
-.slide-3 .slider-buttons {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
-
 .slide-content {
-  max-width: 510px;
-  text-align: center; }
+  max-width: 510px; }
 
 .slider-subheading {
   letter-spacing: 5px; }
@@ -1903,9 +1904,6 @@ hero-slider:hover .arrow-next {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   gap: 24px;
   margin-top: 32px;
   -ms-flex-wrap: wrap;

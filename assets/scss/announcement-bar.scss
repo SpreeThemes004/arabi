@@ -43,7 +43,7 @@
 }
 
 .anounce-bg-black .announcement-contact:last-child a::before {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .announcement-bar * {
@@ -53,6 +53,12 @@
 .language-list-option *,
 .currency-list-option * {
     color: rgba( var(--color-link), 1);
+}
+
+.currency-list-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .announcement-meta {
@@ -74,11 +80,11 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    margin-left: -12px;
+    margin-left: -14px;
 }
 
 .anounce-bg-black .announcement-meta > div + div:before {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .flag {

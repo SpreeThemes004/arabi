@@ -181,6 +181,24 @@ body {
   justify-content: flex-start;
 }
 
+.flex-center{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-end{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-end{
+  text-align: end;
+}
+
 .row-reverse {
   flex-direction: row-reverse;
 }

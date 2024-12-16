@@ -7,10 +7,21 @@
     --color-background: 0, 0, 0;
 }
 
+.section-newsletter-2.newsletter-bag {
+    --color-foreground:  0, 0, 0;
+    --color-background: 247, 247, 247;
+}
+
 .section-newsletter-2 .newsletter-btn-white {
     --color-background: 255, 255, 255;
     --color-foreground: 0, 0, 0;
 }
+
+.section-newsletter-2.newsletter-bag .newsletter-btn-white {
+    --color-background: 0, 0, 0;
+    --color-foreground: 255, 255, 255;
+}
+
 .section-newsletter {
     --color-background: 247, 247, 247;
 }
@@ -57,6 +68,10 @@
 
 .section-newsletter-2 .newsletter-form {
     border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.section-newsletter-2.newsletter-bag .newsletter-form {
+    border: 1px solid rgba(0, 0, 0, 1);
 }
 
 .newsletter-input {

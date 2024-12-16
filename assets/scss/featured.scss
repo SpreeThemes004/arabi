@@ -1,0 +1,25 @@
+.featured-image {
+    --color-background: 247, 247 , 247;
+}
+
+.featured-product {
+    margin-top: 48px;
+}
+
+.featured-image {
+    display: flex;
+    background: rgba(var(--color-background), 1);
+    border-radius: 50%;
+}
+
+.featured-title {
+    margin-top: 24px;
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .featured-title.text_18{
+        font-size: 16px;
+    }
+}

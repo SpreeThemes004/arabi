@@ -198,8 +198,9 @@ header {
 }
 
 .header-search-widget .search-input {
-    width: 100%;
+    width: calc(100% - 24px);
     height: auto;
+    flex: none !important;
 }
 
 .header-search-widget .search-button {

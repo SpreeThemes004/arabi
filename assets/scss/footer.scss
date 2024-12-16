@@ -1,3 +1,12 @@
+.footer-bg {
+    --color-background: 0, 0, 0;
+    --color-foreground: 255, 255, 255;
+}
+
+.footer-bg {
+    background-color: rgba(var(--color-background), 1);
+}
+
 .footer-top {
     padding: 60px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -7,6 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -50px;
+    justify-content: space-between;
 }
 
 
@@ -82,6 +92,10 @@
     left: auto;
 }
 
+.footer-bg .footer-menu .footer-link::after {
+    background-color: #fff;
+}
+
 .footer-menu .footer-link:hover::after {
     left: 0;
     width: 100%;
@@ -112,6 +126,10 @@
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding-top: 24px;
     padding-bottom: 24px;
+}
+
+.footer-bg .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .footer-bottom-inner {

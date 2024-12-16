@@ -25,9 +25,14 @@
     position: relative;
 }
 
-.hero-banner-2 .flex-bannar,
-.hero-banner .flex-bannar {
-    justify-content: flex-start;
+.hero-fixed-bg-2 {
+    background-image: url("/../assets/img/banner/hero-2.jpg");
+    width: 100%;
+    height: 700px;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
 }
 
 .hero-banner .content-box {
@@ -35,11 +40,15 @@
 }
 
 .hero-banner .hero-heading {
-    margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 .hero-banner .hero-text {
-    margin-bottom: 32px;
+    margin-top: 8px;
+}
+
+.hero-banner .hero-button {
+    margin-top: 32px;
 }
 
 // Hero banner style 2

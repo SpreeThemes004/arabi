@@ -1,12 +1,18 @@
+.section-instagram {
+    overflow: hidden;
+}
+
 .instagram-list {
     display: flex;
     flex-wrap: nowrap;
     margin: 0;
     margin-top: 48px;
-    overflow-x: visible ;
+    overflow: hidden;
+    overflow-x: scroll;
 }
 
-li.instagram-item {
+.instagram-item {
+    min-width: 240px;
     width: calc(100% / 5);
 }
 

@@ -2,6 +2,14 @@
     --color-background: 0, 0, 0;
 }
 
+.product-card-4 {
+    --color-background: 241, 241, 241;
+}
+
+.product-card-4 .card-action{
+    --color-background: 255, 255, 255;
+}
+
 .badge-red{
     --color-foreground: 255, 255, 255;
     --color-background:221, 24, 24;
@@ -93,6 +101,11 @@
 .product-card-2,
 .product-card {
     margin-top: 42px;
+}
+
+.product-card-4 {
+    overflow: hidden;
+    background-color: rgba(var(--color-background), 1);
 }
 
 .product-card-details {
@@ -477,6 +490,10 @@
 
     .card-title .text_16 {
         font-size: 14px;
+    }
+
+    .product-card-4 .card-vendor {
+        font-size: 12px;
     }
 
     .card-price-regular.text_14,

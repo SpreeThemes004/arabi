@@ -1,3 +1,7 @@
+.plant-category-block {
+    --color-background: 247, 247, 247;
+}
+
 .product-nav-next:hover, 
 .product-nav-prev:hover {
     --color-background: 0, 0, 0;
@@ -71,6 +75,16 @@
     left: -60px;
     opacity: 1;
     visibility: visible;
+}
+
+// Home plant
+.plant-category-block {
+    background-color: rgba(var(--color-background), 1);
+    display: block;
+    text-align: center;
+    padding: 18px 56px;
+    border-radius: 6px;
+    white-space: nowrap;
 }
 
 

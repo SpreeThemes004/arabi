@@ -7,6 +7,10 @@
     --color-secondary-button-text-hover: 255, 255, 255;
 }
 
+.image-text-card.image-text-card-plant{
+    --font-heading-weight: 600;
+}
+
 .image-with-text-2 {
     --color-secondary-button-border: 0, 0, 0;
 }
@@ -74,6 +78,27 @@
 
 .image-with-content * + * {
     margin-top: 24px;
+}
+
+// Home plant
+.image-text-card-plant .image-text-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.image-text-card-plant .content-absolute {
+    z-index: unset;
+}
+
+.image-text-card-plant .text-content-box {
+    z-index: 11;
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {

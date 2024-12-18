@@ -17,13 +17,20 @@
     --color-foreground: 0, 0, 0;
 }
 
-.section-newsletter-2.newsletter-bag .newsletter-btn-white {
+.section-newsletter-2.newsletter-bag .newsletter-btn-white{
     --color-background: 0, 0, 0;
     --color-foreground: 255, 255, 255;
 }
 
 .section-newsletter {
     --color-background: 247, 247, 247;
+}
+
+.footer-block-item.has-newsletter .newsletter-btn {
+    --color-foreground: 255, 255, 255;
+    --color-background: 0, 0, 0;
+    height: inherit;
+    margin: 0;
 }
     
 .section-newsletter-2,
@@ -61,7 +68,8 @@
 
 .footer-newsletter .newsletter-form,
 .section-newsletter-2 .newsletter-form,
-.section-newsletter .newsletter-form {
+.section-newsletter .newsletter-form,
+.footer-block-item.has-newsletter  .newsletter-form{
     border: 1px solid rgba(0, 0, 0, 0.7);
     border-radius: var(--input-radius);
 }
@@ -70,7 +78,8 @@
     border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-.section-newsletter-2.newsletter-bag .newsletter-form {
+.section-newsletter-2.newsletter-bag .newsletter-form,
+.footer-block-item.has-newsletter .newsletter-form {
     border: 1px solid rgba(0, 0, 0, 1);
 }
 
@@ -125,6 +134,12 @@
 .section-newsletter .newsletter-btn {
     width: 260px;
     max-width: 260px;
+    border: inherit;
+}
+
+.footer-block-item.has-newsletter .newsletter-btn  {
+    width: 190px;
+    max-width: 190px;
     border: inherit;
 }
 

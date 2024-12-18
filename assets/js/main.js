@@ -290,24 +290,36 @@ class newProductSlider extends HTMLElement{
     this.productSwiper = this.querySelector('.swiper');
     this.navNext = this.querySelector('.product-nav-next');
     this.navPrev = this.querySelector('.product-nav-prev');
-    this.init();
-  }
 
-  init(){
-    this.productSlider = new Swiper(this.productSwiper, {
-      slidesPerView: 1,
-      spaceBetween: 24,
-      navigation: {
-        nextEl: this.navNext,
-        prevEl: this.navPrev,
+    this.slidesPerView = 1;
+    this.breakpoints = {
+      320: {
+        slidesPerView: 1.8,
+        spaceBetween: 16,
       },
-      breakpoints: {
-        320: {
-          slidesPerView: 1.8,
+      575: {
+        slidesPerView: 2.6,
+        spaceBetween: 16,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 24,
+      },
+    };
+
+    if (this.getAttribute('data-slidePerView')){
+      this.slidesPerView = parseFloat(this.getAttribute('data-slidePerView'));
+      this.breakpoints = {
+        0: {
+          slidesPerView: 1.5,
           spaceBetween: 16,
         },
         575: {
-          slidesPerView: 2.6,
+          slidesPerView: 2,
           spaceBetween: 16,
         },
         768: {
@@ -315,10 +327,25 @@ class newProductSlider extends HTMLElement{
           spaceBetween: 24,
         },
         992: {
-          slidesPerView: 4,
+          slidesPerView: 5,
           spaceBetween: 24,
         },
+      };
+    }
+
+
+    this.init();
+  }
+
+  init(){
+    this.productSlider = new Swiper(this.productSwiper, {
+      slidesPerView: this.slidesPerView,
+      spaceBetween: 24,
+      navigation: {
+        nextEl: this.navNext,
+        prevEl: this.navPrev,
       },
+      breakpoints: this.breakpoints,
     });
   }
 }

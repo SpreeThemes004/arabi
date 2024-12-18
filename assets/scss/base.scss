@@ -477,6 +477,10 @@ img {
   transform: scale(0.8);
 }
 
+.product-card-4 .secondary-image {
+  transform: scale(1);
+}
+
 .product-card-3:hover .secondary-image,
 .product-card:hover .secondary-image {
   opacity: 1;

@@ -6,6 +6,13 @@
     --color-secondary-button-text-hover: 255, 255, 255;
 }
 
+.hero-banner.hero-fixed-bg-3{
+    --color-foreground: 0, 0, 0;
+    --color-heading: 0, 0, 0;
+    --color-secondary-button-text: 0, 0, 0;
+    --color-secondary-button-text-hover: 0, 0, 0;
+}
+
 .hero-banner-2{
     --color-background: 255, 255, 255;
     --color-foreground: 0, 0, 0;
@@ -15,8 +22,7 @@
     --color-secondary-button-text-hover: 0, 0, 0;
 }
 
-.hero-fixed-bg {
-    background-image: url("/../assets/img/banner/hero.jpg");
+.hero-banner {
     width: 100%;
     height: 700px;
     background-position: center center;
@@ -25,14 +31,16 @@
     position: relative;
 }
 
+.hero-fixed-bg {
+    background-image: url("/../assets/img/banner/hero.jpg");
+}
+
 .hero-fixed-bg-2 {
     background-image: url("/../assets/img/banner/hero-2.jpg");
-    width: 100%;
-    height: 700px;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
+}
+
+.hero-fixed-bg-3 {
+    background-image: url("/../assets/img/banner/hero-3.jpg");
 }
 
 .hero-banner .content-box {
@@ -148,6 +156,10 @@
 }
 
 @media (max-width: 575px) {
+    .hero-banner {
+        background-position: center left 30%;
+    }
+
     .hero-banner .hero-heading {
         font-size: 28px;
     }

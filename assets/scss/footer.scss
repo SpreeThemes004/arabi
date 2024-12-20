@@ -198,18 +198,24 @@
     .footer-block-item {
         width: 33.33%;
     }
+    
+    .footer-with-newsletter .footer-block-item {
+        width: 25%;
+    }
+
+    .footer-block-item.has-newsletter {
+        width: 50%;
+    }
 }
 
 @media (max-width: 767px) {
-    .footer-top {
-        margin-bottom: 20px;
-    }
-
     .footer-blocks div + div {
         margin-bottom: 20px;
     }
 
 
+    .footer-with-newsletter .footer-block-item,
+    .footer-block-item.has-newsletter,
     .footer-block-item.has-logo,
     .footer-block-item {
         width: 100%;

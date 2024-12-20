@@ -32,10 +32,10 @@
 .collage-grid.grid-style-4 {
     --bs-gutter-y: 24px;
     display: grid;
-    grid-template-columns: 45% auto auto;
+    grid-template-columns: auto auto 45%;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "first second third"
-        "first fifth fourth";
+    grid-template-areas: "second third first"
+        "fifth fourth first";
     column-gap: var(--bs-gutter-x);
     row-gap: var(--bs-gutter-y);
 }
@@ -97,11 +97,11 @@
         padding: 22px;
     }
 
-    .heading-collage.text_32 {
-        font-size: 26px;
+    .heading-collage {
+        font-size: 28px;
     }
 
-    .subheading-collage.text_18 {
+    .subheading-collage {
         font-size: 16px;
     }
 }
@@ -119,11 +119,11 @@
         padding: 16px;
     }
 
-   .heading-collage.text_32 {
-    font-size: 22px;
+   .heading-collage {
+    font-size: 24px;
     }
 
-    .subheading-collage.text_18 {
+    .subheading-collage {
         font-size: 14px;
     }
 
@@ -145,11 +145,11 @@
         padding: 10px;
     }
 
-    .heading-collage.text_32 {
-        font-size: 16px;
+    .heading-collage {
+        font-size: 20px;
     }
 
-    .subheading-collage.text_18 {
+    .subheading-collage {
         font-size: 12px;
     }
 
@@ -167,20 +167,25 @@
         width: 100%;
         grid-template-columns: repeat(4, 85%);
         grid-template-rows: none;
-        grid-template-areas: "first second third fourth";
+        grid-template-areas: "first second third fourth fifth";
         overflow: hidden;
         overflow-x: scroll;
+    }
+
+    .collage-grid.grid-style-4 {
+        grid-template-columns: repeat(5, 85%);
+        grid-template-areas: "first second third fourth fifth";
     }
 
     .collage-content.flex-bannar {
         padding: 32px;
     }
 
-    .heading-collage.text_32 {
+    .heading-collage {
         font-size: 32px;
     }
 
-    .subheading-collage.text_18 {
+    .subheading-collage {
         font-size: 18px;
     }
 
@@ -195,11 +200,11 @@
         padding: 22px;
     }
 
-    .heading-collage.text_32 {
+    .heading-collage {
         font-size: 24px;
     }
 
-    .subheading-collage.text_18 {
+    .subheading-collage {
         font-size: 14px;
     }
 

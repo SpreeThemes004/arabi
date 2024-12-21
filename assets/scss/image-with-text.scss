@@ -23,6 +23,11 @@
     --color-background: 223, 225, 248;
 }
 
+.image-with-text-shoe .image-text-left,
+.image-with-text-shoe .image-text-right {
+    --color-background: 247, 247, 247;
+}
+
 .image-text-card {
     overflow: hidden;
 }
@@ -49,10 +54,12 @@
 }
 
 // Image with text 2
+.image-with-text-shoe .image-text-left,
 .image-with-text-2 .image-text-left {
     background-color: rgba(var(--color-background), 1);
 }
 
+.image-with-text-shoe .image-text-right,
 .image-with-text-2 .image-text-right {
     background-color: rgba(var(--color-background), 1);
 }
@@ -100,6 +107,30 @@
 .image-text-card-plant .text-content-box {
     z-index: 11;
 }
+
+// Home Shoe
+.image-with-text-shoe .image-text-right,
+.image-with-text-shoe .image-text-left {
+    padding: 16px;
+}
+
+.image-with-text-shoe .image-text-media {
+    width: 50%;
+}
+
+.image-with-text-shoe .image-with-content {
+    width: calc(50% - 24px);
+}
+
+.image-with-text-shoe .image-with-subheading {
+    margin-top: 8px;
+}
+
+.image-with-text-shoe .image-text-button {
+    margin-top: 24px;
+    display: block;
+}
+
 
 
 @media (min-width: 1200px) and (max-width: 1399px) {

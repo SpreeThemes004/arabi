@@ -22,6 +22,8 @@
     --color-secondary-button-text-hover: 0, 0, 0;
 }
 
+
+.hero-banner-2,
 .hero-banner {
     width: 100%;
     height: 700px;
@@ -43,6 +45,10 @@
     background-image: url("/../assets/img/banner/hero-3.jpg");
 }
 
+.hero-fixed-bg-4 {
+    background-image: url("/../assets/img/banner/hero-4.jpg");
+}
+
 .hero-banner .content-box {
     max-width: 610px;
 }
@@ -61,10 +67,10 @@
 
 // Hero banner style 2
 .hero-banner-2 .content-box {
-    max-width: 550px;
+    max-width: 520px;
     background-color: rgba(var(--color-background), 1);
     text-align: center;
-    padding: 130px 90px;
+    padding: 130px 70px;
 }
 
 .hero-banner-2 .hero-subheading {
@@ -74,6 +80,10 @@
 .hero-banner-2 .hero-text,
 .hero-banner-2 .hero-heading {
     margin-bottom: 24px;
+}
+
+.hero-banner-2 .flex-bannar {
+    justify-content: flex-start;
 }
 
 @media (max-width: 1199px) {

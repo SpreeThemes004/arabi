@@ -89,6 +89,10 @@
     margin: 0;
 }
 
+.footer-menu.footer-menu-schedule {
+    gap: 8px;
+}
+
 .footer-social-item:hover .icon {
     opacity: 0.6;
 }
@@ -138,7 +142,7 @@
     margin-top: 8px;
 }
 
-.newsletter-form-wrap {
+.footer-block-item.has-newsletter .newsletter-form-wrap {
     margin-top: 32px;
 }
 
@@ -205,6 +209,10 @@
 
     .footer-block-item.has-newsletter {
         width: 50%;
+    }
+
+    .footer-blocks {
+        justify-content: unset;
     }
 }
 

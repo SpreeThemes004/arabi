@@ -191,6 +191,21 @@ body {
   justify-content: flex-end;
 }
 
+.align-content-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.align-content-center {
+  display: flex;
+  align-items: center;
+}
+
+.align-content-end {
+  display: flex;
+  align-items: flex-end;
+}
+
 .text-center{
   text-align: center;
 }

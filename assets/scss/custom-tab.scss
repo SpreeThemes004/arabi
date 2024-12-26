@@ -36,6 +36,10 @@
     --color-background: 198, 198, 200;
 }
 
+.product-card-3 .review-icon svg[fill] {
+    --color-foreground: 255, 199, 60;
+}
+
 .swatch-yellow{
     --color-background: 255, 199, 60;
 }
@@ -233,6 +237,11 @@
     justify-content: flex-start;
 }
 
+
+.product-card-3 .card-rating  {
+    justify-content: center;
+}
+
 .product-card-details .card-title {
     line-height: 0;
 }
@@ -352,18 +361,12 @@
 }
 
 // Product cart style 3
+.product-card-3 .card-quickview-button,
 .product-card-3 .card-cart-button {
     background-color: transparent;
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    border: 2px solid rgba(var(--color-foreground), 1);
-}
-
-.product-card-3 .card-quickview-button {
-    background-color: transparent;
-    border-radius: 50%;
-    color: rgba(var(--color-foreground), 1);
     border: 2px solid rgba(var(--color-foreground), 1);
 }
 
@@ -375,6 +378,19 @@
 .product-card-3 .card-action{
     gap: 16px;
     justify-content: center;
+}
+
+.product-card-3 .card-wishlist svg,
+.product-card-3 .card-compare svg {
+    color: rgba(var(--color-foreground), 1);
+}
+
+.product-card-3 .review-icon svg[fill] {
+    color: rgba(var(--color-foreground), 1);
+}
+
+.product-card-3 .rating-number {
+    margin-top: 4px;
 }
 
 // Product cart style 4

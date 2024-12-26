@@ -223,6 +223,12 @@
     font-size: 32px;
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    .contact-map-2 .contact-map-content {
+        max-width: 400px;
+    }
+}
+
 
 @media (max-width: 991px) {
     .contact-style-2 .contact-map-wrap {

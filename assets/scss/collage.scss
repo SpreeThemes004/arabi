@@ -10,10 +10,9 @@
     --bs-gutter-y: 24px;
     display: grid;
     grid-template-columns: 45% auto;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-template-areas: 
-        "first second"
-        "first third";
+        "first second third";
     column-gap: var(--bs-gutter-y);
     row-gap: var(--bs-gutter-x);
 }
@@ -74,22 +73,33 @@
     object-position: center;
 }
 
-.collage-content.flex-bannar {
+.collage-content {
     display: flex;
     height: inherit;
-    justify-content: flex-start;
     width: 100%;
     padding: 32px;
-    align-items: flex-start;
 }
 
 .subheading-collage {
     margin-top: 8px;
 }
 
+.grid-style-2 .subheading-collage {
+    margin-top: 0;
+}
+
 .button-collage {
     margin-top: 24px;
     display: inline-block;
+}
+
+.grid-style-2 .button-collage {
+    margin-top: 8px;
+}
+
+.grid-style-2 .collage-text,
+.grid-style-2 .button-primary {
+    margin-top: 24px;
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -141,7 +151,7 @@
         --bs-gutter-y: 16px;
     }
 
-    .collage-content.flex-bannar {
+    .collage-content {
         padding: 10px;
     }
 
@@ -149,6 +159,7 @@
         font-size: 20px;
     }
 
+    .collage-text,
     .subheading-collage {
         font-size: 12px;
     }
@@ -156,12 +167,19 @@
     .button-collage.button-cta {
         font-size: 11px;
     }
+
+    .grid-style-2 .button, 
+    .grid-style-2 .button:hover, 
+    .grid-style-2 .button:focus {
+        min-width: 170px;
+        height: 48px;
+        font-size: 11px;
+    }
 }
 
 @media (max-width: 767px) {
     .collage-grid.grid-style-4, 
     .collage-grid.grid-style-3, 
-    .collage-grid.grid-style-2, 
     .collage-grid {
         display: grid;
         width: 100%;
@@ -177,7 +195,14 @@
         grid-template-areas: "first second third fourth fifth";
     }
 
-    .collage-content.flex-bannar {
+    
+    .collage-grid.grid-style-2 {
+        
+        grid-template-columns: repeat(3, 85%);
+        grid-template-areas: "first second third";
+    }
+
+    .collage-content {
         padding: 32px;
     }
 
@@ -185,18 +210,19 @@
         font-size: 32px;
     }
 
+    .collage-text,
     .subheading-collage {
         font-size: 18px;
     }
 
+    .grid-style-2 .button-primary,
     .button-collage.button-cta {
         font-size: 14px;
     }
 }
 
 @media (max-width: 575px) {
-
-    .collage-content.flex-bannar {
+    .collage-content {
         padding: 22px;
     }
 
@@ -208,7 +234,21 @@
         font-size: 14px;
     }
 
+    .grid-style-2 .collage-text,
+    .grid-style-2 .subheading-collage {
+        font-size: 12px;
+    }
+
     .button-collage.button-cta {
         font-size: 12px;
+    }
+
+    
+    .grid-style-2 .button, 
+    .grid-style-2 .button:hover, 
+    .grid-style-2 .button:focus {
+        min-width: 170px;
+        height: 48px;
+        font-size: 11px;
     }
 }

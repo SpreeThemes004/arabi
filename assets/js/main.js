@@ -530,6 +530,44 @@ class modalPopUp extends HTMLElement{
 customElements.define('modal-popup', modalPopUp);
 
 
+// Newsletter popup
+class countDown extends HTMLElement{
+  constructor(){
+    super();
+    
+    window.addEventListener('load', this.countFunc.bind(this));
+    
+  }
+
+  countFunc(){
+    this.countIntervel = setInterval (() => {
+      this.countDownDate = new Date("jan 1, 2026 12:00:00").getTime();
+      this.now = new Date().getTime();
+      this.distance = this.countDownDate - this.now;
+
+      this.days = Math.floor(this.distance / (1000 * 60 * 60 * 24));
+      this.hours = Math.floor((this.distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      this.minutes = Math.floor((this.distance % (1000 * 60 * 60)) / (1000 * 60));
+      this.seconds = Math.floor((this.distance % (1000 * 60)) / 1000);
+
+      this.querySelector('.count-days').innerHTML = this.days;
+      this.querySelector('.count-hours').innerHTML = this.hours;
+      this.querySelector('.count-min').innerHTML = this.minutes;
+      this.querySelector('.count-sec').innerHTML = this.seconds;
+
+      if (this.distance < 0) {
+        clearInterval(this.countIntervel);
+      }
+    },1000);
+  }
+
+  
+
+}
+
+customElements.define('count-down', countDown);
+
+
 
 
 

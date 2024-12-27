@@ -1,0 +1,38 @@
+.section-brand {
+    --color-background: 247, 247, 247;
+}
+
+.section-brand {
+    background-color: rgba(var(--color-background), 1);
+    overflow: hidden;
+}
+
+.brand-wrap {
+    display: flex;
+    width: 200%;
+    animation: marqueeSlide 30s linear infinite;
+}
+
+.brand-wrap:hover {
+    animation-play-state: paused;
+}
+
+.brand-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 45px 0;
+    width: 100%;
+    margin: 0;
+}
+
+.brand-item {
+    max-width: 135px;
+    height: auto;
+}
+
+
+@keyframes marqueeSlide{
+    form{transform: translateX(0); }
+    to{transform: translateX(-50%); }
+}

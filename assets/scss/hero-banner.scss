@@ -3,6 +3,7 @@
     --color-foreground: 255, 255, 255;
     --color-secondary-button-text: 255, 255, 255;
     --color-heading: 255, 255, 255;
+    --color-subheading: 255, 255, 255;
     --color-secondary-button-text-hover: 255, 255, 255;
 }
 
@@ -49,6 +50,10 @@
     background-image: url("/../assets/img/banner/hero-4.jpg");
 }
 
+.hero-fixed-bg-5 {
+    background-image: url("/../assets/img/banner/hero-6.jpg");
+}
+
 .hero-banner .content-box {
     max-width: 610px;
 }
@@ -67,10 +72,27 @@
 
 // Hero banner style 2
 .hero-banner-2 .content-box {
-    max-width: 520px;
+    max-width: 450px;
     background-color: rgba(var(--color-background), 1);
     text-align: center;
-    padding: 130px 70px;
+    padding: 64px;
+}
+
+.hero-banner-2 .hero-image {
+    position: relative;
+    height: 100%;
+}
+
+.hero-banner-2 .hero-image img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-banner .banner-container,
+.hero-banner-2 .banner-container {
+    display: flex;
+    align-items: center;
+    height: inherit;
 }
 
 .hero-banner-2 .hero-subheading {
@@ -86,11 +108,31 @@
     justify-content: flex-start;
 }
 
-@media (max-width: 1199px) {
-    .hero-banner-2 .content-box {
-        max-width: 480px;
-        padding: 100px 55px;
-    }
+// Counter up
+.counter-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+}
+
+.counter-list {
+    margin-top: 32px;
+}
+
+.counter-item {
+    width: 64px;
+    height: 64px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.counter-text {
+    line-height: 1;
 }
 
 @media (max-width: 991px) {
@@ -104,7 +146,7 @@
 
     .hero-banner-2 .content-box {
         max-width: 400px;
-        padding: 90px 40px;
+        padding: 48px;
     }
 
     .hero-banner-2 .hero-subheading {
@@ -141,7 +183,6 @@
 
     .hero-banner-2 .content-box {
         max-width: 330px;
-        padding: 60px 25px;
     }
 
     .hero-banner-2 .hero-subheading {
@@ -197,6 +238,19 @@
         min-width: 160px;
         height: 48px;
         font-size: 12px;
+    }
+
+    .counter-item {
+        width: 56px;
+        height: 56px;
+    }
+
+    .count-days {
+        font-size: 16px;
+    }
+
+    .counter-text {
+        font-size: 10px;
     }
 }
 

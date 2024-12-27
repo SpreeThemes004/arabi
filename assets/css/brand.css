@@ -1,0 +1,21 @@
+.section-brand {
+  --color-background: 247, 247, 247; }
+
+.section-brand {
+  background-color: rgba(var(--color-background), 1); }
+
+.brand-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 45px 0; }
+
+.brand-item {
+  max-width: 135px;
+  height: auto; }

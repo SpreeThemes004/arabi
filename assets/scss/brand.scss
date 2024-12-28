@@ -11,6 +11,7 @@
     display: flex;
     width: 200%;
     animation: marqueeSlide 30s linear infinite;
+    gap: 120px;
 }
 
 .brand-wrap:hover {
@@ -24,6 +25,7 @@
     padding: 45px 0;
     width: 100%;
     margin: 0;
+    gap: 120px;
 }
 
 .brand-item {
@@ -35,4 +37,46 @@
 @keyframes marqueeSlide{
     form{transform: translateX(0); }
     to{transform: translateX(-50%); }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .brand-wrap {
+        gap: 80px;
+    }
+
+    .brand-list {
+        gap: 80px;
+    }
+}
+
+@media (max-width: 991px) {
+    .brand-wrap {
+        gap: 50px;
+    }
+
+    .brand-list {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .brand-wrap {
+        gap: 40px;
+    }
+
+    .brand-list {
+        gap: 40px;
+        padding: 32px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .brand-wrap {
+        gap: 16px;
+    }
+
+    .brand-list {
+        gap: 16px;
+        padding: 24px 0;
+    }
 }

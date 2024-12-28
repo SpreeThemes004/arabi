@@ -1,4 +1,4 @@
-.plant-category-block {
+.category-block {
     --color-background: 247, 247, 247;
 }
 
@@ -77,14 +77,24 @@
     visibility: visible;
 }
 
-// Home plant
-.plant-category-block {
+// collection slider
+.category-block {
     background-color: rgba(var(--color-background), 1);
     display: block;
     text-align: center;
     padding: 18px 56px;
     border-radius: 6px;
     white-space: nowrap;
+}
+
+.category-block-2 img {
+    width: 48px;
+    height: 48px;
+}
+
+.category-block-2 .collection-title {
+    display: block;
+    margin-top: 16px;
 }
 
 

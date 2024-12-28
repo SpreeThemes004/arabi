@@ -1,3 +1,7 @@
+.collage-content .review-icon svg[fill] {
+    --color-foreground: 255, 199, 60;
+}
+
 .collage-grid {
     display: grid;
     grid-template-columns: 45% auto;
@@ -39,6 +43,18 @@
     row-gap: var(--bs-gutter-y);
 }
 
+
+.collage-grid.grid-style-5 {
+    --bs-gutter-y: 24px;
+    display: grid;
+    grid-template-columns: 45% auto auto;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:"first second second" 
+                        "first third fourth";
+    column-gap: var(--bs-gutter-x);
+    row-gap: var(--bs-gutter-y);
+}
+
 .collage-grid-item:nth-child(1){
     grid-area: first;
 }
@@ -57,6 +73,10 @@
 
 .collage-grid-item:nth-child(5){
     grid-area: fifth;
+}
+
+.collage-header {
+    margin-bottom: 48px;
 }
 
 .collage-media {
@@ -80,6 +100,7 @@
     padding: 32px;
 }
 
+.collage-grid.grid-style-5 .card-price,
 .subheading-collage {
     margin-top: 8px;
 }
@@ -102,6 +123,19 @@
     margin-top: 24px;
 }
 
+.collage-grid.grid-style-5 .review-icon svg[fill] {
+    color: rgba(var(--color-foreground), 1);
+}
+
+.collage-grid.grid-style-5 .card-price-compare {
+    color: rgba(var(--color-foreground), 0.7);
+    text-decoration: line-through;
+}
+
+.collage-grid.grid-style-5 .card-rating {
+    margin-bottom: 24px;
+}
+
 @media (min-width: 1200px) and (max-width: 1399px) {
     .collage-content.flex-bannar {
         padding: 22px;
@@ -117,6 +151,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+    .collage-grid.grid-style-5,
     .collage-grid.grid-style-4,
     .collage-grid.grid-style-3,
     .collage-grid.grid-style-2,
@@ -143,6 +178,7 @@
 }
 
 @media (max-width: 991px) {
+    .collage-grid.grid-style-5,
     .collage-grid.grid-style-4,
     .collage-grid.grid-style-3,
     .collage-grid.grid-style-2,
@@ -178,6 +214,7 @@
 }
 
 @media (max-width: 767px) {
+    .collage-grid.grid-style-5, 
     .collage-grid.grid-style-4, 
     .collage-grid.grid-style-3, 
     .collage-grid {
@@ -194,10 +231,8 @@
         grid-template-columns: repeat(5, 85%);
         grid-template-areas: "first second third fourth fifth";
     }
-
     
     .collage-grid.grid-style-2 {
-        
         grid-template-columns: repeat(3, 85%);
         grid-template-areas: "first second third";
     }
@@ -250,5 +285,13 @@
         min-width: 170px;
         height: 48px;
         font-size: 11px;
+    }
+
+    .collage-grid.grid-style-5 .card-rating {
+        margin-bottom: 16px;
+    }
+
+    .collage-grid.grid-style-5 .button-collage {
+        margin-top: 16px;
     }
 }

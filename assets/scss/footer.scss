@@ -3,6 +3,11 @@
     --color-foreground: 255, 255, 255;
 }
 
+.footer-bg-2 {
+    --color-background: 247, 247, 247;
+    --color-foreground: 0, 0, 0;
+}
+
 .footer-bg-plant .footer-top {
     --color-background: 221, 240, 235;
 }
@@ -12,6 +17,10 @@
 }
 
 .footer-bg {
+    background-color: rgba(var(--color-background), 1);
+}
+
+.footer-bg-2 {
     background-color: rgba(var(--color-background), 1);
 }
 
@@ -38,6 +47,10 @@
     margin-bottom: 30px;
 }
 
+.footer-block-item.has-logo p + p {
+    margin-top: 24px;
+}
+
 .footer-block-item.has-newsletter {
     width: 38%;
     padding-left: 50px;
@@ -59,7 +72,7 @@
 }
 
 .footer-logo-text {
-    max-width: 190px;
+    max-width: 216px;
 }
 
 .footer-text {

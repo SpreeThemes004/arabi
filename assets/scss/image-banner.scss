@@ -6,12 +6,21 @@
     --color-background: 255, 255, 255;
 }
 
+.section-banner-shipping-wrap .image-banner-wrap,
+.section-banner-shipping-wrap {
+    --color-background: 247, 247, 247;
+}
+
 .image-banner-wrap {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
     height: 100%;
     background-color: rgba(var(--color-background), 1);
+}
+
+.image-banner-3 .image-banner-wrap {
+    background-color: transparent;
 }
 
 .image-banner-2 .image-banner-wrap {
@@ -21,6 +30,14 @@
 .image-banner-media {
     min-width: 50%;
     height: auto;
+}
+
+.image-banner-3 .image-banner-media {
+    min-width: 60%;
+}
+
+.image-banner-3 .image-banner-media img {
+    object-fit: contain;
 }
 
 .image-banner-media img {
@@ -34,6 +51,10 @@
     display: flex;
     align-items: center;
     padding: 24px;
+}
+
+.image-banner-3 .image-banner-content{
+    min-width: 40%;
 }
 
 .image-banner-content .content-box {
@@ -86,6 +107,12 @@
     margin-top: 32px;
 }
 
+.section-banner-shipping-wrap {
+    background-color: rgba(var(--color-background), 1);
+    padding-bottom: 48px;
+    padding-top: 48px;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
     .image-banner-heading {
         font-size: 42px;
@@ -93,6 +120,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .image-banner-text,
     .image-banner-subheading {
         font-size: 16px;
     }
@@ -106,16 +134,24 @@
     }
 }
 
+@media (max-width: 767px) {
+    .image-banner-3 .image-banner-wrap {
+        flex-direction: column;
+    }
+
+    .image-banner-3 .image-banner-content,
+    .image-banner-2 .image-banner-content {
+        padding: 0;
+        margin-top: 32px;
+    }
+}
+
 @media (min-width: 575px) and (max-width: 767px) {
     .image-banner-2 .image-banner-wrap {
         flex-direction: column;
     }
 
-    .image-banner-2 .image-banner-content {
-        padding: 0;
-        margin-top: 32px;
-    }
-
+    .image-banner-text,
     .image-banner-subheading {
         font-size: 14px;
     }
@@ -150,7 +186,7 @@
     }
 }
 
-@media (min-width: 0) and (max-width: 574px) {
+@media (max-width: 574px) {
     .image-banner-wrap {
         flex-direction: column;
     }
@@ -163,12 +199,13 @@
         margin-top: 24px;
     }
 
+    .image-banner-text,
     .image-banner-subheading {
         font-size: 16px;
     }
 
     .image-banner-heading {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .image-desc-item:not(:first-child):before {

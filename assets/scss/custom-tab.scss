@@ -2,11 +2,20 @@
     --color-background: 0, 0, 0;
 }
 
+.product-card-image {
+    --color-background: 247, 247, 247;
+}
+
 .product-card-4 {
     --color-background: 241, 241, 241;
 }
 
 .product-card-4 .card-action{
+    --color-background: 255, 255, 255;
+}
+
+.card-cart-button,
+.card-quickview-button {
     --color-background: 255, 255, 255;
 }
 
@@ -26,6 +35,11 @@
 
 .button-quickview.button-secondary:hover{
     --color-secondary-button-text-hover: 255, 255, 255;
+}
+
+.product-card-3 .card-cart-button:hover,
+.product-card-3 .card-quickview-button:hover {
+    --color-background: 255, 255, 255;
 }
 
 .review-gray{
@@ -141,6 +155,7 @@
 
 .product-card-image {
     overflow: hidden;
+    background-color: rgba(var(--color-background), 1);
 }
 
 .product-card-4 .card-action,

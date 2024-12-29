@@ -290,6 +290,7 @@ class newProductSlider extends HTMLElement{
     this.productSwiper = this.querySelector('.swiper');
     this.navNext = this.querySelector('.product-nav-next');
     this.navPrev = this.querySelector('.product-nav-prev');
+    this.sliderPagination = this.querySelector('.swiper-pagination');
 
     this.slidesPerView = 1;
     this.breakpoints = {

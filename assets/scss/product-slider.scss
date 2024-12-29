@@ -2,6 +2,12 @@
     --color-background: 247, 247, 247;
 }
 
+.product-nav-next, 
+.product-nav-prev {
+    --color-background: 255, 255, 255;
+    --color-foreground: 0, 0, 0;
+}
+
 .product-nav-next:hover, 
 .product-nav-prev:hover {
     --color-background: 0, 0, 0;
@@ -10,6 +16,15 @@
 
 .product-slide-dots{
     --color-background: 0, 0, 0;
+}
+
+.product-slider-2 {
+    --color-background: 197, 227, 220;
+}
+
+.product-slider-2 .card-cart-button:hover,
+.product-slider-2 .card-quickview-button:hover {
+    --color-background: 255, 255, 255;
 }
 
 .section-product-slider {
@@ -36,7 +51,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent;
+    background: rgba(var(--color-background), 1);;
     transition: all 0.4s;
     opacity: 0;
     visibility: hidden;
@@ -75,6 +90,27 @@
     left: -60px;
     opacity: 1;
     visibility: visible;
+}
+
+.product-slider-2 {
+    background: rgba(var(--color-background), 1);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.product-slider-button {
+    margin-top: 24px;
+    display: block;
+}
+
+.product-slider-2 .swiper-pagination.slideshow-dots {
+    bottom: -32px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-slider-2 .section-heading {
+    font-size: 42px;
 }
 
 // collection slider
@@ -158,6 +194,10 @@
         opacity: 1;
         visibility: visible;
     }
+
+    .product-slider-2 .section-heading {
+        font-size: 36px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -181,6 +221,29 @@
 @media (max-width: 991px) {
     .product-slider .swiper {
         overflow: visible;
+    }
+
+    .product-slider-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+    }
+
+    .product-slider-2 .section-heading {
+        font-size: 32px;
+        max-width: calc(80% - 32px);
+    }
+
+    .product-slider-button {
+        max-width: 20%;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .product-slider-2 .section-heading {
+        font-size: 28px;
     }
 }
 
@@ -209,6 +272,15 @@
     .product-slider .card-cart-icon .icon_24 {
         width: 16px;
         height: 16px;
+    }
+
+    .product-slider-2 .section-heading {
+        font-size: 22px;
+        max-width: calc(75% - 32px);
+    }
+
+    .product-slider-button {
+        max-width: 25%;
     }
 
 }

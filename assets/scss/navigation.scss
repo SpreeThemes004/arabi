@@ -140,16 +140,16 @@
 
 .site-navigation .nav-link:after,
 .site-navigation .nav-link-sub:after {
-    bottom: -1px;
     content: "";
     display: block;
-    height: 1px;
-    right: 0;
     position: absolute;
     background-color: #000;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    transition: width 0.4s ease 0s, left 0.4s ease 0s;
     width: 0;
+    height: 1px;
+    right: 0;
     left: auto;
+    bottom: 0;
 }
 
 .menu-list-item:hover > .mega-menu-header .img-menu-action .nav-link-sub:after,

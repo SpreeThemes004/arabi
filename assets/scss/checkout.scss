@@ -69,6 +69,11 @@
     display: block;
 }
 
+.cart-shipping-wrap select,
+.checkout-form select {
+    cursor: pointer;
+}
+
 .cart-shipping-wrap select:focus-visible,
 .cart-shipping-wrap select:focus,
 .checkout-form select:focus-visible,

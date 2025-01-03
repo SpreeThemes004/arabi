@@ -19,6 +19,10 @@
     --color-background: 255, 255, 255;
 }
 
+.collection-layout .layout-list:hover {
+    --color-background: 255, 255, 255;
+}
+
 .collection-wrap {
     display: flex;
     gap: 100px;
@@ -46,7 +50,8 @@
 .collection-wrap .filter-sort-wrap {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
 }
 
 .collection-layout {
@@ -54,6 +59,7 @@
     background: rgba(var(--color-background), 1);
     border-radius: 6px;
     padding: 4px;
+    gap: 6px;
 }
 
 .collection-layout .layout-list {
@@ -63,6 +69,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border-radius: 6px;
 }
 
 .collection-layout .layout-list:hover {
@@ -188,6 +195,10 @@
 
     .collection-wrap .cart-button-text {
         font-size: 12px;
+    }
+
+    .collection-layout {
+        gap: 0;
     }
 }
 

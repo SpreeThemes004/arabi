@@ -3,6 +3,14 @@
     --color-background:247, 247, 247;
 }
 
+.content-map-inner > svg {
+    --color-foreground: 255, 0, 0;
+}
+
+.content-map > svg {
+    --color-foreground: 255, 0, 0;
+}
+
 .contact-info-wrap {
     background: rgba(var(--color-background), 1);
     display: flex;
@@ -145,7 +153,7 @@
 .content-address {
     max-width: 220px;
     width: 220px;
-    background: #fff;
+    background: rgba(var(--color-background), 1);
     text-align: center;
     padding: 24px 0;
     border-radius: 6px;
@@ -159,7 +167,7 @@
 
 .content-map-inner > svg,
 .content-map > svg {
-    color: #ff0000;
+    color: rgba(var(--color-foreground), 1);
 }
 
 // contact style 2
@@ -202,7 +210,7 @@
 
 .contact-map-2 .contact-map-content {
     max-width: 500px;
-    background: #fff;
+    background: rgba(var(--color-background), 1);
     padding: 48px;
 }
 
@@ -226,6 +234,11 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     .contact-map-2 .contact-map-content {
         max-width: 400px;
+    }
+
+    .contact-map-content {
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
 

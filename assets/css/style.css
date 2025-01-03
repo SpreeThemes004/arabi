@@ -5476,6 +5476,17 @@ hero-slider:hover .arrow-next {
 .pagination-next {
   --color-background: 0, 0, 0; }
 
+.pagination-item.active,
+.pagination-item:hover {
+  --color-background: 0, 0, 0; }
+
+.pagination-item.active > .pagination-link,
+.pagination-item:hover > .pagination-link {
+  --color-foreground: 255, 255, 255; }
+
+.pagination-item.disabled:hover {
+  --color-background: 0, 0, 0; }
+
 .pagination-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5515,14 +5526,18 @@ hero-slider:hover .arrow-next {
 
 .pagination-item.active,
 .pagination-item:hover {
-  background-color: #000; }
+  background-color: rgba(var(--color-background), 1); }
 
 .pagination-item.active > .pagination-link,
 .pagination-item:hover > .pagination-link {
-  color: #fff; }
+  color: rgba(var(--color-foreground), 1); }
 
-.pagination-item.disabled .pagination-link {
-  opacity: 0.3; }
+.pagination-item.disabled.active > .pagination-link,
+.pagination-item.disabled:hover > .pagination-link {
+  color: rgba(var(--color-foreground), 0.5); }
+
+.pagination-item.disabled:hover {
+  background-color: rgba(var(--color-background), 0.7); }
 
 .pagination-style-2 .pagination-nav {
   display: -webkit-box;
@@ -5569,6 +5584,12 @@ hero-slider:hover .arrow-next {
 .contact-map-wrap,
 .contact-info-wrap {
   --color-background:247, 247, 247; }
+
+.content-map-inner > svg {
+  --color-foreground: 255, 0, 0; }
+
+.content-map > svg {
+  --color-foreground: 255, 0, 0; }
 
 .contact-info-wrap {
   background: rgba(var(--color-background), 1);
@@ -5713,7 +5734,7 @@ hero-slider:hover .arrow-next {
 .content-address {
   max-width: 220px;
   width: 220px;
-  background: #fff;
+  background: rgba(var(--color-background), 1);
   text-align: center;
   padding: 24px 0;
   border-radius: 6px; }
@@ -5725,7 +5746,7 @@ hero-slider:hover .arrow-next {
 
 .content-map-inner > svg,
 .content-map > svg {
-  color: #ff0000; }
+  color: rgba(var(--color-foreground), 1); }
 
 .contact-style-2 .contact-map-wrap {
   background: transparent;
@@ -5765,7 +5786,7 @@ hero-slider:hover .arrow-next {
 
 .contact-map-2 .contact-map-content {
   max-width: 500px;
-  background: #fff;
+  background: rgba(var(--color-background), 1);
   padding: 48px; }
 
 .contact-map-2 .content-address {
@@ -5785,7 +5806,10 @@ hero-slider:hover .arrow-next {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .contact-map-2 .contact-map-content {
-    max-width: 400px; } }
+    max-width: 400px; }
+  .contact-map-content {
+    padding-left: 32px;
+    padding-right: 32px; } }
 
 @media (max-width: 991px) {
   .contact-style-2 .contact-map-wrap {
@@ -5897,7 +5921,25 @@ hero-slider:hover .arrow-next {
   justify-content: space-between;
   background-color: rgba(var(--color-background), 1);
   padding: 32px;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 100%;
+  gap: 16px; }
+
+.faq-header .faq-question {
+  max-width: calc(95% - 16px); }
+
+.faq-question > .icon {
+  max-width: 5%; }
+
+.faq-question > .faq-question-text {
+  max-width: calc(95% - 16px); }
+
+.faq-header > .icon {
+  max-width: 5%; }
+
+.faq-item {
+  border: 1px solid #f6f7f7;
+  border-radius: 6px; }
 
 .faq-header.minus {
   background-color: #fff; }
@@ -5970,6 +6012,9 @@ hero-slider:hover .arrow-next {
 .filter-content {
   --color-background: 255, 255, 255; }
 
+.collection-layout .layout-list:hover {
+  --color-background: 255, 255, 255; }
+
 .collection-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6001,8 +6046,10 @@ hero-slider:hover .arrow-next {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  gap: 24px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .collection-layout {
   display: -webkit-box;
@@ -6010,7 +6057,8 @@ hero-slider:hover .arrow-next {
   display: flex;
   background: rgba(var(--color-background), 1);
   border-radius: 6px;
-  padding: 4px; }
+  padding: 4px;
+  gap: 6px; }
 
 .collection-layout .layout-list {
   width: 40px;
@@ -6024,7 +6072,8 @@ hero-slider:hover .arrow-next {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer; }
+  cursor: pointer;
+  border-radius: 6px; }
 
 .collection-layout .layout-list:hover {
   background: rgba(var(--color-background), 1); }
@@ -6133,7 +6182,9 @@ hero-slider:hover .arrow-next {
   .collection-wrap .card-cart-button {
     gap: 8px; }
   .collection-wrap .cart-button-text {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .collection-layout {
+    gap: 0; } }
 
 @media (max-width: 991px) {
   .collection-wrap .product-list-wrap {

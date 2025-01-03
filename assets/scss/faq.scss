@@ -17,6 +17,29 @@
     background-color: rgba(var(--color-background), 1);
     padding: 32px;
     cursor: pointer;
+    width: 100%;
+    gap: 16px;
+}
+
+.faq-header .faq-question {
+    max-width: calc(95% - 16px);
+}
+
+.faq-question > .icon {
+    max-width: 5%;
+}
+
+.faq-question > .faq-question-text {
+    max-width: calc(95% - 16px);
+}
+
+.faq-header > .icon {
+    max-width: 5%;
+}
+
+.faq-item {
+    border: 1px solid rgba(246, 247, 247, 1);
+    border-radius: 6px;
 }
 
 .faq-header.minus{
